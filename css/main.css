@@ -758,7 +758,16 @@ body.menu-open .page-wrapper {
     width: 30px;
     height: 30px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    background-color: yellow; 
+    z-index: 5;
+}
+
+#index .sec01 .check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     z-index: 5;
 }
 
@@ -769,14 +778,31 @@ body.menu-open .page-wrapper {
     font-weight: 600;
 }
 
+/* 활성화 시 사각형 채우기 및 선 색상 변경 */
+#index .sec01 .sec01-header.active .check-circle { /* 기존 원 선택자 삭제 또는 주석 처리 */
+    /* fill: #000;
+    stroke: #000; */
+}
 
-#index .sec01 .sec01-header.active .check-circle {
+#index .sec01 .sec01-header.active .check-path { /* 체크 표시 선 색상 변경 유지 */
+    stroke: #fff;
+}
+
+/* 새로운 사각형 스타일 */
+#index .sec01 .sec01-header.active .check-icon svg .check-circle {
     fill: #000;
     stroke: #000;
 }
 
-#index .sec01 .sec01-header.active .check-path {
-    stroke: #fff;
+/* 초기 사각형 스타일 (비활성화 시) */
+#index .sec01 .check-icon svg .check-circle {
+    fill: white; /* 또는 원하는 초기 배경색 */
+    stroke: #AAAAAA;
+}
+
+/* 초기 체크 표시 스타일 (비활성화 시) */
+#index .sec01 .check-icon svg .check-path {
+    stroke: #AAAAAA;
 }
 
 #index .sec01 .content-box {
