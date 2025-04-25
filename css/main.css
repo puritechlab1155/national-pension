@@ -1216,7 +1216,7 @@ body.menu-open .page-wrapper {
     display: block;
     transition: background-image 0.3s ease-in-out;
     background-image: linear-gradient(to bottom, transparent, transparent); /* 평소 배경 */
-    background-size: 100% 200%; /* 초기 배경 크기 설정 */
+    background-size: 100% 200%;
 }
 
 #index .sec03 .caption {
@@ -1371,7 +1371,7 @@ body.menu-open .page-wrapper {
 }
 
 #index .sec05 .post-item:hover {
-    transform: scale(1.02); /* 5% 확대 */
+    transform: scale(1.02);
 }
 #index .sec05 .left-col .post-item {
     position: relative;
@@ -1483,28 +1483,28 @@ body.menu-open .page-wrapper {
 #index .sec05 .item-2-3-col {
     display: flex;
     flex-direction: column;
-    flex: 1; /* 남은 너비를 가져감 */
-    height: 100%; /* 부모 높이 채우기 */
+    flex: 1;
+    height: 100%;
     gap: 20px;
 }
 #index .sec05 .item-4-5-col {
     display: flex;
     flex-direction: column;
-    flex: 1; /* 남은 너비를 가져감 */
-    height: 100%; /* 부모 높이 채우기 */
+    flex: 1;
+    height: 100%;
     gap: 20px;
 }
 #index .sec05 .item-2 {
-    flex: 0 0 40%; /* 높이 30% */
+    flex: 0 0 40%; 
 }
 #index .sec05 .item-3 {
-    flex: 0 0 60%; /* 높이 70% */
+    flex: 0 0 60%; 
 }
 #index .sec05 .item-4 {
-    flex: 0 0 70%; /* 높이 70% */
+    flex: 0 0 70%; 
 }
 #index .sec05 .item-5 {
-    flex: 0 0 30%; /* 높이 30% */
+    flex: 0 0 30%; 
 }
 
 #index .sec06 .title {
@@ -1731,6 +1731,7 @@ body.menu-open .page-wrapper {
 
 
 
+
 #sub-page .sec01 {
     display: flex;
     flex-direction: column;
@@ -1813,7 +1814,7 @@ body.menu-open .page-wrapper {
 
 #sub-page .sec03 {
     padding-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 75px;
 } 
 
 #sub-page .sec03 .carousel-navigation {
@@ -1915,11 +1916,22 @@ body.menu-open .page-wrapper {
 
 
 
+#event-page.content{
+    background-color: #91DDFF;
+}
+
+#event-page .sec01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 
 @media (max-width: 1280px) {
 
     /* ✅ index.html */
-
     #index .sec01 .title {
         line-height: 35px;
         font-size: 25px;
@@ -2000,7 +2012,6 @@ body.menu-open .page-wrapper {
         border: 1.5px solid #FF7BAC;
     }
 
-    /* 키워드 위치 설정 */
     #index .sec02 .keyword-item.center {
         left: 38%;
         top: 20%;
@@ -2073,8 +2084,6 @@ body.menu-open .page-wrapper {
     }
 
 
-
-
     /* ✅ sub-page.html */
     #sub-page .sec03 .nav-button {
         padding: 5px;
@@ -2124,7 +2133,6 @@ body.menu-open .page-wrapper {
         gap: 10px;
     }
 
-    /* 재정렬을 위한 그리드 레이아웃 적용 */
     #index .sec01 .content-box {
         display: grid;
         grid-template-areas:
@@ -2147,7 +2155,6 @@ body.menu-open .page-wrapper {
 
     #index .sec01 .content-right {
         display: contents;
-        /* 자식 요소들을 직접 그리드에 배치하기 위해 */
     }
 
     #index .sec01 .text-area {
@@ -2456,13 +2463,13 @@ body.menu-open .page-wrapper {
     }
 
     #index .sec06 .culture-items {
-        flex-direction: column; /* 일단 세로로 쌓은 후 내부 아이템 조정 */
+        flex-direction: column; 
         margin-left: 0;
         margin-right: 0;
     }
 
     #index .sec06 .item {
-        display: flex; /* 이미지와 텍스트를 가로로 배치 */
+        display: flex;
         width: 100%;
         margin: 10px 0;
     }
@@ -2491,7 +2498,6 @@ body.menu-open .page-wrapper {
         display: flex;
         flex-direction: column; 
         justify-content: center; 
-        background-color: yellow;
     }
     #index .sec06 .sub-title {
         margin-top: 0px;
@@ -2585,6 +2591,9 @@ body.menu-open .page-wrapper {
     #sub-page .sec02 .img-container {
         margin-bottom: 40px;
     }
+    #sub-page .sec03 {
+        margin-bottom: 20px;
+    } 
 
     #sub-page .sec03 .carousel-navigation {
         display: flex; 

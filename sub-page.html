@@ -15,7 +15,9 @@
         <!-- 모바일 슬라이드 메뉴 -->
         <div class="mobile-menu"> 
             <div class="mobile-menu-header">
-                <img src="img/logo.png" alt="NPS 로고" class="mobile-logo"/>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="NPS 로고" class="mobile-logo"/>
+                </a>
                 <button type="button" class="close-menu" aria-label="닫기">
                     <svg class="slide-menu-close" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L7.5063 7.5063" stroke="white" stroke-width="0.841346"/>
@@ -73,9 +75,9 @@
             <header class="header">
                 <nav class="nav">
                     <ul class="nav-left">
-                        <div class="logo">
+                        <a href="index.html" class="logo">
                             <img src="img/logo.png" alt="NPS 로고" />
-                        </div>
+                        </a>
                         <li class="menu-item dropdown">
                             <a href="#">NPS</a>
                             <ul class="submenu">
@@ -91,25 +93,32 @@
                         <li class="menu-item dropdown"><a href="#" class="menu-link">이벤트</a></li>
                     </ul>
                     <div class="nav-right">
-                        <button type="button" onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'" class="prev-issues">지난호 보기</button>
+                        <button type="button"
+                            onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'"
+                            class="prev-issues">지난호 보기</button>
                         <span class="volume">2025 Spring VOL.203</span>
                         <div class="search-container" id="searchContainer">
                             <div>
-                                <svg class="search-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M35 35L28.3333 28.3333M31.6667 18.3333C31.6667 21.8696 30.2619 25.2609 27.7614 27.7614C25.2609 30.2619 21.8696 31.6667 18.3333 31.6667C14.7971 31.6667 11.4057 30.2619 8.90524 27.7614C6.40476 25.2609 5 21.8696 5 18.3333C5 14.7971 6.40476 11.4057 8.90524 8.90524C11.4057 6.40476 14.7971 5 18.3333 5C21.8696 5 25.2609 6.40476 27.7614 8.90524C30.2619 11.4057 31.6667 14.7971 31.6667 18.3333Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </div >
+                                <svg class="search-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M35 35L28.3333 28.3333M31.6667 18.3333C31.6667 21.8696 30.2619 25.2609 27.7614 27.7614C25.2609 30.2619 21.8696 31.6667 18.3333 31.6667C14.7971 31.6667 11.4057 30.2619 8.90524 27.7614C6.40476 25.2609 5 21.8696 5 18.3333C5 14.7971 6.40476 11.4057 8.90524 8.90524C11.4057 6.40476 14.7971 5 18.3333 5C21.8696 5 25.2609 6.40476 27.7614 8.90524C30.2619 11.4057 31.6667 14.7971 31.6667 18.3333Z"
+                                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
                             <div class="search-bar" id="searchBar">
-                                <input type="text" class="search-input"/>
+                                <input type="text" class="search-input" />
                             </div>
                         </div>
-                        <button type="button" class="menu-toggle" aria-label="메뉴 열기">
-                            <svg class="m-menu" width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="17" height="0.68" fill="black"/>
-                                <rect y="5" width="17" height="0.68" fill="black"/>
-                                <rect y="10.88" width="17" height="0.68" fill="black"/>
-                                </svg>
-                                
+                        <button type="button" class="menu-toggle" aria-label="메뉴 열기" onclick="window.location.href='#';">
+                            <svg class="m-menu" width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="17" height="0.68" fill="black" />
+                                <rect y="5" width="17" height="0.68" fill="black" />
+                                <rect y="10.88" width="17" height="0.68" fill="black" />
+                            </svg>
+    
                         </button>
                     </div>
                 </nav>

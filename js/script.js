@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 isActive = true;
                 setTimeout(() => {
                     searchInput?.focus();
-                }, 300);
+                }, 100);
             } else {
                 searchBar.classList.remove('active');
                 isActive = false;
