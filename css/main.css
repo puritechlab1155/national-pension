@@ -2490,7 +2490,8 @@ body.menu-open .page-wrapper {
         padding-left: 15px; 
         display: flex;
         flex-direction: column; 
-        justify-content: start; 
+        justify-content: center; 
+        background-color: yellow;
     }
     #index .sec06 .sub-title {
         margin-top: 0px;
