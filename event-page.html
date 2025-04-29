@@ -229,20 +229,20 @@
                             <path id="gentle-wave-wider" d="M-200 55 L-185 55 C-175 55 -170 60 -160 60 S -145 55 -135 55 -120 60 -110 60 -95 55 -85 55 -70 60 -60 60 -45 55 -35 55 -20 60 -10 60 5 55 15 55 30 60 40 60 55 55 65 55 80 60 90 60 105 55 115 55 130 60 140 60 155 55 165 55 180 60 190 60 v64h-400z" />
                         </defs>
                         <g class="parallax" transform="translate(0, -55)">
-                            <use class="wave1" xlink:href="#gentle-wave-small" x="50" y="0" fill="#0086DD" filter="url(#shadow1)" />
+                            <use class="wave wave1" xlink:href="#gentle-wave-small" x="50" y="0" fill="#0086DD" filter="url(#shadow1)" />
                                 <image class="gift" xlink:href="img/event-page/gift1.png" x="20" y="70" width="15" height="20" preserveAspectRatio="none"/>
                                 <image class="gift" xlink:href="img/event-page/gift2.png" x="60" y="70" width="13" height="25" preserveAspectRatio="none"/>
-                            <use class="wave2" xlink:href="#gentle-wave-small" x="50" y="45" fill="#02A6E4" filter="url(#shadow1)" />
+                            <use class="wave wave2" xlink:href="#gentle-wave-small" x="50" y="45" fill="#02A6E4" filter="url(#shadow1)" />
                                 <image class="gift" xlink:href="img/event-page/gift3.png" x="95" y="80" width="10" height="25" preserveAspectRatio="none"/>
-                            <use class="wave3" xlink:href="#gentle-wave-small" x="50" y="15" fill="#7CE6F7" filter="url(#shadow1)" />
+                            <use class="wave wave3" xlink:href="#gentle-wave-small" x="50" y="15" fill="#7CE6F7" filter="url(#shadow1)" />
                                 <image class="gift" xlink:href="img/event-page/gift6.png" x="75" y="90" width="13" height="22" preserveAspectRatio="none"/>
                                 <image class="gift" xlink:href="img/event-page/gift4.png" x="35" y="86" width="15" height="25" preserveAspectRatio="none"/>
-                            <use class="wave4" xlink:href="#gentle-wave-small" x="50" y="70" fill="#F5FFFF" filter="url(#shadow1)" />
+                            <use class="wave wave4" xlink:href="#gentle-wave-small" x="50" y="70" fill="#F5FFFF" filter="url(#shadow1)" />
                                 <image class="gift" xlink:href="img/event-page/gift8.png" x="95" y="100" width="15" height="30" preserveAspectRatio="none"/>
-                            <use class="wave5" xlink:href="#gentle-wave-small" x="50" y="30" fill="#02A6E4" filter="url(#shadow1)" />
+                            <use class="wave wave5" xlink:href="#gentle-wave-small" x="50" y="30" fill="#02A6E4" filter="url(#shadow1)" />
                                 <image class="gift" xlink:href="img/event-page/gift7.png" x="20" y="102" width="15" height="25" preserveAspectRatio="none" />
                                 <image class="gift" xlink:href="img/event-page/gift5.png" x="57" y="95" width="10" height="30" preserveAspectRatio="none" />
-                            <use class="wave6" xlink:href="#gentle-wave-small" x="50" y="60" fill="#D3FFFD" filter="url(#shadow1)" />
+                            <use class="wave wave6" xlink:href="#gentle-wave-small" x="50" y="60" fill="#D3FFFD" filter="url(#shadow1)" />
                         </g>
                     </svg>
             </section>
@@ -620,30 +620,25 @@
 <script>
 
 
-    // 화면 너비에 따라 파도 패턴 변경하는 함수
-    function updateWavePattern() {
-        // 모든 파도 요소를 한 번에 선택
-        const waveElements = document.querySelectorAll('use[class^="wave"]');
-        
-        // 현재 너비에 따라 적용할 패턴 ID
-        const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
-        
-        // 모든 파도 요소에 동시에 적용
-        waveElements.forEach(wave => {
-            wave.setAttribute('xlink:href', patternId);
+        function updateWavePattern() {
+            const waveElements = document.querySelectorAll('use.wave'); // 클래스에 'wave'를 가진 모든 요소 선택
+            const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
+
+            waveElements.forEach(wave => {
+                wave.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', patternId);
+            });
+        }
+
+        // 페이지 로드와 리사이즈 이벤트에 함수 연결
+        window.addEventListener('DOMContentLoaded', updateWavePattern);
+        window.addEventListener('resize', updateWavePattern);
+
+        // 성능 최적화: resize 이벤트 디바운싱
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(updateWavePattern, 100);
         });
-    }
-
-    // 페이지 로드와 리사이즈 이벤트에 함수 연결
-    window.addEventListener('DOMContentLoaded', updateWavePattern);
-    window.addEventListener('resize', updateWavePattern);
-
-    // 성능 최적화: resize 이벤트 디바운싱
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(updateWavePattern, 100);
-    });
 
 </script>
 <script type="text/javascript">
