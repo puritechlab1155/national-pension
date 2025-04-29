@@ -40,6 +40,7 @@ body.menu-open .page-wrapper {
 
 .body .menu-open {
     overflow: hidden;
+    touch-action: none;
 }
 
 /* ✅ PC 해더 */
@@ -2191,31 +2192,43 @@ body.menu-open .page-wrapper {
 
 #event-page .parallax .wave1 {
     animation-delay: -1s;
-    animation: move-forever2 15s linear infinite;
+    animation: move-forever2 15s linear infinite alternate;
 }
 
 #event-page .parallax .wave2 {
     animation-delay: -8s;
-    animation: move-forever3 15s linear infinite;
+    animation: move-forever3 15s linear infinite alternate;
 }
 
 #event-page .parallax .wave3 {
     animation-delay: -2s;
-    animation: move-forever2 20s linear infinite;
+    animation: move-forever2 20s linear infinite alternate;
 }
 #event-page .parallax .wave4 {
-    animation: move-forever3 20s linear infinite;
+    animation: move-forever3 20s linear infinite alternate;
 }
 #event-page .parallax .wave5 {
     animation-delay: -1s;
-    animation: move-forever2 15s linear infinite;
+    animation: move-forever2 15s linear infinite alternate;
 }
 
 #event-page .parallax .wave6 {
     animation-delay: -5s;
-    animation: move-forever 20s linear infinite;
+    animation: move-forever 20s linear infinite alternate;
 }
 
+#event-page .parallax .wave1,
+#event-page .parallax .wave2,
+#event-page .parallax .wave3,
+#event-page .parallax .wave4,
+#event-page .parallax .wave5,
+#event-page .parallax .wave6 {
+    will-change: transform;
+}
+
+#event-page .parallax .gift {
+    will-change: transform, filter;
+}
 
 @keyframes move-forever2 {
     0% {
@@ -2297,7 +2310,7 @@ body.menu-open .page-wrapper {
 #event-page .parallax .gift:hover,
 #event-page .parallax .gift.clicked,
 #event-page .parallax .gift.touched {
-    animation-play-state: paused; /* 호버 시 애니메이션 일시 정지 */
+    animation-play-state: paused; 
     filter: drop-shadow(0 0 5px white);
 }
 

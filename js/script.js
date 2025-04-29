@@ -136,11 +136,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const moreButton = document.getElementById('share-button');
     const floatingButtons = document.querySelector('.floating-buttons');
 
-    function toggleOverlay(show) {
-        if (overlay) {
-            overlay.classList.toggle('active', show);
-        }
-    }
 
     if (homeButton) {
         homeButton.addEventListener('click', function () {
@@ -164,7 +159,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const isMobile = window.innerWidth <= 768;
         if (!isMobile) {
             popup?.classList.remove('show');
-            toggleOverlay(false);
         }
     }
 
@@ -175,16 +169,21 @@ document.addEventListener('DOMContentLoaded', function () {
         e.stopPropagation();
         const isMobile = window.innerWidth <= 768;
         if (isMobile) {
-            const shouldShow = !popup?.classList.contains('show');
-            popup?.classList.toggle('show', shouldShow);
-            toggleOverlay(shouldShow);
+            const isShowing = popup?.classList.toggle('show');
+            overlay?.classList.toggle('active'); 
+            if (isShowing) {
+                document.body.classList.add('no-scroll');
+            } else {
+                document.body.classList.remove('no-scroll');
+            }
         }
     });
 
     document.addEventListener('click', (e) => {
         if (!popup?.contains(e.target) && !moreButton?.contains(e.target)) {
             popup?.classList.remove('show');
-            toggleOverlay(false);
+            overlay?.classList.remove('active');
+            document.body.classList.remove('no-scroll');
         }
     });
 
