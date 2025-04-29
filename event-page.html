@@ -219,22 +219,23 @@
                 <p class="comment">아래에서 원하는 선물 상자를 <br class="mob-br"/> 눌러 주세요!</p>
                     <!-- SVG wave background -->
                     <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 130 100" preserveAspectRatio="none">
+                    viewBox="0 0 130 100" preserveAspectRatio="none">
                         <defs>
                             <filter id="shadow1" x="-50%" y="-50%" width="200%" height="200%">
                                 <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="rgba(0, 0, 0, 0.5)" />
                             </filter>
                             <path id="gentle-wave" d="M-160 50c30 0 58-20 88-20s 58 20 88 20 58-20 88-20 58 20 88 20 v30h-352z"/>
                             <path id="gentle-wave-small" d="M-160 60c5 0 7-5 12-5s 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5  7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 v64h-352z" />
+                            <path id="gentle-wave-wider" d="M-200 55 L-185 55 C-175 55 -170 60 -160 60 S -145 55 -135 55 -120 60 -110 60 -95 55 -85 55 -70 60 -60 60 -45 55 -35 55 -20 60 -10 60 5 55 15 55 30 60 40 60 55 55 65 55 80 60 90 60 105 55 115 55 130 60 140 60 155 55 165 55 180 60 190 60 v64h-400z" />
                         </defs>
                         <g class="parallax" transform="translate(0, -55)">
                             <use class="wave1" xlink:href="#gentle-wave-small" x="50" y="0" fill="#0086DD" filter="url(#shadow1)" />
-                                <image class="gift" xlink:href="img/event-page/gift1.png" x="25" y="70" width="13" height="20" preserveAspectRatio="none"/>
-                                <image xlink:href="img/event-page/gift2.png" x="55" y="70" width="13" height="25" preserveAspectRatio="none"/>
+                                <image class="gift" xlink:href="img/event-page/gift1.png" x="20" y="70" width="15" height="20" preserveAspectRatio="none"/>
+                                <image class="gift" xlink:href="img/event-page/gift2.png" x="60" y="70" width="13" height="25" preserveAspectRatio="none"/>
                             <use class="wave2" xlink:href="#gentle-wave-small" x="50" y="45" fill="#02A6E4" filter="url(#shadow1)" />
-                                <image class="gift" xlink:href="img/event-page/gift3.png" x="90" y="75" width="10" height="30" preserveAspectRatio="none"/>
+                                <image class="gift" xlink:href="img/event-page/gift3.png" x="95" y="80" width="10" height="25" preserveAspectRatio="none"/>
                             <use class="wave3" xlink:href="#gentle-wave-small" x="50" y="15" fill="#7CE6F7" filter="url(#shadow1)" />
-                                <image class="gift" xlink:href="img/event-page/gift6.png" x="70" y="90" width="13" height="22" preserveAspectRatio="none"/>
+                                <image class="gift" xlink:href="img/event-page/gift6.png" x="75" y="90" width="13" height="22" preserveAspectRatio="none"/>
                                 <image class="gift" xlink:href="img/event-page/gift4.png" x="35" y="86" width="15" height="25" preserveAspectRatio="none"/>
                             <use class="wave4" xlink:href="#gentle-wave-small" x="50" y="70" fill="#F5FFFF" filter="url(#shadow1)" />
                                 <image class="gift" xlink:href="img/event-page/gift8.png" x="95" y="100" width="15" height="30" preserveAspectRatio="none"/>
@@ -618,27 +619,31 @@
 <script src="js/script.js"></script>
 <script>
 
-const paths = Array.from(document.querySelectorAll('.wave pattern path:not(:last-child)'));
-if (paths.length % 2 != 0) paths.pop();
 
-const f = paths[0].getAttribute("d");
-const t = paths[1].getAttribute("d");
-
-let interpolator1 = flubber.interpolate(f, t);
-let interpolator2 = flubber.interpolate(t, f);
-
-requestAnimationFrame(draw);
-
-
-function draw(time) {
-		// console.log(time);
-    let t = time / 5000;
-    paths[0].setAttribute("d", interpolator1(t));
-    paths[1].setAttribute("d", interpolator2(t));
-    if (t < 1) {
-        requestAnimationFrame(draw);
+    // 화면 너비에 따라 파도 패턴 변경하는 함수
+    function updateWavePattern() {
+        // 모든 파도 요소를 한 번에 선택
+        const waveElements = document.querySelectorAll('use[class^="wave"]');
+        
+        // 현재 너비에 따라 적용할 패턴 ID
+        const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
+        
+        // 모든 파도 요소에 동시에 적용
+        waveElements.forEach(wave => {
+            wave.setAttribute('xlink:href', patternId);
+        });
     }
-}
+
+    // 페이지 로드와 리사이즈 이벤트에 함수 연결
+    window.addEventListener('DOMContentLoaded', updateWavePattern);
+    window.addEventListener('resize', updateWavePattern);
+
+    // 성능 최적화: resize 이벤트 디바운싱
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(updateWavePattern, 100);
+    });
 
 </script>
 <script type="text/javascript">

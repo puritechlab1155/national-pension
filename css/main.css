@@ -2168,7 +2168,7 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec04 {
-    margin-top: 30px;
+    margin-top: 50px;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -2185,7 +2185,7 @@ body.menu-open .page-wrapper {
     color: #1375DB;
 }
 
-.editorial {
+#event-page .sec04 .editorial {
     display: block;
     width: 100%;
     height: auto;
@@ -2193,30 +2193,29 @@ body.menu-open .page-wrapper {
     margin: 0;
 }
 
-
-.parallax .wave1 {
+#event-page .parallax .wave1 {
     animation-delay: -1s;
     animation: move-forever2 15s linear infinite;
 }
 
-.parallax .wave2 {
+#event-page .parallax .wave2 {
     animation-delay: -8s;
     animation: move-forever3 15s linear infinite;
 }
 
-.parallax .wave3 {
+#event-page .parallax .wave3 {
     animation-delay: -2s;
     animation: move-forever2 20s linear infinite;
 }
-.parallax .wave4 {
+#event-page .parallax .wave4 {
     animation: move-forever3 20s linear infinite;
 }
-.parallax .wave5 {
+#event-page .parallax .wave5 {
     animation-delay: -1s;
     animation: move-forever2 15s linear infinite;
 }
 
-.parallax .wave6 {
+#event-page .parallax .wave6 {
     animation-delay: -5s;
     animation: move-forever 20s linear infinite;
 }
@@ -2254,12 +2253,12 @@ body.menu-open .page-wrapper {
 /* 선물 흔들림 애니메이션 */
 @keyframes float1 {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-3px); }
+    50% { transform: translateY(-5px); }
 }
 
 @keyframes float2 {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-3px); }
+    50% { transform: translateY(-5px); }
     100% { transform: translateY(0); }
 }
 
@@ -2283,7 +2282,7 @@ body.menu-open .page-wrapper {
 
 @keyframes float6 {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-3px); }
+    50% { transform: translateY(-5px); }
     100% { transform: translateY(0); }
 }
 
@@ -2299,7 +2298,7 @@ body.menu-open .page-wrapper {
     100% { transform: translateY(0); }
 }
 
-.parallax > image {
+#event-page .parallax .gift {
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -2308,54 +2307,54 @@ body.menu-open .page-wrapper {
     filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
 }
 
-.parallax > image:hover {
+#event-page .parallax .gift:hover {
     animation-play-state: paused; /* 호버 시 애니메이션 일시 정지 */
     filter: drop-shadow(0 0 5px white); /* 검은 그림자와 흰색 테두리처럼 보이는 효과 */
 }
 
 
-.parallax > image:nth-of-type(1) {
+#event-page .parallax .gift:nth-of-type(1) {
     animation-name: float1;
     animation-delay: 0.2s;
 }
 
-.parallax > image:nth-of-type(2) {
+#event-page .parallax .gift:nth-of-type(2) {
     animation-name: float2;
     animation-delay: 0.6s;
     animation-duration: 2.3s;
 }
 
-.parallax > image:nth-of-type(3) {
+#event-page .parallax .gift:nth-of-type(3) {
     animation-name: float3;
     animation-delay: 0s;
     animation-duration: 1.8s;
 }
 
-.parallax > image:nth-of-type(4) {
+#event-page .parallax .gift:nth-of-type(4) {
     animation-name: float4;
     animation-delay: 0.8s;
     animation-duration: 2.1s;
 }
 
-.parallax > image:nth-of-type(5) {
+#event-page .parallax .gift:nth-of-type(5) {
     animation-name: float5;
     animation-delay: 0.4s;
     animation-duration: 1.9s;
 }
 
-.parallax > image:nth-of-type(6) {
+#event-page .parallax .gift:nth-of-type(6) {
     animation-name: float6;
     animation-delay: 1.2s;
     animation-duration: 2.5s;
 }
 
-.parallax > image:nth-of-type(7) {
+#event-page .parallax .gift:nth-of-type(7) {
     animation-name: float7;
     animation-delay: 0.1s;
     animation-duration: 2.2s;
 }
 
-.parallax > image:nth-of-type(8) {
+#event-page .parallax .gift:nth-of-type(8) {
     animation-name: float8;
     animation-delay: 0.9s;
     animation-duration: 2.0s;
@@ -2558,6 +2557,7 @@ body.menu-open .page-wrapper {
         width: 75%;
     }
 
+
     #event-page  .sec06 .nav-button {
         padding: 5px;
     }
@@ -2569,6 +2569,52 @@ body.menu-open .page-wrapper {
     #event-page .sec06 .carousel-navigation {
         gap: 20px;
     }
+    #event-page .parallax .gift:nth-of-type(1) {
+        x: 15;
+        y: 68;
+        width: 15%;
+        height: 20%;
+    }
+
+    #event-page .parallax .gift:nth-of-type(2) {
+        width: 13%;
+        height: 25%;
+    }
+
+    #event-page .parallax .gift:nth-of-type(3) {
+        width: 10%;
+        height: 25%;
+        x: 105;
+    }
+
+    #event-page .parallax .gift:nth-of-type(4) {
+        width: 13%;
+        height: 22%;
+        x: 80;
+    }
+
+    #event-page .parallax .gift:nth-of-type(5) {
+        width: 15%;
+        height: 25%;
+        x: 32;
+    }
+
+    #event-page .parallax .gift:nth-of-type(6) {
+        width: 15%;
+        height: 30%;
+    }
+
+    #event-page .parallax .gift:nth-of-type(7) {
+        width: 15%;
+        height: 25%;
+        x: 15;
+    }
+
+    #event-page .parallax .gift:nth-of-type(8) {
+        width: 10%;
+        height: 30%;
+        x: 58;
+    }
 
 
 }
@@ -2578,20 +2624,19 @@ body.menu-open .page-wrapper {
         padding-top: 65px;
     }
     #event-page .sec02 {
-        height: 250px;
+        height: 300px;
     }
     #event-page .sec02 .text-content {
-        top: 80%;
+        top: 75%;
 
     }
     #event-page .sec02-1 .comment {
-        width: 90%;
+        width: 80%;
         text-align: left;
     }
     #event-page .sec02-1 .gone {
         display: none;
     }
-
 
     #event-page .sec02 .cloud-img {
         transform: scale(0.6);
@@ -2613,7 +2658,6 @@ body.menu-open .page-wrapper {
         gap: 30px;
     }
 
-
     #event-page .sec02 .mob-br {
         display: block;
     }
@@ -2625,7 +2669,6 @@ body.menu-open .page-wrapper {
     #event-page .sec03 .info-zone {
         width: 90%;
     }
-
 
     #event-page .sec03 .info-label {
         width: 50%;
@@ -2657,6 +2700,7 @@ body.menu-open .page-wrapper {
         line-height: 100%;
         font-weight: 700;
     }
+
     #event-page .sec05 {
         padding-bottom: 0px;
     }
@@ -2669,7 +2713,6 @@ body.menu-open .page-wrapper {
         border-top: 1px solid #000;
     }
 
-
     #event-page .sec05 .notice1 {
         font-size: 14px;
     }
@@ -2681,7 +2724,6 @@ body.menu-open .page-wrapper {
     #event-page .sec06 {
         padding-top: 0px;
     }
-
 
     #event-page .sec06 .carousel-navigation {
         display: flex;
@@ -2718,6 +2760,9 @@ body.menu-open .page-wrapper {
         font-size: 14px;
         line-height: 22px;
     }
+
+
+
 
 
 }
@@ -3496,4 +3541,129 @@ body.menu-open .page-wrapper {
     #event-page .sec02-1 .coupon-img {
         width: 80%;
     }
+    #event-page .sec02-1 .comment {
+        width: 90%;
+    }
+
+    @keyframes move-forever {
+        0% {
+            transform: translate(-90px, 0%);
+        }
+
+        100% {
+            transform: translate(85px, 0%);
+        }
+    }
+
+    @keyframes move-forever2 {
+        0% {
+            transform: rotate(3deg) translate(-90px, 0%);
+        }
+
+        100% {
+            transform: rotate(3deg) translate(85px, 0%);
+        }
+    }
+    @keyframes move-forever3 {
+        0% {
+            transform: rotate(-3deg) translate(-50px, 0%);
+        }
+
+        100% {
+            transform: rotate(-3deg) translate(85px, 0%);
+        }
+    }
+    .parallax > use.wave1 {
+        y: 10;
+    }
+    .parallax > use.wave2 {
+        y: 40;
+    }
+    .parallax > use.wave3 {
+        y: 55;
+    }
+    .parallax > use.wave4 {
+        y: 80;
+    }
+    .parallax > use.wave5 {
+        y: 95;
+    }
+    .parallax > use.wave6 {
+        y: 120;
+    }
+    #event-page .sec04 {
+        margin-top: 30px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    #event-page .editorial{
+        overflow: visible;
+    }
+    #event-page .sec04 .mob-br{
+        display: block;
+    }
+    #event-page .sec04 .comment {
+        line-height: 22px;
+        letter-spacing: -2%;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    #event-page .parallax .gift:nth-of-type(1) {
+        x: 15;
+        y: 70;
+        width: 25%;
+        height: 30%;
+    }
+
+    #event-page .parallax .gift:nth-of-type(2) {
+        width: 25%;
+        height: 30%;
+        x: 80;
+        y: 70;
+    }
+
+    #event-page .parallax .gift:nth-of-type(3) {
+        width: 20%;
+        height: 40%;
+        x: 50;
+        y: 85;
+    }
+
+    #event-page .parallax .gift:nth-of-type(4) {
+        width: 25%;
+        height: 35%;
+        x: 85;
+        y: 107;
+    }
+
+    #event-page .parallax .gift:nth-of-type(5) {
+        width: 25%;
+        height: 40%;
+        x: 13;
+        y: 110;
+    }
+
+    #event-page .parallax .gift:nth-of-type(6) {
+        width: 30%;
+        height: 45%;
+        x: 45;
+        y: 128;
+    }
+
+    #event-page .parallax .gift:nth-of-type(7) {
+        width: 25%;
+        height: 45%;
+        x: 15;
+        y: 145;
+    }
+
+    #event-page .parallax .gift:nth-of-type(8) {
+        width: 20%;
+        height: 40%;
+        x: 90;
+        y: 145;
+    }
+
+    
 }
