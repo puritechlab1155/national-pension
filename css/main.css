@@ -2220,15 +2220,6 @@ body.menu-open .page-wrapper {
     animation: move-forever 20s linear infinite;
 }
 
-@keyframes move-forever {
-    0% {
-        transform: translate(-90px, 0%);
-    }
-
-    100% {
-        transform: translate(85px, 0%);
-    }
-}
 
 @keyframes move-forever2 {
     0% {
@@ -3580,22 +3571,22 @@ body.menu-open .page-wrapper {
         }
     }
     #event-page .parallax .wave1 {
-        y: 10;
+        y: 10 !important;
     }
     #event-page .parallax .wave2 {
-        y: 40;
+        y: 40 !important;
     }
     #event-page .parallax .wave3 {
-        y: 55;
+        y: 55 !important;
     }
     #event-page .parallax .wave4 {
-        y: 80;
+        y: 80 !important;
     }
     #event-page .parallax .wave5 {
-        y: 95;
+        y: 95 !important;
     }
     #event-page .parallax .wave6 {
-        y: 120;
+        y: 120 !important;
     }
     #event-page .sec04 {
         margin-top: 30px;
