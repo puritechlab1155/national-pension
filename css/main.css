@@ -866,10 +866,6 @@ body.menu-open .page-wrapper {
 /* <---------개별 페이지 적용-------> */
 
 
-
-
-
-
 /* ✅ index.html */
 #index .sec01 {
     display: flex;
@@ -2299,7 +2295,8 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .parallax .gift:hover,
-#event-page .parallax .gift.clicked {
+#event-page .parallax .gift.clicked,
+#event-page .parallax .gift.touched {
     animation-play-state: paused; /* 호버 시 애니메이션 일시 정지 */
     filter: drop-shadow(0 0 5px white);
 }
@@ -2538,7 +2535,74 @@ body.menu-open .page-wrapper {
     opacity: 1;
 }
 
+.event-result {
+    text-align: center;
+    padding: 20px;
+}
 
+.event-result h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff6699; /* 사진의 강조 색상과 유사하게 변경 */
+}
+
+.event-result .gift-card {
+    display: inline-block;
+    position: relative;
+    margin: 10px 0;
+}
+
+.event-result .gift-card img {
+    width: 200px; /* 이미지 너비 조절 */
+    height: auto;
+    border: 1px solid #ccc; /* 선택 사항: 이미지 테두리 */
+    border-radius: 5px; /* 선택 사항: 이미지 둥근 모서리 */
+}
+
+.event-result .gift-card .amount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 128, 0, 0.7); /* 사진의 금액 표시 배경색과 유사하게 변경 */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.event-result .description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.event-result .instruction {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.event-result .notice {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.event-result .submit-button {
+    background-color: #007bff; /* 사진의 "클릭!" 버튼 색상과 유사하게 변경 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.event-result .submit-button:hover {
+    background-color: #0056b3;
+}
 
 
 @media (max-width: 1280px) {
