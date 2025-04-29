@@ -245,6 +245,23 @@
                             <use class="wave wave6" xlink:href="#gentle-wave-small" x="50" y="60" fill="#D3FFFD" filter="url(#shadow1)" />
                         </g>
                     </svg>
+                    <div id="modal1" class="custom-modal">
+                        <div class="modal-content">
+                            <button type="button" class="close-button" aria-label="닫기">×</button>
+                            <h2>선물 1</h2>
+                            <p>선물 1에 대한 자세한 내용...</p>
+                            <a href="https://www.nps.or.kr/jsppage/cyber_pr/subscribe/intro.jsp" target="_blank">새 창으로 구독하기</a>
+                        </div>
+                    </div>
+                
+                    <div id="modal2" class="custom-modal">
+                        <div class="modal-content">
+                            <button type="button" class="close-button" aria-label="닫기">×</button>
+                            <h2>선물 2</h2>
+                            <p>선물 2에 대한 또 다른 내용...</p>
+                            <a href="https://www.nps.or.kr/jsppage/cyber_pr/subscribe/intro.jsp" target="_blank">새 창으로 구독하기</a>
+                        </div>
+                    </div>
             </section>
 
             <section class="section sec05"> 
@@ -619,7 +636,7 @@
 <script src="js/script.js"></script>
 <script>
 
-
+        // ✅  모바일 파도 변경
         function updateWavePattern() {
             const waveElements = document.querySelectorAll('use.wave'); // 클래스에 'wave'를 가진 모든 요소 선택
             const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
@@ -629,18 +646,16 @@
             });
         }
 
-        // 페이지 로드와 리사이즈 이벤트에 함수 연결
         window.addEventListener('DOMContentLoaded', updateWavePattern);
         window.addEventListener('resize', updateWavePattern);
 
-        // 성능 최적화: resize 이벤트 디바운싱
         let resizeTimer;
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(updateWavePattern, 100);
         });
 
-        // iOS Safari에서의 SVG y 및 선물 x, y 속성 문제 해결
+        // ✅  아이폰 iOS 위치값 적용
         function fixIOSSVGAttributes() {
             if (window.innerWidth <= 480) {
                 const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
@@ -655,12 +670,12 @@
                     };
 
                     const gifts = {
-                        'nth-of-type(1)': { x: '15', y: '75' },
+                        'nth-of-type(1)': { x: '15', y: '78' },
                         'nth-of-type(2)': { x: '80', y: '75' },
                         'nth-of-type(3)': { x: '50', y: '90' },
                         'nth-of-type(4)': { x: '85', y: '115' },
-                        'nth-of-type(5)': { x: '13', y: '115' },
-                        'nth-of-type(6)': { x: '45', y: '135' },
+                        'nth-of-type(5)': { x: '13', y: '120' },
+                        'nth-of-type(6)': { x: '45', y: '140' },
                         'nth-of-type(7)': { x: '15', y: '155' },
                         'nth-of-type(8)': { x: '90', y: '155' }
                     };
@@ -684,6 +699,91 @@
         // iOS 감지 후 실행
         document.addEventListener('DOMContentLoaded', fixIOSSVGAttributes);
         window.addEventListener('resize', fixIOSSVGAttributes);
+
+        const giftElements = document.querySelectorAll('#event-page .parallax .gift');
+
+        giftElements.forEach(gift => {
+            gift.addEventListener('click', function() {
+                // 클릭된 요소 외의 모든 'clicked' 클래스 제거
+                giftElements.forEach(otherGift => {
+                    if (otherGift !== this && otherGift.classList.contains('clicked')) {
+                        otherGift.classList.remove('clicked');
+                    }
+                });
+                // 클릭된 요소에 'clicked' 클래스 토글
+                this.classList.toggle('clicked');
+            });
+        });
+
+
+    //✅ 모달 + 선물창 효과
+    document.querySelectorAll('#event-page .parallax .gift').forEach(gift => {
+        gift.addEventListener('click', function() {
+            const modalId = this.dataset.modal;
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'flex'; // 모달 표시
+                document.body.style.overflow = 'hidden'; // 모달 활성화 시 배경 스크롤 방지 (선택 사항)
+            }
+
+            // (선택 사항) 클릭된 선물 상자의 스타일 유지
+            const giftElements = document.querySelectorAll('#event-page .parallax .gift');
+            giftElements.forEach(otherGift => {
+                if (otherGift !== this && otherGift.classList.contains('clicked')) {
+                    otherGift.classList.remove('clicked');
+                }
+            });
+            this.classList.add('clicked');
+        });
+    });
+    document.querySelectorAll('.custom-modal .close-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = this.closest('.custom-modal');
+            if (modal) {
+                modal.style.display = 'none'; // 모달 숨김
+                document.body.style.overflow = ''; // 배경 스크롤 복원 (선택 사항)
+            }
+        });
+    });
+
+    // (선택 사항) 모달 외부 클릭 시 닫기
+    window.addEventListener('click', function(event) {
+        if (event.target.classList.contains('custom-modal')) {
+            event.target.style.display = 'none';
+            document.body.style.overflow = ''; // 배경 스크롤 복원 (선택 사항)
+        }
+    });
+
+    // (선택 사항) ESC 키로 모달 닫기
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            document.querySelectorAll('.custom-modal').forEach(modal => {
+                modal.style.display = 'none';
+                document.body.style.overflow = ''; // 배경 스크롤 복원 (선택 사항)
+            });
+        }
+    });
+
+    // document.querySelectorAll('#event-page .parallax .gift').forEach(gift => {
+    //     gift.addEventListener('click', function() {
+    //         const htmlFilePath = 'modal.html'; // 열고자 하는 HTML 파일의 경로
+    //         const windowName = '_blank';
+    //         const windowFeatures = 'noopener,noreferrer,width=700,height=500';
+
+    //         window.open(htmlFilePath, windowName, windowFeatures);
+
+    //         // (선택 사항) 클릭된 선물 상자의 스타일 유지
+    //         const giftElements = document.querySelectorAll('#event-page .parallax .gift');
+    //         giftElements.forEach(otherGift => {
+    //             if (otherGift !== this && otherGift.classList.contains('clicked')) {
+    //                 otherGift.classList.remove('clicked');
+    //             }
+    //         });
+    //         this.classList.add('clicked');
+    //     });
+    // });
+
+
 
 </script>
 <script type="text/javascript">

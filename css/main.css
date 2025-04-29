@@ -2273,7 +2273,7 @@ body.menu-open .page-wrapper {
 
 @keyframes float6 {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+    50% { transform: translateY(-6px); }
     100% { transform: translateY(0); }
 }
 
@@ -2298,7 +2298,8 @@ body.menu-open .page-wrapper {
     filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
 }
 
-#event-page .parallax .gift:hover {
+#event-page .parallax .gift:hover,
+#event-page .parallax .gift.clicked {
     animation-play-state: paused; /* 호버 시 애니메이션 일시 정지 */
     filter: drop-shadow(0 0 5px white); /* 검은 그림자와 흰색 테두리처럼 보이는 효과 */
 }
@@ -2493,7 +2494,49 @@ body.menu-open .page-wrapper {
 }
 
 
+.custom-modal {
+    display: none; /* 초기에는 숨김 */
+    position: fixed; /* 화면 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 다른 요소 위에 표시 */
+    overflow: auto; /* 내용이 많아질 경우 스크롤 가능 */
+}
 
+.custom-modal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 700px; /* 원하는 모달 너비 */
+    max-width: 90%;
+    height: auto; /* 내용에 따라 높이 자동 조절 */
+    max-height: 90%;
+    position: relative; /* 닫기 버튼 위치 기준 */
+}
+
+.custom-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: black;
+    opacity: 0.7;
+}
+
+.custom-modal .close-button:hover {
+    opacity: 1;
+}
 
 
 
@@ -3572,22 +3615,22 @@ body.menu-open .page-wrapper {
         }
     }
     #event-page .parallax .wave1 {
-        y: 10 !important;
+        y: 10;
     }
     #event-page .parallax .wave2 {
-        y: 45 !important;
+        y: 45;
     }
     #event-page .parallax .wave3 {
-        y: 60 !important;
+        y: 60;
     }
     #event-page .parallax .wave4 {
-        y: 90 !important;
+        y: 90;
     }
     #event-page .parallax .wave5 {
-        y: 105 !important;
+        y: 105;
     }
     #event-page .parallax .wave6 {
-        y: 130 !important;
+        y: 130;
     }
     #event-page .sec04 {
         margin-top: 30px;
@@ -3609,7 +3652,7 @@ body.menu-open .page-wrapper {
 
     #event-page .parallax .gift:nth-of-type(1) {
         x: 15;
-        y: 75;
+        y: 78;
         width: 25%;
         height: 30%;
     }
@@ -3639,14 +3682,14 @@ body.menu-open .page-wrapper {
         width: 25%;
         height: 40%;
         x: 13;
-        y: 115;
+        y: 120;
     }
 
     #event-page .parallax .gift:nth-of-type(6) {
         width: 30%;
         height: 45%;
         x: 45;
-        y: 135;
+        y: 140;
     }
 
     #event-page .parallax .gift:nth-of-type(7) {
