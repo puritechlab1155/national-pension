@@ -3544,6 +3544,12 @@ body.menu-open .page-wrapper {
     #event-page .sec02-1 .comment {
         width: 90%;
     }
+    #event-page .sec02 .draw {
+        border-bottom: 1px solid #000000;
+    }
+    #event-page .sec03 .divider {
+        border: 0.5px solid #000000;
+    }
 
     @keyframes move-forever {
         0% {
@@ -3573,22 +3579,22 @@ body.menu-open .page-wrapper {
             transform: rotate(-3deg) translate(85px, 0%);
         }
     }
-    .parallax > use.wave1 {
+    .parallax .wave1 {
         y: 10;
     }
-    .parallax > use.wave2 {
+    .parallax .wave2 {
         y: 40;
     }
-    .parallax > use.wave3 {
+    .parallax .wave3 {
         y: 55;
     }
-    .parallax > use.wave4 {
+    .parallax .wave4 {
         y: 80;
     }
-    .parallax > use.wave5 {
+    .parallax .wave5 {
         y: 95;
     }
-    .parallax > use.wave6 {
+    .parallax .wave6 {
         y: 120;
     }
     #event-page .sec04 {
