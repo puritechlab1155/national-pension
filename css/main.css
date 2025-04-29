@@ -2301,7 +2301,7 @@ body.menu-open .page-wrapper {
 #event-page .parallax .gift:hover,
 #event-page .parallax .gift.clicked {
     animation-play-state: paused; /* 호버 시 애니메이션 일시 정지 */
-    filter: drop-shadow(0 0 5px white); /* 검은 그림자와 흰색 테두리처럼 보이는 효과 */
+    filter: drop-shadow(0 0 5px white);
 }
 
 
