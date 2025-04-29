@@ -169,21 +169,13 @@ document.addEventListener('DOMContentLoaded', function () {
         e.stopPropagation();
         const isMobile = window.innerWidth <= 768;
         if (isMobile) {
-            const isShowing = popup?.classList.toggle('show');
-            overlay?.classList.toggle('active'); 
-            if (isShowing) {
-                document.body.classList.add('no-scroll');
-            } else {
-                document.body.classList.remove('no-scroll');
-            }
+            popup?.classList.toggle('show');
         }
     });
 
     document.addEventListener('click', (e) => {
         if (!popup?.contains(e.target) && !moreButton?.contains(e.target)) {
             popup?.classList.remove('show');
-            overlay?.classList.remove('active');
-            document.body.classList.remove('no-scroll');
         }
     });
 
