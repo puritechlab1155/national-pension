@@ -3579,22 +3579,22 @@ body.menu-open .page-wrapper {
             transform: rotate(-3deg) translate(85px, 0%);
         }
     }
-    .parallax .wave1 {
+    #event-page .parallax .wave1 {
         y: 10;
     }
-    .parallax .wave2 {
+    #event-page .parallax .wave2 {
         y: 40;
     }
-    .parallax .wave3 {
+    #event-page .parallax .wave3 {
         y: 55;
     }
-    .parallax .wave4 {
+    #event-page .parallax .wave4 {
         y: 80;
     }
-    .parallax .wave5 {
+    #event-page .parallax .wave5 {
         y: 95;
     }
-    .parallax .wave6 {
+    #event-page .parallax .wave6 {
         y: 120;
     }
     #event-page .sec04 {
