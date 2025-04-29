@@ -640,46 +640,50 @@
             resizeTimer = setTimeout(updateWavePattern, 100);
         });
 
+        // iOS Safari에서의 SVG y 및 선물 x, y 속성 문제 해결
         function fixIOSSVGAttributes() {
-            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-            const waves = {
-                '.wave1': '10',
-                '.wave2': '40',
-                '.wave3': '55',
-                '.wave4': '80',
-                '.wave5': '95',
-                '.wave6': '120'
-            };
-            const defaultYs = {}; // 기본 y 값 저장 객체
+            if (window.innerWidth <= 480) {
+                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+                if (isIOS) {
+                    const waves = {
+                        '.wave1': '10',
+                        '.wave2': '45',
+                        '.wave3': '60',
+                        '.wave4': '90',
+                        '.wave5': '105',
+                        '.wave6': '130'
+                    };
 
-            if (window.innerWidth <= 480 && isIOS) {
-                Object.entries(waves).forEach(([selector, yValue]) => {
-                    const element = document.querySelector(`#event-page .parallax ${selector}`);
-                    if (element && !element.dataset.originalY) {
-                        // 최초 실행 시 기본 y 값 저장
-                        defaultYs[selector] = element.getAttribute('y') || '';
-                        element.dataset.originalY = defaultYs[selector];
-                        element.setAttribute('y', yValue);
-                    } else if (element && element.dataset.originalY !== undefined) {
-                        // 이미 저장된 기본 y 값이 있다면 적용
-                        element.setAttribute('y', yValue);
-                    }
-                });
-            } else {
-                // 480px 초과 또는 iOS가 아닌 경우 원래 y 값으로 복구
-                Object.entries(waves).forEach(([selector]) => {
-                    const element = document.querySelector(`#event-page .parallax ${selector}`);
-                    if (element && element.dataset.originalY !== undefined) {
-                        element.setAttribute('y', element.dataset.originalY);
-                        delete element.dataset.originalY; // 데이터 속성 제거
-                    }
-                });
+                    const gifts = {
+                        'nth-of-type(1)': { x: '15', y: '75' },
+                        'nth-of-type(2)': { x: '80', y: '75' },
+                        'nth-of-type(3)': { x: '50', y: '90' },
+                        'nth-of-type(4)': { x: '85', y: '115' },
+                        'nth-of-type(5)': { x: '13', y: '115' },
+                        'nth-of-type(6)': { x: '45', y: '135' },
+                        'nth-of-type(7)': { x: '15', y: '155' },
+                        'nth-of-type(8)': { x: '90', y: '155' }
+                    };
+
+                    Object.entries(waves).forEach(([selector, yValue]) => {
+                        const element = document.querySelector(`#event-page .parallax ${selector}`);
+                        if (element) element.setAttribute('y', yValue);
+                    });
+
+                    Object.entries(gifts).forEach(([nthOfType, coordinates]) => {
+                        const element = document.querySelector(`#event-page .parallax .gift:${nthOfType}`);
+                        if (element) {
+                            element.setAttribute('x', coordinates.x);
+                            element.setAttribute('y', coordinates.y);
+                        }
+                    });
+                }
             }
         }
 
-// iOS 감지 후 실행
-document.addEventListener('DOMContentLoaded', fixIOSSVGAttributes);
-window.addEventListener('resize', fixIOSSVGAttributes);
+        // iOS 감지 후 실행
+        document.addEventListener('DOMContentLoaded', fixIOSSVGAttributes);
+        window.addEventListener('resize', fixIOSSVGAttributes);
 
 </script>
 <script type="text/javascript">

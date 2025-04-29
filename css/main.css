@@ -3575,19 +3575,19 @@ body.menu-open .page-wrapper {
         y: 10 !important;
     }
     #event-page .parallax .wave2 {
-        y: 40 !important;
+        y: 45 !important;
     }
     #event-page .parallax .wave3 {
-        y: 55 !important;
+        y: 60 !important;
     }
     #event-page .parallax .wave4 {
-        y: 80 !important;
+        y: 90 !important;
     }
     #event-page .parallax .wave5 {
-        y: 95 !important;
+        y: 105 !important;
     }
     #event-page .parallax .wave6 {
-        y: 120 !important;
+        y: 130 !important;
     }
     #event-page .sec04 {
         margin-top: 30px;
@@ -3609,7 +3609,7 @@ body.menu-open .page-wrapper {
 
     #event-page .parallax .gift:nth-of-type(1) {
         x: 15;
-        y: 70;
+        y: 75;
         width: 25%;
         height: 30%;
     }
@@ -3618,49 +3618,49 @@ body.menu-open .page-wrapper {
         width: 25%;
         height: 30%;
         x: 80;
-        y: 70;
+        y: 75;
     }
 
     #event-page .parallax .gift:nth-of-type(3) {
         width: 20%;
         height: 40%;
         x: 50;
-        y: 85;
+        y: 90;
     }
 
     #event-page .parallax .gift:nth-of-type(4) {
         width: 25%;
         height: 35%;
         x: 85;
-        y: 107;
+        y: 115;
     }
 
     #event-page .parallax .gift:nth-of-type(5) {
         width: 25%;
         height: 40%;
         x: 13;
-        y: 110;
+        y: 115;
     }
 
     #event-page .parallax .gift:nth-of-type(6) {
         width: 30%;
         height: 45%;
         x: 45;
-        y: 128;
+        y: 135;
     }
 
     #event-page .parallax .gift:nth-of-type(7) {
         width: 25%;
         height: 45%;
         x: 15;
-        y: 145;
+        y: 155;
     }
 
     #event-page .parallax .gift:nth-of-type(8) {
         width: 20%;
         height: 40%;
         x: 90;
-        y: 145;
+        y: 155;
     }
 
     
