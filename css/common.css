@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+@font-face {
+    font-family: 'WavvePADO-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
@@ -40,9 +47,11 @@ a {
     height: 100%;
     display: block;
 }
+
 a:focus {
     outline: none;
 }
+
 button {
     cursor: pointer;
     border: none;
@@ -51,60 +60,68 @@ button {
 
 
 @supports (-webkit-appearance:none) {
-input {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
-}
+    input {
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+    }
 }
 
 input[type="password"]::-ms-reveal,
 input[type="password"]::-ms-clear {
-display: none;
+    display: none;
 }
 
 input::-webkit-contacts-auto-fill-button {
-visibility: hidden !important;
-display: none !important;
-pointer-events: none !important;
-position: absolute !important;
-right: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    right: 0 !important;
 }
 
 input::-webkit-credentials-auto-fill-button {
-visibility: hidden !important;
-display: none !important;
-pointer-events: none !important;
-position: absolute !important;
-right: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    right: 0 !important;
 }
 
 
 .color-picker::-webkit-color-swatch-wrapper {
-padding: 0;
+    padding: 0;
 }
 
 .color-picker::-webkit-color-swatch {
-border: 2px solid #eee;
-border-radius: 50%;
+    border: 2px solid #eee;
+    border-radius: 50%;
 }
 
 .number-input::-webkit-outer-spin-button,
 .number-input::-webkit-inner-spin-button {
--webkit-appearance: none;
-margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
-img, input, select, textarea, button, label {
+img,
+input,
+select,
+textarea,
+button,
+label {
     vertical-align: middle;
 }
-img, fieldset, abbr {
+
+img,
+fieldset,
+abbr {
     border: 0;
 }
 
 
-.mob-br{
+.mob-br {
     display: none;
 }
 
@@ -115,49 +132,54 @@ img, fieldset, abbr {
     letter-spacing: 0%;
 }
 
-.m-top-90{
+.Wavve{
+    font-family: 'WavvePADO-Regular';
+}
+
+.m-top-90 {
     margin-top: 90px !important;
 }
 
-.padding-80 { 
+.padding-80 {
     margin: 0 auto;
     max-width: 1440px;
 }
 
-.padding-230{ 
+.padding-230 {
     margin: 0 auto;
     max-width: 980px;
 }
 
 @media (max-width: 1520px) {
-    .padding-80 { 
+    .padding-80 {
         padding: 0 80px;
     }
 }
+
 @media (max-width: 1280px) {
-    .padding-230{
+    .padding-230 {
         padding: 0 100px;
     }
 }
 
 @media (max-width: 768px) {
 
-    .m-top-90{
+    .m-top-90 {
         margin-top: 30px !important;
     }
 
-    .padding-80 { 
+    .padding-80 {
         padding: 0;
     }
 
-    .padding-230{
+    .padding-230 {
         padding: 0 50px;
     }
 
 }
 
-@media (max-width: 480px){
-    .padding-230{
+@media (max-width: 480px) {
+    .padding-230 {
         padding: 0 20px;
     }
 }

@@ -245,20 +245,86 @@
                             <use class="wave wave6" xlink:href="#gentle-wave-small" x="50" y="60" fill="#D3FFFD" filter="url(#shadow1)" />
                         </g>
                     </svg>
-                    <div id="eventModal" class="custom-modal">
+                    <div id="eventModal" class="event-modal">
                         <div class="modal-content">
-                            <button type="button" class="close-button" aria-label="닫기">×</button>
+                            <button type="button" class="close-button" aria-label="닫기">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path 
+                                    d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" 
+                                    fill="#000000" 
+                                    stroke="#000000" 
+                                    stroke-width="1"
+                                    />
+                                </svg>
+                            </button>
                             <div class="event-result">
-                                <h2>축하합니다!</h2>
-                                <p>이벤트에 당첨되셨습니다.</p>
+                                <h2 class="result-message Wavve">축하합니다!</h2>
+                                <p class="sub-message Wavve">이벤트에 당첨되셨습니다.</p>
                                 <div class="gift-card">
-                                    <img src="img/event-page/starbucks_giftcard.png" alt="스타벅스 5천원 상품권">
-                                    <div class="amount">5,000원</div>
+                                    <img class="gift-img" src="img/event-page/gift-coupon-real.png" alt="스타벅스 5천원 상품권" />
+                                    <div >5천원 상당의 커피 기프티콘</div>
                                 </div>
-                                <p class="description">5천 원 상당의 커피 기프티콘</p>
-                                <p class="instruction">폼을 작성하여 제출해주세요.<br>제출한 번호로 개별 연락드릴 예정입니다.</p>
-                                <p class="notice">*경품 발송 시, &lt;내 곁에 국민연금&gt;의 구독자가 아닐 경우 당첨이 취소됩니다.</p>
-                                <button type="button" class="submit-button">클릭!</button>
+                                <p class="instruction Wavve">폼을 작성하여 제출해주세요.<br/>제출한 번호로 개별 연락드릴 예정입니다.</p>
+                                <p class="notice">*경품 발송 시, <내 곁에 국민연금>의 구독자가 <br/> 아닐 경우 당첨이 취소됩니다.</p>
+                                <button type="button" class="submit-button Wavve">클릭!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="infoModal" class="info-modal custom-modal">
+                        <div class="modal-content">
+                            <button type="button" class="close-button" aria-label="닫기">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path 
+                                    d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" 
+                                    fill="#000000" 
+                                    stroke="#000000" 
+                                    stroke-width="1"
+                                    />
+                                </svg>
+                            </button>
+                            <div class="info-form">
+                                <h2 class="form-title Wavve">당첨자 정보</h2>
+                                <p class="form-description">폼을 작성하여 제출해주세요.<br/>제출한 번호로 개별 연락드릴 예정입니다. <br/>
+                                *경품 발송 시, <내 곁에 국민연금>의 구독자가 아닐 경우 <br/> 당첨이 취소됩니다.</p>
+                                <div class="form-group">
+                                    <label for="name">성명</label>
+                                    <input class="name-input" type="text" id="name" name="name" placeholder="이름을 입력해주세요">
+                                </div>
+                                <div class="form-group phone-group">
+                                    <label for="phone">휴대폰 번호</label>
+                                    <div class="phone-inputs">
+                                        <select id="phone-prefix" name="phone-prefix">
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        <span class="hyphen">-</span>
+                                        <input type="tel" id="phone-mid" name="phone-mid" maxlength="4" placeholder="1234">
+                                        <span class="hyphen">-</span>
+                                        <input type="tel" id="phone-last" name="phone-last" maxlength="4" placeholder="5678">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input class="email-input" type="email" id="email" name="email" placeholder="이메일을 입력해주세요">
+                                </div>
+                                <h3 class="agreement-title">개인정보정책 및 이용약관 동의</h3>
+                                <div class="agreement-group">
+                                    <div class="agreement-content">
+                                        <h4 class="agreement-subtitle">개인정보 수집 및 이용 동의</h4>
+                                        <p class="agreement-text">수집하는 개인정보 항목: 이름, 연락처, 이메일</p>
+                                        <p class="agreement-text">수집 및 이용 목적: 이벤트 참여자 확인 및 당첨 안내</p>
+                                        <p class="agreement-text">보유 및 이용 기간: 당첨자 발표 후 1개월</p>
+                                    </div>
+                                    <div class="checkbox-row">
+                                        <input type="checkbox" id="agree" name="agree">
+                                        <label for="agree">동의합니다</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit-button">등록!</button>
                             </div>
                         </div>
                     </div>
@@ -725,11 +791,22 @@
         }
     }
 
+    function hideModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+    }
+
+    const eventModal = document.getElementById('eventModal');
+    const submitButton = eventModal.querySelector('.submit-button'); // "클릭!" 버튼 선택
+
     giftElements.forEach(gift => {
         gift.addEventListener('click', function() {
             const modalId = this.dataset.modal;
             if (modalId) {
-                showModal(modalId); // 모달 표시 함수 호출
+                showModal(modalId); // 이벤트 결과 모달 표시
 
                 // (선택 사항) 클릭된 선물 상자의 스타일 유지
                 giftElements.forEach(otherGift => {
@@ -748,35 +825,56 @@
         gift.addEventListener('touchend', () => {
             setTimeout(() => {
                 gift.classList.remove('touched');
-            }, 100); // 짧은 시간 동안 시각 효과 유지 (선택 사항)
+            }, 100);
         });
     });
 
-    document.querySelectorAll('.custom-modal .close-button').forEach(button => {
+    document.querySelectorAll('.event-modal .close-button').forEach(button => {
         button.addEventListener('click', function() {
-            const modal = this.closest('.custom-modal');
-            if (modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = '';
-            }
+            hideModal('eventModal'); // 이벤트 결과 모달 숨김
         });
     });
 
     // (선택 사항) 모달 외부 클릭 시 닫기
     window.addEventListener('click', function(event) {
-        if (event.target.classList.contains('custom-modal')) {
-            event.target.style.display = 'none';
-            document.body.style.overflow = '';
+        if (event.target === eventModal) {
+            hideModal('eventModal'); // 이벤트 결과 모달 숨김
         }
     });
 
     // (선택 사항) ESC 키로 모달 닫기
     document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-            document.querySelectorAll('.custom-modal').forEach(modal => {
-                modal.style.display = 'none';
-                document.body.style.overflow = '';
-            });
+        if (event.key === 'Escape' && eventModal.style.display === 'flex') {
+            hideModal('eventModal'); // 이벤트 결과 모달 숨김
+        }
+    });
+
+    // "클릭!" 버튼 클릭 시 다음 모달 표시
+    if (submitButton) {
+        submitButton.addEventListener('click', function() {
+            hideModal('eventModal'); // 현재 모달 숨김
+            showModal('infoModal'); // 다음 정보 입력 모달 표시 (id는 'infoModal'이라고 가정)
+        });
+    }
+
+    // 다음 정보 입력 모달 관련 JavaScript (표시 및 닫기)
+    document.querySelectorAll('#infoModal .close-button').forEach(button => {
+        button.addEventListener('click', function() {
+            hideModal('infoModal');
+        });
+    });
+
+    window.addEventListener('click', function(event) {
+        const infoModal = document.getElementById('infoModal');
+        if (infoModal && event.target === infoModal) {
+            hideModal('infoModal');
+        }
+    });
+
+    document.addEventListener('keydown', function(event) {
+        const infoModal = document.getElementById('infoModal');
+        if (infoModal && event.key === 'Escape' && infoModal.style.display === 'flex') {
+            hideModal('infoModal');
         }
     });
 

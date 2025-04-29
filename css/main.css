@@ -40,7 +40,6 @@ body.menu-open .page-wrapper {
 
 .body .menu-open {
     overflow: hidden;
-    touch-action: none;
 }
 
 /* ✅ PC 해더 */
@@ -2230,6 +2229,7 @@ body.menu-open .page-wrapper {
     will-change: transform, filter;
 }
 
+
 @keyframes move-forever2 {
     0% {
         transform: rotate(15deg) translate(-90px, 0%);
@@ -2310,7 +2310,7 @@ body.menu-open .page-wrapper {
 #event-page .parallax .gift:hover,
 #event-page .parallax .gift.clicked,
 #event-page .parallax .gift.touched {
-    animation-play-state: paused; 
+    animation-play-state: paused; /* 호버 시 애니메이션 일시 정지 */
     filter: drop-shadow(0 0 5px white);
 }
 
@@ -2504,36 +2504,37 @@ body.menu-open .page-wrapper {
 }
 
 
-.custom-modal {
-    display: none; /* 초기에는 숨김 */
-    position: fixed; /* 화면 고정 */
+.event-modal {
+    display: none; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+    background-color: rgba(0, 0, 0, 0.5); 
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* 다른 요소 위에 표시 */
-    overflow: auto; /* 내용이 많아질 경우 스크롤 가능 */
+    z-index: 2500;
+    overflow: auto;
 }
 
-.custom-modal .modal-content {
+.event-modal .modal-content {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    width: 700px; /* 원하는 모달 너비 */
-    max-width: 90%;
-    height: auto; /* 내용에 따라 높이 자동 조절 */
-    max-height: 90%;
-    position: relative; /* 닫기 버튼 위치 기준 */
+    max-width: 70%;
+    height: auto; 
+    position: relative; 
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
-.custom-modal .close-button {
+.event-modal .close-button {
     position: absolute;
     top: 10px;
     right: 10px;
-    padding: 8px 12px;
+    padding: 5px;
     font-size: 1.5em;
     font-weight: bold;
     line-height: 1;
@@ -2544,79 +2545,283 @@ body.menu-open .page-wrapper {
     opacity: 0.7;
 }
 
-.custom-modal .close-button:hover {
+.event-modal .close-button:hover {
     opacity: 1;
 }
 
 .event-result {
     text-align: center;
-    padding: 20px;
+    padding: 90px 10px 30px;
+    background-image: url('../img/event-page/deco.png');
+    background-repeat: no-repeat; 
+    background-position: center top;
+    background-size: contain
 }
 
-.event-result h2 {
-    font-size: 1.5em;
+.event-result .result-message {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -2%;
     margin-bottom: 10px;
-    color: #ff6699; /* 사진의 강조 색상과 유사하게 변경 */
+    color: #0086DD;
+}
+.event-result .sub-message{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    margin-bottom: 30px;
+}
+
+
+.event-result .gift-img {
+    width: 70%; 
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .event-result .gift-card {
-    display: inline-block;
-    position: relative;
-    margin: 10px 0;
+    margin: 10px 50px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -2%;
 }
 
-.event-result .gift-card img {
-    width: 200px; /* 이미지 너비 조절 */
-    height: auto;
-    border: 1px solid #ccc; /* 선택 사항: 이미지 테두리 */
-    border-radius: 5px; /* 선택 사항: 이미지 둥근 모서리 */
-}
-
-.event-result .gift-card .amount {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 128, 0, 0.7); /* 사진의 금액 표시 배경색과 유사하게 변경 */
-    color: white;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.event-result .description {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #555;
-}
 
 .event-result .instruction {
     margin-top: 20px;
-    line-height: 1.5;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .event-result .notice {
     margin-top: 10px;
-    font-size: 0.9em;
-    color: #888;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .event-result .submit-button {
-    background-color: #007bff; /* 사진의 "클릭!" 버튼 색상과 유사하게 변경 */
+    background-color: #0086DD; /* 사진의 "클릭!" 버튼 색상과 유사하게 변경 */
     color: white;
-    padding: 10px 20px;
+    padding: 5px 30px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 999px;
     margin-top: 20px;
-    font-size: 1em;
+    font-size: 25px;
+    width: 200px;
 }
 
 .event-result .submit-button:hover {
     background-color: #0056b3;
 }
 
+.info-modal {
+    display: none; /* 초기 숨김 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2600;
+    overflow: auto;
+}
+
+.info-modal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90vh;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.info-modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-modal label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.info-modal input[type="text"],
+.info-modal input[type="tel"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.info-modal button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.info-modal button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.info-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* 기존 닫기 버튼 스타일 유지 */
+}
+
+
+
+.info-form {
+    padding: 20px;
+}
+
+.info-form .form-title {
+    font-size: 24px;
+    color: #0086DD;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.info-form .form-description,
+.info-form .form-notice {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.info-form .form-group {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.info-form label {
+    width: 30%;
+    box-sizing: border-box;
+    display: block;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.info-form input[type="text"],
+.info-form input[type="tel"],
+.info-form input[type="email"],
+.info-form select {
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    height: 45px;
+}
+.info-form .phone-inputs,
+.info-form .name-input,
+.info-form .email-input
+{
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.info-form .phone-group .phone-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.info-form .phone-group select {
+    width: auto;
+    flex-grow: 0;
+    margin-right: 10px;
+}
+
+.info-form .phone-group input[type="tel"] {
+    flex-grow: 1;
+}
+
+.info-form .phone-group .hyphen {
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #777;
+}
+
+.info-form .agreement-group {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.info-form .agreement-group .agreement-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-form .agreement-group .agreement-subtitle {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.info-form .agreement-group .agreement-text {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.info-form .agreement-group .checkbox-row {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.info-form .agreement-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.info-form .agreement-group label {
+    font-weight: normal;
+}
+
+.info-form .submit-button {
+    background-color: #0086DD;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.info-form .submit-button:hover {
+    background-color: #0056b3;
+}
 
 @media (max-width: 1280px) {
     #event-page .sec02 {
@@ -2871,6 +3076,18 @@ body.menu-open .page-wrapper {
         font-size: 14px;
         line-height: 22px;
     }
+    .event-modal .modal-content { 
+        max-width: 80%;
+    }
+    
+    .event-result .gift-img {
+        width: 70%; 
+    }
+
+    .event-result .gift-card {
+        margin: 10px 0px;
+    }
+    
 
 
 
@@ -3781,6 +3998,55 @@ body.menu-open .page-wrapper {
         height: 40%;
         x: 90;
         y: 155;
+    }
+    .event-modal .modal-content { 
+        max-width: 90%;
+    }
+    
+
+    .event-result {
+        text-align: center;
+        padding: 40px 10px 20px;
+    }
+    
+
+    .event-result .result-message {
+        font-size: 32px;
+    }
+    .event-result .sub-message{
+        font-size: 18px;
+    }
+    
+    
+    .event-result .gift-img {
+        width: 90%; 
+        margin-bottom: 5px;
+    }
+    
+    .event-result .gift-card {
+        margin: 10px 0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc; 
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 100%;
+        letter-spacing: -2%;
+    }
+    
+    
+    .event-result .instruction {
+        font-size: 14px;
+    }
+    
+    .event-result .notice {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .event-result .submit-button {
+        font-size: 20px;
+        font-weight: 400;
     }
 
     
