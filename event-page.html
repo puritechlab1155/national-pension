@@ -620,27 +620,66 @@
 <script>
 
 
-        // function updateWavePattern() {
-        //     const waveElements = document.querySelectorAll('use.wave'); // 클래스에 'wave'를 가진 모든 요소 선택
-        //     const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
+        function updateWavePattern() {
+            const waveElements = document.querySelectorAll('use.wave'); // 클래스에 'wave'를 가진 모든 요소 선택
+            const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
 
-        //     waveElements.forEach(wave => {
-        //         wave.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', patternId);
-        //     });
-        // }
+            waveElements.forEach(wave => {
+                wave.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', patternId);
+            });
+        }
 
-        // // 페이지 로드와 리사이즈 이벤트에 함수 연결
-        // window.addEventListener('DOMContentLoaded', updateWavePattern);
-        // window.addEventListener('resize', updateWavePattern);
+        // 페이지 로드와 리사이즈 이벤트에 함수 연결
+        window.addEventListener('DOMContentLoaded', updateWavePattern);
+        window.addEventListener('resize', updateWavePattern);
 
-        // // 성능 최적화: resize 이벤트 디바운싱
-        // let resizeTimer;
-        // window.addEventListener('resize', () => {
-        //     clearTimeout(resizeTimer);
-        //     resizeTimer = setTimeout(updateWavePattern, 100);
-        // });
+        // 성능 최적화: resize 이벤트 디바운싱
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(updateWavePattern, 100);
+        });
 
-        
+        function fixIOSSVGAttributes() {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            const waves = {
+                '.wave1': '10',
+                '.wave2': '40',
+                '.wave3': '55',
+                '.wave4': '80',
+                '.wave5': '95',
+                '.wave6': '120'
+            };
+            const defaultYs = {}; // 기본 y 값 저장 객체
+
+            if (window.innerWidth <= 480 && isIOS) {
+                Object.entries(waves).forEach(([selector, yValue]) => {
+                    const element = document.querySelector(`#event-page .parallax ${selector}`);
+                    if (element && !element.dataset.originalY) {
+                        // 최초 실행 시 기본 y 값 저장
+                        defaultYs[selector] = element.getAttribute('y') || '';
+                        element.dataset.originalY = defaultYs[selector];
+                        element.setAttribute('y', yValue);
+                    } else if (element && element.dataset.originalY !== undefined) {
+                        // 이미 저장된 기본 y 값이 있다면 적용
+                        element.setAttribute('y', yValue);
+                    }
+                });
+            } else {
+                // 480px 초과 또는 iOS가 아닌 경우 원래 y 값으로 복구
+                Object.entries(waves).forEach(([selector]) => {
+                    const element = document.querySelector(`#event-page .parallax ${selector}`);
+                    if (element && element.dataset.originalY !== undefined) {
+                        element.setAttribute('y', element.dataset.originalY);
+                        delete element.dataset.originalY; // 데이터 속성 제거
+                    }
+                });
+            }
+        }
+
+// iOS 감지 후 실행
+document.addEventListener('DOMContentLoaded', fixIOSSVGAttributes);
+window.addEventListener('resize', fixIOSSVGAttributes);
 
 </script>
 <script type="text/javascript">

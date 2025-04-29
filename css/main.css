@@ -3502,6 +3502,7 @@ body.menu-open .page-wrapper {
 
 
 @media (max-width: 480px) {
+    
     #index .sec04 .swiper-frame {
         max-height: 150px;
     }
