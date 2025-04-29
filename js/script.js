@@ -136,6 +136,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const moreButton = document.getElementById('share-button');
     const floatingButtons = document.querySelector('.floating-buttons');
 
+    function toggleOverlay(show) {
+        if (overlay) {
+            overlay.classList.toggle('active', show);
+        }
+    }
 
     if (homeButton) {
         homeButton.addEventListener('click', function () {
@@ -159,6 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const isMobile = window.innerWidth <= 768;
         if (!isMobile) {
             popup?.classList.remove('show');
+            toggleOverlay(false);
         }
     }
 
@@ -169,13 +175,16 @@ document.addEventListener('DOMContentLoaded', function () {
         e.stopPropagation();
         const isMobile = window.innerWidth <= 768;
         if (isMobile) {
-            popup?.classList.toggle('show');
+            const shouldShow = !popup?.classList.contains('show');
+            popup?.classList.toggle('show', shouldShow);
+            toggleOverlay(shouldShow);
         }
     });
 
     document.addEventListener('click', (e) => {
         if (!popup?.contains(e.target) && !moreButton?.contains(e.target)) {
             popup?.classList.remove('show');
+            toggleOverlay(false);
         }
     });
 

@@ -2191,42 +2191,29 @@ body.menu-open .page-wrapper {
 
 #event-page .parallax .wave1 {
     animation-delay: -1s;
-    animation: move-forever2 15s linear infinite alternate;
+    animation: move-forever2 15s linear infinite;
 }
 
 #event-page .parallax .wave2 {
     animation-delay: -8s;
-    animation: move-forever3 15s linear infinite alternate;
+    animation: move-forever3 15s linear infinite;
 }
 
 #event-page .parallax .wave3 {
     animation-delay: -2s;
-    animation: move-forever2 20s linear infinite alternate;
+    animation: move-forever2 20s linear infinite;
 }
 #event-page .parallax .wave4 {
-    animation: move-forever3 20s linear infinite alternate;
+    animation: move-forever3 20s linear infinite;
 }
 #event-page .parallax .wave5 {
     animation-delay: -1s;
-    animation: move-forever2 15s linear infinite alternate;
+    animation: move-forever2 15s linear infinite;
 }
 
 #event-page .parallax .wave6 {
     animation-delay: -5s;
-    animation: move-forever 20s linear infinite alternate;
-}
-
-#event-page .parallax .wave1,
-#event-page .parallax .wave2,
-#event-page .parallax .wave3,
-#event-page .parallax .wave4,
-#event-page .parallax .wave5,
-#event-page .parallax .wave6 {
-    will-change: transform;
-}
-
-#event-page .parallax .gift {
-    will-change: transform, filter;
+    animation: move-forever 20s linear infinite;
 }
 
 
@@ -3076,6 +3063,8 @@ body.menu-open .page-wrapper {
         font-size: 14px;
         line-height: 22px;
     }
+
+
     .event-modal .modal-content { 
         max-width: 80%;
     }
@@ -3087,10 +3076,6 @@ body.menu-open .page-wrapper {
     .event-result .gift-card {
         margin: 10px 0px;
     }
-    
-
-
-
 
 
 }
@@ -3998,55 +3983,6 @@ body.menu-open .page-wrapper {
         height: 40%;
         x: 90;
         y: 155;
-    }
-    .event-modal .modal-content { 
-        max-width: 90%;
-    }
-    
-
-    .event-result {
-        text-align: center;
-        padding: 40px 10px 20px;
-    }
-    
-
-    .event-result .result-message {
-        font-size: 32px;
-    }
-    .event-result .sub-message{
-        font-size: 18px;
-    }
-    
-    
-    .event-result .gift-img {
-        width: 90%; 
-        margin-bottom: 5px;
-    }
-    
-    .event-result .gift-card {
-        margin: 10px 0;
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: 1px solid #ccc; 
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 100%;
-        letter-spacing: -2%;
-    }
-    
-    
-    .event-result .instruction {
-        font-size: 14px;
-    }
-    
-    .event-result .notice {
-        font-size: 12px;
-        font-weight: 400;
-    }
-    
-    .event-result .submit-button {
-        font-size: 20px;
-        font-weight: 400;
     }
 
     

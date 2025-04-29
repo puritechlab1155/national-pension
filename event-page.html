@@ -118,7 +118,7 @@
                             <input type="text" class="search-input" />
                         </div>
                     </div>
-                    <button type="button" class="menu-toggle" aria-label="메뉴 열기">
+                    <button type="button" class="menu-toggle" aria-label="메뉴 열기" onclick="window.location.href='#';">
                         <svg class="m-menu" width="17" height="12" viewBox="0 0 17 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="17" height="0.68" fill="black" />
@@ -791,22 +791,11 @@
         }
     }
 
-    function hideModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = '';
-        }
-    }
-
-    const eventModal = document.getElementById('eventModal');
-    const submitButton = eventModal.querySelector('.submit-button'); // "클릭!" 버튼 선택
-
     giftElements.forEach(gift => {
         gift.addEventListener('click', function() {
             const modalId = this.dataset.modal;
             if (modalId) {
-                showModal(modalId); // 이벤트 결과 모달 표시
+                showModal(modalId); // 모달 표시 함수 호출
 
                 // (선택 사항) 클릭된 선물 상자의 스타일 유지
                 giftElements.forEach(otherGift => {
@@ -825,56 +814,35 @@
         gift.addEventListener('touchend', () => {
             setTimeout(() => {
                 gift.classList.remove('touched');
-            }, 100);
+            }, 100); // 짧은 시간 동안 시각 효과 유지 (선택 사항)
         });
     });
 
-    document.querySelectorAll('.event-modal .close-button').forEach(button => {
+    document.querySelectorAll('.custom-modal .close-button').forEach(button => {
         button.addEventListener('click', function() {
-            hideModal('eventModal'); // 이벤트 결과 모달 숨김
+            const modal = this.closest('.custom-modal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
         });
     });
 
     // (선택 사항) 모달 외부 클릭 시 닫기
     window.addEventListener('click', function(event) {
-        if (event.target === eventModal) {
-            hideModal('eventModal'); // 이벤트 결과 모달 숨김
+        if (event.target.classList.contains('custom-modal')) {
+            event.target.style.display = 'none';
+            document.body.style.overflow = '';
         }
     });
 
     // (선택 사항) ESC 키로 모달 닫기
     document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' && eventModal.style.display === 'flex') {
-            hideModal('eventModal'); // 이벤트 결과 모달 숨김
-        }
-    });
-
-    // "클릭!" 버튼 클릭 시 다음 모달 표시
-    if (submitButton) {
-        submitButton.addEventListener('click', function() {
-            hideModal('eventModal'); // 현재 모달 숨김
-            showModal('infoModal'); // 다음 정보 입력 모달 표시 (id는 'infoModal'이라고 가정)
-        });
-    }
-
-    // 다음 정보 입력 모달 관련 JavaScript (표시 및 닫기)
-    document.querySelectorAll('#infoModal .close-button').forEach(button => {
-        button.addEventListener('click', function() {
-            hideModal('infoModal');
-        });
-    });
-
-    window.addEventListener('click', function(event) {
-        const infoModal = document.getElementById('infoModal');
-        if (infoModal && event.target === infoModal) {
-            hideModal('infoModal');
-        }
-    });
-
-    document.addEventListener('keydown', function(event) {
-        const infoModal = document.getElementById('infoModal');
-        if (infoModal && event.key === 'Escape' && infoModal.style.display === 'flex') {
-            hideModal('infoModal');
+        if (event.key === 'Escape') {
+            document.querySelectorAll('.custom-modal').forEach(modal => {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            });
         }
     });
 
