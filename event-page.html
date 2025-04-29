@@ -620,25 +620,27 @@
 <script>
 
 
-        function updateWavePattern() {
-            const waveElements = document.querySelectorAll('use.wave'); // 클래스에 'wave'를 가진 모든 요소 선택
-            const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
+        // function updateWavePattern() {
+        //     const waveElements = document.querySelectorAll('use.wave'); // 클래스에 'wave'를 가진 모든 요소 선택
+        //     const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
 
-            waveElements.forEach(wave => {
-                wave.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', patternId);
-            });
-        }
+        //     waveElements.forEach(wave => {
+        //         wave.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', patternId);
+        //     });
+        // }
 
-        // 페이지 로드와 리사이즈 이벤트에 함수 연결
-        window.addEventListener('DOMContentLoaded', updateWavePattern);
-        window.addEventListener('resize', updateWavePattern);
+        // // 페이지 로드와 리사이즈 이벤트에 함수 연결
+        // window.addEventListener('DOMContentLoaded', updateWavePattern);
+        // window.addEventListener('resize', updateWavePattern);
 
-        // 성능 최적화: resize 이벤트 디바운싱
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(updateWavePattern, 100);
-        });
+        // // 성능 최적화: resize 이벤트 디바운싱
+        // let resizeTimer;
+        // window.addEventListener('resize', () => {
+        //     clearTimeout(resizeTimer);
+        //     resizeTimer = setTimeout(updateWavePattern, 100);
+        // });
+
+        
 
 </script>
 <script type="text/javascript">
