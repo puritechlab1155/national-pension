@@ -6,7 +6,8 @@
         <title>국민연금 | 세부페이지</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/common.css">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -16,9 +17,9 @@
         <div class="mobile-menu">
             <div class="mobile-menu-header">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="NPS 로고" class="mobile-logo"/>
+                    <img src="img/logo.png" alt="NPS 로고" class="mobile-logo" />
                 </a>
-                <button type="button" class="close-menu" aria-label="닫기" onclick="window.location.href='#';">
+                <button type="button" class="close-menu" aria-label="닫기">
                     <svg class="slide-menu-close" width="8" height="8" viewBox="0 0 8 8" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L7.5063 7.5063" stroke="white" stroke-width="0.841346" />
@@ -28,9 +29,9 @@
             </div>
             <span class="m-volume">2025 VOL.203</span>
             <ul class="mobile-menu-links">
-                <li class="menu-item">
+                <li class="menu-item submenu-toggle">
                     <a class="menu-link" href="#">NPS</a>
-                    <button type="button" class="submenu-toggle">
+                    <button type="button" class="submenu-button">
                         <svg class="submenu-toggle-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 9L10 13L6 9" stroke="black" />
@@ -46,7 +47,7 @@
                 </ul>
                 <li class="menu-item">
                     <a class="menu-link" href="#">시니어 라이프</a>
-                    <button type="button" class="submenu-toggle">
+                    <button type="button" class="submenu-button">
                         <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 9L10 13L6 9" stroke="black" />
@@ -55,7 +56,7 @@
                 </li>
                 <li class="menu-item">
                     <a class="menu-link" href="#">문화</a>
-                    <button type="button" class="submenu-toggle">
+                    <button type="button" class="submenu-button">
                         <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 9L10 13L6 9" stroke="black" />
@@ -64,7 +65,7 @@
                 </li>
                 <li class="menu-item">
                     <a class="menu-link" href="event-page.html">이벤트</a>
-                    <button type="button" class="submenu-toggle">
+                    <button type="button" class="submenu-button">
                         <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 9L10 13L6 9" stroke="black" />
@@ -330,6 +331,7 @@
         </div>
 
         <!-- 하단바 공유하기 팝업 -->
+        <div class="share-popup-overlay"></div>
         <div class="bar-popup" id="popup">
             <div class="line"></div>
             <div class="icon-container">

@@ -30,9 +30,9 @@
         </div>
         <span class="m-volume">2025 VOL.203</span>
         <ul class="mobile-menu-links">
-            <li class="menu-item">
+            <li class="menu-item submenu-toggle">
                 <a class="menu-link" href="#">NPS</a>
-                <button type="button" class="submenu-toggle">
+                <button type="button" class="submenu-button">
                     <svg class="submenu-toggle-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 9L10 13L6 9" stroke="black" />
@@ -48,7 +48,7 @@
             </ul>
             <li class="menu-item">
                 <a class="menu-link" href="#">시니어 라이프</a>
-                <button type="button" class="submenu-toggle">
+                <button type="button" class="submenu-button">
                     <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 9L10 13L6 9" stroke="black" />
@@ -57,7 +57,7 @@
             </li>
             <li class="menu-item">
                 <a class="menu-link" href="#">문화</a>
-                <button type="button" class="submenu-toggle">
+                <button type="button" class="submenu-button">
                     <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 9L10 13L6 9" stroke="black" />
@@ -66,7 +66,7 @@
             </li>
             <li class="menu-item">
                 <a class="menu-link" href="event-page.html">이벤트</a>
-                <button type="button" class="submenu-toggle">
+                <button type="button" class="submenu-button">
                     <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 9L10 13L6 9" stroke="black" />
@@ -295,12 +295,12 @@
                                 <label class="phone" for="phone">휴대폰 번호</label>
                                 <div class="phone-inputs">
                                     <select class="phone-select" id="phone-prefix" name="phone-prefix">
-                                        <option value="010">010</option>
-                                        <option value="011">011</option>
-                                        <option value="016">016</option>
-                                        <option value="017">017</option>
-                                        <option value="018">018</option>
-                                        <option value="019">019</option>
+                                        <option class="phone-option" value="010">010</option>
+                                        <option class="phone-option" value="011">011</option>
+                                        <option class="phone-option" value="016">016</option>
+                                        <option class="phone-option" value="017">017</option>
+                                        <option class="phone-option" value="018">018</option>
+                                        <option class="phone-option" value="019">019</option>
                                     </select>
                                     <span class="hyphen">-</span>
                                     <input class="phone-input" type="tel" id="phone-mid" name="phone-mid" maxlength="4" >
@@ -346,8 +346,8 @@
                 </div>
                 <div id="unluckyModal" class="unlucky-modal">
                     <div class="modal-content">
-                        <img class="unlucky-img" src="img/event-page/unlucky.png" alt="Unlucky!" style="width: 150px; margin-bottom: 20px;">
-                        <h2 class="form-title Wavve" style="color: #0086DD;">당첨되지 않았습니다!</h2>
+                        <img class="unlucky-img" src="img/event-page/unlucky.png" alt="Unlucky!">
+                        <h2 class="form-title Wavve">당첨되지 않았습니다!</h2>
                         <p class="form-description Wavve">다음에 다시 참여해주세요.</p>
                         <button type="button" class="close-button Wavve" onclick="hideModal('unluckyModal')" style="color: #FFFFFF; background-color: #B2B2B2; padding: 5px 30px; border: none; border-radius: 999px; font-size: 25px; width: 200px; margin-top: 10px;">확인</button>
                     </div>
@@ -360,7 +360,7 @@
                 </div>
                 <div id="eventEndedModal" class="event-ended-modal custom-modal">
                     <div class="modal-content">
-                        <h2 class="form-title Wavve" style="font-size: 24px; line-height: 1.4;">당첨 정원이 충족돼<br/>이벤트가 종료됐습니다.</h2>
+                        <h2 class="form-title Wavve" >당첨 정원이 충족돼<br/>이벤트가 종료됐습니다.</h2>
                         <button type="button" class="close-button Wavve" onclick="hideModal('eventEndedModal')" style="color: #FFFFFF; background-color: #B2B2B2; padding: 5px 30px; border: none; border-radius: 999px; font-size: 25px; width: 200px; margin-top: 20px;">닫기</button>
                     </div>
                 </div>
