@@ -17,7 +17,7 @@
 }
 @media (max-width: 1280px) {
     .padding-230{
-        padding: 0 100px;
+        padding: 0 100px !important;
     }
 }
 
@@ -32,9 +32,15 @@
     }
 
     .padding-230{
-        padding: 0 50px;
+        padding: 0 50px !important;
     }
 
+}
+
+@media (max-width: 480px) {
+    .padding-230{
+        padding: 0 20px !important;
+    }
 }
 
 
@@ -363,7 +369,6 @@ body.menu-open .page-wrapper {
     align-items: center;
     padding: 10px 0;
     width: 100%;
-    color: #4f4f4f;
     font-size: 16px;
     letter-spacing: 0%;
     line-height: 100%;
@@ -1833,7 +1838,7 @@ body.menu-open .page-wrapper {
     align-items: center;
     gap: 15px;
     justify-content: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 #sub-page .sec02 .separator {

@@ -7,27 +7,30 @@ document.addEventListener('DOMContentLoaded', function () {
     // });
     // ✅  편하게보기 체크표시
     const toggle = document.getElementById('checkView');
-    // 현재 페이지가 index-easy.html 이면 체크박스를 active 상태로 설정
-    if (window.location.pathname.includes('index-easy.html') && toggle) {
-        toggle.classList.add('active');
-    }
 
-    toggle?.addEventListener('click', () => {
-        toggle.classList.toggle('active');
+    if (toggle) {
         const currentPath = window.location.pathname;
-
-        if (toggle.classList.contains('active')) {
-            // 체크되었을 때 index-easy.html로 이동
-            if (currentPath.includes('index.html')) {
-                window.location.href = 'index-easy.html';
-            }
-        } else {
-            // 체크 해제되었을 때 index.html로 이동
-            if (currentPath.includes('index-easy.html')) {
-                window.location.href = 'index.html';
-            }
+        const isEasyVersion = currentPath.includes('-easy');
+    
+        // 현재 페이지가 -easy 버전이면 체크박스를 활성화
+        if (isEasyVersion) {
+            toggle.classList.add('active');
         }
-    });
+    
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            const currentFile = currentPath.split('/').pop(); // ex) main.html or main-easy.html
+            let baseName = currentFile.replace('-easy', '').replace('.html', '');
+    
+            if (toggle.classList.contains('active')) {
+                // -easy 버전으로 이동
+                window.location.href = `${baseName}-easy.html`;
+            } else {
+                // 일반 버전으로 이동
+                window.location.href = `${baseName}.html`;
+            }
+        });
+    }
 
     // ✅  모바일 서브메뉴 토글
     const menuToggle = document.querySelector('.menu-toggle');
