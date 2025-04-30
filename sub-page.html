@@ -13,15 +13,16 @@
         <!-- 모바일 슬라이드 메뉴 오버레이 배경 -->
         <div class="mobile-menu-overlay"></div> 
         <!-- 모바일 슬라이드 메뉴 -->
-        <div class="mobile-menu"> 
+        <div class="mobile-menu">
             <div class="mobile-menu-header">
                 <a href="index.html">
                     <img src="img/logo.png" alt="NPS 로고" class="mobile-logo"/>
                 </a>
-                <button type="button" class="close-menu" aria-label="닫기">
-                    <svg class="slide-menu-close" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7.5063 7.5063" stroke="white" stroke-width="0.841346"/>
-                        <path d="M7.50635 1L1.00005 7.5063" stroke="white" stroke-width="0.841346"/>
+                <button type="button" class="close-menu" aria-label="닫기" onclick="window.location.href='#';">
+                    <svg class="slide-menu-close" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7.5063 7.5063" stroke="white" stroke-width="0.841346" />
+                        <path d="M7.50635 1L1.00005 7.5063" stroke="white" stroke-width="0.841346" />
                     </svg>
                 </button>
             </div>
@@ -29,9 +30,10 @@
             <ul class="mobile-menu-links">
                 <li class="menu-item">
                     <a class="menu-link" href="#">NPS</a>
-                    <button type="button" class="submenu-toggle" >
-                        <svg class="submenu-toggle-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 9L10 13L6 9" stroke="black"/>
+                    <button type="button" class="submenu-toggle">
+                        <svg class="submenu-toggle-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 9L10 13L6 9" stroke="black" />
                         </svg>
                     </button>
                 </li>
@@ -45,29 +47,33 @@
                 <li class="menu-item">
                     <a class="menu-link" href="#">시니어 라이프</a>
                     <button type="button" class="submenu-toggle">
-                        <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 9L10 13L6 9" stroke="black"/>
+                        <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 9L10 13L6 9" stroke="black" />
                         </svg>
                     </button>
                 </li>
                 <li class="menu-item">
                     <a class="menu-link" href="#">문화</a>
                     <button type="button" class="submenu-toggle">
-                        <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 9L10 13L6 9" stroke="black"/>
+                        <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 9L10 13L6 9" stroke="black" />
                         </svg>
                     </button>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" href="#">이벤트</a>
+                    <a class="menu-link" href="event-page.html">이벤트</a>
                     <button type="button" class="submenu-toggle">
-                        <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 9L10 13L6 9" stroke="black"/>
+                        <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 9L10 13L6 9" stroke="black" />
                         </svg>
                     </button>
                 </li>
             </ul>
-            <button type="button"  onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'" class="m-prev-issues">지난호 보기</button>
+            <button type="button" onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'"
+                class="m-prev-issues">지난호 보기</button>
         </div>
 
         <div class="page-wrapper">
@@ -90,7 +96,7 @@
                         </li>
                         <li class="menu-item dropdown"><a href="#" class="menu-link">시니어 라이프</a></li>
                         <li class="menu-item dropdown"><a href="#" class="menu-link">문화</a></li>
-                        <li class="menu-item dropdown"><a href="#" class="menu-link">이벤트</a></li>
+                        <li class="menu-item dropdown"><a href="event-page.html" class="menu-link">이벤트</a></li>
                     </ul>
                     <div class="nav-right">
                         <button type="button"
@@ -118,7 +124,7 @@
                                 <rect y="5" width="17" height="0.68" fill="black" />
                                 <rect y="10.88" width="17" height="0.68" fill="black" />
                             </svg>
-    
+
                         </button>
                     </div>
                 </nav>

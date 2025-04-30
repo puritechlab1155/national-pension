@@ -2608,7 +2608,7 @@ body.menu-open .page-wrapper {
 }
 
 .info-modal {
-    display: none; /* 초기 숨김 */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -2638,29 +2638,12 @@ body.menu-open .page-wrapper {
     margin-bottom: 20px;
 }
 
-.info-modal label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.info-modal input[type="text"],
-.info-modal input[type="tel"] {
-    width: calc(100% - 12px);
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
 
 .info-modal .close-button {
     position: absolute;
     top: 10px;
     right: 10px;
 }
-
-
 
 .info-form {
     padding: 20px;
@@ -2682,7 +2665,7 @@ body.menu-open .page-wrapper {
     margin-bottom: 15px;
     font-size: 15px;
 }
-
+/* 
 .info-form .form-group {
     display: flex;
     align-items: center; 
@@ -2706,6 +2689,7 @@ body.menu-open .page-wrapper {
     height: 45px;
 }
 
+
 .info-form .name-input
 {
     width: 70%;
@@ -2728,7 +2712,90 @@ body.menu-open .page-wrapper {
     color: #777;
     height: 45px;
     line-height: 45px;
+    width: 12px;
+} */
+
+/* .info-modal label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+} */
+
+/* .info-modal input[type="text"],
+.info-modal input[type="tel"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+
+
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
 }
+
+.form-group label {
+    width: 120px;
+    margin-right: 15px;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.form-group .name-input,
+.form-group .email-input {
+    flex-grow: 1;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 45px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form-group .phone-inputs {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.phone-group .phone-inputs select,
+.phone-group .phone-inputs input { 
+    font-size: 14px;
+    height: 45px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.phone-group .phone-inputs select {
+    width: auto;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+.phone-group .phone-inputs input {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.phone-group .hyphen {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+    height: 45px;
+    line-height: 45px;
+    flex-shrink: 0;
+}
+
+
+
+
 
 .info-form .agreement-group {
     margin-top: 30px;
@@ -2771,42 +2838,56 @@ body.menu-open .page-wrapper {
     cursor: pointer;
     user-select: none;
 }
-
-/* 체크박스 기본 스타일 커스텀 */
-.checkbox-row input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 25px;
-    height: 25px;
-    border: 2px solid #D9D9D9;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-    position: relative;
-}
-
-/* 체크 표시 스타일 */
-.checkbox-row input[type="checkbox"]::after {
-    content: '✔';
+.styled-checkbox {
     position: absolute;
-    top: -4px;
-    left: 4px;
-    font-size: 18px;
-    color: #0086DD;
-    display: none;
+    opacity: 0;
 }
 
-/* 체크되었을 때 표시 */
-.checkbox-row input[type="checkbox"]:checked::after {
-    display: block;
-}
-
-/* 라벨 스타일 */
-.checkbox-row label {
-    font-size: 16px;
-    color: #333;
+.checkbox-label {
+    position: relative;
     cursor: pointer;
-    padding-top: 5px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center; 
+}
+
+.checkbox-label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #ccc;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+
+.styled-checkbox:checked + .checkbox-label:before {
+    background: #0086DD;
+}
+
+.styled-checkbox:checked + .checkbox-label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+        2px 0 0 white,
+        4px 0 0 white,
+        4px -2px 0 white,
+        4px -4px 0 white,
+        4px -6px 0 white,
+        4px -8px 0 white;
+    transform: rotate(45deg);
+}
+.checkbox-label:before {
+    transform: translateY(-2px); 
 }
 
 .info-form .submit-button {

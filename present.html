@@ -1,338 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presents Animation</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-        body {
-            background: #34E1FF;
-            font-family: 'Fredoka One', cursive;
-            overflow-x: hidden;
-            margin: 0;
-        }
-
-        .container {
+        .styled-checkbox {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            opacity: 0;
         }
 
-        .text {
-            min-width: 100%;
-            text-align: center;
-            color: white;
-            text-shadow: 1px 1px #2C3A49;
-            font-size: 3em;
-        }
-
-        .text .char {
-            animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
-            animation-delay: calc(60ms * var(--char-index));
-        }
-
-        @keyframes slide-in {
-            from {
-                transform: translateY(-1em) rotate(-.5turn) scale(0.5);
-                opacity: 0;
-            }
-        }
-
-        .presents {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            height: 200px;
-        }
-
-        .present {
+        .checkbox-label {
             position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             cursor: pointer;
-            margin: 0 20px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center; 
         }
 
-        .present .lid {
-            height: 20%;
-            width: calc(100% + 10px);
-            border: 4px solid #2C3A49;
-            border-radius: 5px;
-            box-shadow: inset 2px 2px rgba(255,255,255,.5), 5px 0 rgba(0,0,0,.15);
-        }
-
-        .present .box {
-            width: 100%;
-            height: 100%;
-            background-position: 0 0, 20px 20px;
-            background-size: 40px 40px;
-            border: 4px solid #2C3A49;
-            border-top: 0;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            box-shadow: inset -10px 5px rgba(0,0,0,.3), 5px 0 rgba(0,0,0,.15);
-        }
-
-        .present .ribbon {
-            position: absolute;
-            top: -3px;
-            width: 30px;
-            height: calc(100% - 5px);
-            border: 4px solid #2C3A49;
-            border-radius: 5px;
-            box-shadow: inset 2px 2px rgba(255,255,255,.5);
-        }
-
-        .present .ribbon::before {
-            display: block;
+        .checkbox-label:before {
             content: '';
-            position: absolute;
-            width: 100%;
-            height: 5px;
-            background: rgba(0,0,0,.3);
-            top: 21%;
-        }
-
-        .present .box {
-            position: absolute;
-            top: -20px;
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
             width: 20px;
             height: 20px;
-            border: 4px solid #2C3A49;
-            border-radius: 50%;
-            box-shadow: inset 2px 2px rgba(255,255,255,.5), inset -2px -5px rgba(0,0,0,.3);
-            z-index: 1;
+            background: white;
+            border: 2px solid #ccc;
+            vertical-align: middle;
+            box-sizing: border-box;
         }
 
-        .present .box::before, .present .box::after {
-            display: block;
+
+        .styled-checkbox:checked + .checkbox-label:before {
+            background: #0086DD;
+        }
+
+        .styled-checkbox:checked + .checkbox-label:after {
             content: '';
             position: absolute;
-            top: -10px;
-            width: 30px;
-            height: 30px;
-            border: 4px solid #2C3A49;
-            border-radius: 50%;
-            box-shadow: inset 2px 2px rgba(255,255,255,.5), inset -2px -5px rgba(0,0,0,.3);
-            z-index: -1;
+            left: 5px;
+            top: 9px;
+            background: white;
+            width: 2px;
+            height: 2px;
+            box-shadow:
+                2px 0 0 white,
+                4px 0 0 white,
+                4px -2px 0 white,
+                4px -4px 0 white,
+                4px -6px 0 white,
+                4px -8px 0 white;
+            transform: rotate(45deg);
         }
-
-        .present .box::before {
-            left: -10px;
-        }
-
-        .present .box::after {
-            right: -10px;
-        }
-
-        /* Specific present colors and animations */
-        .green {
-            /* Inherits base present styles */
-        }
-
-        .green .lid,
-        .green .box {
-            background-color: #3DDC81;
-        }
-
-        .green .box {
-            background-image: radial-gradient(#fff 20%, transparent 20%),
-                              radial-gradient(#fff 20%, transparent 20%);
-            background-position: 0 0, 20px 20px;
-            background-size: 40px 40px;
-        }
-
-        .green .ribbon,
-        .green .box,
-        .green .box::before,
-        .green .box::after {
-            background-color: #F75D4C;
-            border-color: #2C3A49;
-        }
-
-        @keyframes green {
-            0% {
-                transform: translateY(0);
-            }
-            30% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(5px);
-            }
-            100% {
-                transform: translateY(0);
-            }
-        }
-
-        .green:hover {
-            animation: green .5s;
-        }
-
-        .orange {
-            /* Inherits base present styles */
-        }
-
-        .orange .lid,
-        .orange .box {
-            background-color: #FFA726;
-        }
-
-        .orange .box {
-            background-image: radial-gradient(#2C3A49 20%, transparent 20%),
-                              radial-gradient(#2C3A49 20%, transparent 20%);
-            background-position: 0 0, 20px 20px;
-            background-size: 40px 40px;
-        }
-
-        .orange .ribbon,
-        .orange .bow,
-        .orange .bow::before,
-        .orange .bow::after {
-            background-color: #F75D4C;
-            border-color: #2C3A49;
-        }
-
-        @keyframes orange {
-            0% {
-                transform: scale(1);
-            }
-            30% {
-                transform: scale(1.1);
-            }
-            60% {
-                transform: scale(0.9);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        .orange:hover {
-            animation: orange .5s;
-        }
-
-        .blue {
-            /* Inherits base present styles */
-        }
-
-        .blue .lid,
-        .blue .box {
-            background-color: #1BB5FE;
-        }
-
-        .blue .box {
-            background-image: none; /* No dots for blue present */
-        }
-
-        .blue .ribbon,
-        .blue .bow,
-        .blue .bow::before,
-        .blue .bow::after {
-            background-color: #3DDC81;
-            border-color: #2C3A49;
-        }
-
-        @keyframes blue {
-            0% {
-                transform: rotate(0deg);
-            }
-            30% {
-                transform: rotate(10deg);
-            }
-            60% {
-                transform: rotate(-5deg);
-            }
-            100% {
-                transform: rotate(0deg);
-            }
-        }
-
-        .blue:hover {
-            animation: blue .5s;
+        .checkbox-label:before {
+            transform: translateY(-2px); 
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="text" data-splitting>Happy Birthday!</div>
-        <div class="presents">
-            <div class="present green">
-                <div class="lid"></div>
-                <div class="box"></div>
-                <div class="ribbon"></div>
-                <div class="bow"></div>
-            </div>
-            <div class="present orange">
-                <div class="lid"></div>
-                <div class="box"></div>
-                <div class="ribbon"></div>
-                <div class="bow"></div>
-            </div>
-            <div class="present blue">
-                <div class="lid"></div>
-                <div class="box"></div>
-                <div class="ribbon"></div>
-                <div class="bow"></div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
-    <script src="script.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            Splitting(); // Initialize the text splitting animation
+    <h1 class="title">Pure CSS Custom Checkboxes</h1>
 
-            document.addEventListener("click", (event) => {
-                bursty(event.pageX, event.pageY);
-            });
-
-            setInterval(() => randomizedConfetti(), 500);
-
-            function bursty(x, y) {
-                const burst = new mojs.Burst({
-                    left: 0,
-                    top: 0,
-                    radius: { 0: 200 },
-                    count: 20,
-                    degree: 360,
-                    children: {
-                        fill: { white: "#34E1FF" },
-                        duration: 2000
-                    }
-                }).tune({
-                    x: x,
-                    y: y
-                });
-
-                burst.replay();
-            }
-
-            function randomizedConfetti() {
-                let randomX = Math.floor(Math.random() * (document.body.clientWidth - 100));
-                let randomY = Math.floor(Math.random() * (window.innerHeight - 200));
-                const burst = new mojs.Burst({
-                    left: 0,
-                    top: 0,
-                    radius: { 0: 200 },
-                    count: 20,
-                    degree: 360,
-                    children: {
-                        fill: { white: "#34E1FF" },
-                        duration: 2000
-                    }
-                }).tune({
-                    x: randomX,
-                    y: randomY
-                });
-
-                burst.replay();
-            }
-        });
-    </script>
+    <ul>
+        <li>
+            <input class="styled-checkbox" id="checkbox-label" type="checkbox" value="html" />
+            <label class="checkbox-label" for="checkbox-label">동의합니다</label>
+        </li>
+    </ul>
 </body>
+
 </html>

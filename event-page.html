@@ -328,8 +328,8 @@
                                 </div>
                             </div>
                             <div class="checkbox-row">
-                                <input type="checkbox" id="agree" name="agree">
-                                <label for="agree">동의합니다</label>
+                                <input class="styled-checkbox" id="checkbox-label" type="checkbox" value="html" />
+                                <label class="checkbox-label" for="checkbox-label">동의합니다</label>
                             </div>
                             <button type="submit" class="submit-button Wavve">등록!</button>
                         </div>
@@ -884,22 +884,6 @@
         if (infoModal && event.key === 'Escape' && infoModal.style.display === 'flex') {
             hideModal('infoModal');
         }
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const checkboxRow = document.querySelector('.checkbox-row');
-        const checkbox = document.querySelector('#agree');
-        const label = document.querySelector('label[for="agree"]');
-
-        checkboxRow.addEventListener('click', function (e) {
-            // label 또는 checkbox 클릭은 기본 동작 유지
-            if (e.target !== checkbox && e.target !== label) {
-            checkbox.checked = !checkbox.checked;
-            }
-
-            // 콘솔 확인
-            console.log('체크 상태:', checkbox.checked);
-        });
     });
 
 
