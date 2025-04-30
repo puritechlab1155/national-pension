@@ -286,13 +286,13 @@
                         <div class="info-form">
                             <h2 class="form-title Wavve">당첨자 정보</h2>
                             <p class="form-description">폼을 작성하여 제출해주세요.<br/>제출한 번호로 개별 연락드릴 예정입니다. <br/>
-                            *경품 발송 시, &lt;내 곁에 국민연금>의 구독자가 아닐 경우 <br/> 당첨이 취소됩니다.</p>
+                            *경품 발송 시, &lt;내 곁에 국민연금>의 구독자가 <br/> 아닐 경우 당첨이 취소됩니다.</p>
                             <div class="form-group">
-                                <label for="name">성명</label>
+                                <label class="name" for="name">성명</label>
                                 <input class="name-input" type="text" id="name" name="name">
                             </div>
                             <div class="form-group phone-group">
-                                <label for="phone">휴대폰 번호</label>
+                                <label class="phone" for="phone">휴대폰 번호</label>
                                 <div class="phone-inputs">
                                     <select class="phone-select" id="phone-prefix" name="phone-prefix">
                                         <option value="010">010</option>
@@ -303,13 +303,13 @@
                                         <option value="019">019</option>
                                     </select>
                                     <span class="hyphen">-</span>
-                                    <input type="tel" id="phone-mid" name="phone-mid" maxlength="4" >
+                                    <input class="phone-input" type="tel" id="phone-mid" name="phone-mid" maxlength="4" >
                                     <span class="hyphen">-</span>
-                                    <input type="tel" id="phone-last" name="phone-last" maxlength="4" >
+                                    <input class="phone-input" type="tel" id="phone-last" name="phone-last" maxlength="4" >
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="email">E-mail</label>
+                                <label class="email" for="email">E-mail</label>
                                 <input class="email-input" type="email" id="email" name="email">
                             </div>
                             <h3 class="agreement-title">개인정보정책 및 이용약관 동의</h3>
@@ -391,7 +391,7 @@
                             </svg>
                         </button>
                         <div class="nav-content" onclick="window.location.href='#';">
-                            <span class="nav-label">NEXT</span>
+                            <span class="nav-label">PREVIOUS</span>
                             <h3 class="nav-title">똑똑한 노후 준비!</h3>
                             <p class="nav-description">40대부터 은퇴를 앞둔 60대까지, <br/>
                                 알아두 변 좋은 연령법 똑똑한 은퇴 준비</p>
@@ -400,7 +400,7 @@
                     </div>
                     <div class="nav-item prev">
                         <div class="nav-content">
-                            <span class="nav-label">PREVIOUS</span>
+                            <span class="nav-label">NEXT</span>
                             <h3 class="nav-title">NPS 칼럼</h3>
                             <p class="nav-description">잘못 알려진 국민연금 제도 바로알기</p>
                         </div>
@@ -586,6 +586,7 @@
     </div>
 
     <!-- 하단바 공유하기 팝업 -->
+    <div class="share-popup-overlay"></div>
     <div class="bar-popup" id="popup">
         <div class="line"></div>
         <div class="icon-container">

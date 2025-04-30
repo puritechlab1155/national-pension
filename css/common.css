@@ -78,6 +78,16 @@ pointer-events: none !important;
 position: absolute !important;
 right: 0 !important;
 }
+select {
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+}
+
+select::-ms-expand {
+    display: none;
+}
+
 
 
 .color-picker::-webkit-color-swatch-wrapper {

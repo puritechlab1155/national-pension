@@ -9,24 +9,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu-toggle');
     const closeMenu = document.querySelector('.close-menu');
     const mobileMenu = document.querySelector('.mobile-menu');
-    const overlay = document.querySelector('.mobile-menu-overlay');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
     const body = document.body;
 
     menuToggle?.addEventListener('click', () => {
         mobileMenu.classList.add('open');
-        overlay.classList.add('active');
+        mobileMenuOverlay.classList.add('active');
         body.classList.add('menu-open');
     });
 
     closeMenu?.addEventListener('click', () => {
         mobileMenu.classList.remove('open');
-        overlay.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
         body.classList.remove('menu-open');
     });
 
-    overlay?.addEventListener('click', () => {
+    mobileMenuOverlay?.addEventListener('click', () => {
         mobileMenu.classList.remove('open');
-        overlay.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
         body.classList.remove('menu-open');
     });
 
@@ -135,10 +135,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const forwardButton = document.getElementById('forwardButton');
     const moreButton = document.getElementById('share-button');
     const floatingButtons = document.querySelector('.floating-buttons');
+    const sharePopupOverlay = document.querySelector('.share-popup-overlay');
 
     function toggleOverlay(show) {
-        if (overlay) {
-            overlay.classList.toggle('active', show);
+        if (sharePopupOverlay) {
+            sharePopupOverlay.classList.toggle('active', show);
         }
     }
 
@@ -177,14 +178,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isMobile) {
             const shouldShow = !popup?.classList.contains('show');
             popup?.classList.toggle('show', shouldShow);
-            toggleOverlay(shouldShow);
+            toggleOverlay(shouldShow, sharePopupOverlay);
         }
     });
 
     document.addEventListener('click', (e) => {
         if (!popup?.contains(e.target) && !moreButton?.contains(e.target)) {
             popup?.classList.remove('show');
-            toggleOverlay(false);
+            toggleOverlay(false, sharePopupOverlay);
         }
     });
 
