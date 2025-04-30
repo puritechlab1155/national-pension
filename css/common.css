@@ -120,7 +120,6 @@ img, fieldset, abbr {
 
 .poppins {
     font-family: 'Poppins', sans-serif;
-    font-weight: 800;
     line-height: 100%;
     letter-spacing: 0%;
 }
@@ -133,45 +132,18 @@ img, fieldset, abbr {
     margin-top: 90px !important;
 }
 
-.padding-80 { 
-    margin: 0 auto;
-    max-width: 1440px;
-}
-
-.padding-230{ 
-    margin: 0 auto;
-    max-width: 980px;
-}
-
-@media (max-width: 1520px) {
-    .padding-80 { 
-        padding: 0 80px;
-    }
-}
-@media (max-width: 1280px) {
-    .padding-230{
-        padding: 0 100px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .m-top-90{
-        margin-top: 30px !important;
-    }
-
-    .padding-80 { 
-        padding: 0;
-    }
-
-    .padding-230{
-        padding: 0 50px;
-    }
-
-}
-
 @media (max-width: 480px){
     .padding-230{
         padding: 0 20px;
     }
 }
+
+/* .enlarged-view {
+    font-size: 1.5em !important; 
+    line-height: 1.5 !important; 
+}
+
+.enlarged-view img {
+    transform: scale(1.2) !important; 
+    transform-origin: center center !important;
+} */

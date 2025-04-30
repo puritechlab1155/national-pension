@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>국민연금</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-easy.css">
     <link rel="stylesheet" href="css/common.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -82,24 +83,28 @@
         <!-- 해더 -->
         <header class="header">
             <nav class="nav">
-                <ul class="nav-left">
-                    <a href="index.html" class="logo">
-                        <img src="img/logo.png" alt="NPS 로고" />
-                    </a>
-                    <li class="menu-item dropdown">
-                        <a href="#">NPS</a>
-                        <ul class="submenu">
-                            <li class="submenu-item"><a href="#" class="submenu-link">NPS 뉴스</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">NPS 칼럼</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">알아봐요, 국민연금</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">세계연금 이모저모</a></li>
-                            <li class="submenu-item"><a href="#" class="submenu-link">NPS 영상</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item dropdown"><a href="#" class="menu-link">시니어 라이프</a></li>
-                    <li class="menu-item dropdown"><a href="#" class="menu-link">문화</a></li>
-                    <li class="menu-item dropdown"><a href="event-page.html" class="menu-link">이벤트</a></li>
-                </ul>
+                <div class="nav-left">
+                    <div class="logo-wrapper">
+                        <a href="index.html" class="logo">
+                            <img class="header-logo" src="img/logo.png" alt="NPS 로고" />
+                        </a>
+                    </div>
+                    <div class="menu-wrapper poppins">
+                        <li class="menu-item dropdown">
+                            <a href="#">NPS</a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#" class="submenu-link">NPS 뉴스</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">NPS 칼럼</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">알아봐요, 국민연금</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">세계연금 이모저모</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">NPS 영상</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown"><a href="#" class="menu-link">시니어 라이프</a></li>
+                        <li class="menu-item dropdown"><a href="#" class="menu-link">문화</a></li>
+                        <li class="menu-item dropdown"><a href="event-page.html" class="menu-link">이벤트</a></li>
+                    </div>
+                </div>
                 <div class="nav-right">
                     <button type="button"
                         onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'"
@@ -133,283 +138,338 @@
         </header>
 
         <!-- 컨텐츠 -->
-        <main class="content" id="event-page">
-            <section class="section sec01">
+        <main class="content" id="index">
+            <section class="section sec01 padding-80">
                 <div class="sec01-header" id="checkView">
                     <span class="check-icon">
-                        <svg class="check-svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect class="check-circle" x="0.75" y="0.75" width="26.5" height="26.5" rx="13.25"
-                                stroke="#AAAAAA" stroke-width="1.5" />
-                            <path class="check-path" d="M7 15L12 20L21 9" stroke="#AAAAAA" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                        <svg class="check-svg" width="35" height="35" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="check-circle" x="0.75" y="0.75" width="26.5" height="26.5" rx="13.25" stroke="#AAAAAA" stroke-width="1.5"/>
+                            <path class="check-path" d="M7 15L12 20L21 9" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </span>
                     <span class="check-label">편하게 보기</span>
                 </div>
-            </section>
-
-            <section class="section sec02">
-                <img class="seagull-1" src="img/event-page/seagull1.png" alt="갈매기1">
-                <img class="seagull-2" src="img/event-page/seagull2.png" alt="갈매기1">
-                <img class="cloud-img" src="img/event-page/cloud.png" alt="구름 이미지" />
-                <div class="text-content padding-230">
-                    <p class="draw">구독자 뽑기 이벤트</p>
-                    <h1 class="event-title">출렁이는 파도 위, <br/>
-                        행운이 든 선물 상자를 <br class="mob-br"/> 잡아라~!</h1>
-                </div>
-            </section>
-            <section class="section sec02-1">
-                <p class="comment">
-                    &lt;내 곁에 국민연금>을 방문해 주신 구독자 여러분께 <br class="gone"/>
-                        감사의 마음을 담아 파도 타고 온 선물 상자 잡기 이벤트를 준비했습니다. <br/>
-                        이벤트 기간 내 행운이 담긴 선물 상자를 클릭해 당첨되신 <br class="gone" />
-                        구독자님 100분께 5천 원 상당의 커피 기프티콘을 드립니다.
-                </p>
-                <img class="coupon-img" src="img/event-page/gift-coupon.png" alt="기프트쿠폰" />
-            </section>
-
-
-            <section class="section sec03 padding-230">
-                <h2 class="section-title">참여 방법</h2>
-                <div class="steps-container">
-                    <div class="step">
-                        <div class="step-number poppins">1 <br />
-                            <p class="step-description">국민연금 구독 <br />신청 버튼 클릭</p>
+                <div class="content-box">
+                    <div class="black-box">
+                        지금 주목할만한 이야기
+                    </div>
+                    <div class="content-wrapper">
+                        <!-- 왼쪽 이미지 -->
+                        <div class="content-left">
+                            <img class="sec01-img" src="img/main/section01.png" alt="컨텐츠 이미지" class="content-image" />
                         </div>
 
-                    </div>
-                    <div class="step">
-                        <div class="step-number poppins">2 <br />
-                            <p class="step-description">구독 신청 완료</p>
-                        </div>
-
-                    </div>
-                    <div class="step">
-                        <div class="step-number poppins">3 <br />
-                            <p class="step-description">행운이 깃든<br />선물 상자 클릭</p>
-                        </div>
-
-                    </div>
-                    <div class="step">
-                        <div class="step-number poppins">4 <br />
-                            <p class="step-description">당첨 확인</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="info-zone">
-                    <hr class="divider">
-                    <div class="info-row">
-                        <div class="info-label">응모 기간</div>
-                        <div class="info-value">6월 20일 오후 2시 ~ 8월 10일 오후 11시 30분</div>
-                    </div>
-                    <hr class="divider">
-                    <div class="info-row">
-                        <div class="info-label">경품 발송</div>
-                        <div class="info-value">8월 20일 오후 5시</div>
-                    </div>
-                    <hr class="divider">
-                </div>
-                <button type="button" class="subscribe-button" 
-                    onclick="window.open('https://www.nps.or.kr/jsppage/cyber_pr/subscribe/intro.jsp', '_blank', 'noopener,noreferrer,width=700,height=500');">
-                    구독하기
-                </button>
-            </section>
-
-            <section class="section sec04">
-                <p class="comment">아래에서 원하는 선물 상자를 <br class="mob-br"/> 눌러 주세요!</p>
-                    <!-- SVG wave background -->
-                <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 130 100" preserveAspectRatio="none">
-                    <defs>
-                        <filter id="shadow1" x="-50%" y="-50%" width="200%" height="200%">
-                            <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="rgba(0, 0, 0, 0.5)" />
-                        </filter>
-                        <path id="gentle-wave" d="M-160 50c30 0 58-20 88-20s 58 20 88 20 58-20 88-20 58 20 88 20 v30h-352z"/>
-                        <path id="gentle-wave-small" d="M-160 60c5 0 7-5 12-5s 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5  7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 7-5 12-5 7 5 12 5 v64h-352z" />
-                        <path id="gentle-wave-wider" d="M-200 55 L-185 55 C-175 55 -170 60 -160 60 S -145 55 -135 55 -120 60 -110 60 -95 55 -85 55 -70 60 -60 60 -45 55 -35 55 -20 60 -10 60 5 55 15 55 30 60 40 60 55 55 65 55 80 60 90 60 105 55 115 55 130 60 140 60 155 55 165 55 180 60 190 60 v64h-400z" />
-                    </defs>
-                    <g class="parallax" transform="translate(0, -55)">
-                        <use class="wave wave1" xlink:href="#gentle-wave-small" x="50" y="0" fill="#0086DD" filter="url(#shadow1)" />
-                            <image class="gift" xlink:href="img/event-page/gift1.png" x="20" y="70" width="15" height="20" preserveAspectRatio="none" data-modal="unluckyModal"/>
-                            <image class="gift" xlink:href="img/event-page/gift2.png" x="60" y="70" width="13" height="25" preserveAspectRatio="none" data-modal="alreadyAppliedModal"/>
-                        <use class="wave wave2" xlink:href="#gentle-wave-small" x="50" y="45" fill="#02A6E4" filter="url(#shadow1)" />
-                            <image class="gift" xlink:href="img/event-page/gift3.png" x="95" y="80" width="10" height="25" preserveAspectRatio="none" data-modal="eventModal"/>
-                        <use class="wave wave3" xlink:href="#gentle-wave-small" x="50" y="15" fill="#7CE6F7" filter="url(#shadow1)" />
-                            <image class="gift" xlink:href="img/event-page/gift6.png" x="75" y="90" width="13" height="22" preserveAspectRatio="none" data-modal="eventModal"/>
-                            <image class="gift" xlink:href="img/event-page/gift4.png" x="35" y="86" width="15" height="25" preserveAspectRatio="none" data-modal="eventModal"/>
-                        <use class="wave wave4" xlink:href="#gentle-wave-small" x="50" y="70" fill="#F5FFFF" filter="url(#shadow1)" />
-                            <image class="gift" xlink:href="img/event-page/gift8.png" x="95" y="100" width="15" height="30" preserveAspectRatio="none" data-modal="eventModal"/>
-                        <use class="wave wave5" xlink:href="#gentle-wave-small" x="50" y="30" fill="#02A6E4" filter="url(#shadow1)" />
-                            <image class="gift" xlink:href="img/event-page/gift7.png" x="20" y="102" width="15" height="25" preserveAspectRatio="none" data-modal="eventModal"/>
-                            <image class="gift" xlink:href="img/event-page/gift5.png" x="57" y="95" width="10" height="30" preserveAspectRatio="none" data-modal="eventEndedModal"/>
-                        <use class="wave wave6" xlink:href="#gentle-wave-small" x="50" y="60" fill="#D3FFFD" filter="url(#shadow1)" />
-                    </g>
-                </svg>
-                <div id="eventModal" class="event-modal">
-                    <div class="modal-content">
-                        <button type="button" class="close-button" aria-label="닫기">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path 
-                                d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" 
-                                fill="#000000" 
-                                stroke="#000000" 
-                                stroke-width="1"
-                                />
-                            </svg>
-                        </button>
-                        <div class="event-result">
-                            <h2 class="result-message Wavve">축하합니다!</h2>
-                            <p class="sub-message Wavve">이벤트에 당첨되셨습니다.</p>
-                            <div class="gift-card">
-                                <img class="gift-img" src="img/event-page/gift-coupon-real.png" alt="스타벅스 5천원 상품권" />
-                                <div>5천원 상당의 커피 기프티콘</div>
+                        <!-- 오른쪽 텍스트 -->
+                        <div class="content-right">
+                            <div class="text-area">
+                                <p class="catagory">NPS 칼럼</p>
+                                <h1 class="title">2025 <br/> 국민연금개혁의 <br/> 필요성</h1>
+                                <h5 class="sub-title">더는 못 미룰 연금개혁도 <br/> “럭키 비키” 외칠 수 있다면</h5>
                             </div>
-                            <p class="instruction Wavve">폼을 작성하여 제출해주세요.<br/>제출한 번호로 개별 연락드릴 예정입니다.
-                            <br/>*경품 발송 시, &lt;내 곁에 국민연금>의 구독자가 <br/> 아닐 경우 당첨이 취소됩니다.</p>
-                            <button type="button" class="submit-button Wavve">클릭!</button>
+                            <button type="button" class="sec01-btn" onclick="window.location.href='#';">지금 확인하기</button>
                         </div>
                     </div>
                 </div>
-                <div id="infoModal" class="info-modal">
-                    <div class="modal-content">
-                        <button type="button" class="close-button" aria-label="닫기">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path 
-                                d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" 
-                                fill="#000000" 
-                                stroke="#000000" 
-                                stroke-width="1"
-                                />
-                            </svg>
-                        </button>
-                        <div class="info-form">
-                            <h2 class="form-title Wavve">당첨자 정보</h2>
-                            <p class="form-description">폼을 작성하여 제출해주세요.<br/>제출한 번호로 개별 연락드릴 예정입니다. <br/>
-                            *경품 발송 시, &lt;내 곁에 국민연금>의 구독자가 <br/> 아닐 경우 당첨이 취소됩니다.</p>
-                            <div class="form-group">
-                                <label class="name" for="name">성명</label>
-                                <input class="name-input" type="text" id="name" name="name">
-                            </div>
-                            <div class="form-group phone-group">
-                                <label class="phone" for="phone">휴대폰 번호</label>
-                                <div class="phone-inputs">
-                                    <select class="phone-select" id="phone-prefix" name="phone-prefix">
-                                        <option class="phone-option" value="010">010</option>
-                                        <option class="phone-option" value="011">011</option>
-                                        <option class="phone-option" value="016">016</option>
-                                        <option class="phone-option" value="017">017</option>
-                                        <option class="phone-option" value="018">018</option>
-                                        <option class="phone-option" value="019">019</option>
-                                    </select>
-                                    <span class="hyphen">-</span>
-                                    <input class="phone-input" type="tel" id="phone-mid" name="phone-mid" maxlength="4" >
-                                    <span class="hyphen">-</span>
-                                    <input class="phone-input" type="tel" id="phone-last" name="phone-last" maxlength="4" >
+            </section>
+
+            <section class="section sec02 padding-80">
+                <h2 class="poppins title">KEYWORD</h2>
+                <div class="keyword-cloud">
+                    <div class="keyword-item center" data-aos-delay="400">
+                        <a href="#" class="keyword main">국민연금<br/>개혁</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1200">
+                        <a href="#" class="keyword medium gray">경제학</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="800">
+                        <a href="#" class="keyword small">N잡러</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1800">
+                        <a href="#" class="keyword emphasized">N잡러</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1100">
+                        <a href="#" class="keyword">노후대비</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="500">
+                        <a href="#" class="keyword">주택청약</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1500">
+                        <a href="#" class="keyword nano gray">금리</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="800">
+                        <a href="#" class="keyword gray mbig">흑백요리사</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1500">
+                        <a href="#" class="keyword small gray">트렌드</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1000">
+                        <a href="#" class="keyword big">주택담보대출</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="800">
+                        <a href="#" class="keyword normal">장애연금</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section sec03 padding-80 ">
+                <h2 class="title poppins">NPS</h2>
+                <div class="carousel-container">
+                    <button class="carousel-button left" onclick="window.location.href='#';">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M33.414 6.58606C33.7889 6.96112 33.9996 7.46973 33.9996 8.00006C33.9996 8.53039 33.7889 9.03901 33.414 9.41406L18.828 24.0001L33.414 38.5861C33.7783 38.9633 33.9799 39.4685 33.9753 39.9929C33.9708 40.5173 33.7605 41.0189 33.3896 41.3897C33.0188 41.7605 32.5172 41.9709 31.9928 41.9754C31.4684 41.98 30.9632 41.7784 30.586 41.4141L14.586 25.4141C14.2111 25.039 14.0004 24.5304 14.0004 24.0001C14.0004 23.4697 14.2111 22.9611 14.586 22.5861L30.586 6.58606C30.9611 6.21112 31.4697 6.00049 32 6.00049C32.5303 6.00049 33.0389 6.21112 33.414 6.58606Z"
+                                fill="#AAAAAA" />
+                        </svg>
+                    </button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic01.jpg" alt="국민연금 주요 뉴스"/>
+                                <div class="caption">
+                                    <p class="small-text">NPS 뉴스</p>
+                                    <p class="title-text">국민연금 주요 뉴스</p>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="email" for="email">E-mail</label>
-                                <input class="email-input" type="email" id="email" name="email">
-                            </div>
-                            <h3 class="agreement-title">개인정보정책 및 이용약관 동의</h3>
-                            <div class="agreement-group">
-                                <div class="agreement-content">
-                                    <h4 class="agreement-subtitle">개인정보 수집 및 이용 동의</h4>
-                                    <p class="agreement-text">수집하는 개인정보 항목: 이름, 연락처, 이메일
-                                    <br/> 수집 및 이용 목적: 이벤트 참여자 확인 및 당첨 안내
-                                    <br/> 보유 및 이용 기간: 당첨자 발표 후 1개월</p>
-
-                                    <h4 class="agreement-subtitle">개인정보 제3자 제공 동의</h4>
-                                    <p class="agreement-text">동의를 거부할 수 있으나, 이 경우 이벤트 참여가 불가능합니다.
-                                    <br/> 제공받는 자의 이용 목적: 이름, 연락처, 이메일
-                                    <br/> 제공하는 항목: 이름, 연락처, 이메일
-                                    <br/> 제공받는 자의 보유 및 이용 기간:
-                                    <br/> 보유 및 이용기간: 당첨자 발표 후 1개월</p>
-                                </div>
-                            </div>
-                            <div class="checkbox-row">
-                                <input class="styled-checkbox" id="checkbox-label" type="checkbox" value="html" />
-                                <label class="checkbox-label" for="checkbox-label">동의합니다</label>
-                            </div>
-                            <button type="submit" class="submit-button Wavve">등록!</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="registrationCompleteModal" class="registration-complete-modal">
-                    <div class="modal-content">
-                        <h2 class="form-title Wavve">등록 완료</h2>
-                        <p class="form-description1 Wavve">정상적으로 제출되었습니다.<br/> 제출한 번호로 개별 연락드릴 예정입니다.<br/>감사합니다.</p>
-                        <p class="form-description2"> *경품 발송 시, &lt;내 곁에 국민연금&gt;의 구독자가 <br/>아닐 경우 당첨이 취소됩니다.</p>
-                        <button type="button" class="close-button Wavve" onclick="hideModal('registrationCompleteModal')">닫기</button>
-                    </div>
-                </div>
-                <div id="unluckyModal" class="unlucky-modal">
-                    <div class="modal-content">
-                        <img class="unlucky-img" src="img/event-page/unlucky.png" alt="Unlucky!">
-                        <h2 class="form-title Wavve">당첨되지 않았습니다!</h2>
-                        <p class="form-description Wavve">다음에 다시 참여해주세요.</p>
-                        <button type="button" class="close-button Wavve" onclick="hideModal('unluckyModal')" style="color: #FFFFFF; background-color: #B2B2B2; padding: 5px 30px; border: none; border-radius: 999px; font-size: 25px; width: 200px; margin-top: 10px;">확인</button>
-                    </div>
-                </div>
-                <div id="alreadyAppliedModal" class="already-applied-modal custom-modal">
-                    <div class="modal-content">
-                        <h2 class="form-title Wavve">이미 응모하셨습니다.</h2>
-                        <button type="button" class="close-button Wavve" onclick="hideModal('alreadyAppliedModal')" style="color: #FFFFFF; background-color: #B2B2B2; padding: 5px 30px; border: none; border-radius: 999px; font-size: 25px; width: 200px; margin-top: 20px;">확인</button>
-                    </div>
-                </div>
-                <div id="eventEndedModal" class="event-ended-modal custom-modal">
-                    <div class="modal-content">
-                        <h2 class="form-title Wavve" >당첨 정원이 충족돼<br/>이벤트가 종료됐습니다.</h2>
-                        <button type="button" class="close-button Wavve" onclick="hideModal('eventEndedModal')" style="color: #FFFFFF; background-color: #B2B2B2; padding: 5px 30px; border: none; border-radius: 999px; font-size: 25px; width: 200px; margin-top: 20px;">닫기</button>
-                    </div>
-                </div>
-            </section>
-            <section class="section sec05"> 
-                <ul class="notice1">
-                    <li>내 곁에 국민연금 구독자가 아닐 경우, 차후에 당첨이 취소되오니 반드시 구독 후 이벤트에 참여해 주세요.</li>
-                    <li>본 이벤트는 같은 이메일 주소, 같은 IP, 같은 이름, 같은 전화번호를 포함해 한 번만 응모 가능하며, 중복 참여는 불가능합니다.</li>
-                </ul>
-                <ul class="notice2">
-                    <li> <내 곁에 국민연금> 웹진 이벤트 5종에 대한 중복 당첨은 불가합니다. </li>
-                    <li> 본 이벤트 경품은 당사 사정에 따라 변경될 수 있습니다. </li>
-                    <li> 이벤트 응모 시 개인정보 활용에 동의한 것으로 간주됩니다. </li>
-                    <li> 부정행위를 통해 이벤트 참여 시 제재를 받으며, 당첨 경품도 취소됩니다. </li>
-                    <li> 부많은 분께 이벤트 혜택을 드리기 위해 중복 당첨 시 경품 지급은 한 번만 이뤄집니다. </li>
-                    <li> 당첨자에 한해 개인정보가 경품 발송 대행사에 전달되며 경품 발송 후 즉시 폐기됩니다. </li>
-                    <li> 정확하지 않은 개인정보로 인해 당첨자 연락이 되지 않거나 확인이 불가능할 경우, 당첨 취소됩니다. </li>
-                </ul>
-            </section>
+                            </a>
             
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic02.jpg" alt="잘못 알려진 국민연금 제도 바로보기"/>
+                                <div class="caption">
+                                    <p class="small-text">NPS 팩트</p>
+                                    <p class="title-text">잘못 알려진 국민연금 제도<br/>바로보기</p>
+                                </div>
+                            </a>
+            
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic03.jpg" alt="지금 알아두면 좋은 제도는 무엇일까?"/>
+                                <div class="caption">
+                                    <p class="small-text">잊어버려요, 국민연금</p>
+                                    <p class="title-text">지금 알아두면 좋은 제도는<br/>무엇일까?</p>
+                                </div>
+                            </a>
+            
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic04.jpg" alt="세계의 다양한 연금 제도 알아보기"/>
+                                <div class="caption">
+                                    <p class="small-text">세계연금 이모저모</p>
+                                    <p class="title-text">세계의 다양한 연금 제도<br/>알아보기</p>
+                                </div>
+                            </a>
+            
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic05.png" alt="다른 나라의 연금제도는? 글로벌 연금 토크쇼"/>
+                                <div class="caption">
+                                    <p class="small-text">NPS 영상</p>
+                                    <p class="title-text">다른 나라의 연금제도는?<br/>글로벌 연금 토크쇼</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <button class="carousel-button right" onclick="window.location.href='#';">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.5859 6.58606C14.211 6.96112 14.0004 7.46973 14.0004 8.00006C14.0004 8.53039 14.211 9.03901 14.5859 9.41406L29.1719 24.0001L14.5859 38.5861C14.2216 38.9633 14.02 39.4685 14.0246 39.9929C14.0291 40.5173 14.2395 41.0189 14.6103 41.3897C14.9811 41.7605 15.4827 41.9709 16.0071 41.9754C16.5315 41.98 17.0367 41.7784 17.4139 41.4141L33.4139 25.4141C33.7889 25.039 33.9995 24.5304 33.9995 24.0001C33.9995 23.4697 33.7889 22.9611 33.4139 22.5861L17.4139 6.58606C17.0389 6.21112 16.5303 6.00049 15.9999 6.00049C15.4696 6.00049 14.961 6.21112 14.5859 6.58606Z"
+                                fill="#AAAAAA" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
 
-            <section class="section sec06">
-                <div class="carousel-navigation padding-80">
-                    <div class="nav-item next">
-                        <button class="nav-button" onclick="window.location.href='#';">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M24.3749 16.2501L9.89242 16.2501L15.5174 21.8751L13.7499 23.6426L5.10742 15.0001L13.7499 6.35758L15.5174 8.12508L9.89242 13.7501L24.3749 13.7501L24.3749 16.2501Z" fill="white"/>
+            <section class="section sec04 m-top-90">
+                <h2 class="title poppins">국민연금 TV</h2>
+                <div class="sec04-wrap padding-80">
+                    <div class="line"></div>
+                    <div class="slider-section">
+                        <button id="prev" class="swiper-button prev" onclick="window.location.href='#';"> 
+                            <svg class="swiper-button-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M33.414 6.58606C33.7889 6.96112 33.9996 7.46973 33.9996 8.00006C33.9996 8.53039 33.7889 9.03901 33.414 9.41406L18.828 24.0001L33.414 38.5861C33.7783 38.9633 33.9799 39.4685 33.9753 39.9929C33.9708 40.5173 33.7605 41.0189 33.3896 41.3897C33.0188 41.7605 32.5172 41.9709 31.9928 41.9754C31.4684 41.98 30.9632 41.7784 30.586 41.4141L14.586 25.4141C14.2111 25.039 14.0004 24.5304 14.0004 24.0001C14.0004 23.4697 14.2111 22.9611 14.586 22.5861L30.586 6.58606C30.9611 6.21112 31.4697 6.00049 32 6.00049C32.5303 6.00049 33.0389 6.21112 33.414 6.58606Z"
+                                    fill="#AAAAAA" />
                             </svg>
                         </button>
-                        <div class="nav-content" onclick="window.location.href='#';">
-                            <span class="nav-label">PREVIOUS</span>
-                            <h3 class="nav-title">똑똑한 노후 준비!</h3>
-                            <p class="nav-description">40대부터 은퇴를 앞둔 60대까지, <br/>
-                                알아두 변 좋은 연령법 똑똑한 은퇴 준비</p>
+                        <div class="swiper-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-item">
+                                        <iframe class="swiper-frame"
+                                            style="width: 100%; height: 400px"
+                                            src="https://www.youtube.com/embed/mGRgD6fLVBE"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen
+                                        ></iframe>
+                                </div>
+                                <div class="swiper-item">
+                                    <iframe class="swiper-frame"
+                                            style="width: 100%; height: 400px"
+                                            src="https://www.youtube.com/embed/loIBLzAX-pU"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen
+                                        ></iframe>
+                                </div>
+                                <div class="swiper-item">
+                                    <iframe class="swiper-frame"
+                                            style="width: 100%; height: 400px"
+                                            src="https://www.youtube.com/embed/W74KnvpgFE8"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen
+                                        ></iframe>
+                                </div>
+                            </div>
                         </div>
-                        
-                    </div>
-                    <div class="nav-item prev">
-                        <div class="nav-content">
-                            <span class="nav-label">NEXT</span>
-                            <h3 class="nav-title">NPS 칼럼</h3>
-                            <p class="nav-description">잘못 알려진 국민연금 제도 바로알기</p>
-                        </div>
-                        <button class="nav-button" onclick="window.location.href='#';">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.62508 13.7499L20.1076 13.7499L14.4826 8.12492L16.2501 6.35742L24.8926 14.9999L16.2501 23.6424L14.4826 21.8749L20.1076 16.2499L5.62508 16.2499L5.62508 13.7499Z" fill="white"/>
-                            </svg>                             
+                        <button id="next" class="swiper-button next" onclick="window.location.href='#';">
+                            <svg class="swiper-button-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.5859 6.58606C14.211 6.96112 14.0004 7.46973 14.0004 8.00006C14.0004 8.53039 14.211 9.03901 14.5859 9.41406L29.1719 24.0001L14.5859 38.5861C14.2216 38.9633 14.02 39.4685 14.0246 39.9929C14.0291 40.5173 14.2395 41.0189 14.6103 41.3897C14.9811 41.7605 15.4827 41.9709 16.0071 41.9754C16.5315 41.98 17.0367 41.7784 17.4139 41.4141L33.4139 25.4141C33.7889 25.039 33.9995 24.5304 33.9995 24.0001C33.9995 23.4697 33.7889 22.9611 33.4139 22.5861L17.4139 6.58606C17.0389 6.21112 16.5303 6.00049 15.9999 6.00049C15.4696 6.00049 14.961 6.21112 14.5859 6.58606Z"
+                                    fill="#AAAAAA" />
+                            </svg>
                         </button>
                     </div>
+                </div>
+            </section>
+
+            <section class="section sec05 padding-80 m-top-90">
+                <div class="sec05-container">
+                    <h2 class="title poppins">시니어 라이프</h2>
+                    <div class="grid">
+                        <div class="left-col">
+                            <a href="#" class="post-item">
+                                <img src="img/main/sec05-pic01.jpg" alt="부모님과 함께하는 부산 여행" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+                                <div class="text-overlay">
+                                    <p class="sub-title">모두의 여행</p>
+                                    <h2 class="post-title">부모님과 함께하는 부산 여행</h2>
+                                </div>
+                            </a>
+                            <div class="text-wrap">
+                                <p class="sub-title">모두의 여행</p>
+                                <h2 class="post-title">부모님과 함께하는 부산 여행</h2>
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="right-row">
+                                <div class="item-2-3-col">
+                                    <a href="#" class="post-item item-2">
+                                        <div class="img-container">
+                                            <img class="post-img" src="img/main/sec05-pic02.jpg" alt="함께 떠나는 시니어 여행" class="post-item__image">
+                                        </div>
+                                        <h3 class="sub-title">함께 시니어 여행</h3>
+                                        <p class="post-title">노년층에게 혜택을 주는 여행지로 떠나보자!</p>
+                                    </a>
+                                    <a href="#" class="post-item item-3">
+                                        <div class="img-container">
+                                            <img class="post-img" src="img/main/sec05-pic04.jpg" alt="함께 떠나는 시니어 여행" class="post-item__image">
+                                        </div>
+                                        <h3 class="sub-title">똑똑한 노후준비!</h3>
+                                        <p class="post-title">40대부터 <br> 은퇴를 앞둔 60대까지,<br> 
+                                            알아두면 좋은 연령법 <br> 똑똑한 은퇴 준비</p>
+                                    </a>
+                                </div>
+                                <div class="item-4-5-col">
+                                    <a href="#" class="post-item item-4">
+                                        <div class="img-container">
+                                            <img class="post-img" src="img/main/sec05-pic03.jpg" alt="함께 떠나는 시니어 여행" class="post-item__image">
+                                        </div>
+                                        <h3 class="sub-title">액티비 시니어</h3>
+                                        <p class="post-title">60대에도 끊임없이 도전하는 <br>
+                                            셀럽의 이야기 들어보기</p>
+                                    </a>
+                                    <a href="#" class="post-item item-5">
+                                        <div class="img-container">
+                                            <img class="post-img" src="img/main/sec05-pic05.png" alt="함께 떠나는 시니어 여행" class="post-item__image">
+                                        </div>
+                                        <h3 class="sub-title">5060 우리는 지금</h3>
+                                        <p class="post-title">중장년층 관심 주제에 대해 <br>
+                                            재밌게 풀어보기</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section sec06 padding-80 m-top-90">
+                <h2 class="title poppins">문화</h2>
+                <div class="culture-items">
+                    <a href="#" class="item">
+                        <div class="img-container">
+                            <img class="culture-img" src="img/main/sec06-pic01.jpg" alt="문화컨텐츠 1"/>
+                        </div>
+                        <div class="text-wrap">
+                            <h3 class="sub-title">연금&시네마</h3>
+                            <p class="post-title">영화 <미 비포 유>로 읽는<br/>장애연금</p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img-container">
+                            <img class="culture-img" src="img/main/sec06-pic02.jpg" alt="문화컨텐츠 2"/>
+                        </div>
+                        <div class="text-wrap">
+                            <h3 class="sub-title">오늘의 레시피</h3>
+                            <p class="post-title">영양이 오동통, <br/> 굴전 레시피</p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img-container">
+                            <img class="culture-img" src="img/main/sec06-pic03.jpg" alt="문화컨텐츠 3"/>
+                        </div>
+                        <div class="text-wrap">
+                            <h3 class="sub-title">헬스 앤 라이프</h3>
+                            <p class="post-title">동절기엔 이것을 <br/> 조심하세요! <br/> 낙상과 심혈관 질환</p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img-container">
+                            <img class="culture-img" src="img/main/sec06-pic04.jpg" alt="문화컨텐츠 4"/>
+                        </div>
+                        <div class="text-wrap">
+                            <h3 class="sub-title">꼬리에 꼬리를 무는 문화탐구</h3>
+                            <p class="post-title"><흑백요리사> 인기 이끈 <br/>베테랑 셰프들</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section sec07 padding-80 m-top-90">
+                <h2 class="title poppins">이벤트</h2>
+                <div class="event-carousel">
+                    <div class="carousel-items"></div>
+                </div>
+                <div class="event-items">
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">NPS 칼럼 이벤트</div>
+                            <img class="event-img" src="img/main/sec07-pic01.jpg" alt="이벤트1"/>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">알아봐요, 국민연금 이벤트</div>
+                            <img class="event-img" src="img/main/sec07-pic02.jpg" alt="이벤트2"/>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">연금&시네마 이벤트</div>
+                            <img class="event-img" src="img/main/sec07-pic03.jpg" alt="이벤트3"/>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">오픈 이벤트</div>
+                            <img class="event-img" src="img/main/sec07-pic04.jpg" alt="이벤트4"/>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">독자의 목소리</div>
+                            <img class="event-img" src="img/main/sec07-pic05.jpg" alt="이벤트5"/>
+                        </div>
+                    </a>
                 </div>
             </section>
         </main>
@@ -575,8 +635,8 @@
                 </div>
                 <div class="footer-right">
                     <p>
-                        국민연금 고객센터 : 국번없이 1355 <br class="mob-br" /> (해외:+82-63-713-6900 평일 09:00 ~ 18:00)<br>
-                        54870 전라북도 전주시 덕진구 기지로 180 <br class="mob-br" /> (만성동, 국민연금공단)<br>
+                        국민연금 고객센터 : 국번없이 1355 <br class="mob-br" /> (해외:+82-63-713-6900 평일 09:00 ~ 18:00)<br/>
+                        54870 전라북도 전주시 덕진구 기지로 180 <br class="mob-br" /> (만성동, 국민연금공단)<br/>
                         간행물 등록번호 : 전주, 바 00034<br>
                         © nps.or.kr. All rights reserved.
                     </p>
@@ -584,6 +644,7 @@
             </div>
         </footer>
     </div>
+
 
     <!-- 하단바 공유하기 팝업 -->
     <div class="share-popup-overlay"></div>
@@ -734,283 +795,473 @@
     </div>
 
 
+
 </body>
 <script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
 
-        // ✅  모바일 파도 변경
-        function updateWavePattern() {
-            const waveElements = document.querySelectorAll('use.wave'); // 클래스에 'wave'를 가진 모든 요소 선택
-            const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
-
-            waveElements.forEach(wave => {
-                wave.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', patternId);
-            });
-        }
-
-        window.addEventListener('DOMContentLoaded', updateWavePattern);
-        window.addEventListener('resize', updateWavePattern);
-
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(updateWavePattern, 100);
+    // ✅ 섹션 2 : 키워드 등장
+    document.addEventListener('DOMContentLoaded', function () {
+        // AOS 초기화 - 기존 AOS 효과 유지
+        AOS.init({
+            duration: 800,
+            once: true
         });
 
-        // ✅  아이폰 iOS 위치값 적용
-        function fixIOSSVGAttributes() {
-            if (window.innerWidth <= 480) {
-                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-                if (isIOS) {
-                    const waves = {
-                        '.wave1': '10',
-                        '.wave2': '45',
-                        '.wave3': '60',
-                        '.wave4': '90',
-                        '.wave5': '105',
-                        '.wave6': '130'
-                    };
+        const keywordItems = document.querySelectorAll('.keyword-item');
+        const mainKeyword = document.querySelector('.keyword-item.center'); // 메인 키워드 선택
+        let animationTriggered = false; // 애니메이션 실행 여부를 추적하는 변수
 
-                    const gifts = {
-                        'nth-of-type(1)': { x: '15', y: '78' },
-                        'nth-of-type(2)': { x: '80', y: '75' },
-                        'nth-of-type(3)': { x: '50', y: '90' },
-                        'nth-of-type(4)': { x: '85', y: '115' },
-                        'nth-of-type(5)': { x: '13', y: '120' },
-                        'nth-of-type(6)': { x: '45', y: '140' },
-                        'nth-of-type(7)': { x: '15', y: '155' },
-                        'nth-of-type(8)': { x: '90', y: '155' }
-                    };
+        function startKeywordAnimations() {
+            if (animationTriggered) {
+                return; // 이미 애니메이션이 실행되었으면 더 이상 실행하지 않음
+            }
+            animationTriggered = true;
 
-                    Object.entries(waves).forEach(([selector, yValue]) => {
-                        const element = document.querySelector(`#event-page .parallax ${selector}`);
-                        if (element) element.setAttribute('y', yValue);
-                    });
+            // 메인 키워드 애니메이션 (먼저 천천히 등장)
+            anime({
+                targets: mainKeyword,
+                opacity: [0, 1],
+                scale: [0.8, 1],
+                easing: 'easeOutQuad',
+                duration: 800, // 다른 키워드보다 길게 설정
+                delay: parseInt(mainKeyword.dataset.aosDelay) || 800, // 메인 키워드의 딜레이 적용
+                keyframes: [
+                    { scale: 1 },
+                    { scale: 1.2, duration: 500, easing: 'easeInOutSine' },
+                    { scale: 1, duration: 500, easing: 'easeInOutSine' }
+                ],
+                loopBegin: function () {
+                    anime.set(mainKeyword, { scale: 1 });
+                }
+            });
 
-                    Object.entries(gifts).forEach(([nthOfType, coordinates]) => {
-                        const element = document.querySelector(`#event-page .parallax .gift:${nthOfType}`);
-                        if (element) {
-                            element.setAttribute('x', coordinates.x);
-                            element.setAttribute('y', coordinates.y);
+            // 나머지 키워드 애니메이션 (시간차 등장)
+            keywordItems.forEach(item => {
+                if (item !== mainKeyword) { // 메인 키워드 제외
+                    const delay = parseInt(item.dataset.aosDelay) || 0;
+
+                    anime({
+                        targets: item,
+                        opacity: [0, 1],
+                        scale: [0.9, 1],
+                        easing: 'easeOutQuad',
+                        duration: 1200,
+                        delay: delay + 800, // 메인 키워드 등장 시간 이후 시작
+                        keyframes: [
+                            { scale: 1 },
+                            { scale: 1.1, duration: 600, easing: 'easeInOutSine' },
+                            { scale: 1, duration: 400, easing: 'easeInOutSine' }
+                        ],
+                        loopBegin: function () {
+                            anime.set(item, { scale: 1 });
                         }
                     });
+                }
+            });
+
+            // 애니메이션 시작 후 스크롤 이벤트 리스너 제거
+            window.removeEventListener('scroll', handleScroll);
+        }
+
+        function handleScroll() {
+            // 스크롤 위치를 확인하여 애니메이션 시작 조건 충족 여부 판단
+            // 예시: 화면 높이의 50% 이상 스크롤되었을 때 시작
+            if (window.scrollY > window.innerHeight * 0.5) {
+                startKeywordAnimations();
+            }
+        }
+
+        // 초기 상태로 숨김 (CSS에서 처리하는 것이 더 좋음)
+        keywordItems.forEach(item => {
+            item.style.opacity = 0;
+            item.style.transform = 'scale(0.9)'; // 초기 스케일 설정 (메인 키워드 제외)
+        });
+        mainKeyword.style.opacity = 0;
+        mainKeyword.style.transform = 'scale(0.8)';
+
+        // 스크롤 이벤트 리스너 등록
+        window.addEventListener('scroll', handleScroll);
+    });
+
+    // ✅ 섹션 3 : 이미지 슬라이더
+    const track = document.querySelector('.carousel-track');
+    let items = document.querySelectorAll('.carousel-item');
+    const leftBtn = document.querySelector('.carousel-button.left');
+    const rightBtn = document.querySelector('.carousel-button.right');
+
+    const itemWidth = 300; // 아이템 너비
+    const itemMargin = 18; // 아이템 간격
+    const totalItemWidth = itemWidth + itemMargin;
+
+    let visibleCount = 4;
+    let currentIndex = visibleCount;
+    let totalItems = items.length;
+
+    const updateVisibleCount = () => {
+        const width = window.innerWidth;
+        if (width <= 480) visibleCount = 1;
+        else if (width <= 767) visibleCount = 2;
+        else visibleCount = 4;
+    };
+
+    const updateSlide = (instant = false) => {
+        const offset = currentIndex * totalItemWidth;
+        if (instant) {
+            track.style.transition = 'none';
+        } else {
+            track.style.transition = 'transform 0.3s ease';
+        }
+        track.style.transform = `translateX(-${offset}px)`;
+    };
+
+    const removeClones = () => {
+        const clones = document.querySelectorAll('.carousel-item.clone');
+        clones.forEach(clone => clone.remove());
+        items = document.querySelectorAll('.carousel-item:not(.clone)');
+        totalItems = items.length;
+    };
+
+
+    const cloneItems = () => {
+        removeClones(); // 기존 복제 아이템 제거
+
+        if (window.innerWidth <= 768) {
+            // 모바일에서는 복제하지 않고 원본만 유지
+            currentIndex = 0;
+            updateSlide(true);
+            return;
+        }
+
+        const originalItems = Array.from(items);
+
+        originalItems.slice(-visibleCount).forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.classList.add('clone');
+            track.insertBefore(clone, track.firstChild);
+        });
+
+        originalItems.slice(0, visibleCount).forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.classList.add('clone');
+            track.appendChild(clone);
+        });
+
+        items = document.querySelectorAll('.carousel-item');
+        totalItems = items.length;
+        currentIndex = visibleCount;
+        updateSlide(true);
+    };
+
+    leftBtn.addEventListener('click', () => {
+        currentIndex--;
+        updateSlide();
+    });
+
+    rightBtn.addEventListener('click', () => {
+        currentIndex++;
+        updateSlide();
+    });
+
+    track.addEventListener('transitionend', () => {
+        // 처음 복제된 아이템 위치로 이동 (무한 루프)
+        if (currentIndex === 0) {
+            currentIndex = totalItems - visibleCount * 2;
+            updateSlide(true);
+        }
+        // 마지막 복제된 아이템 위치로 이동 (무한 루프)
+        if (currentIndex === totalItems - visibleCount) {
+            currentIndex = visibleCount;
+            updateSlide(true);
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        const prevVisibleCount = visibleCount;
+        updateVisibleCount();
+        removeClones(); // 복제 먼저 제거
+        cloneItems(); // 새로 복제 or 원상복구
+        if (prevVisibleCount !== visibleCount) {
+            cloneItems(); // 보이는 개수가 바뀌면 복제 다시
+        } else {
+            updateSlide(true);
+        }
+    });
+
+    updateVisibleCount();
+    cloneItems(); // 초기 복제 실행
+    updateSlide(true); // 초기 슬라이드 위치 설정
+
+    let autoSlideInterval = setInterval(() => {
+        currentIndex++;
+        updateSlide();
+    }, 2000);
+
+
+    // ✅ 섹션 4 : 유투브 슬라이드
+    const carouselCon04 = document.querySelector('.swiper-slider');
+    const carouselWrap04 = document.querySelector('.swiper-wrapper');
+    const originalSlides04 = document.querySelectorAll('.swiper-item'); // 변경: querySelectorAll 사용
+    const prevButton04 = document.getElementById('prev');
+    const nextButton04 = document.getElementById('next');
+
+    let currentIndex04 = 1; // 초기 위치를 첫 번째 실제 슬라이드로 설정 (클론 후)
+    let slideCount04 = originalSlides04.length;
+    let isTransitioning04 = false;
+    let autoSlideInterval04;
+    const autoSlideDelay04 = 2000;
+
+    function goToSlide04(index, instant = false) {
+        console.log('goToSlide04 called with index:', index, 'instant:', instant);
+        if (isTransitioning04) return;
+        isTransitioning04 = true;
+        const updatedSlides = document.querySelectorAll('.swiper-wrapper > div');
+        const totalSlides = updatedSlides.length;
+        carouselWrap04.style.transition = instant ? 'none' : 'transform 0.5s ease-in-out';
+        carouselWrap04.style.transform = `translateX(-${index * 100}%)`;
+        currentIndex04 = index;
+        setTimeout(() => {
+            isTransitioning04 = false;
+            if (currentIndex04 === 0) {
+                goToSlide04(totalSlides - 2, true); // 마지막 실제 슬라이드로 이동
+            } else if (currentIndex04 === totalSlides - 1) {
+                goToSlide04(1, true); // 첫 번째 실제 슬라이드로 이동
+            }
+        }, instant ? 0 : 500);
+    }
+
+    function nextSlide04() {
+        goToSlide04(currentIndex04 + 1);
+    }
+
+    function prevSlide04() {
+        goToSlide04(currentIndex04 - 1);
+    }
+
+    function setupInfiniteLoop04() {
+        const firstClone = originalSlides04[0].cloneNode(true);
+        const lastClone = originalSlides04[slideCount04 - 1].cloneNode(true);
+        carouselWrap04.appendChild(firstClone);
+        carouselWrap04.insertBefore(lastClone, carouselWrap04.firstChild);
+
+        goToSlide04(1, true);
+        startAutoSlide04();
+    }
+
+    function startAutoSlide04() {
+        stopAutoSlide04();
+        autoSlideInterval04 = setInterval(nextSlide04, autoSlideDelay04);
+    }
+
+    function stopAutoSlide04() {
+        clearInterval(autoSlideInterval04);
+    }
+
+    if (prevButton04 && nextButton04) {
+        prevButton04.addEventListener('click', () => {
+            stopAutoSlide04();
+            prevSlide04();
+            startAutoSlide04();
+        });
+        nextButton04.addEventListener('click', () => {
+            stopAutoSlide04();
+            nextSlide04();
+            startAutoSlide04();
+        });
+    }
+
+    if (originalSlides04.length === 3) {
+        setupInfiniteLoop04();
+        carouselCon04.addEventListener('mouseenter', stopAutoSlide04);
+        carouselCon04.addEventListener('mouseleave', startAutoSlide04);
+    }
+
+
+    // ✅ 섹션 7 : 이벤트 
+    const carouselItems = document.querySelector('.carousel-items');
+        const itemsData = [
+            {
+                title: "NPS 칼럼 이벤트",
+                imgSrc: "img/main/sec07-pic01.jpg",
+                alt: "NPS 칼럼 이벤트"
+            },
+            {
+                title: "알아봐요, 국민연금 이벤트",
+                imgSrc: "img/main/sec07-pic02.jpg",
+                alt: "알아봐요, 국민연금 이벤트"
+            },
+            {
+                title: "연금&시네마 이벤트",
+                imgSrc: "img/main/sec07-pic03.jpg",
+                alt: "연금&시네마 이벤트"
+            },
+            {
+                title: "오픈 이벤트",
+                imgSrc: "img/main/sec07-pic04.jpg",
+                alt: "오픈 이벤트"
+            },
+            {
+                title: "독자의 목소리",
+                imgSrc: "img/main/sec07-pic05.jpg",
+                alt: "독자의 목소리"
+            }
+        ];
+        
+        let activeIndex = 0;
+        const itemCount = itemsData.length;
+        let isAnimating = false;
+        
+        // Create items initially
+        function createItems() {
+            carouselItems.innerHTML = '';
+            
+            // Create all 5 items
+            for (let i = 0; i < itemCount; i++) {
+                const item = document.createElement('div');
+                item.classList.add('eventItem');
+                item.id = `item-${i}`;
+                
+                const itemHTML = `
+                    <div class="image-wrapper">
+                        <div class="event-title">${itemsData[i].title}</div>
+                        <img class="event-img" src="${itemsData[i].imgSrc}" alt="${itemsData[i].alt}"/>
+                    </div>
+                `;
+                
+                item.innerHTML = itemHTML;
+                carouselItems.appendChild(item);
+            }
+            
+            // Position all items based on active index
+            updateItemPositions();
+        }
+        
+        // Update positions of all items based on active index
+        function updateItemPositions() {
+            // Reset all items to hidden first
+            document.querySelectorAll('.eventItem').forEach(item => {
+                item.classList.remove('visible-center', 'visible-left', 'visible-right');
+                item.classList.add('hidden');
+            });
+            
+            // Set positions for visible items
+            const centerIndex = activeIndex;
+            const leftIndex = (activeIndex - 1 + itemCount) % itemCount;
+            const rightIndex = (activeIndex + 1) % itemCount;
+            
+            // Center item
+            const centerItem = document.getElementById(`item-${centerIndex}`);
+            centerItem.classList.remove('hidden');
+            centerItem.classList.add('visible-center');
+            
+            // Left item (20% visible)
+            const leftItem = document.getElementById(`item-${leftIndex}`);
+            leftItem.classList.remove('hidden');
+            leftItem.classList.add('visible-left');
+            
+            // Right item (20% visible)
+            const rightItem = document.getElementById(`item-${rightIndex}`);
+            rightItem.classList.remove('hidden');
+            rightItem.classList.add('visible-right');
+        }
+
+        // Move the carousel left
+        function moveLeft() {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            const currentCenter = document.querySelector('.visible-center');
+            const currentLeft = document.querySelector('.visible-left');
+            const currentRight = document.querySelector('.visible-right');
+
+            if (currentCenter) currentCenter.style.transform = 'translateX(calc(100% + 10px - 20%)) scale(0.8)';
+            if (currentLeft) currentLeft.style.transform = 'translateX(0) scale(1)';
+            if (currentRight) currentRight.style.transform = 'translateX(calc(200% + 20px - 40%)) scale(0.8)';
+
+            activeIndex = (activeIndex - 1 + itemCount) % itemCount;
+
+            setTimeout(() => {
+                document.querySelectorAll('.eventItem').forEach(item => {
+                    item.style.transform = ''; // Reset inline transforms
+                });
+                updateItemPositions();
+                isAnimating = false;
+            }, 300);
+        }
+
+        // Move the carousel right
+        function moveRight() {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            const currentCenter = document.querySelector('.visible-center');
+            const currentLeft = document.querySelector('.visible-left');
+            const currentRight = document.querySelector('.visible-right');
+
+            if (currentCenter) currentCenter.style.transform = 'translateX(calc(-100% - 10px + 20%)) scale(0.8)';
+            if (currentLeft) currentLeft.style.transform = 'translateX(calc(-200% - 20px + 40%)) scale(0.8)';
+            if (currentRight) currentRight.style.transform = 'translateX(0) scale(1)';
+
+            activeIndex = (activeIndex + 1) % itemCount;
+
+            setTimeout(() => {
+                document.querySelectorAll('.eventItem').forEach(item => {
+                    item.style.transform = ''; // Reset inline transforms
+                });
+                updateItemPositions();
+                isAnimating = false;
+            }, 300);
+        }
+
+        // Handle window resize to ensure responsive behavior
+        window.addEventListener('resize', function() {
+            if (!isAnimating) {
+                updateItemPositions();
+            }
+        });
+
+        // Initialize
+        createItems();
+
+        let startX = 0;
+        let endX = 0;
+
+        // PC용 마우스 드래그
+        carouselItems.addEventListener('mousedown', (e) => {
+            startX = e.clientX;
+        });
+
+        carouselItems.addEventListener('mouseup', (e) => {
+            endX = e.clientX;
+            handleSwipe();
+        });
+
+        // 모바일용 터치 이벤트
+        carouselItems.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        carouselItems.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const distance = endX - startX;
+
+            if (Math.abs(distance) > 50) { 
+                if (distance < 0) {
+                    moveRight(); 
+                } else {
+                    moveLeft(); 
                 }
             }
         }
 
-        // iOS 감지 후 실행
-        document.addEventListener('DOMContentLoaded', fixIOSSVGAttributes);
-        window.addEventListener('resize', fixIOSSVGAttributes);
-
-        const giftElements = document.querySelectorAll('#event-page .parallax .gift');
-
-        giftElements.forEach(gift => {
-            gift.addEventListener('click', function() {
-                // 클릭된 요소 외의 모든 'clicked' 클래스 제거
-                giftElements.forEach(otherGift => {
-                    if (otherGift !== this && otherGift.classList.contains('clicked')) {
-                        otherGift.classList.remove('clicked');
-                    }
-                });
-                // 클릭된 요소에 'clicked' 클래스 토글
-                this.classList.toggle('clicked');
-            });
-        });
-
-
-
-    //✅ 모달 + 선물창 효과
-    function showModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-    }
-
-    function hideModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = '';
-
-            const inputs = modal.querySelectorAll('input');
-            inputs.forEach(input => {
-                input.value = ''; 
-            });
-
-            const selects = modal.querySelectorAll('select');
-            selects.forEach(select => {
-                select.selectedIndex = 0; 
-            });
-        }
-    }
-
-    const eventModal = document.getElementById('eventModal');
-    const submitButton = eventModal.querySelector('.submit-button'); // "클릭!" 버튼 선택
-    const infoModalSubmitButton = document.querySelector('#infoModal .submit-button'); // info 모달의 "등록!" 버튼 선택
-    const infoModal = document.getElementById('infoModal');
-    const registrationCompleteModal = document.getElementById('registrationCompleteModal');
-    const unluckyModal = document.getElementById('unluckyModal');
-    const alreadyAppliedModal = document.getElementById('alreadyAppliedModal');
-    const eventEndedModal = document.getElementById('eventEndedModal');
-
-    giftElements.forEach(gift => {
-        gift.addEventListener('click', function() {
-            const modalId = this.dataset.modal;
-            if (modalId) {
-                showModal(modalId); // 이벤트 결과 모달 표시
-
-                // (선택 사항) 클릭된 선물 상자의 스타일 유지
-                giftElements.forEach(otherGift => {
-                    if (otherGift !== this && otherGift.classList.contains('clicked')) {
-                        otherGift.classList.remove('clicked');
-                    }
-                });
-                this.classList.add('clicked');
-            }
-        });
-
-        gift.addEventListener('touchstart', () => {
-            gift.classList.add('touched');
-        });
-
-        gift.addEventListener('touchend', () => {
-            setTimeout(() => {
-                gift.classList.remove('touched');
-            }, 100);
-        });
-    });
-
-    document.querySelectorAll('.event-modal .close-button').forEach(button => {
-        button.addEventListener('click', function() {
-            hideModal('eventModal'); // 이벤트 결과 모달 숨김
-        });
-    });
-
-    // (선택 사항) 모달 외부 클릭 시 닫기
-    window.addEventListener('click', function(event) {
-        if (event.target === eventModal) {
-            hideModal('eventModal'); // 이벤트 결과 모달 숨김
-        }
-    });
-
-    // (선택 사항) ESC 키로 모달 닫기
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' && eventModal.style.display === 'flex') {
-            hideModal('eventModal'); // 이벤트 결과 모달 숨김
-        }
-    });
-
-    // "클릭!" 버튼 클릭 시 다음 모달 표시
-    if (submitButton) {
-        submitButton.addEventListener('click', function() {
-            hideModal('eventModal'); // 현재 모달 숨김
-            showModal('infoModal'); // 다음 정보 입력 모달 표시 (id는 'infoModal'이라고 가정)
-        });
-    }
-
-    // 다음 정보 입력 모달 관련 JavaScript (표시 및 닫기)
-    document.querySelectorAll('#infoModal .close-button').forEach(button => {
-        button.addEventListener('click', function() {
-            hideModal('infoModal');
-        });
-    });
-
-        // 모달 바깥 클릭 시 닫기 (모든 모달에 적용)
-    window.addEventListener('click', function(event) {
-        if (event.target === eventModal && eventModal.style.display === 'flex') {
-            hideModal('eventModal');
-        }
-        if (event.target === infoModal && infoModal.style.display === 'flex') {
-            hideModal('infoModal');
-        }
-        if (event.target === registrationCompleteModal && registrationCompleteModal.style.display === 'flex') {
-            hideModal('registrationCompleteModal');
-        }
-        if (event.target === unluckyModal && unluckyModal.style.display === 'flex') {
-            hideModal('unluckyModal');
-        }
-        if (event.target === alreadyAppliedModal && alreadyAppliedModal.style.display === 'flex') {
-            hideModal('alreadyAppliedModal');
-        }
-        if (event.target === eventEndedModal && eventEndedModal.style.display === 'flex') {
-            hideModal('eventEndedModal');
-        }
-    });
-
-    // ESC 키로 모달 닫기 (모든 모달에 적용)
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-            if (eventModal?.style.display === 'flex') {
-                hideModal('eventModal');
-            }
-            if (infoModal?.style.display === 'flex') {
-                hideModal('infoModal');
-            }
-            if (registrationCompleteModal?.style.display === 'flex') {
-                hideModal('registrationCompleteModal');
-            }
-            if (unluckyModal?.style.display === 'flex') {
-                hideModal('unluckyModal');
-            }
-            if (alreadyAppliedModal?.style.display === 'flex') {
-                hideModal('alreadyAppliedModal');
-            }
-            if (eventEndedModal?.style.display === 'flex') {
-                hideModal('eventEndedModal');
-            }
-        }
-    });
-
-     // info 모달의 "등록!" 버튼 클릭 시 "등록 완료" 모달 표시
-    if (infoModalSubmitButton) {
-        infoModalSubmitButton.addEventListener('click', function() {
-            hideModal('infoModal'); // 현재 info 모달 숨김
-            showModal('registrationCompleteModal'); // "등록 완료" 모달 표시
-        });
-    }
-
-    const phoneMidInput = document.getElementById('phone-mid');
-    const phoneLastInput = document.getElementById('phone-last');
-
-    // phone-mid 입력 필드에 숫자만 허용
-    phoneMidInput.addEventListener('input', function() {
-        this.value = this.value.replace(/[^0-9]/g, '');
-    });
-
-    // phone-last 입력 필드에 숫자만 허용
-    phoneLastInput.addEventListener('input', function() {
-        this.value = this.value.replace(/[^0-9]/g, '');
-    });
-
-
-
-</script>
-<script type="text/javascript">
-    function shareKakaoTalk() {
-        Kakao.Share.sendDefault({
-            objectType: 'feed',
-            content: {
-                title: document.title, // 현재 페이지 제목
-                description: document.querySelector('meta[name="description"]') ? document.querySelector('meta[name="description"]').getAttribute('content') : document.title, // 현재 페이지 설명 (메타 태그가 없으면 제목 사용)
-                imageUrl: '', // 공유할 이미지 URL (선택 사항)
-                link: {
-                    mobileWebUrl: document.URL,
-                    webUrl: document.URL,
-                },
-            },
-            buttons: [
-                {
-                    title: '웹으로 보기',
-                    link: {
-                        mobileWebUrl: document.URL,
-                        webUrl: document.URL,
-                    },
-                },
-            ],
-        });
-    }
 </script>
 
 </html>
