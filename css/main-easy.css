@@ -2063,7 +2063,7 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec01 {
-    padding-top: 50px;
+    padding-top: 200px;
     padding-bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -2078,7 +2078,7 @@ body.menu-open .page-wrapper {
     background-color: #91DDFF;
     position: relative;
     overflow: hidden;
-    height: 500px;
+    height: 650px;
 }
 
 #event-page .sec02 .cloud-img {
@@ -2121,24 +2121,23 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec02 .draw {
-    font-size: 17px;
-    line-height: 100%;
-    height: 25px;
+    font-size: 22.5px;
+    height: 40px;
     border-bottom: 2px solid #000000;
     font-weight: 700;
-    width: 140px;
+    width: 180px;
 }
 
 #event-page .sec02 .event-title {
-    font-size: 48px;
-    line-height: 66px;
+    font-size: 72px;
+    line-height: 80px;
     font-weight: 700;
     margin-top: 50px;
 }
 
 #event-page .sec02-1 .comment {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 27px;
+    line-height: 40px;
     font-weight: 400;
     margin-top: 20px;
     text-align: center;
@@ -2146,6 +2145,8 @@ body.menu-open .page-wrapper {
 
 #event-page .sec02-1 .coupon-img {
     margin-top: 50px;
+    max-width: 500px;
+    width: 60%;
 }
 
 #event-page .sec03 {
@@ -2162,7 +2163,7 @@ body.menu-open .page-wrapper {
     width: 115px;
     background-color: black;
     border-radius: 999px;
-    font-size: 17px;
+    font-size: 24px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 30px;
@@ -2179,8 +2180,8 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec03 .step {
-    width: 135px;
-    height: 135px;
+    width: 200px;
+    height: 200px;
     padding-top: 20px;
     border-radius: 50%;
     display: flex;
@@ -2191,24 +2192,24 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec03 .step-number {
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 500;
 }
 
 #event-page .sec03 .step-description {
     margin-top: 5px;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 35px;
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 80px;
 }
 
 #event-page .sec03 .info-zone {
     margin-top: 30px;
-    width: 70%;
+    width: 90%;
 }
 
 #event-page .sec03 .divider {
@@ -2223,7 +2224,7 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec03 .info-label {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: -2%;
@@ -2232,7 +2233,7 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec03 .info-value {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -2%;
@@ -2247,12 +2248,12 @@ body.menu-open .page-wrapper {
 
 #event-page .sec03 .subscribe-button {
     margin-top: 30px;
-    padding: 8px 48px;
+    padding: 10px 48px;
     background-color: #0086DD;
     color: #FFFFFF;
     border-radius: 999px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: -2%;
     line-height: 100%;
     font-weight: 700;
@@ -2264,11 +2265,11 @@ body.menu-open .page-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: -200px;
+    margin-bottom: -150px;
 }
 
 #event-page .sec04 .comment {
-    font-size: 17px;
+    font-size: 22.5px;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: -2%;
@@ -2458,11 +2459,11 @@ body.menu-open .page-wrapper {
 
 #event-page .sec05 .notice1 {
     padding: 25px;
-    max-width: 600px;
+    max-width: 800px;
     background-color: #FFFFFF;
     font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 22.5px;
+    line-height: 35px;
     letter-spacing: -2%;
     text-align: left;
     padding-left: 40px;
@@ -2476,10 +2477,11 @@ body.menu-open .page-wrapper {
     list-style-type: disc;
     text-align: left;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 21.8px;
+    font-size: 22.5px;
+    line-height: 35px;
     letter-spacing: -2%;
     text-align: left;
+    max-width: 800px;
 }
 
 #event-page .sec06 {
@@ -2540,7 +2542,7 @@ body.menu-open .page-wrapper {
 
 #event-page .sec06 .nav-label {
     display: block;
-    font-size: 15px;
+    font-size: 22.5px;
     font-weight: 400;
     line-height: 100%;
     letter-spacing: -2%;
@@ -2551,9 +2553,9 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec06 .nav-title {
-    font-size: 15px;
+    font-size: 22.5px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 36px;
     letter-spacing: -2%;
     margin-bottom: 5px;
     color: #FFFFFF;
@@ -2562,9 +2564,9 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec06 .nav-description {
-    font-size: 15px;
+    font-size: 22.5px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 36px;
     letter-spacing: -2%;
     color: #FFFFFF;
     z-index: 5;
@@ -3351,7 +3353,7 @@ body.menu-open .page-wrapper {
 
     /* ✅ event-page.html */
     #event-page .sec02 {
-        height: 350px;
+        height: 450px;
     }
     #event-page .sec02 .text-content {
         top: 80%;
@@ -3370,8 +3372,8 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .sec02 .event-title {
-        font-size: 26px;
-        line-height: 36px;
+        font-size: 39px;
+        line-height: 50px;
         margin-top: 30px;
     }
 
@@ -3388,7 +3390,7 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .sec03 .info-zone {
-        width: 80%;
+        width: 100%;
     }
 
     #event-page .sec03 .info-label {
@@ -4044,8 +4046,14 @@ body.menu-open .page-wrapper {
     #event-page.content {
         padding-top: 65px;
     }
+    #event-page .sec01 {
+        padding-top: 100px;
+    }
     #event-page .sec02 {
-        height: 310px;
+        height: 450px;
+    }
+    #event-page .sec02 .event-title {
+        font-style: 25px;
     }
     #event-page .sec02 .text-content {
         top: 75%;
@@ -4098,8 +4106,8 @@ body.menu-open .page-wrapper {
 
     #event-page .sec03 .info-label {
         width: 50%;
-        font-size: 17px;
-        line-height: 25px;
+        font-size: 22.5px;
+        line-height: 35px;
         letter-spacing: -2%;
         margin-right: 0%;
         padding: 3px;
@@ -4107,24 +4115,11 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .sec03 .info-value {
-        font-size: 17px;
+        font-size: 22.5px;
         font-weight: 400;
-        line-height: 25px;
+        line-height: 35px;
         padding: 3px;
         width: 80%;
-    }
-
-    #event-page .sec03 .subscribe-button {
-        margin-top: 30px;
-        padding: 13px 55px;
-        background-color: #0086DD;
-        color: #FFFFFF;
-        border-radius: 999px;
-        cursor: pointer;
-        font-size: 18px;
-        letter-spacing: -2%;
-        line-height: 100%;
-        font-weight: 700;
     }
 
     #event-page .sec05 {
@@ -4140,7 +4135,7 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .sec05 .notice1 {
-        font-size: 14px;
+        font-size: 22.5px;
     }
     #event-page .sec05 .notice2 {
         margin-top: 30px;
@@ -4304,7 +4299,7 @@ body.menu-open .page-wrapper {
     #event-page .sec04 {
         margin-top: 30px;
         padding-top: 0px;
-        margin-bottom: 0px;
+        margin-bottom: 30px;
     }
     #event-page .editorial{
         overflow: visible;
@@ -4389,7 +4384,14 @@ body.menu-open .page-wrapper {
         font-size: 32px;
     }
     #event-page .event-result .sub-message{
-        font-size: 18px;
+        #event-page .sec01 {
+            padding-top: 200px;
+            padding-bottom: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #91DDFF;
+        }
     }
     
     
@@ -4411,11 +4413,11 @@ body.menu-open .page-wrapper {
     
     
     #event-page .event-result .instruction {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     #event-page .event-result .notice {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 400;
     }
     
@@ -4454,7 +4456,7 @@ body.menu-open .page-wrapper {
     #event-page .form-group .name {
         width: 75px;
         margin-right: 5px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #event-page .info-modal .modal-content {

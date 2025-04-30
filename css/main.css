@@ -21,7 +21,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .m-top-90{
         margin-top: 30px !important;
@@ -32,16 +32,11 @@
     }
 
     .padding-230{
-        padding: 0 50px !important;
-    }
-
-}
-
-@media (max-width: 480px) {
-    .padding-230{
         padding: 0 20px !important;
     }
+
 }
+
 
 
 /* ✅ 메뉴 효과 */
@@ -587,7 +582,7 @@ body.menu-open .page-wrapper {
     background-color: #444;
 }
 
-.subscribe-link {
+.riribe-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -830,7 +825,7 @@ body.menu-open .page-wrapper {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /* ✅ 해더 */
     .header {
@@ -3436,7 +3431,7 @@ body.menu-open .page-wrapper {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /* ✅ index.html */
     #index .sec01 {
@@ -4381,15 +4376,15 @@ body.menu-open .page-wrapper {
         font-size: 23px;
     }
 
-    #event-page .info-modal .form-description{
-        font-size: 13px;
+    
+    #event-page .registration-complete-modal .mob-br{
+        display: block;
     }
+
     #event-page .registration-complete-modal .form-description1{
-        font-size: 15px;
+        font-size: 16px;
     }
-    #event-page .registration-complete-modal .form-description2{
-        font-size: 13px;
-    }
+
     #event-page .registration-complete-modal .modal-content {
         padding: 30px 20px;
         width: 85%; 
@@ -4408,7 +4403,9 @@ body.menu-open .page-wrapper {
 
     #event-page .info-form {
         padding: 20px 10px;
-
+    }
+    #event-page .info-form .mob-br {
+        display: block;
     }
 
     #event-page .info-form .agreement-group {
