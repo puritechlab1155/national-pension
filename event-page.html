@@ -232,7 +232,7 @@
                     <g class="parallax" transform="translate(0, -55)">
                         <use class="wave wave1" xlink:href="#gentle-wave-small" x="50" y="0" fill="#0086DD" filter="url(#shadow1)" />
                             <image class="gift" xlink:href="img/event-page/gift1.png" x="20" y="70" width="15" height="20" preserveAspectRatio="none" data-modal="unluckyModal"/>
-                            <image class="gift" xlink:href="img/event-page/gift2.png" x="60" y="70" width="13" height="25" preserveAspectRatio="none" data-modal="eventModal"/>
+                            <image class="gift" xlink:href="img/event-page/gift2.png" x="60" y="70" width="13" height="25" preserveAspectRatio="none" data-modal="alreadyAppliedModal"/>
                         <use class="wave wave2" xlink:href="#gentle-wave-small" x="50" y="45" fill="#02A6E4" filter="url(#shadow1)" />
                             <image class="gift" xlink:href="img/event-page/gift3.png" x="95" y="80" width="10" height="25" preserveAspectRatio="none" data-modal="eventModal"/>
                         <use class="wave wave3" xlink:href="#gentle-wave-small" x="50" y="15" fill="#7CE6F7" filter="url(#shadow1)" />
@@ -242,7 +242,7 @@
                             <image class="gift" xlink:href="img/event-page/gift8.png" x="95" y="100" width="15" height="30" preserveAspectRatio="none" data-modal="eventModal"/>
                         <use class="wave wave5" xlink:href="#gentle-wave-small" x="50" y="30" fill="#02A6E4" filter="url(#shadow1)" />
                             <image class="gift" xlink:href="img/event-page/gift7.png" x="20" y="102" width="15" height="25" preserveAspectRatio="none" data-modal="eventModal"/>
-                            <image class="gift" xlink:href="img/event-page/gift5.png" x="57" y="95" width="10" height="30" preserveAspectRatio="none" data-modal="eventModal"/>
+                            <image class="gift" xlink:href="img/event-page/gift5.png" x="57" y="95" width="10" height="30" preserveAspectRatio="none" data-modal="eventEndedModal"/>
                         <use class="wave wave6" xlink:href="#gentle-wave-small" x="50" y="60" fill="#D3FFFD" filter="url(#shadow1)" />
                     </g>
                 </svg>
@@ -352,8 +352,19 @@
                         <button type="button" class="close-button Wavve" onclick="hideModal('unluckyModal')" style="color: #FFFFFF; background-color: #B2B2B2; padding: 5px 30px; border: none; border-radius: 999px; font-size: 25px; width: 200px; margin-top: 10px;">확인</button>
                     </div>
                 </div>
+                <div id="alreadyAppliedModal" class="already-applied-modal custom-modal">
+                    <div class="modal-content">
+                        <h2 class="form-title Wavve">이미 응모하셨습니다.</h2>
+                        <button type="button" class="close-button Wavve" onclick="hideModal('alreadyAppliedModal')" style="color: #FFFFFF; background-color: #B2B2B2; padding: 5px 30px; border: none; border-radius: 999px; font-size: 25px; width: 200px; margin-top: 20px;">확인</button>
+                    </div>
+                </div>
+                <div id="eventEndedModal" class="event-ended-modal custom-modal">
+                    <div class="modal-content">
+                        <h2 class="form-title Wavve" style="font-size: 24px; line-height: 1.4;">당첨 정원이 충족돼<br/>이벤트가 종료됐습니다.</h2>
+                        <button type="button" class="close-button Wavve" onclick="hideModal('eventEndedModal')" style="color: #FFFFFF; background-color: #B2B2B2; padding: 5px 30px; border: none; border-radius: 999px; font-size: 25px; width: 200px; margin-top: 20px;">닫기</button>
+                    </div>
+                </div>
             </section>
-
             <section class="section sec05"> 
                 <ul class="notice1">
                     <li>내 곁에 국민연금 구독자가 아닐 경우, 차후에 당첨이 취소되오니 반드시 구독 후 이벤트에 참여해 주세요.</li>

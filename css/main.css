@@ -2988,7 +2988,95 @@ body.menu-open .page-wrapper {
 .unlucky-modal .close-button:hover {
     background-color: #969696;
 }
+/* "이미 응모하셨습니다" 모달 스타일 */
+.already-applied-modal {
+    display: none; /* 처음에는 숨김 */
+    position: fixed; /* 화면에 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 어두운 배경 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    z-index: 1000; /* 다른 요소 위에 표시 */
+}
 
+.already-applied-modal .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%; /* 적절한 너비 설정 */
+    max-width: 400px; /* 최대 너비 설정 */
+}
+
+.already-applied-modal .form-title {
+    font-size: 24px;
+}
+
+.already-applied-modal .close-button {
+    color: #FFFFFF;
+    background-color: #B2B2B2;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 999px;
+    font-size: 25px;
+    width: 200px;
+    margin-top: 20px; /* 버튼 위 간격 조정 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.already-applied-modal .close-button:hover {
+    background-color: #969696; /* 호버 시 버튼 색상 변경 */
+}
+
+/* "이벤트 종료" 모달 스타일 */
+.event-ended-modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 어두운 배경 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.event-ended-modal .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%; 
+    max-width: 400px;
+}
+
+.event-ended-modal .form-title {
+    font-size: 24px;
+}
+
+.event-ended-modal .close-button {
+    color: #FFFFFF;
+    background-color: #B2B2B2;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 999px;
+    font-size: 25px;
+    width: 200px;
+    margin-top: 20px; /* 버튼 위 간격 조정 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-ended-modal .close-button:hover {
+    background-color: #969696; /* 호버 시 버튼 색상 변경 */
+}
 
 
 @media (max-width: 1280px) {
