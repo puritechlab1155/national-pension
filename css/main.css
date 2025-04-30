@@ -2031,7 +2031,7 @@ body.menu-open .page-wrapper {
     height: 25px;
     border-bottom: 2px solid #000000;
     font-weight: 700;
-    width: 130px;
+    width: 140px;
 }
 
 #event-page .sec02 .event-title {
@@ -2633,21 +2633,31 @@ body.menu-open .page-wrapper {
     position: relative;
 }
 
+.info-modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: black;
+    opacity: 0.7;
+}
+
 .info-modal h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
 
-.info-modal .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
 .info-form {
     padding: 20px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .info-form .form-title {
@@ -2658,78 +2668,13 @@ body.menu-open .page-wrapper {
     font-weight: 400;
 }
 
-.info-form .form-description,
-.info-form .form-notice {
+.info-form .form-description {
     font-weight: 400;
     text-align: center;
     margin-bottom: 15px;
     font-size: 15px;
 }
-/* 
-.info-form .form-group {
-    display: flex;
-    align-items: center; 
-    gap: 5px;
-    margin-bottom: 10px;
-}
 
-.info-form label {
-    width: 30%;
-    box-sizing: border-box;
-    display: block;
-    font-weight: bold;
-}
-
-.info-form input[type="text"],
-.info-form input[type="tel"],
-.info-form input[type="email"],
-.info-form select {
-    border: 2px solid #D9D9D9;
-    border-radius: 5px;
-    height: 45px;
-}
-
-
-.info-form .name-input
-{
-    width: 70%;
-    box-sizing: border-box;
-}
-.info-form .email-input{
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.info-form .phone-group .phone-inputs {
-    display: flex;
-
-}
-
-
-.info-form .phone-group .hyphen {
-    margin: 0 10px;
-    font-size: 1.2em;
-    color: #777;
-    height: 45px;
-    line-height: 45px;
-    width: 12px;
-} */
-
-/* .info-modal label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-} */
-
-/* .info-modal input[type="text"],
-.info-modal input[type="tel"] {
-    width: calc(100% - 12px);
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-} */
 
 
 .form-group {
@@ -2739,10 +2684,13 @@ body.menu-open .page-wrapper {
 }
 
 .form-group label {
-    width: 120px;
+    width: 90px;
     margin-right: 15px;
     text-align: left;
     flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -2%;
 }
 
 .form-group .name-input,
@@ -2750,10 +2698,12 @@ body.menu-open .page-wrapper {
     flex-grow: 1;
     font-size: 14px;
     box-sizing: border-box;
-    height: 45px;
+    height: 35px;
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .form-group .phone-inputs {
@@ -2765,17 +2715,41 @@ body.menu-open .page-wrapper {
 .phone-group .phone-inputs select,
 .phone-group .phone-inputs input { 
     font-size: 14px;
-    height: 45px;
+    height: 35px;
     border: 2px solid #ccc;
     border-radius: 5px;
     padding: 5px;
 }
-
-.phone-group .phone-inputs select {
-    width: auto;
-    flex-shrink: 0;
-    margin-right: 5px;
+.form-group .name-input:focus,
+.form-group .email-input:focus,
+.phone-group .phone-inputs select:focus,
+.phone-group .phone-inputs input:focus {
+    outline: none; 
+    border-color: #0086DD; 
+    box-shadow: 0 0 5px rgba(0, 134, 221, 0.5); 
 }
+
+.phone-group select {
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    width: 100px;   
+    height: 45px;
+    padding-right: 25px; 
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-image: url('../img/event-page/select-arrow.svg');
+    background-position: right 2px center;
+    background-size: 25px 25px;
+    position: relative;
+}
+
+.phone-group select option {
+    font-size: 14px;
+    padding: 10px;
+}
+
+
 
 .phone-group .phone-inputs input {
     width: 40%;
@@ -2788,8 +2762,8 @@ body.menu-open .page-wrapper {
     text-align: center;
     font-size: 16px;
     margin: 0 5px;
-    height: 45px;
-    line-height: 45px;
+    height: 35px;
+    line-height: 35px;
     flex-shrink: 0;
 }
 
@@ -2798,34 +2772,33 @@ body.menu-open .page-wrapper {
 
 
 .info-form .agreement-group {
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 15px;
-    border: 1px solid #eee;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #F2F2F2;
     max-height: 150px;
     overflow-x: auto;
+    text-align: left;
 }
 
-.info-form .agreement-group .agreement-title {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+.info-form .agreement-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: left;
 }
 
 .info-form .agreement-group .agreement-subtitle {
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
     color: #333;
     margin-bottom: 5px;
 }
 
 
 .info-form .agreement-group .agreement-text {
-    font-size: 0.9em;
+    font-size: 14px;
     color: #666;
-    line-height: 1.4;
     margin-bottom: 8px;
 }
 
@@ -2864,7 +2837,6 @@ body.menu-open .page-wrapper {
     box-sizing: border-box;
 }
 
-
 .styled-checkbox:checked + .checkbox-label:before {
     background: #0086DD;
 }
@@ -2886,12 +2858,12 @@ body.menu-open .page-wrapper {
         4px -8px 0 white;
     transform: rotate(45deg);
 }
-.checkbox-label:before {
-    transform: translateY(-2px); 
-}
+/* .checkbox-label:before {
+    transform: translateY(-1px); 
+} */
 
 .info-form .submit-button {
-    background-color: #0086DD; /* 사진의 "클릭!" 버튼 색상과 유사하게 변경 */
+    background-color: #0086DD;
     color: white;
     padding: 5px 30px;
     border: none;
@@ -2904,6 +2876,120 @@ body.menu-open .page-wrapper {
 .info-form .submit-button:hover {
     background-color: #0056b3;
 }
+
+/* "등록 완료" 모달 스타일 */
+.registration-complete-modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.registration-complete-modal .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%; 
+    max-width: 400px;
+}
+
+.registration-complete-modal .form-title {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #0086DD;
+}
+
+.registration-complete-modal .form-description1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.registration-complete-modal .form-description2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.registration-complete-modal .close-button {
+    color: #FFFFFF;
+    background-color: #B2B2B2;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 999px;
+    font-size: 25px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.registration-complete-modal .close-button:hover {
+    background-color: #969696;
+}
+
+.unlucky-modal {
+    display: none; /* 처음에는 숨김 */
+    position: fixed; /* 화면에 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 어두운 배경 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.unlucky-modal .modal-content {
+    background-color: #fff;
+    padding: 70px 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%; /* 적절한 너비 설정 */
+    max-width: 450px; /* 최대 너비 설정 */
+}
+
+.unlucky-modal .form-title {
+    font-size: 40px;
+    color: #0086DD;
+}
+
+.unlucky-modal .unlucky-img {
+    min-width: 250px; 
+}
+.unlucky-modal .form-description {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.unlucky-modal .close-button {
+    color: #FFFFFF;
+    background-color: #B2B2B2;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 999px;
+    font-size: 25px;
+    width: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.unlucky-modal .close-button:hover {
+    background-color: #969696;
+}
+
+
 
 @media (max-width: 1280px) {
     #event-page .sec02 {
@@ -3170,6 +3256,16 @@ body.menu-open .page-wrapper {
 
     .event-result .gift-card {
         margin: 10px 0px;
+    }
+
+    .unlucky-modal .unlucky-img {
+        min-width: 200px;  
+    }
+    #event-page .sec04 .form-title{
+        font-size: 35px;
+    }
+    #event-page .unluckyModal .form-description{
+        font-size: 25px;
     }
 
 
@@ -4128,5 +4224,26 @@ body.menu-open .page-wrapper {
         font-size: 20px;
         font-weight: 400;
     }
+
+    .unlucky-modal .unlucky-img {
+        min-width: 150px;  
+    }
+    #event-page .sec04 .form-title{
+        font-size: 30px;
+    }
+    #event-page .sec04 .form-description{
+        font-size: 20px;
+    }
+    #event-page .form-description1{
+        font-size: 14px;
+    }
+    #event-page .form-description2{
+        font-size: 12px;
+    }
+    .registration-complete-modal .modal-content {
+        padding: 30px 20px;
+        width: 80%; 
+    }
+    
     
 }

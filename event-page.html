@@ -7,7 +7,8 @@
     <title>국민연금</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -230,7 +231,7 @@
                     </defs>
                     <g class="parallax" transform="translate(0, -55)">
                         <use class="wave wave1" xlink:href="#gentle-wave-small" x="50" y="0" fill="#0086DD" filter="url(#shadow1)" />
-                            <image class="gift" xlink:href="img/event-page/gift1.png" x="20" y="70" width="15" height="20" preserveAspectRatio="none" data-modal="eventModal"/>
+                            <image class="gift" xlink:href="img/event-page/gift1.png" x="20" y="70" width="15" height="20" preserveAspectRatio="none" data-modal="unluckyModal"/>
                             <image class="gift" xlink:href="img/event-page/gift2.png" x="60" y="70" width="13" height="25" preserveAspectRatio="none" data-modal="eventModal"/>
                         <use class="wave wave2" xlink:href="#gentle-wave-small" x="50" y="45" fill="#02A6E4" filter="url(#shadow1)" />
                             <image class="gift" xlink:href="img/event-page/gift3.png" x="95" y="80" width="10" height="25" preserveAspectRatio="none" data-modal="eventModal"/>
@@ -270,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="infoModal" class="info-modal custom-modal">
+                <div id="infoModal" class="info-modal">
                     <div class="modal-content">
                         <button type="button" class="close-button" aria-label="닫기">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -288,12 +289,12 @@
                             *경품 발송 시, &lt;내 곁에 국민연금>의 구독자가 아닐 경우 <br/> 당첨이 취소됩니다.</p>
                             <div class="form-group">
                                 <label for="name">성명</label>
-                                <input class="name-input" type="text" id="name" name="name" placeholder="이름을 입력해주세요">
+                                <input class="name-input" type="text" id="name" name="name">
                             </div>
                             <div class="form-group phone-group">
                                 <label for="phone">휴대폰 번호</label>
                                 <div class="phone-inputs">
-                                    <select id="phone-prefix" name="phone-prefix">
+                                    <select class="phone-select" id="phone-prefix" name="phone-prefix">
                                         <option value="010">010</option>
                                         <option value="011">011</option>
                                         <option value="016">016</option>
@@ -302,29 +303,29 @@
                                         <option value="019">019</option>
                                     </select>
                                     <span class="hyphen">-</span>
-                                    <input type="tel" id="phone-mid" name="phone-mid" maxlength="4" placeholder="1234">
+                                    <input type="tel" id="phone-mid" name="phone-mid" maxlength="4" >
                                     <span class="hyphen">-</span>
-                                    <input type="tel" id="phone-last" name="phone-last" maxlength="4" placeholder="5678">
+                                    <input type="tel" id="phone-last" name="phone-last" maxlength="4" >
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="email">E-mail</label>
-                                <input class="email-input" type="email" id="email" name="email" placeholder="이메일을 입력해주세요">
+                                <input class="email-input" type="email" id="email" name="email">
                             </div>
                             <h3 class="agreement-title">개인정보정책 및 이용약관 동의</h3>
                             <div class="agreement-group">
                                 <div class="agreement-content">
                                     <h4 class="agreement-subtitle">개인정보 수집 및 이용 동의</h4>
-                                    <p class="agreement-text">수집하는 개인정보 항목: 이름, 연락처, 이메일</p>
-                                    <p class="agreement-text">수집 및 이용 목적: 이벤트 참여자 확인 및 당첨 안내</p>
-                                    <p class="agreement-text">보유 및 이용 기간: 당첨자 발표 후 1개월</p>
+                                    <p class="agreement-text">수집하는 개인정보 항목: 이름, 연락처, 이메일
+                                    <br/> 수집 및 이용 목적: 이벤트 참여자 확인 및 당첨 안내
+                                    <br/> 보유 및 이용 기간: 당첨자 발표 후 1개월</p>
 
                                     <h4 class="agreement-subtitle">개인정보 제3자 제공 동의</h4>
-                                    <p class="agreement-text">동의를 거부할 수 있으나, 이 경우 이벤트 참여가 불가능합니다.</p>
-                                    <p class="agreement-text">제공받는 자의 이용 목적: 이름, 연락처, 이메일</p>
-                                    <p class="agreement-text">제공하는 항목: 이름, 연락처, 이메일</p>
-                                    <p class="agreement-text">제공받는 자의 보유 및 이용 기간:</p>
-                                    <p class="agreement-text">보유 및 이용기간: 당첨자 발표 후 1개월</p>
+                                    <p class="agreement-text">동의를 거부할 수 있으나, 이 경우 이벤트 참여가 불가능합니다.
+                                    <br/> 제공받는 자의 이용 목적: 이름, 연락처, 이메일
+                                    <br/> 제공하는 항목: 이름, 연락처, 이메일
+                                    <br/> 제공받는 자의 보유 및 이용 기간:
+                                    <br/> 보유 및 이용기간: 당첨자 발표 후 1개월</p>
                                 </div>
                             </div>
                             <div class="checkbox-row">
@@ -333,6 +334,22 @@
                             </div>
                             <button type="submit" class="submit-button Wavve">등록!</button>
                         </div>
+                    </div>
+                </div>
+                <div id="registrationCompleteModal" class="registration-complete-modal">
+                    <div class="modal-content">
+                        <h2 class="form-title Wavve">등록 완료</h2>
+                        <p class="form-description1 Wavve">정상적으로 제출되었습니다.<br/> 제출한 번호로 개별 연락드릴 예정입니다.<br/>감사합니다.</p>
+                        <p class="form-description2"> *경품 발송 시, &lt;내 곁에 국민연금&gt;의 구독자가 <br/>아닐 경우 당첨이 취소됩니다.</p>
+                        <button type="button" class="close-button Wavve" onclick="hideModal('registrationCompleteModal')">닫기</button>
+                    </div>
+                </div>
+                <div id="unluckyModal" class="unlucky-modal">
+                    <div class="modal-content">
+                        <img class="unlucky-img" src="img/event-page/unlucky.png" alt="Unlucky!" style="width: 150px; margin-bottom: 20px;">
+                        <h2 class="form-title Wavve" style="color: #0086DD;">당첨되지 않았습니다!</h2>
+                        <p class="form-description Wavve">다음에 다시 참여해주세요.</p>
+                        <button type="button" class="close-button Wavve" onclick="hideModal('unluckyModal')" style="color: #FFFFFF; background-color: #B2B2B2; padding: 5px 30px; border: none; border-radius: 999px; font-size: 25px; width: 200px; margin-top: 10px;">확인</button>
                     </div>
                 </div>
             </section>
@@ -804,11 +821,22 @@
         if (modal) {
             modal.style.display = 'none';
             document.body.style.overflow = '';
+
+            const inputs = modal.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.value = ''; 
+            });
+
+            const selects = modal.querySelectorAll('select');
+            selects.forEach(select => {
+                select.selectedIndex = 0; 
+            });
         }
     }
 
     const eventModal = document.getElementById('eventModal');
     const submitButton = eventModal.querySelector('.submit-button'); // "클릭!" 버튼 선택
+    const infoModalSubmitButton = document.querySelector('#infoModal .submit-button'); // info 모달의 "등록!" 버튼 선택
 
     giftElements.forEach(gift => {
         gift.addEventListener('click', function() {
@@ -885,6 +913,28 @@
             hideModal('infoModal');
         }
     });
+
+     // info 모달의 "등록!" 버튼 클릭 시 "등록 완료" 모달 표시
+    if (infoModalSubmitButton) {
+        infoModalSubmitButton.addEventListener('click', function() {
+            hideModal('infoModal'); // 현재 info 모달 숨김
+            showModal('registrationCompleteModal'); // "등록 완료" 모달 표시
+        });
+    }
+
+    const phoneMidInput = document.getElementById('phone-mid');
+    const phoneLastInput = document.getElementById('phone-last');
+
+    // phone-mid 입력 필드에 숫자만 허용
+    phoneMidInput.addEventListener('input', function() {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+
+    // phone-last 입력 필드에 숫자만 허용
+    phoneLastInput.addEventListener('input', function() {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+
 
 
 </script>

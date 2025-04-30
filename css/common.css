@@ -1,5 +1,5 @@
 /* ✅ 기본 설정 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @font-face {
@@ -14,12 +14,11 @@
     padding: 0;
     box-sizing: border-box;
     color: #000000;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
     background: #fff;
-    font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
