@@ -1,5 +1,10 @@
 /* <---------모든 페이지 공통적용-------> */
 
+
+.m-top-90{
+    margin-top: 90px !important;
+}
+
 .padding-80 { 
     margin: 0 auto;
     max-width: 1440px;
@@ -21,7 +26,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     .m-top-90{
         margin-top: 30px !important;
@@ -32,9 +37,15 @@
     }
 
     .padding-230{
-        padding: 0 20px !important;
+        padding: 0 50px !important;
     }
 
+}
+
+@media (max-width: 480px) {
+    .padding-230{
+        padding: 0 20px !important;
+    }
 }
 
 
@@ -582,7 +593,7 @@ body.menu-open .page-wrapper {
     background-color: #444;
 }
 
-.riribe-link {
+.floating-buttons .subscribe-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -627,23 +638,6 @@ body.menu-open .page-wrapper {
     pointer-events: all;
 }
 
-.floating-buttons .share-toggle {
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    opacity: 1 !important;
-    transform: translateX(0) !important;
-    pointer-events: auto !important;
-}
-
 .floating-buttons .share-toggle:hover {
     background-color: #444;
 }
@@ -671,7 +665,6 @@ body.menu-open .page-wrapper {
 
 .floating-buttons .share-button {
     opacity: 0;
-    /* 초기 투명도 0 */
 }
 
 .floating-buttons .share-panel.active .share-button {
@@ -825,7 +818,7 @@ body.menu-open .page-wrapper {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     /* ✅ 해더 */
     .header {
@@ -1288,7 +1281,7 @@ body.menu-open .page-wrapper {
     line-height: 100%;
     font-weight: 400;
     color: #000000;
-    margin: 5px 0;
+    padding: 10px 0;
 }
 
 #index .sec03 .title-text {
@@ -1464,7 +1457,6 @@ body.menu-open .page-wrapper {
     position: absolute;
     bottom: 40px;
     left: 40px;
-    font-style: normal;
     z-index: 1;
 }
 
@@ -1908,24 +1900,24 @@ body.menu-open .page-wrapper {
     margin-bottom: 75px;
 }
 
-#sub-page .sec03 .carousel-navigation {
+.pagination {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     gap: 40px;
 }
 
-#sub-page .sec03 .nav-item {
+.pagination .nav-item {
     flex: 1;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 80px;
+    padding: 25px 40px;
     position: relative;
 }
 
-#sub-page .sec03 .nav-item::after {
+.pagination .nav-item::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1936,30 +1928,27 @@ body.menu-open .page-wrapper {
     z-index: 1;
 }
 
-#sub-page .sec03 .nav-item.prev {
+.pagination .nav-item.next {
     background-image: url('../img/sub-page/next-img.jpg');
-    /* 이전 항목 배경 이미지 경로 */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: right;
 }
 
-#sub-page .sec03 .nav-item.next {
+.pagination .nav-item.prev {
     background-image: url('../img/sub-page/prev-img.jpg');
-    /* 이전 항목 배경 이미지 경로 */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
 }
 
-
-#sub-page .sec03 .nav-content {
+.pagination .nav-content {
     flex: 1;
 }
 
-#sub-page .sec03 .nav-label {
+.pagination .nav-label {
     display: block;
     font-size: 15px;
     font-weight: 400;
@@ -1971,7 +1960,7 @@ body.menu-open .page-wrapper {
     position: relative;
 }
 
-#sub-page .sec03 .nav-title {
+.nav-title {
     font-size: 15px;
     font-weight: 500;
     line-height: 24px;
@@ -1982,7 +1971,7 @@ body.menu-open .page-wrapper {
     position: relative;
 }
 
-#sub-page .sec03 .nav-description {
+.nav-description {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
@@ -1992,15 +1981,15 @@ body.menu-open .page-wrapper {
     position: relative;
 }
 
-#sub-page .sec03 .nav-button {
+.pagination .nav-button {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 30px;
     z-index: 5;
 }
 
-#sub-page .sec03 .nav-arrow {
+.pagination .nav-arrow {
     width: 30px;
     height: 30px;
     color: #fff;
@@ -2122,8 +2111,7 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec03 .section-title {
-    padding: 10px;
-    width: 115px;
+    padding: 10px 20px;
     background-color: black;
     border-radius: 999px;
     font-size: 17px;
@@ -2450,103 +2438,6 @@ body.menu-open .page-wrapper {
     background-color: #D3FFFD;
     padding-top: 130px;
     padding-bottom: 75px;
-}
-
-#event-page .sec06 .carousel-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    gap: 40px;
-}
-
-#event-page .sec06 .nav-item {
-    flex: 1;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 80px;
-    position: relative;
-}
-
-#event-page .sec06 .nav-item::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
-
-#event-page .sec06 .nav-item.prev {
-    background-image: url('../img/sub-page/next-img.jpg');
-    /* 이전 항목 배경 이미지 경로 */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: right;
-}
-
-#event-page .sec06 .nav-item.next {
-    background-image: url('../img/sub-page/prev-img.jpg');
-    /* 이전 항목 배경 이미지 경로 */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-#event-page .sec06 .nav-content {
-    flex: 1;
-}
-
-#event-page .sec06 .nav-label {
-    display: block;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -2%;
-    margin-bottom: 5px;
-    color: #FFFFFF;
-    z-index: 5;
-    position: relative;
-}
-
-#event-page .sec06 .nav-title {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -2%;
-    margin-bottom: 5px;
-    color: #FFFFFF;
-    z-index: 5;
-    position: relative;
-}
-
-#event-page .sec06 .nav-description {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -2%;
-    color: #FFFFFF;
-    z-index: 5;
-    position: relative;
-}
-
-#event-page .sec06 .nav-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 5;
-}
-
-#event-page .sec06 .nav-arrow {
-    width: 30px;
-    height: 30px;
-    color: #fff;
 }
 
 
@@ -3299,15 +3190,15 @@ body.menu-open .page-wrapper {
 
 
     /* ✅ sub-page.html */
-    #sub-page .sec03 .nav-button {
-        padding: 5px;
+    .pagination .nav-button {
+        padding: 5px 10px;
     }
 
-    #sub-page .sec03 .nav-item {
+    .pagination .nav-item {
         padding: 20px 0px;
     }
 
-    #sub-page .sec03 .carousel-navigation {
+    .pagination .pagination {
         gap: 20px;
     }
 
@@ -3339,7 +3230,7 @@ body.menu-open .page-wrapper {
         margin-top: 30px;
     }
 
-    #event-page .sec02 .comment {
+    #event-page .sec02-1 .comment {
         text-align: left;
         font-size: 17px;
         line-height: 29px;
@@ -3363,18 +3254,6 @@ body.menu-open .page-wrapper {
         width: 75%;
     }
 
-
-    #event-page  .sec06 .nav-button {
-        padding: 5px;
-    }
-
-    #event-page  .sec06 .nav-item {
-        padding: 20px 0px;
-    }
-
-    #event-page .sec06 .carousel-navigation {
-        gap: 20px;
-    }
     #event-page .parallax .gift:nth-of-type(1) {
         x: 15;
         y: 68;
@@ -3431,7 +3310,7 @@ body.menu-open .page-wrapper {
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     /* ✅ index.html */
     #index .sec01 {
@@ -3671,7 +3550,7 @@ body.menu-open .page-wrapper {
     }
 
     #index .sec03 .small-text {
-        padding: 10px 20px 5px;
+        padding: 10px 20px;
         font-size: 15px;
     }
 
@@ -3847,6 +3726,9 @@ body.menu-open .page-wrapper {
     #index .sec06 .sub-title {
         margin-top: 0px;
     }
+    #index .sec07 {
+        padding-bottom: 50px;
+    }
 
     #index .sec07 .title {
         padding: 10px 20px;
@@ -3947,39 +3829,35 @@ body.menu-open .page-wrapper {
     #sub-page .sec03 {
         margin-bottom: 20px;
     }
+    #sub-page .sec03.padding-80 {
+        padding: 0 20px;
+    }
 
-    #sub-page .sec03 .carousel-navigation {
+
+    .pagination {
         display: flex;
         flex-direction: column;
     }
 
-    #sub-page .sec03 .nav-item {
+    .pagination .nav-item {
         flex: none;
         padding: 0;
         height: 120px;
     }
 
-    #sub-page .sec03.padding-80 {
-        padding: 0 20px;
-    }
-
-    #sub-page .sec03 .nav-button {
-        padding: 10px;
-    }
-
-    #sub-page .sec03 .nav-label {
+    .pagination .nav-label {
         font-size: 14px;
         font-weight: 400;
         margin-bottom: 5px;
     }
 
-    #sub-page .sec03 .nav-title {
+    .pagination .nav-title {
         font-size: 14px;
         line-height: 22px;
         margin-bottom: 3px;
     }
 
-    #sub-page .sec03 .nav-description {
+    .pagination .nav-description {
         font-size: 14px;
         line-height: 22px;
     }
@@ -4091,42 +3969,9 @@ body.menu-open .page-wrapper {
         padding-top: 0px;
     }
 
-    #event-page .sec06 .carousel-navigation {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #event-page .sec06 .nav-item {
-        flex: none;
-        padding: 0;
-        height: 120px;
-    }
-
     #event-page .sec06 .padding-80 {
         padding: 0 20px;
     }
-
-    #event-page .sec06 .nav-button {
-        padding: 10px;
-    }
-
-    #event-page .sec06 .nav-label {
-        font-size: 14px;
-        font-weight: 400;
-        margin-bottom: 5px;
-    }
-
-    #event-page .sec06 .nav-title {
-        font-size: 14px;
-        line-height: 22px;
-        margin-bottom: 3px;
-    }
-
-    #event-page .sec06 .nav-description {
-        font-size: 14px;
-        line-height: 22px;
-    }
-
 
     #event-page .event-modal .modal-content { 
         max-width: 80%;

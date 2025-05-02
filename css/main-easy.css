@@ -1,7 +1,9 @@
 /* <---------모든 페이지 공통적용-------> */
 
 
-/* <---------모든 페이지 공통적용-------> */
+.m-top-90{
+    margin-top: 90px !important;
+}
 
 .padding-80 { 
     margin: 0 auto;
@@ -35,16 +37,17 @@
     }
 
     .padding-230{
-        padding: 0 50px !important;
+        padding: 0 40px !important;
     }
 
 }
 
 @media (max-width: 480px) {
     .padding-230{
-        padding: 0 20px !important;
+        padding: 0 10px !important;
     }
 }
+
 
 /* ✅ 메뉴 효과 */
 .menu-item.active,
@@ -143,7 +146,7 @@ body.menu-open .page-wrapper {
     display: flex;
     align-items: flex-end;
     height: 25px;
-    line-height: 100%;
+    
 }
 
 
@@ -152,8 +155,8 @@ body.menu-open .page-wrapper {
     font-weight: 500;
     color: #4f4f4f;
     font-size: 15px;
-    letter-spacing: -2%;
-    line-height: 100%;
+    
+    
     font-weight: 500;
     padding: 20px 15px;
     border-bottom: 0.5px solid #E8E8E8;
@@ -340,7 +343,7 @@ body.menu-open .page-wrapper {
 
 .mobile-menu .m-volume {
     font-size: 19.5px;
-    line-height: 100%;
+    
     margin-bottom: 35px;
 }
 
@@ -382,7 +385,7 @@ body.menu-open .page-wrapper {
     width: 100%;
     font-size: 24px;
     letter-spacing: 0%;
-    line-height: 100%;
+    
     cursor: pointer;
     position: relative;
     border-bottom: 0.5px solid #AAAAAA;
@@ -411,7 +414,7 @@ body.menu-open .page-wrapper {
     font-size: 20px;
     font-weight: 400;
     padding-left: 16px;
-    line-height: 100%;
+    
     padding: 10px 20px;
 }
 
@@ -555,7 +558,7 @@ body.menu-open .page-wrapper {
     color: #a9aaaa;
     font-weight: 400;
     font-size: 13px;
-    line-height: 100%;
+    
 }
 
 .bar-popup .popup-icon-img {
@@ -674,7 +677,7 @@ body.menu-open .page-wrapper {
     color: #a9aaaa;
     font-weight: 400;
     font-size: 10px;
-    line-height: 100%;
+    
 }
 
 .floating-buttons .share-button-img {
@@ -973,8 +976,8 @@ body.menu-open .page-wrapper {
 
 .check-label {
     font-size: 25.5px;
-    line-height: 100%;
-    letter-spacing: -2%;
+    
+    
     font-weight: 600;
 }
 
@@ -1053,19 +1056,18 @@ body.menu-open .page-wrapper {
     font-size: 72px;
     font-weight: 700;
     line-height: 90px;
-    letter-spacing: -2%;
+    
 }
 
 #index .sec01 .catagory {
     font-weight: 500;
     font-size: 25.5px;
-    letter-spacing: -2%;
+    
 }
 
 #index .sec01 .sub-title {
     font-weight: 400;
     font-size: 30px;
-    letter-spacing: -2%;
 }
 
 #index .sec01 .sec01-img {
@@ -1082,7 +1084,7 @@ body.menu-open .page-wrapper {
     color: #000000;
     padding: 20px 25px;
     font-weight: 500;
-    line-height: 100%;
+    
     font-size: 30px;
     border-radius: 8px;
     transition: scale 0.3s ease-in-out;
@@ -1150,7 +1152,7 @@ body.menu-open .page-wrapper {
     font-size: 30px;
     font-weight: 500;
     border: 3px solid #FF7BAC;
-    line-height: 100%;
+    
 }
 
 #index .sec02 .keyword.emphasized {
@@ -1280,7 +1282,6 @@ body.menu-open .page-wrapper {
 
 #index .sec03 .carousel-item {
     width: 300px;
-    height: 570px;
     flex: 0 0 auto;
     margin-right: 20px;
     text-align: left;
@@ -1303,22 +1304,20 @@ body.menu-open .page-wrapper {
 }
 
 #index .sec03 .caption {
-    margin-top: 40px;
-    height: 136px;
+    margin-top: 20px;
+
 }
 
 #index .sec03 .small-text {
+    padding: 10px 0;
     font-size: 22.5px;
-    letter-spacing: -2%;
-    line-height: 100%;
     font-weight: 400;
     color: #000000;
-    margin: 5px 0;
 }
 
 #index .sec03 .title-text {
     font-size: 27px;
-    letter-spacing: -2%;
+    
     line-height: 40.5px;
     font-weight: 500;
     color: #000000;
@@ -1498,8 +1497,8 @@ body.menu-open .page-wrapper {
 #index .sec05 .left-col .text-overlay .sub-title {
     font-weight: 500;
     font-size: 22.5px;
-    letter-spacing: -2%;
-    line-height: 100%;
+    
+    
     margin-bottom: 15px;
     color: #FFFFFF;
 }
@@ -1507,8 +1506,8 @@ body.menu-open .page-wrapper {
 #index .sec05 .left-col .text-overlay .post-title {
     font-weight: 700;
     font-size: 30px;
-    letter-spacing: -2%;
-    line-height: 100%;
+    
+    
     margin-top: 0;
     color: #FFFFFF;
 }
@@ -1564,8 +1563,6 @@ body.menu-open .page-wrapper {
 #index .sec05 .sub-title {
     font-weight: 400;
     font-size: 22.5px;
-    letter-spacing: -2%;
-    line-height: 100%;
     margin-bottom: 15px;
     margin-top: 20px;
 }
@@ -1573,7 +1570,6 @@ body.menu-open .page-wrapper {
 #index .sec05 .post-title {
     font-weight: 500;
     font-size: 27px;
-    letter-spacing: -2%;
     line-height: 40.5px;
     margin-top: 0;
 }
@@ -1658,8 +1654,8 @@ body.menu-open .page-wrapper {
 
 #index .sec06 .sub-title {
     font-size: 22.5px;
-    letter-spacing: -2%;
-    line-height: 100%;
+    
+    
     font-weight: 400;
     color: #000000;
     margin: 5px 0;
@@ -1667,7 +1663,7 @@ body.menu-open .page-wrapper {
 
 #index .sec06 .post-title {
     font-size: 27px;
-    letter-spacing: -2%;
+    
     line-height: 40.5px;
     font-weight: 500;
     color: #000000;
@@ -1749,7 +1745,7 @@ body.menu-open .page-wrapper {
     box-sizing: border-box;
     z-index: 5;
     line-height: 27px;
-    letter-spacing: -2%;
+    
 }
 
 
@@ -1799,14 +1795,14 @@ body.menu-open .page-wrapper {
     top: 17px;
     left: 20px;
     color: white;
-    font-size: 18px;
+    font-size: 27px;
     font-weight: 500;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     z-index: 5;
-    line-height: 27px;
-    letter-spacing: -2%;
+    line-height: 40.5px;
+    
 }
 
 #index .sec07 .visible-center {
@@ -1873,13 +1869,13 @@ body.menu-open .page-wrapper {
 #sub-page .sec02 .category {
     font-weight: 700;
     font-size: 25.5px;
-    line-height: 100%;
+    
 }
 
 #sub-page .sec02 .author {
     font-weight: 400;
     font-size: 25.5px;
-    line-height: 100%;
+    
 }
 
 #sub-page .sec02 .title {
@@ -1892,7 +1888,7 @@ body.menu-open .page-wrapper {
 #sub-page .sec02 .message {
     font-weight: 400;
     font-size: 25.5px;
-    line-height: 100%;
+    
     color: #717171;
     padding-bottom: 20px;
     border-bottom: 1px solid #AAAAAA;
@@ -1902,7 +1898,7 @@ body.menu-open .page-wrapper {
 #sub-page .sec02 .summary {
     font-weight: 500;
     font-size: 27px;
-    letter-spacing: -2%;
+    
     line-height: 48px;
     color: #627A3E;
     margin-bottom: 70px;
@@ -1944,24 +1940,24 @@ body.menu-open .page-wrapper {
     margin-bottom: 75px;
 }
 
-#sub-page .sec03 .carousel-navigation {
+.pagination {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     gap: 40px;
 }
 
-#sub-page .sec03 .nav-item {
+.pagination .nav-item {
     flex: 1;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 80px;
+    padding: 15px 40px;
     position: relative;
 }
 
-#sub-page .sec03 .nav-item::after {
+.pagination .nav-item::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1972,71 +1968,64 @@ body.menu-open .page-wrapper {
     z-index: 1;
 }
 
-#sub-page .sec03 .nav-item.prev {
+.pagination .nav-item.next {
     background-image: url('../img/sub-page/next-img.jpg');
-    /* 이전 항목 배경 이미지 경로 */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: right;
 }
 
-#sub-page .sec03 .nav-item.next {
+.pagination .nav-item.prev {
     background-image: url('../img/sub-page/prev-img.jpg');
-    /* 이전 항목 배경 이미지 경로 */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
 }
 
-
-#sub-page .sec03 .nav-content {
+.pagination .nav-content {
     flex: 1;
 }
 
-#sub-page .sec03 .nav-label {
+.pagination .nav-label {
     display: block;
-    font-size: 15px;
+    font-size: 22.5px;
     font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -2%;
     margin-bottom: 5px;
     color: #FFFFFF;
     z-index: 5;
     position: relative;
 }
 
-#sub-page .sec03 .nav-title {
-    font-size: 15px;
+.nav-title {
+    font-size: 22.5px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -2%;
+    line-height: 36px;
     margin-bottom: 5px;
     color: #FFFFFF;
     z-index: 5;
     position: relative;
 }
 
-#sub-page .sec03 .nav-description {
-    font-size: 15px;
+.nav-description {
+    font-size: 22.5px;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -2%;
+    line-height: 36px;
     color: #FFFFFF;
     z-index: 5;
     position: relative;
 }
 
-#sub-page .sec03 .nav-button {
+.pagination .nav-button {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 30px;
     z-index: 5;
 }
 
-#sub-page .sec03 .nav-arrow {
+.pagination .nav-arrow {
     width: 30px;
     height: 30px;
     color: #fff;
@@ -2111,7 +2100,7 @@ body.menu-open .page-wrapper {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 100%;
 }
 #event-page .sec02-1 {
     display: flex;
@@ -2159,8 +2148,7 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec03 .section-title {
-    padding: 10px;
-    width: 115px;
+    padding: 10px 30px;
     background-color: black;
     border-radius: 999px;
     font-size: 24px;
@@ -2169,19 +2157,18 @@ body.menu-open .page-wrapper {
     margin-bottom: 30px;
     color: #FFFFFF;
     font-weight: 500;
-    font-size: 17px;
-    line-height: 100%;
+    
 }
 
 #event-page .sec03 .steps-container {
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    gap: 20px;
 }
 
 #event-page .sec03 .step {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     padding-top: 20px;
     border-radius: 50%;
     display: flex;
@@ -2198,7 +2185,7 @@ body.menu-open .page-wrapper {
 
 #event-page .sec03 .step-description {
     margin-top: 5px;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 35px;
     font-weight: 500;
     display: flex;
@@ -2226,8 +2213,8 @@ body.menu-open .page-wrapper {
 #event-page .sec03 .info-label {
     font-size: 30px;
     font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -2%;
+    
+    
     padding: 8px 0;
     width: 15%;
 }
@@ -2235,8 +2222,8 @@ body.menu-open .page-wrapper {
 #event-page .sec03 .info-value {
     font-size: 30px;
     font-weight: 500;
-    line-height: 100%;
-    letter-spacing: -2%;
+    
+    
     padding: 8px;
     text-align: left;
     width: 80%;
@@ -2248,14 +2235,14 @@ body.menu-open .page-wrapper {
 
 #event-page .sec03 .subscribe-button {
     margin-top: 30px;
-    padding: 10px 48px;
+    padding: 10px 35px;
     background-color: #0086DD;
     color: #FFFFFF;
     border-radius: 999px;
     cursor: pointer;
-    font-size: 30px;
-    letter-spacing: -2%;
-    line-height: 100%;
+    font-size: 27px;
+    
+    
     font-weight: 700;
 }
 
@@ -2271,8 +2258,7 @@ body.menu-open .page-wrapper {
 #event-page .sec04 .comment {
     font-size: 22.5px;
     font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -2%;
+    
     text-align: center;
     color: #1375DB;
 }
@@ -2459,12 +2445,11 @@ body.menu-open .page-wrapper {
 
 #event-page .sec05 .notice1 {
     padding: 25px;
-    max-width: 800px;
+    max-width: 750px;
     background-color: #FFFFFF;
     font-weight: 700;
     font-size: 22.5px;
     line-height: 35px;
-    letter-spacing: -2%;
     text-align: left;
     padding-left: 40px;
     list-style-type: disc;
@@ -2479,9 +2464,8 @@ body.menu-open .page-wrapper {
     font-weight: 400;
     font-size: 22.5px;
     line-height: 35px;
-    letter-spacing: -2%;
     text-align: left;
-    max-width: 800px;
+    max-width: 750px;
 }
 
 #event-page .sec06 {
@@ -2489,104 +2473,6 @@ body.menu-open .page-wrapper {
     padding-top: 130px;
     padding-bottom: 75px;
 }
-
-#event-page .sec06 .carousel-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    gap: 40px;
-}
-
-#event-page .sec06 .nav-item {
-    flex: 1;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 80px;
-    position: relative;
-}
-
-#event-page .sec06 .nav-item::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
-
-#event-page .sec06 .nav-item.prev {
-    background-image: url('../img/sub-page/next-img.jpg');
-    /* 이전 항목 배경 이미지 경로 */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: right;
-}
-
-#event-page .sec06 .nav-item.next {
-    background-image: url('../img/sub-page/prev-img.jpg');
-    /* 이전 항목 배경 이미지 경로 */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-#event-page .sec06 .nav-content {
-    flex: 1;
-}
-
-#event-page .sec06 .nav-label {
-    display: block;
-    font-size: 22.5px;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -2%;
-    margin-bottom: 5px;
-    color: #FFFFFF;
-    z-index: 5;
-    position: relative;
-}
-
-#event-page .sec06 .nav-title {
-    font-size: 22.5px;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: -2%;
-    margin-bottom: 5px;
-    color: #FFFFFF;
-    z-index: 5;
-    position: relative;
-}
-
-#event-page .sec06 .nav-description {
-    font-size: 22.5px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: -2%;
-    color: #FFFFFF;
-    z-index: 5;
-    position: relative;
-}
-
-#event-page .sec06 .nav-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 5;
-}
-
-#event-page .sec06 .nav-arrow {
-    width: 30px;
-    height: 30px;
-    color: #fff;
-}
-
 
 #event-page .event-modal {
     display: none; 
@@ -2645,16 +2531,16 @@ body.menu-open .page-wrapper {
 #event-page .event-result .result-message {
     font-weight: 400;
     font-size: 40px;
-    line-height: 100%;
-    letter-spacing: -2%;
+    
+    
     margin-bottom: 10px;
     color: #0086DD;
 }
 #event-page .event-result .sub-message{
     font-weight: 400;
     font-size: 24px;
-    line-height: 100%;
-    letter-spacing: -2%;
+    
+    
     margin-bottom: 30px;
 }
 
@@ -2672,8 +2558,8 @@ body.menu-open .page-wrapper {
     border: 1px solid #ccc; 
     font-weight: 400;
     font-size: 15px;
-    line-height: 100%;
-    letter-spacing: -2%;
+    
+    
 }
 
 
@@ -2789,7 +2675,7 @@ body.menu-open .page-wrapper {
     flex-shrink: 0;
     font-size: 15px;
     font-weight: 500;
-    letter-spacing: -2%;
+    
 }
 
 #event-page .form-group .name-input,
@@ -3180,6 +3066,8 @@ body.menu-open .page-wrapper {
 
 
 
+
+
 @media (max-width: 1280px) {
 
     /* ✅ index.html */
@@ -3221,7 +3109,7 @@ body.menu-open .page-wrapper {
         height: 110px;
         border-radius: 999px;
         border: 1.5px solid #FF7BAC;
-        line-height: 100%;
+        
     }
 
     #index .sec02 .keyword.nano {
@@ -3318,36 +3206,28 @@ body.menu-open .page-wrapper {
         top: 105%;
     }
 
+    #index .sec07 .event-carousel {
+        display: block;
+    }
+
     #index .sec07 .event-items {
-        margin-left: -5px;
-        margin-right: -5px;
-    }
-
-    #index .sec07 .event-items .item {
-        margin: 5px;
-        width: calc(20% - 10px);
-    }
-
-    #index .sec07 .event-title {
-        position: absolute;
-        top: 7px;
-        left: 10px;
-        font-size: 16px;
+        display: none;
     }
 
 
     /* ✅ sub-page.html */
-    #sub-page .sec03 .nav-button {
-        padding: 5px;
+    .pagination .nav-button {
+        padding: 5px 10px;
     }
 
-    #sub-page .sec03 .nav-item {
-        padding: 20px 0px;
+    .pagination .nav-item {
+        padding: 10px;
     }
 
-    #sub-page .sec03 .carousel-navigation {
+    .pagination .pagination {
         gap: 20px;
     }
+
 
 
 
@@ -3377,10 +3257,10 @@ body.menu-open .page-wrapper {
         margin-top: 30px;
     }
 
-    #event-page .sec02 .comment {
+    #event-page .sec02-1 .comment {
         text-align: left;
-        font-size: 17px;
-        line-height: 29px;
+        font-size: 22.5px;
+        line-height: 32px;
         font-weight: 400;
         margin-top: 20px;
     }
@@ -3398,16 +3278,7 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .sec03 .info-value {
-        width: 75%;
-    }
-
-
-    #event-page  .sec06 .nav-button {
-        padding: 5px;
-    }
-
-    #event-page  .sec06 .nav-item {
-        padding: 20px 0px;
+        width: 80%;
     }
 
     #event-page .sec06 .carousel-navigation {
@@ -3415,49 +3286,53 @@ body.menu-open .page-wrapper {
     }
     #event-page .parallax .gift:nth-of-type(1) {
         x: 15;
-        y: 68;
-        width: 15%;
-        height: 20%;
+        y: 70;
+        width: 20%;
+        height: 25%;
     }
 
     #event-page .parallax .gift:nth-of-type(2) {
-        width: 13%;
-        height: 25%;
+        width: 18%;
+        height: 30%;
     }
 
     #event-page .parallax .gift:nth-of-type(3) {
-        width: 10%;
-        height: 25%;
+        width: 15%;
+        height: 30%;
         x: 105;
     }
 
     #event-page .parallax .gift:nth-of-type(4) {
-        width: 13%;
-        height: 22%;
-        x: 80;
+        width: 20%;
+        height: 25%;
+        x: 60;
+        y: 95;
     }
 
     #event-page .parallax .gift:nth-of-type(5) {
-        width: 15%;
-        height: 25%;
-        x: 32;
+        width: 20%;
+        height: 30%;
+        x: 20;
+        y: 90;
     }
 
     #event-page .parallax .gift:nth-of-type(6) {
-        width: 15%;
-        height: 30%;
+        width: 20%;
+        height: 35%;
     }
 
     #event-page .parallax .gift:nth-of-type(7) {
         width: 15%;
-        height: 25%;
-        x: 15;
+        height: 30%;
+        x: 10;
+        y: 110;
     }
 
     #event-page .parallax .gift:nth-of-type(8) {
-        width: 10%;
-        height: 30%;
-        x: 58;
+        width: 15%;
+        height: 35%;
+        x: 50;
+        y: 110;
     }
     
 }
@@ -3706,7 +3581,7 @@ body.menu-open .page-wrapper {
     #index .sec03 .carousel-track {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
         transform: none !important;
         transition: none !important;
     }
@@ -3731,9 +3606,6 @@ body.menu-open .page-wrapper {
 
     #index .sec03 .title-text {
         padding: 0px 20px;
-    }
-    #index .sec03 .caption {
-        height: 110px;
     }
 
     #index .sec04 .title {
@@ -3797,7 +3669,7 @@ body.menu-open .page-wrapper {
     #index .sec05 .left-col .text-overlay .post-title {
         font-weight: 500;
         font-size: 18px;
-        letter-spacing: -2%;
+        
         line-height: 27px;
         margin-top: 0;
     }
@@ -3808,7 +3680,7 @@ body.menu-open .page-wrapper {
 
     #index .sec05 .sub-title {
         padding: 0 20px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 
     #index .sec05 .post-title {
@@ -3895,7 +3767,7 @@ body.menu-open .page-wrapper {
 
     #index .sec06 .text-wrap {
         width: 70%;
-        padding-left: 15px;
+        padding-left: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3903,6 +3775,9 @@ body.menu-open .page-wrapper {
 
     #index .sec06 .sub-title {
         margin-top: 0px;
+    }
+    #index .sec07 {
+        padding-bottom: 50px;
     }
 
     #index .sec07 .title {
@@ -3921,18 +3796,8 @@ body.menu-open .page-wrapper {
     }
 
     #index .sec07 .event-title {
-        position: absolute;
-        top: 22.5px;
+        top: 7px;
         left: 20px;
-        font-size: 18px;
-    }
-
-    #index .sec07 .event-carousel {
-        display: block;
-    }
-
-    #index .sec07 .event-items {
-        display: none;
     }
 
 
@@ -4005,41 +3870,42 @@ body.menu-open .page-wrapper {
         margin-bottom: 20px;
     }
 
-    #sub-page .sec03 .carousel-navigation {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #sub-page .sec03 .nav-item {
-        flex: none;
-        padding: 0;
-        height: 120px;
-    }
-
     #sub-page .sec03.padding-80 {
         padding: 0 20px;
     }
 
-    #sub-page .sec03 .nav-button {
-        padding: 10px;
+    .pagination {
+        display: flex;
+        flex-direction: column;
     }
 
-    #sub-page .sec03 .nav-label {
-        font-size: 14px;
+    .pagination .nav-item {
+        flex: none;
+        padding: 20px 10px;
+    }
+
+    .pagination {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagination .nav-label {
+        font-size: 22px;
         font-weight: 400;
         margin-bottom: 5px;
     }
 
-    #sub-page .sec03 .nav-title {
-        font-size: 14px;
-        line-height: 22px;
+    .pagination .nav-title {
+        font-size: 22px;
+        line-height: 33px;
         margin-bottom: 3px;
     }
 
-    #sub-page .sec03 .nav-description {
-        font-size: 14px;
-        line-height: 22px;
+    .pagination .nav-description {
+        font-size: 22px;
+        line-height: 33px;
     }
+
 
 
     /* ✅ event-page.html */
@@ -4050,13 +3916,13 @@ body.menu-open .page-wrapper {
         padding-top: 100px;
     }
     #event-page .sec02 {
-        height: 450px;
+        height: 350px;
     }
     #event-page .sec02 .event-title {
-        font-style: 25px;
+        font-size: 30px;
     }
     #event-page .sec02 .text-content {
-        top: 75%;
+        top: 70%;
 
     }
     #event-page .sec02-1 .comment {
@@ -4100,18 +3966,40 @@ body.menu-open .page-wrapper {
         padding-top: 0px;
         margin-top: 30px;
     }
+
+    #event-page .sec03 .step {
+        width: 150px;
+        height: 150px;
+        padding-top: 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        border: 2px solid #000000;
+    }
+
+    #event-page .sec03 .step-description {
+        margin-top: 10px;
+        font-size: 19px;
+        line-height: 32px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+    }
+
     #event-page .sec03 .info-zone {
         width: 90%;
     }
 
     #event-page .sec03 .info-label {
-        width: 50%;
+        width: 40%;
         font-size: 22.5px;
         line-height: 35px;
-        letter-spacing: -2%;
         margin-right: 0%;
         padding: 3px;
-        width: 30%;
     }
 
     #event-page .sec03 .info-value {
@@ -4125,8 +4013,10 @@ body.menu-open .page-wrapper {
     #event-page .sec05 {
         padding-bottom: 0px;
     }
+    
     #event-page .sec05 .notice1{
         width: 90%;
+        font-size: 22px;
     }
 
     #event-page .sec05 .notice2{
@@ -4134,9 +4024,6 @@ body.menu-open .page-wrapper {
         border-top: 1px solid #000;
     }
 
-    #event-page .sec05 .notice1 {
-        font-size: 22.5px;
-    }
     #event-page .sec05 .notice2 {
         margin-top: 30px;
         font-weight: 400;
@@ -4146,40 +4033,8 @@ body.menu-open .page-wrapper {
         padding-top: 0px;
     }
 
-    #event-page .sec06 .carousel-navigation {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #event-page .sec06 .nav-item {
-        flex: none;
-        padding: 0;
-        height: 120px;
-    }
-
     #event-page .sec06 .padding-80 {
         padding: 0 20px;
-    }
-
-    #event-page .sec06 .nav-button {
-        padding: 10px;
-    }
-
-    #event-page .sec06 .nav-label {
-        font-size: 14px;
-        font-weight: 400;
-        margin-bottom: 5px;
-    }
-
-    #event-page .sec06 .nav-title {
-        font-size: 14px;
-        line-height: 22px;
-        margin-bottom: 3px;
-    }
-
-    #event-page .sec06 .nav-description {
-        font-size: 14px;
-        line-height: 22px;
     }
 
 
@@ -4282,24 +4137,24 @@ body.menu-open .page-wrapper {
         y: 10;
     }
     #event-page .parallax .wave2 {
-        y: 45;
+        y: 50;
     }
     #event-page .parallax .wave3 {
-        y: 60;
+        y: 70;
     }
     #event-page .parallax .wave4 {
-        y: 90;
+        y: 100;
     }
     #event-page .parallax .wave5 {
-        y: 105;
+        y: 120;
     }
     #event-page .parallax .wave6 {
-        y: 130;
+        y: 150;
     }
     #event-page .sec04 {
         margin-top: 30px;
         padding-top: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 200px;
     }
     #event-page .editorial{
         overflow: visible;
@@ -4307,67 +4162,61 @@ body.menu-open .page-wrapper {
     #event-page .sec04 .mob-br{
         display: block;
     }
-    #event-page .sec04 .comment {
-        line-height: 22px;
-        letter-spacing: -2%;
-        font-weight: 700;
-        font-size: 16px;
-    }
 
     #event-page .parallax .gift:nth-of-type(1) {
         x: 15;
-        y: 78;
-        width: 25%;
-        height: 30%;
+        y: 82;
+        width: 30%;
+        height: 35%;
     }
 
     #event-page .parallax .gift:nth-of-type(2) {
-        width: 25%;
-        height: 30%;
+        width: 30%;
+        height: 35%;
         x: 80;
-        y: 75;
+        y: 80;
     }
 
     #event-page .parallax .gift:nth-of-type(3) {
-        width: 20%;
-        height: 40%;
+        width: 25%;
+        height: 45%;
         x: 50;
-        y: 90;
+        y: 95;
     }
 
     #event-page .parallax .gift:nth-of-type(4) {
-        width: 25%;
-        height: 35%;
+        width: 30%;
+        height: 40%;
         x: 85;
-        y: 115;
+        y: 125;
     }
 
     #event-page .parallax .gift:nth-of-type(5) {
-        width: 25%;
-        height: 40%;
+        width: 30%;
+        height: 45%;
         x: 13;
-        y: 120;
+        y: 128;
     }
 
     #event-page .parallax .gift:nth-of-type(6) {
-        width: 30%;
-        height: 45%;
+        width: 35%;
+        height: 50%;
         x: 45;
-        y: 140;
+        y: 152;
     }
 
     #event-page .parallax .gift:nth-of-type(7) {
-        width: 25%;
-        height: 45%;
+        width: 30%;
+        height: 50%;
         x: 15;
-        y: 155;
+        y: 170;
     }
 
     #event-page .parallax .gift:nth-of-type(8) {
-        width: 20%;
-        height: 40%;
+        width: 25%;
+        height: 45%;
         x: 90;
-        y: 155;
+        y: 175;
     }
     #event-page .event-modal .modal-content { 
         max-width: 90%;
@@ -4407,8 +4256,8 @@ body.menu-open .page-wrapper {
         border: 1px solid #ccc; 
         font-weight: 400;
         font-size: 15px;
-        line-height: 100%;
-        letter-spacing: -2%;
+        
+        
     }
     
     
