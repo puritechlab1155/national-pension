@@ -4235,7 +4235,7 @@ body.menu-open .page-wrapper {
     #event-page .form-group .phone,
     #event-page .form-group .email,
     #event-page .form-group .name {
-        width: 75px;
+        width: 85px;
         margin-right: 5px;
         font-size: 14px;
     }
@@ -4260,10 +4260,10 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .info-form .agreement-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
     #event-page .info-form .agreement-text {
-        font-size: 11px;
+        font-size: 14px;
     }
     #event-page .unlucky-modal .unlucky-img {
         width: 75%; 

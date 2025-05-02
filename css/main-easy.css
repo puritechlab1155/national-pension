@@ -2661,6 +2661,7 @@ body.menu-open .page-wrapper {
     display: flex;
     margin-bottom: 15px;
     align-items: center;
+    width: 100%;
 }
 
 #event-page .form-group .phone,
@@ -2684,6 +2685,8 @@ body.menu-open .page-wrapper {
     padding: 5px;
     font-size: 15px;
     font-weight: 500;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 #event-page .form-group .phone-inputs {
@@ -2822,7 +2825,7 @@ body.menu-open .page-wrapper {
     content: '';
     position: absolute;
     left: 5px;
-    top: 10px;
+    top: 15px;
     background: white;
     width: 2px;
     height: 2px;
@@ -4291,13 +4294,13 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .info-modal .form-description{
-        font-size: 13px;
+        font-size: 14px;
     }
     #event-page .registration-complete-modal .form-description1{
         font-size: 15px;
     }
     #event-page .registration-complete-modal .form-description2{
-        font-size: 13px;
+        font-size: 14px;
     }
     #event-page .registration-complete-modal .modal-content {
         padding: 30px 20px;
@@ -4306,7 +4309,7 @@ body.menu-open .page-wrapper {
     #event-page .form-group .phone,
     #event-page .form-group .email,
     #event-page .form-group .name {
-        width: 75px;
+        width: 85px;
         margin-right: 5px;
         font-size: 16px;
     }
@@ -4325,14 +4328,14 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .info-form .agreement-title {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #event-page .info-form .agreement-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
     #event-page .info-form .agreement-text {
-        font-size: 11px;
+        font-size: 14px;
     }
     #event-page .unlucky-modal .unlucky-img {
         width: 75%; 
