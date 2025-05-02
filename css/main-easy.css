@@ -3253,8 +3253,8 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .sec02 .event-title {
-        font-size: 39px;
-        line-height: 50px;
+        font-size: 43px;
+        line-height: 60px;
         margin-top: 30px;
     }
 
@@ -3930,7 +3930,8 @@ body.menu-open .page-wrapper {
         height: 350px;
     }
     #event-page .sec02 .event-title {
-        font-size: 30px;
+        font-size: 32px;
+        line-height: 40px;
     }
     #event-page .sec02 .text-content {
         top: 70%;
@@ -4075,7 +4076,13 @@ body.menu-open .page-wrapper {
 
 
 @media (max-width: 480px) {
-    
+        #event-page .sec01.padding-230{ 
+        padding: 10px 0;
+    }
+
+    #event-page .sec03.padding-230{ 
+        padding: 10px 0;
+    }
     #index .sec04 .swiper-frame {
         max-height: 150px;
     }
@@ -4103,6 +4110,13 @@ body.menu-open .page-wrapper {
         height: 100px;
     }
 
+    #event-page .sec01.padding-230{ 
+        padding: 10px 0;
+    }
+
+    #event-page .sec03.padding-230{ 
+        padding: 10px 0;
+    }
     #event-page .sec02-1 .coupon-img {
         width: 80%;
     }
@@ -4244,14 +4258,7 @@ body.menu-open .page-wrapper {
         font-size: 32px;
     }
     #event-page .event-result .sub-message{
-        #event-page .sec01 {
-            padding-top: 200px;
-            padding-bottom: 0px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #91DDFF;
-        }
+        font-size: 18px;
     }
     
     

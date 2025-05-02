@@ -44,7 +44,7 @@
 
 @media (max-width: 480px) {
     .padding-230{
-        padding: 0 25px !important;
+        padding: 0 20px !important;
     }
 }
 
@@ -4039,7 +4039,6 @@ body.menu-open .page-wrapper {
     #index .sec06 .img-container {
         height: 80px;
     }
-
     #event-page .sec02-1 .coupon-img {
         width: 80%;
     }
@@ -4049,6 +4048,7 @@ body.menu-open .page-wrapper {
     #event-page .sec02 .draw {
         border-bottom: 1px solid #000000;
     }
+
     #event-page .sec03 .divider {
         border: 0.5px solid #000000;
     }
