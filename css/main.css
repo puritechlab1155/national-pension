@@ -1885,13 +1885,19 @@ body.menu-open .page-wrapper {
 }
 
 #sub-page .sec02 .img-container {
-    width: 100%;
+    width: auto;
+    height: 440px;
     margin-bottom: 70px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 #sub-page .sec02 .article-img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -3823,6 +3829,7 @@ body.menu-open .page-wrapper {
     }
 
     #sub-page .sec02 .img-container {
+        height: 320px;
         margin-bottom: 40px;
     }
 
