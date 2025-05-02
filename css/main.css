@@ -2648,8 +2648,6 @@ body.menu-open .page-wrapper {
 #event-page .form-group .name-input,
 #event-page .form-group .email-input {
     flex-grow: 1;
-    font-size: 14px;
-    box-sizing: border-box;
     height: 35px;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -4258,7 +4256,7 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .info-form .agreement-title {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     #event-page .info-form .agreement-subtitle {

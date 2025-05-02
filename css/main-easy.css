@@ -343,7 +343,6 @@ body.menu-open .page-wrapper {
 
 .mobile-menu .m-volume {
     font-size: 19.5px;
-    
     margin-bottom: 35px;
 }
 
@@ -381,11 +380,9 @@ body.menu-open .page-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 5px 0;
     width: 100%;
     font-size: 24px;
-    letter-spacing: 0%;
-    
     cursor: pointer;
     position: relative;
     border-bottom: 0.5px solid #AAAAAA;
@@ -435,9 +432,9 @@ body.menu-open .page-wrapper {
     position: absolute;
     bottom: 60px;
     right: 15px;
-    font-size: 16px;
+    font-size: 19.5px;
     border: 1px solid #000000;
-    border-radius: 17px;
+    border-radius: 999px;
     padding: 4px 18px;
     cursor: pointer;
     display: inline-block;
@@ -2681,8 +2678,6 @@ body.menu-open .page-wrapper {
 #event-page .form-group .name-input,
 #event-page .form-group .email-input {
     flex-grow: 1;
-    font-size: 14px;
-    box-sizing: border-box;
     height: 35px;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -3817,6 +3812,8 @@ body.menu-open .page-wrapper {
     #sub-page .sec02 .info {
         gap: 5px;
         margin-bottom: 24px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     #sub-page .sec02 .separator {
