@@ -3218,7 +3218,7 @@ body.menu-open .page-wrapper {
     }
 
     .pagination .nav-item {
-        padding: 20px 0px;
+        padding: 20px 10px;
     }
 
     .pagination .pagination {
@@ -3886,14 +3886,14 @@ body.menu-open .page-wrapper {
 
     .pagination .nav-item {
         flex: none;
-        padding: 20px 10px;
+    }
+    .pagination .prev .nav-button{
+        padding: 0 10px 0 0 
     }
 
-    .pagination {
-        display: flex;
-        flex-direction: column;
+    .pagination .next .nav-button{
+        padding: 0 0 0 10px 
     }
-
     .pagination .nav-label {
         font-size: 22px;
         font-weight: 400;

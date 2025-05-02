@@ -3195,7 +3195,7 @@ body.menu-open .page-wrapper {
     }
 
     .pagination .nav-item {
-        padding: 20px 0px;
+        padding: 20px;
     }
 
     .pagination .pagination {
@@ -3841,9 +3841,15 @@ body.menu-open .page-wrapper {
 
     .pagination .nav-item {
         flex: none;
-        padding: 0;
-        height: 120px;
     }
+
+    .pagination .prev .nav-button {
+        padding: 0 10px 0 0;
+    }
+    .pagination .next .nav-button {
+        padding: 0 0 0 10px;
+    }
+
 
     .pagination .nav-label {
         font-size: 14px;
