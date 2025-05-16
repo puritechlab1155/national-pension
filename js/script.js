@@ -32,6 +32,52 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    document.addEventListener("click", function (e) {
+        const target = e.target.closest("#checkView2");
+
+        if (target && !window.location.href.includes("easy-page.html")) {
+            // 이미 easy-page가 아닌 경우에만 처리
+            // 현재 페이지 경로 저장
+            localStorage.setItem("previousPage", window.location.href);
+
+            // main.content 내부에서 .sec01 제외한 section들 가져오기
+            const mainContent = document.querySelector("main.content");
+            if (!mainContent) return;
+
+            const sections = mainContent.querySelectorAll("section:not(.sec01)");
+
+            let contentToCopy = "";
+            sections.forEach(section => {
+                contentToCopy += section.outerHTML;
+        });
+
+        // 저장
+        localStorage.setItem("easyPageContent", contentToCopy);
+
+        // 이동
+        window.location.href = "easy-page.html";
+        } else if (target && window.location.href.includes("easy-page.html")) {
+            const previousPage = localStorage.getItem("previousPage");
+            
+            if (previousPage) {
+                // 체크박스가 비활성화되면 이전 페이지로 돌아감
+                if (!target.classList.contains("active")) {
+                    console.log("Previous Page:", previousPage);
+                    
+                    // localStorage 정리
+                    localStorage.removeItem("easyPageContent");
+                    
+                    // 이전 페이지로 이동
+                    window.location.href = previousPage;
+                } else {
+                    target.classList.remove("active");
+                }
+            }
+        }
+    });
+
+
+
     // ✅  모바일 서브메뉴 토글
     const menuToggle = document.querySelector('.menu-toggle');
     const closeMenu = document.querySelector('.close-menu');
@@ -57,69 +103,76 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.remove('menu-open');
     });
 
-    // ✅ PC해더 서브메뉴 토글
-    document.querySelectorAll('.submenu-toggle').forEach(button => {
-        button.addEventListener('click', (event) => {
-            const parentItem = button.closest('.menu-item');
-            const submenu = parentItem?.nextElementSibling;
-
-            parentItem?.classList.toggle('open');
-
-            const mainLink = parentItem?.querySelector('a');
-            if (mainLink) {
-                mainLink.focus();
-            }
-
-            if (submenu && submenu.classList.contains('submenu')) {
-                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-            }
-
-            event.stopPropagation();
-        });
-    });
-
-    // ✅ 서브메뉴 선택 시 포커스 유지
-    document.querySelectorAll('.submenu-item').forEach(item => {
-        item.setAttribute('tabindex', '0');
-
-        item.addEventListener('click', (event) => {
-            event.stopPropagation();
-
-            document.querySelectorAll('.submenu-item').forEach(subItem => {
-                subItem.classList.remove('focused');
-            });
-
-            item.classList.add('focused');
-
-            const submenu = item.closest('.submenu');
-            const previousItem = submenu?.previousElementSibling;
-
-            if (previousItem?.classList.contains('menu-item')) {
-                previousItem.classList.add('active');
-
-                const mainLink = previousItem.querySelector('a');
-                if (mainLink) {
-                    mainLink.focus();
+// ✅ 모바일 서브메뉴 토글
+document.querySelectorAll('.submenu-toggle').forEach(listItem => {
+    listItem.addEventListener('click', (event) => {
+        const menuItem = listItem.querySelector('.menu-item');
+        const submenu = listItem.querySelector('.submenu');
+        const toggleIcon = listItem.querySelector('.submenu-toggle-svg');
+        const isSubmenuOpen = listItem.classList.contains('open');
+        
+        // 열려있는 다른 서브메뉴 닫기
+        document.querySelectorAll('.submenu-toggle.open').forEach(openItem => {
+            if (openItem !== listItem) {
+                openItem.classList.remove('open');
+                const openSubmenu = openItem.querySelector('.submenu');
+                const openIcon = openItem.querySelector('.submenu-toggle-svg');
+                if (openSubmenu) {
+                    openSubmenu.style.display = 'none';
+                }
+                if (openIcon) {
+                    openIcon.style.transform = 'rotate(0deg)';
                 }
             }
         });
-    });
 
-    // ✅  서브메뉴 transition 후 포커스 유지
-    document.querySelectorAll('.submenu').forEach(submenu => {
-        submenu.addEventListener('transitionend', () => {
-            const previousItem = submenu.previousElementSibling;
-            if (previousItem?.classList.contains('menu-item') && previousItem.classList.contains('open')) {
-                const mainLink = previousItem.querySelector('a');
-                if (mainLink) {
-                    mainLink.focus();
-                }
+        // 현재 메뉴 상태 토글
+        listItem.classList.toggle('open');
+        
+        // 메인 링크에 포커스
+        const mainLink = menuItem?.querySelector('a');
+        if (mainLink) {
+            mainLink.focus();
+        }
+        
+        // 서브메뉴 표시/숨김
+        if (submenu) {
+            submenu.style.display = isSubmenuOpen ? 'none' : 'block';
+        }
+        
+        // 아이콘 회전
+        if (toggleIcon) {
+            toggleIcon.style.transform = isSubmenuOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+        
+        event.stopPropagation();
+    });
+});
+
+// ✅ 모바일 지난호보기 고정
+    const mPrevIssues = document.querySelector('.mobile-menu .m-prev-issues');
+    const mobileMenu2 = document.querySelector('.mobile-menu');
+    
+    if (mPrevIssues && mobileMenu) {
+        const initialBottom = 60; // 초기 bottom 값
+        const threshold = 100; // 스크롤 얼마나 내려갔을 때 변경할지 (조절 가능)
+    
+        mobileMenu2.addEventListener('scroll', () => {
+            if (mobileMenu2.scrollTop > threshold) {
+                mPrevIssues.style.position = 'static';
+                mPrevIssues.style.bottom = '';
+                mPrevIssues.style.right = '';
+            } else {
+                mPrevIssues.style.position = 'absolute';
+                mPrevIssues.style.bottom = `${initialBottom}px`;
+                mPrevIssues.style.right = '15px';
             }
         });
-    });
+    }
+    
+
 
     //  ✅ 검색창 등장
-    const searchContainer = document.getElementById('searchContainer');
     const searchBar = document.getElementById('searchBar');
     const searchIcon = document.querySelector('.search-icon');
     let isActive = false;
