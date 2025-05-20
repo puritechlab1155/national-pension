@@ -1,11 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // // ✅  편하게보기 체크표시
-    // const toggle = document.getElementById('checkView');
-    // toggle?.addEventListener('click', () => {
-    //     toggle.classList.toggle('active');
-    //     body.classList.toggle('enlarged-view');
-    // });
-    // ✅  편하게보기 체크표시
+    // ✅  index,event 편하게보기 체크표시
     const toggle = document.getElementById('checkView');
 
     if (toggle) {
@@ -31,51 +25,84 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
+    // ✅  sub-page 편하게보기 체크표시
     document.addEventListener("click", function (e) {
         const target = e.target.closest("#checkView2");
-
+    
+        // ✅ 클릭 대상이 checkView2이고, 현재 페이지가 easy-page가 아닐 경우
         if (target && !window.location.href.includes("easy-page.html")) {
-            // 이미 easy-page가 아닌 경우에만 처리
-            // 현재 페이지 경로 저장
             localStorage.setItem("previousPage", window.location.href);
-
-            // main.content 내부에서 .sec01 제외한 section들 가져오기
+    
             const mainContent = document.querySelector("main.content");
             if (!mainContent) return;
-
+    
             const sections = mainContent.querySelectorAll("section:not(.sec01)");
-
+    
             let contentToCopy = "";
             sections.forEach(section => {
                 contentToCopy += section.outerHTML;
-        });
-
-        // 저장
-        localStorage.setItem("easyPageContent", contentToCopy);
-
-        // 이동
-        window.location.href = "easy-page.html";
-        } else if (target && window.location.href.includes("easy-page.html")) {
+            });
+    
+            localStorage.setItem("easyPageContent", contentToCopy);
+    
+            window.location.href = "easy-page.html";
+        }
+    
+        // ✅ easy-page에서 클릭했을 때
+        else if (target && window.location.href.includes("easy-page.html")) {
             const previousPage = localStorage.getItem("previousPage");
-            
+    
             if (previousPage) {
-                // 체크박스가 비활성화되면 이전 페이지로 돌아감
-                if (!target.classList.contains("active")) {
-                    console.log("Previous Page:", previousPage);
-                    
-                    // localStorage 정리
-                    localStorage.removeItem("easyPageContent");
-                    
-                    // 이전 페이지로 이동
-                    window.location.href = previousPage;
-                } else {
+                // 🔥 체크되어 있으면 → 해제 후 바로 이동
+                if (target.classList.contains("active")) {
+                    // 체크 해제되자마자 이동
                     target.classList.remove("active");
+                    localStorage.removeItem("easyPageContent");
+                    window.location.href = previousPage;
                 }
             }
         }
     });
 
+    // ✅  해더메뉴 서브메뉴 등장
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+        let closeTimeout;
+
+        dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('mouseenter', () => {
+            clearTimeout(closeTimeout); // 닫는 타임아웃 취소
+            closeAllDropdowns();
+            dropdown.classList.add('open');
+            dropdown.querySelector('.submenu').style.display = 'block';
+        });
+
+        dropdown.addEventListener('mouseleave', () => {
+            closeTimeout = setTimeout(() => {
+            dropdown.classList.remove('open');
+            dropdown.querySelector('.submenu').style.display = 'none';
+            }, 300); // 300ms 후 닫힘 (필요시 조절)
+        });
+
+        const submenu = dropdown.querySelector('.submenu');
+        submenu.addEventListener('mouseenter', () => {
+            clearTimeout(closeTimeout); // 마우스가 서브메뉴에 있으면 닫기 취소
+        });
+        submenu.addEventListener('mouseleave', () => {
+            closeTimeout = setTimeout(() => {
+            dropdown.classList.remove('open');
+            submenu.style.display = 'none';
+            }, 300);
+        });
+        });
+
+        function closeAllDropdowns() {
+        dropdowns.forEach(dd => {
+            dd.classList.remove('open');
+            const submenu = dd.querySelector('.submenu');
+            if (submenu) submenu.style.display = 'none';
+        });
+        }
 
 
     // ✅  모바일 서브메뉴 토글
@@ -148,6 +175,7 @@ document.querySelectorAll('.submenu-toggle').forEach(listItem => {
         event.stopPropagation();
     });
 });
+
 
 // ✅ 모바일 지난호보기 고정
     const mPrevIssues = document.querySelector('.mobile-menu .m-prev-issues');

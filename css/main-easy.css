@@ -54,7 +54,7 @@
 .menu-item:hover {
     color: #FF8EA8;
 }
-
+.menu-item a:hover,
 .menu-item a:focus {
     color: #FF8EA8;
 }
@@ -183,8 +183,11 @@ body.menu-open .page-wrapper {
 .menu-item:nth-child(3) .submenu { left: 770px}
 .menu-item:nth-child(4) .submenu { left: 890px;}
 
-.header .dropdown:hover .submenu,
+/* .header .dropdown:hover .submenu,
 .header .dropdown:focus-within .submenu {
+    display: block;
+} */
+.header .menu-item.active .submenu {
     display: block;
 }
 
@@ -1519,7 +1522,7 @@ body.menu-open .page-wrapper {
 
 #index .sec05 .grid {
     display: flex;
-    height: 920px;
+    height: 1380px;
     gap: 20px;
     overflow: hidden;
 }

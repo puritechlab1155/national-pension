@@ -159,8 +159,8 @@ body.menu-open .page-wrapper {
 }
 
 .header .menu-item .submenu {
-    display: none;
     position: absolute;
+    display: none;
     top: 120px;
     width: 240px;
     background-color: #ffffff;
@@ -169,12 +169,20 @@ body.menu-open .page-wrapper {
     z-index: 999;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
 }
-
-.header .dropdown:hover .submenu,
+/* .header .dropdown:hover .submenu,
 .header .dropdown:focus-within .submenu {
+    display: block;
+} */
+
+/* 'active' 클래스가 있을 때 서브메뉴 보이기 (강제 적용) */
+.header .menu-item.active .submenu {
     display: block;
 }
 
+.menu-item.active .submenu {
+    display: block;
+    opacity: 1;
+}
 
 .header .nav-right {
     display: flex;
@@ -182,7 +190,7 @@ body.menu-open .page-wrapper {
     justify-content: center;
     gap: 15px;
     margin: 50px 50px 25px 0;
-}
+} 
 
 .header .prev-issues {
     font-size: 16px;
