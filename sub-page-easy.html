@@ -84,7 +84,7 @@
                 </li>
                 <li class="submenu-toggle">
                     <div class="menu-item">
-                    <a class="menu-link" href="event-page.html">이벤트</a>
+                    <a class="menu-link">이벤트</a>
                     <button type="button" class="submenu-button">
                         <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -106,259 +106,285 @@
         </div>
 
         <div class="page-wrapper">
-            <!-- 해더 -->
-            <header class="header">
-                <nav class="nav">
-                    <div class="nav-left">
-                        <div class="logo-wrapper">
-                            <a href="index.html" class="logo">
-                                <img class="header-logo" src="img/logo-easy.png" alt="NPS 로고" />
-                            </a>
-                        </div>
-                        <div class="menu-wrapper poppins">
-                            <li class="menu-item dropdown">
-                                <a href="#">NPS</a>
-                                <ul class="submenu">
-                                    <li class="submenu-item"><a href="#" class="submenu-link">NPS 뉴스</a></li>
-                                    <li class="submenu-item"><a href="#" class="submenu-link">NPS 칼럼</a></li>
-                                    <li class="submenu-item"><a href="#" class="submenu-link">알아봐요, 국민연금</a></li>
-                                    <li class="submenu-item"><a href="#" class="submenu-link">세계연금 이모저모</a></li>
-                                    <li class="submenu-item"><a href="#" class="submenu-link">NPS 영상</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item dropdown"><a href="#" class="menu-link">시니어 라이프</a></li>
-                            <li class="menu-item dropdown"><a href="#" class="menu-link">문화</a></li>
-                            <li class="menu-item dropdown"><a href="event-page.html" class="menu-link">이벤트</a></li>
-                        </div>
+        <!-- 해더 -->
+        <header class="header">
+            <nav class="nav">
+                <div class="nav-left">
+                    <div class="logo-wrapper">
+                        <a href="index.html" class="logo">
+                            <img class="header-logo" src="img/logo-easy.png" alt="NPS 로고" />
+                        </a>
                     </div>
-                    <div class="nav-right">
-                        <button type="button"
-                            onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'"
-                            class="prev-issues">지난호 보기</button>
-                        <span class="volume">2025 Spring VOL.203</span>
-                        <div class="search-container" id="searchContainer">
-                            <div>
-                                <svg class="search-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M35 35L28.3333 28.3333M31.6667 18.3333C31.6667 21.8696 30.2619 25.2609 27.7614 27.7614C25.2609 30.2619 21.8696 31.6667 18.3333 31.6667C14.7971 31.6667 11.4057 30.2619 8.90524 27.7614C6.40476 25.2609 5 21.8696 5 18.3333C5 14.7971 6.40476 11.4057 8.90524 8.90524C11.4057 6.40476 14.7971 5 18.3333 5C21.8696 5 25.2609 6.40476 27.7614 8.90524C30.2619 11.4057 31.6667 14.7971 31.6667 18.3333Z"
-                                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div class="search-bar" id="searchBar">
-                                <input type="text" class="search-input" />
-                            </div>
-                        </div>
-                        <button type="button" class="menu-toggle" aria-label="메뉴 열기" onclick="window.location.href='#';">
-                            <svg class="m-menu" width="17" height="12" viewBox="0 0 17 12" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="17" height="0.68" fill="black" />
-                                <rect y="5" width="17" height="0.68" fill="black" />
-                                <rect y="10.88" width="17" height="0.68" fill="black" />
-                            </svg>
-
-                        </button>
-                    </div>
-                </nav>
-            </header>
-
-            <!-- 컨텐츠 -->
-            <main class="content" id="sub-page">
-                <section class="section sec01 padding-230">
-                    <div class="sec01-header" id="checkView">
-                        <span class="check-icon">
-                            <svg class="check-svg" width="37" height="37" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect class="check-circle" x="0.75" y="0.75" width="26.5" height="26.5" rx="13.25" stroke="#AAAAAA" stroke-width="1.5"/>
-                                <path class="check-path" d="M7 15L12 20L21 9" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                        <span class="check-label">편하게 보기</span>
-                    </div>
-                </section>
-
-                <section class="section sec02 padding-230">
-                    <div class="article">
-                        <div class="article-header">
-                            <div class="info">
-                                <p class="category">NPS 칼럼</p>
-                                <p class="author">write. 한국일보 김창훈 기자</p>
-                            </div>
-                            <h2 class="title">2024 <br class="mob-br"/> 국민연금 개혁의 <br class="mob-br"/> 필요성</h2>
-                            <p class="message">더는 미룰 연금개혁도 <br class="mob-br"/> '럭키 비키' 외칠 수 있다면</p>
-                        </div>
-                        <div class="article-content">
-                            <p class="summary">세대 간, 진영 간 갈등이 폭발하는 연금개혁은 언제나 난제다. 정부는 올해 9월 단일 개혁안을 내놓았지만 반발은 거세고 국회에서는 논의조차 안 되고 있다. 기금 소진은 다가오는데 17년 만의 연금개혁 기회를 놓칠 수 있다는 우려가 커지고 있다. 어느 때보다 긍정적 사고가 필요한 시기다.</p>
-                
-                            <h3 class="subtitle">연금개혁에 대한 <br class="mob-br"/> 세대별 불만</h3>
-                            <p class="paragraph">연금개혁, 특히 전 국민이 의무적으로 가입하는 국민연금과 관련해 취재하다 보면 세대별 반응은 극명히 갈린다. 청년층에서는 “기금이 고갈돼 받지도 못할 것”이라는 불신과 “이득은 기성세대가 독차지하고 부담만 큰데 없애고 말자”는 극단적 반발도 적지 않다. 노년층은 또 그들대로 “쥐꼬리 만한 연금만으로 노후 생활은 불가능하다”며 고개를 젓는다. 세대별 불만을 듣다 보면 기성세대와 미래세대의 연대라는 사회보험의 존재 이유가 무색할 정도다. 1988년 도입 이후 30여 년이 흐르며 국민연금은 되레 갈등과 반목의 원인으로 자리 잡았다. 그 시간 동안 지속 가능성을 위해 보험료율을 높이자는 주장과 세계 최고 수준인 노인 빈곤율을 낮추기 위해 명목소득대체율(은퇴 전 소득을 연금이 대체하는 비율)을 올려야 한다는 주장이 첨예하게 격돌해 왔다. 정치권도 재정 안정과 노후 소득 강화를 놓고 갈라져 사회적 갈등은 증폭됐고, 그간 정부는 반발이 큰 ‘표 떨어지는’ 연금개혁을 사실상 외면했다.</p>
-                
-                            <div class="img-container">
-                                <img class="article-img" src="img/sub-page/article-img01.jpg" alt="연금 개혁 관련 이미지">
-                            </div>
-                            <h3 class="subtitle">연금개혁, <br class="mob-br"/> 제도 존속을 위해 <br class="mob-br"/>올해에는 꼭 성공해야</h3>
-                            <p class="paragraph">최근 보건복지부의 언론 브리핑에 참여한 연금 전문가 김상균 서울대 명예교수는 “연금개혁은 사실상 연금 삭감”이라고 단언했다. 개혁이라는 말은 그럴싸하지만 연금 재정을 안정화해 사회보험제도를 지속 가능케 한다는 뜻이 그 안에 내포됐다는 것이다. 보험료율을 높이고 소득대체율을 축소한 선진국들의 연금개혁도 본질은 연금 삭감과 가까웠고, 우리도 다르지 않았다. 지금까지 두 번의 연금개혁이 있었는데, 1998년 1차 개혁으로 소득대체율이 70%에서 60%로 축소됐고 수급개시연령은 60세에서 2033년에 65세가 되도록 단계적으로 조정했다. 2007년 2차 개혁 때는 소득대체율을 50%로 더 내렸고, 매년 0.5%포인트씩 계속 줄어들어 2028년에는 40%가 되도록 설정했다. 표피는 개혁이었지만 국민 입장에서는 은퇴 이후 받을 수 있는 연금액이 깎인 게 맞다. 3차 연금개혁도 제도의 존속을 위해 가입자의 부담이 늘어난다는 개혁의 속성은 변함이 없을 것이다. 2056년 고갈이 예정된 국민연금 기금을 감안하면 보험료율 인상은 필수적이고, 소득대체율은 정부 개혁안을 감안할 때 40%로 내려가지는 않겠지만 얼마나 늘어날지는 미지수다. 다만 연금개혁을 미루고 미뤘던 시간이 쌓이며 개혁 필요성에는 상당한 공감대가 형성됐다. 전 세계에서 유례를 찾을 수 없는 초저출생에 직면한 만큼 재정 안정이나 노후 소득 강화를 주장하는 양쪽 모두 더는 연금개혁을 회피할 수 없다는 점에 동의한다. 올해가 골든 타임이고, 이번에 성공하지 못한다면 앞으로 연금개혁은 더욱 어려워질 것이란 예측에도 이견이 없다.</p>
-                            <h3 class="subtitle">정부가 발표한 <br class="mob-br"/> 연금 개혁안의 <br class="mob-br"/>최대 쟁점은?</h3>
-                            <p class="paragraph">정부는 9월 초 보험료율 13%와 소득대체율 42% 등 모수개혁안이 중심인 ‘연금개혁 추진계획’을 제시했다. 무려 21년 만에 정부가 내놓은 단일 개혁안이다. 21대 국회 연금특위 공론화위원회의 결론과는 격차가 큰 소득대체율, 구조개혁을 의식해 포함한 듯한 연금액 ‘자동조정장치’ 등에 대한 비판이 이어지지만 일단 치열하게 연금개혁을 논의할 판은 깔렸다. 보험료율 13%는 21대 국회 막판에 여야가 합의한 바라 다툼의 여지가 적어 보인다. 소득대체율은 논쟁이 불가피해도 정부가 제안한 42%가 마지노선인 셈이라 향후 국회 논의 과정에서 타협점을 찾을 여지가 있다. 인구구조 변화나 경제 상황 등과 연동해 연금액 등을 조절하는 자동조정장치는 정부도 “치밀한 검토가 필요하다”고 했고, 예상 도입 시점도 빨라야 연금 급여가 보험료 수입을 초과하는 2036년이라 당장 결론을 내려야 할 사안이 아니다. 재정 투입을 늘리는 방식의 출산 및 군 복무 크레딧(납입기간 추가 산입) 확대에는 모두가 동의한다. 결국 최대 쟁점은 ‘세대별 보험료율 인상 속도 차등화’인데, 연금개혁이 시급하다는 대의(大義) 앞에서 논의를 통해 극복하지 못할 장애물은 아니라는 게 전문가들의 중론이다. 공을 넘겨받은 국회에서 의지만 있다면 말이다.</p>
-                            <div class="img-container">
-                                <img class="article-img" src="img/sub-page/article-img02.jpg" alt="연금 개혁 관련 이미지">
-                            </div>
-                            <h3 class="subtitle">연금개혁 과정에도 <br class="mob-br"/> 필요한 긍정적 사고</h3>
-                            <p class="paragraph">온라인에서 젊은 세대를 중심으로 유행한 ‘럭키 비키’가 산업계, 공공부문 등 전방위로 확산하는 분위기다. 행운을 뜻하는 럭키(Lucky)와 아이돌 그룹 아이브 멤버 장원영의 영어 이름 비키(Vicky)를 합친 럭키 비키는 부정적인 일조차 자신에게 도움이 되는 과정으로 여기는 긍정적 사고가 가동될 때 따라붙는 감탄사다. 연금개혁 과정에도 럭키 비키가 작동할 수 있다면 어떨까. 기성세대는 보험료율 인상이 부담스럽겠지만 청년세대보다 상대적으로 덜 내고 더 받는 사실은 부인할 수 없다. 은퇴하기 전까지 보험료를 조금 더 납부해서 미래를 살아갈 자녀들의 짐을 덜어줄 수 있다면 럭키 비키로 받아들일 수 있다. 청년들도 연금이 제 기능을 해 나중에 부모의 노후를 챙겨야 할 부담이 줄어든다면 그 또한 럭키 비키 아닌가. 정부도 연금에 재정 투자를 늘려서 노후의 보편적 삶이 개선된다면 다른 사회복지제도에 들어갈 비용을 줄이는 효과를 기대할 수 있다. 필연적으로 누구는 덜 내고 더 받고, 다른 누군가는 더 내고도 덜 받을 수밖에 없는 구조 속에서 사사건건 부정적으로만 인식한다면 타협과 연대는 점점 멀어질 것이다. 17년 만에 찾아온 연금개혁의 기회를 의미 없이 흘려보내지 않기 위해서는 배려와 양보를 이끌어낼 긍정적 사고가 필요하다. 우리에게는 남은 시간도 많지 않다. 급속한 고령화와 초저출생 쓰나미가 몰아치는 한국에서 살고 있으니 말이다.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section sec03 padding-80">
-                    <div class="pagination">
-                        <div class="nav-item prev">
-                            <button class="nav-button" onclick="window.location.href='#';">
-                                <svg width="45" height="45" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M24.3749 16.2501L9.89242 16.2501L15.5174 21.8751L13.7499 23.6426L5.10742 15.0001L13.7499 6.35758L15.5174 8.12508L9.89242 13.7501L24.3749 13.7501L24.3749 16.2501Z" fill="white"/>
-                                </svg>
-                            </button>
-                            <div class="nav-content" onclick="window.location.href='#';">
-                                <span class="nav-label">PREVIOUS</span>
-                                <h3 class="nav-title">똑똑한 노후 준비!</h3>
-                                <p class="nav-description">40대부터 은퇴를 앞둔 60대까지, <br/>
-                                    알아두면 좋은 연령법 똑똑한 은퇴 준비</p>
-                            </div>
-                            
-                        </div>
-                        <div class="nav-item next">
-                            <div class="nav-content">
-                                <span class="nav-label">NEXT</span>
-                                <h3 class="nav-title">NPS 칼럼</h3>
-                                <p class="nav-description">잘못 알려진 국민연금 제도 바로알기</p>
-                            </div>
-                            <button class="nav-button" onclick="window.location.href='#';">
-                                <svg width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.62508 13.7499L20.1076 13.7499L14.4826 8.12492L16.2501 6.35742L24.8926 14.9999L16.2501 23.6424L14.4826 21.8749L20.1076 16.2499L5.62508 16.2499L5.62508 13.7499Z" fill="white"/>
-                                </svg>                             
-                            </button>
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-
-            <!-- 푸터 -->
-            <footer class="footer">
-                <div class="footer-content">
-                    <div class="footer-left">
-                        <div class="footer-logo">
-                            <img src="img/logo.png" alt="국민연금로고"/>
-                        </div>
-                    </div>
-                    <div class="footer-center">
-                        <div class="footer-icons">
-                            <a href="https://www.youtube.com/user/NaionalPensionServic" target="_blank" title="유투브" class="footer-link">
-                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1402_5)">
-                                    <path d="M32.48 16.24C32.48 25.21 25.21 32.48 16.24 32.48C7.27 32.48 0 25.21 0 16.24C0 7.27 7.27 0 16.24 0C25.21 0 32.48 7.27 32.48 16.24Z" fill="white"/>
-                                    <path d="M24.91 16.2402C24.91 22.6202 24.53 22.0802 16.24 22.3202C8.06001 22.1502 7.57001 22.6202 7.57001 16.2402C7.57001 9.86016 8.08001 10.3102 16.24 10.1602C24.13 10.2602 24.91 9.72016 24.91 16.2402Z" fill="#231815"/>
-                                    <path d="M18.98 16.2399L14.52 18.8599V13.6099L18.98 16.2399Z" fill="white"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_1402_5">
-                                    <rect width="32.48" height="32.48" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg> 
-                            </a>
-                            <a href="https://www.instagram.com/accounts/login/?next=/npstagram/" target="_blank" title="인스타그램" class="footer-link">
-                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1402_9)">
-                                    <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
-                                    <path d="M9.06 19.3298V13.1098C9.06 10.8798 10.87 9.06982 13.1 9.06982H19.32C21.55 9.06982 23.36 10.8798 23.36 13.1098V19.3298C23.36 21.5598 21.55 23.3698 19.32 23.3698H13.1C10.87 23.3698 9.06 21.5598 9.06 19.3298Z" fill="#231815"/>
-                                    <path d="M13.11 10.1699C12.33 10.1699 11.59 10.4799 11.03 11.0299C10.48 11.5899 10.17 12.3199 10.17 13.1099V19.3299C10.17 20.1199 10.48 20.8499 11.03 21.4099C11.59 21.9599 12.32 22.2699 13.11 22.2699H19.33C20.11 22.2699 20.85 21.9599 21.41 21.4099C21.97 20.8599 22.27 20.1199 22.27 19.3299V13.1099C22.27 12.3199 21.96 11.5899 21.41 11.0299C20.85 10.4799 20.12 10.1699 19.33 10.1699H13.11Z" fill="white"/>
-                                    <path d="M19.48 12.3102C19.48 11.9502 19.77 11.6602 20.13 11.6602C20.49 11.6602 20.78 11.9502 20.78 12.3102C20.78 12.6702 20.49 12.9702 20.13 12.9702C19.77 12.9702 19.48 12.6802 19.48 12.3102Z" fill="#231815"/>
-                                    <path d="M18.09 18.5302C17.59 19.0302 16.93 19.3102 16.22 19.3102C15.51 19.3102 14.85 19.0302 14.35 18.5302C13.85 18.0302 13.58 17.3702 13.58 16.6602C13.58 15.9502 13.86 15.2902 14.35 14.7902C14.85 14.2902 15.51 14.0102 16.22 14.0102C16.93 14.0102 17.59 14.2902 18.09 14.7902C18.59 15.2902 18.86 15.9502 18.86 16.6602C18.86 17.3702 18.59 18.0302 18.09 18.5302ZM16.22 12.9102C14.15 12.9102 12.47 14.5902 12.47 16.6602C12.47 18.7302 14.15 20.4102 16.22 20.4102C18.29 20.4102 19.97 18.7302 19.97 16.6602C19.97 14.5902 18.29 12.9102 16.22 12.9102Z" fill="#231815"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_1402_9">
-                                    <rect width="32.43" height="32.43" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                            <a href="https://www.facebook.com/proNPS" target="_blank"  title="페이스북" class="footer-link">
-                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1402_15)">
-                                    <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
-                                    <path d="M24.46 16.2202C24.46 20.3502 21.42 23.7702 17.46 24.3702C17.46 22.5002 17.46 20.6302 17.46 18.7602L17.61 18.6002C18.2 18.6002 18.79 18.6002 19.37 18.6002L19.55 18.4402C19.57 18.2102 19.61 17.9902 19.63 17.7602C19.69 17.2802 19.76 16.8002 19.82 16.3202C19.84 16.1502 19.83 16.1502 19.66 16.1502H17.45C17.45 15.8702 17.45 15.6202 17.45 15.3602C17.45 14.9902 17.45 14.6302 17.48 14.2702C17.5 13.9802 17.64 13.7302 17.93 13.6102C18.07 13.5502 18.22 13.5102 18.36 13.5102C18.82 13.4902 19.29 13.4902 19.75 13.4902L19.92 13.3302C19.92 12.7002 19.92 12.0702 19.92 11.4402L19.77 11.2802C19.15 11.2602 18.54 11.2202 17.92 11.2102C17.51 11.2002 17.11 11.2802 16.73 11.4302C15.62 11.8802 15.08 12.7502 14.97 13.8902C14.91 14.5802 14.94 15.2802 14.94 15.9702C14.94 16.0902 14.91 16.1402 14.78 16.1402C14.19 16.1402 13.6 16.1402 13.02 16.1402L12.87 16.3002C12.87 17.0102 12.87 17.7202 12.87 18.4302L13.03 18.5902C13.6 18.5902 14.18 18.5902 14.75 18.5902C14.94 18.5902 14.94 18.5902 14.94 18.7802C14.94 20.6402 14.94 22.5002 14.94 24.3502C11 23.7402 7.97998 20.3202 7.97998 16.2102C7.97998 11.6602 11.67 7.97021 16.22 7.97021C20.77 7.97021 24.46 11.6602 24.46 16.2102" fill="#231815"/>
-                                    <path d="M19.93 13.3401L19.76 13.5001C19.3 13.5001 18.83 13.5001 18.37 13.5201C18.22 13.5201 18.07 13.5701 17.94 13.6201C17.65 13.7401 17.52 13.9801 17.49 14.2801C17.46 14.6401 17.46 15.0101 17.46 15.3701C17.46 15.6301 17.46 15.8801 17.46 16.1601H17.63C18.31 16.1601 18.99 16.1601 19.66 16.1601C19.83 16.1601 19.84 16.1601 19.82 16.3401C19.76 16.8201 19.7 17.3001 19.63 17.7801C19.6 18.0001 19.57 18.2301 19.55 18.4601L19.37 18.6201C18.78 18.6201 18.19 18.6201 17.61 18.6201L17.46 18.7801C17.46 20.6501 17.46 22.5201 17.46 24.3901C17.06 24.4501 16.64 24.4801 16.22 24.4801C15.8 24.4801 15.36 24.4501 14.94 24.3801C14.94 22.5201 14.94 20.6601 14.94 18.8101C14.94 18.6834 14.8767 18.6201 14.75 18.6201C14.18 18.6201 13.6 18.6201 13.03 18.6201L12.87 18.4601C12.87 17.7501 12.87 17.0401 12.87 16.3301L13.02 16.1701C13.61 16.1701 14.2 16.1701 14.78 16.1701C14.92 16.1701 14.94 16.1301 14.94 16.0001C14.94 15.3101 14.91 14.6101 14.97 13.9201C15.07 12.7701 15.62 11.9001 16.73 11.4601C17.11 11.3101 17.51 11.2301 17.92 11.2401C18.54 11.2501 19.15 11.2901 19.77 11.3101L19.92 11.4701C19.92 12.1001 19.92 12.7301 19.92 13.3601" fill="white"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_1402_15">
-                                    <rect width="32.43" height="32.43" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                            <a href="https://blog.naver.com/pro_nps" target="_blank" title="블로그" class="footer-link">
-                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1402_19)">
-                                    <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
-                                    <path d="M24.48 19.1601C24.48 20.6101 23.31 21.7801 21.87 21.7801H10.56C9.12001 21.7801 7.95001 20.6101 7.95001 19.1601V12.9501C7.95001 11.5001 9.12001 10.3301 10.56 10.3301H21.87C23.31 10.3301 24.48 11.5001 24.48 12.9501V19.1601Z" fill="#231815"/>
-                                    <path d="M18.25 21.3299L16.57 21.2299V21.1899L16.22 21.2099L15.86 21.1899V21.2399L14.18 21.3399L15.78 23.9499L15.82 24.0099C15.9 24.1399 16.04 24.2299 16.21 24.2299C16.38 24.2299 16.52 24.1399 16.6 24.0099L16.64 23.9399L18.24 21.3299H18.25Z" fill="#231815"/>
-                                    <path d="M11.4 17.1002C11.04 17.1002 10.75 16.8102 10.75 16.4502C10.75 16.0902 11.04 15.8002 11.4 15.8002C11.76 15.8002 12.05 16.0902 12.05 16.4502C12.05 16.8102 11.76 17.1002 11.4 17.1002ZM11.62 14.8802C11.62 14.8802 11.17 14.8802 10.76 15.2802V13.6802H9.75V17.9002H10.77V17.5702C10.77 17.5702 11.01 18.0102 11.62 18.0102C11.62 18.0102 13.05 17.9602 13.05 16.4402C13.05 16.4402 13 14.9002 11.62 14.9002" fill="white"/>
-                                    <path d="M13.38 13.5801V14.5601C13.38 14.5601 13.84 14.5401 13.84 15.4001V17.9001H14.82V15.1701C14.82 15.1701 14.86 13.5901 13.38 13.5901" fill="white"/>
-                                    <path d="M17.2 17.1001C16.84 17.1001 16.55 16.8101 16.55 16.4501C16.55 16.0901 16.84 15.8001 17.2 15.8001C17.56 15.8001 17.85 16.0901 17.85 16.4501C17.85 16.8101 17.56 17.1001 17.2 17.1001ZM17.2 14.8901C17.2 14.8901 15.53 14.8901 15.53 16.4501C15.53 16.4501 15.48 17.9901 17.2 17.9901C17.2 17.9901 18.91 17.9901 18.91 16.4501C18.91 16.4501 18.97 14.8901 17.2 14.8901Z" fill="white"/>
-                                    <path d="M21.09 17.1002C20.73 17.1002 20.44 16.8102 20.44 16.4502C20.44 16.0902 20.73 15.8002 21.09 15.8002C21.45 15.8002 21.74 16.0902 21.74 16.4502C21.74 16.8102 21.45 17.1002 21.09 17.1002ZM21.7 14.9902V15.2702C21.7 15.2702 21.41 14.8802 20.85 14.8802C20.85 14.8802 19.42 14.8202 19.42 16.4302C19.42 16.4302 19.4 17.9302 20.81 17.9302C20.81 17.9302 21.38 17.9502 21.7 17.5402V17.7802C21.7 17.7802 21.77 18.5202 21.05 18.5202H20.81V19.4202H21.2C21.2 19.4202 22.68 19.4402 22.68 17.8402V14.9802H21.7V14.9902Z" fill="white"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_1402_19">
-                                    <rect width="32.43" height="32.43" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                            <a href="https://post.naver.com/pro_nps" target="_blank" title="네이버 포스트" class="footer-link">
-                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1402_27)">
-                                    <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
-                                    <path d="M21.19 8.77002H11.25V18.71H21.19V8.77002Z" fill="#231815"/>
-                                    <path d="M19.06 22.1601L21.19 19.6201H11.24L13.37 22.1601H19.06Z" fill="#231815"/>
-                                    <path d="M14.4 23.3901L16.22 25.5501L18.03 23.3901H14.4Z" fill="#231815"/>
-                                    <path d="M18.54 11.7598V16.0198H16.98L15.45 13.8798V16.0198H13.9V11.7598H15.45L16.98 13.9898V11.7598H18.54Z" fill="white"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_1402_27">
-                                    <rect width="32.43" height="32.43" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                            <a href="https://tv.naver.com/npstv" target="_blank" title="네이버TV" class="footer-link">
-                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <g clip-path="url(#clip0_1402_33)">
-                                    <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
-                                    <rect width="16" height="16" transform="translate(9 8)" fill="url(#pattern0_1402_33)"/>
-                                    </g>
-                                    <defs>
-                                    <pattern id="pattern0_1402_33" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_1402_33" transform="scale(0.01)"/>
-                                    </pattern>
-                                    <clipPath id="clip0_1402_33">
-                                    <rect width="32.43" height="32.43" fill="white"/>
-                                    </clipPath>
-                                    <image id="image0_1402_33" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4yLWMwMDAgNzkuMWI2NWE3OWI0LCAyMDIyLzA2LzEzLTIyOjAxOjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjMuNSAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMDUtMTdUMTU6MjI6MzIrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMDUtMTdUMTU6MjI6MzIrMDk6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDI0LTA1LTE3VDE1OjIyOjMyKzA5OjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmQ3YTE1ZjdkLTNlZjUtNDM0NC05NmQ0LTM0ZTMwMTRmNjM1OSIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmFjMmRhNTk4LWE4M2YtYWY0MC05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"/>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer-right">
-                        <p>
-                        국민연금 고객센터 : 국번없이 1355 <br class="mob-br"/> (해외:+82-63-713-6900 평일 09:00 ~ 18:00)<br>
-                        54870 전라북도 전주시 덕진구 기지로 180 <br class="mob-br"/> (만성동, 국민연금공단)<br>
-                        간행물 등록번호 : 전주, 바 00034<br>
-                        © nps.or.kr. All rights reserved.
-                        </p>
+                    <div class="menu-wrapper poppins">
+                        <li class="menu-item dropdown">
+                            <a href="#">NPS</a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="nps-news.html" class="submenu-link">NPS 뉴스</a></li>
+                                <li class="submenu-item"><a href="nps-column.html" class="submenu-link">NPS 칼럼</a></li>
+                                <li class="submenu-item"><a href="nps-learn.html" class="submenu-link">알아봐요, 국민연금</a></li>
+                                <li class="submenu-item"><a href="nps-world.html" class="submenu-link">세계연금 이모저모</a></li>
+                                <li class="submenu-item"><a href="nps-video.html" class="submenu-link">NPS 영상</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" >시니어 라이프</a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="seniorLife-every.html" class="submenu-link">모두의 여행</a></li>
+                                <li class="submenu-item"><a href="seniorLife-together.html" class="submenu-link">함께 시니어 여행</a></li>
+                                <li class="submenu-item"><a href="seniorLife-now.html" class="submenu-link">우리는 지금</a></li>
+                                <li class="submenu-item"><a href="seniorLife-smart.html" class="submenu-link">똑똑한 노후준비!</a></li>
+                                <li class="submenu-item"><a href="seniorLife-active.html" class="submenu-link">액티브 시니어</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#">문화</a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="culture-cinema.html" class="submenu-link">연금&시네마</a></li>
+                                <li class="submenu-item"><a href="culture-recipe.html" class="submenu-link">오늘의 레시피</a></li>
+                                <li class="submenu-item"><a href="culture-health.html" class="submenu-link">헬스 앤 라이프</a></li>
+                                <li class="submenu-item"><a href="culture-learn.html" class="submenu-link">꼬리에 꼬리를 무는 문화탐구</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="menu-link">이벤트</a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="event-initialQuiz.html" class="submenu-link">초성 퀴즈</a></li>
+                                <li class="submenu-item"><a href="event-vote.html" class="submenu-link">최애 콘텐츠 투표</a></li>
+                                <li class="submenu-item"><a href="event-oxQuiz.html" class="submenu-link">OX 퀴즈</a></li>
+                                <li class="submenu-item"><a href="event-draw.html" class="submenu-link">구독자 뽑기</a></li>
+                                <li class="submenu-item"><a href="event-voice.html" class="submenu-link">독자 목소리</a></li>
+                            </ul>
+                        </li>
                     </div>
                 </div>
-            </footer>
+                <div class="nav-right">
+                    <button type="button"
+                        onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'"
+                        class="prev-issues">지난호 보기</button>
+                    <span class="volume">2025 Spring VOL.203</span>
+                    <div class="search-container" id="searchContainer">
+                        <div>
+                            <svg class="search-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35 35L28.3333 28.3333M31.6667 18.3333C31.6667 21.8696 30.2619 25.2609 27.7614 27.7614C25.2609 30.2619 21.8696 31.6667 18.3333 31.6667C14.7971 31.6667 11.4057 30.2619 8.90524 27.7614C6.40476 25.2609 5 21.8696 5 18.3333C5 14.7971 6.40476 11.4057 8.90524 8.90524C11.4057 6.40476 14.7971 5 18.3333 5C21.8696 5 25.2609 6.40476 27.7614 8.90524C30.2619 11.4057 31.6667 14.7971 31.6667 18.3333Z"
+                                    stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="search-bar" id="searchBar">
+                            <input type="text" class="search-input" />
+                        </div>
+                    </div>
+                    <button type="button" class="menu-toggle" aria-label="메뉴 열기" onclick="window.location.href='#';">
+                        <svg class="m-menu" width="17" height="12" viewBox="0 0 17 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="17" height="0.68" fill="black" />
+                            <rect y="5" width="17" height="0.68" fill="black" />
+                            <rect y="10.88" width="17" height="0.68" fill="black" />
+                        </svg>
+
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- 컨텐츠 -->
+        <main class="content" id="sub-page">
+            <section class="section sec01 padding-230">
+                <div class="sec01-header" id="checkView">
+                    <span class="check-icon">
+                        <svg class="check-svg" width="37" height="37" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="check-circle" x="0.75" y="0.75" width="26.5" height="26.5" rx="13.25" stroke="#AAAAAA" stroke-width="1.5"/>
+                            <path class="check-path" d="M7 15L12 20L21 9" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="check-label">편하게 보기</span>
+                </div>
+            </section>
+
+            <section class="section sec02 padding-230">
+                <div class="article">
+                    <div class="article-header">
+                        <div class="info">
+                            <p class="category">NPS 칼럼</p>
+                            <p class="author">write. 한국일보 김창훈 기자</p>
+                        </div>
+                        <h2 class="title">2024 <br class="mob-br"/> 국민연금 개혁의 <br class="mob-br"/> 필요성</h2>
+                        <p class="message">더는 미룰 연금개혁도 <br class="mob-br"/> '럭키 비키' 외칠 수 있다면</p>
+                    </div>
+                    <div class="article-content">
+                        <p class="summary">세대 간, 진영 간 갈등이 폭발하는 연금개혁은 언제나 난제다. 정부는 올해 9월 단일 개혁안을 내놓았지만 반발은 거세고 국회에서는 논의조차 안 되고 있다. 기금 소진은 다가오는데 17년 만의 연금개혁 기회를 놓칠 수 있다는 우려가 커지고 있다. 어느 때보다 긍정적 사고가 필요한 시기다.</p>
+            
+                        <h3 class="subtitle">연금개혁에 대한 <br class="mob-br"/> 세대별 불만</h3>
+                        <p class="paragraph">연금개혁, 특히 전 국민이 의무적으로 가입하는 국민연금과 관련해 취재하다 보면 세대별 반응은 극명히 갈린다. 청년층에서는 “기금이 고갈돼 받지도 못할 것”이라는 불신과 “이득은 기성세대가 독차지하고 부담만 큰데 없애고 말자”는 극단적 반발도 적지 않다. 노년층은 또 그들대로 “쥐꼬리 만한 연금만으로 노후 생활은 불가능하다”며 고개를 젓는다. 세대별 불만을 듣다 보면 기성세대와 미래세대의 연대라는 사회보험의 존재 이유가 무색할 정도다. 1988년 도입 이후 30여 년이 흐르며 국민연금은 되레 갈등과 반목의 원인으로 자리 잡았다. 그 시간 동안 지속 가능성을 위해 보험료율을 높이자는 주장과 세계 최고 수준인 노인 빈곤율을 낮추기 위해 명목소득대체율(은퇴 전 소득을 연금이 대체하는 비율)을 올려야 한다는 주장이 첨예하게 격돌해 왔다. 정치권도 재정 안정과 노후 소득 강화를 놓고 갈라져 사회적 갈등은 증폭됐고, 그간 정부는 반발이 큰 ‘표 떨어지는’ 연금개혁을 사실상 외면했다.</p>
+            
+                        <div class="img-container">
+                            <img class="article-img" src="img/sub-page/article-img01.jpg" alt="연금 개혁 관련 이미지">
+                        </div>
+                        <h3 class="subtitle">연금개혁, <br class="mob-br"/> 제도 존속을 위해 <br class="mob-br"/>올해에는 꼭 성공해야</h3>
+                        <p class="paragraph">최근 보건복지부의 언론 브리핑에 참여한 연금 전문가 김상균 서울대 명예교수는 “연금개혁은 사실상 연금 삭감”이라고 단언했다. 개혁이라는 말은 그럴싸하지만 연금 재정을 안정화해 사회보험제도를 지속 가능케 한다는 뜻이 그 안에 내포됐다는 것이다. 보험료율을 높이고 소득대체율을 축소한 선진국들의 연금개혁도 본질은 연금 삭감과 가까웠고, 우리도 다르지 않았다. 지금까지 두 번의 연금개혁이 있었는데, 1998년 1차 개혁으로 소득대체율이 70%에서 60%로 축소됐고 수급개시연령은 60세에서 2033년에 65세가 되도록 단계적으로 조정했다. 2007년 2차 개혁 때는 소득대체율을 50%로 더 내렸고, 매년 0.5%포인트씩 계속 줄어들어 2028년에는 40%가 되도록 설정했다. 표피는 개혁이었지만 국민 입장에서는 은퇴 이후 받을 수 있는 연금액이 깎인 게 맞다. 3차 연금개혁도 제도의 존속을 위해 가입자의 부담이 늘어난다는 개혁의 속성은 변함이 없을 것이다. 2056년 고갈이 예정된 국민연금 기금을 감안하면 보험료율 인상은 필수적이고, 소득대체율은 정부 개혁안을 감안할 때 40%로 내려가지는 않겠지만 얼마나 늘어날지는 미지수다. 다만 연금개혁을 미루고 미뤘던 시간이 쌓이며 개혁 필요성에는 상당한 공감대가 형성됐다. 전 세계에서 유례를 찾을 수 없는 초저출생에 직면한 만큼 재정 안정이나 노후 소득 강화를 주장하는 양쪽 모두 더는 연금개혁을 회피할 수 없다는 점에 동의한다. 올해가 골든 타임이고, 이번에 성공하지 못한다면 앞으로 연금개혁은 더욱 어려워질 것이란 예측에도 이견이 없다.</p>
+                        <h3 class="subtitle">정부가 발표한 <br class="mob-br"/> 연금 개혁안의 <br class="mob-br"/>최대 쟁점은?</h3>
+                        <p class="paragraph">정부는 9월 초 보험료율 13%와 소득대체율 42% 등 모수개혁안이 중심인 ‘연금개혁 추진계획’을 제시했다. 무려 21년 만에 정부가 내놓은 단일 개혁안이다. 21대 국회 연금특위 공론화위원회의 결론과는 격차가 큰 소득대체율, 구조개혁을 의식해 포함한 듯한 연금액 ‘자동조정장치’ 등에 대한 비판이 이어지지만 일단 치열하게 연금개혁을 논의할 판은 깔렸다. 보험료율 13%는 21대 국회 막판에 여야가 합의한 바라 다툼의 여지가 적어 보인다. 소득대체율은 논쟁이 불가피해도 정부가 제안한 42%가 마지노선인 셈이라 향후 국회 논의 과정에서 타협점을 찾을 여지가 있다. 인구구조 변화나 경제 상황 등과 연동해 연금액 등을 조절하는 자동조정장치는 정부도 “치밀한 검토가 필요하다”고 했고, 예상 도입 시점도 빨라야 연금 급여가 보험료 수입을 초과하는 2036년이라 당장 결론을 내려야 할 사안이 아니다. 재정 투입을 늘리는 방식의 출산 및 군 복무 크레딧(납입기간 추가 산입) 확대에는 모두가 동의한다. 결국 최대 쟁점은 ‘세대별 보험료율 인상 속도 차등화’인데, 연금개혁이 시급하다는 대의(大義) 앞에서 논의를 통해 극복하지 못할 장애물은 아니라는 게 전문가들의 중론이다. 공을 넘겨받은 국회에서 의지만 있다면 말이다.</p>
+                        <div class="img-container">
+                            <img class="article-img" src="img/sub-page/article-img02.jpg" alt="연금 개혁 관련 이미지">
+                        </div>
+                        <h3 class="subtitle">연금개혁 과정에도 <br class="mob-br"/> 필요한 긍정적 사고</h3>
+                        <p class="paragraph">온라인에서 젊은 세대를 중심으로 유행한 ‘럭키 비키’가 산업계, 공공부문 등 전방위로 확산하는 분위기다. 행운을 뜻하는 럭키(Lucky)와 아이돌 그룹 아이브 멤버 장원영의 영어 이름 비키(Vicky)를 합친 럭키 비키는 부정적인 일조차 자신에게 도움이 되는 과정으로 여기는 긍정적 사고가 가동될 때 따라붙는 감탄사다. 연금개혁 과정에도 럭키 비키가 작동할 수 있다면 어떨까. 기성세대는 보험료율 인상이 부담스럽겠지만 청년세대보다 상대적으로 덜 내고 더 받는 사실은 부인할 수 없다. 은퇴하기 전까지 보험료를 조금 더 납부해서 미래를 살아갈 자녀들의 짐을 덜어줄 수 있다면 럭키 비키로 받아들일 수 있다. 청년들도 연금이 제 기능을 해 나중에 부모의 노후를 챙겨야 할 부담이 줄어든다면 그 또한 럭키 비키 아닌가. 정부도 연금에 재정 투자를 늘려서 노후의 보편적 삶이 개선된다면 다른 사회복지제도에 들어갈 비용을 줄이는 효과를 기대할 수 있다. 필연적으로 누구는 덜 내고 더 받고, 다른 누군가는 더 내고도 덜 받을 수밖에 없는 구조 속에서 사사건건 부정적으로만 인식한다면 타협과 연대는 점점 멀어질 것이다. 17년 만에 찾아온 연금개혁의 기회를 의미 없이 흘려보내지 않기 위해서는 배려와 양보를 이끌어낼 긍정적 사고가 필요하다. 우리에게는 남은 시간도 많지 않다. 급속한 고령화와 초저출생 쓰나미가 몰아치는 한국에서 살고 있으니 말이다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section sec03 padding-80">
+                <div class="pagination">
+                    <div class="nav-item prev">
+                        <button class="nav-button" onclick="window.location.href='#';">
+                            <svg width="45" height="45" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.3749 16.2501L9.89242 16.2501L15.5174 21.8751L13.7499 23.6426L5.10742 15.0001L13.7499 6.35758L15.5174 8.12508L9.89242 13.7501L24.3749 13.7501L24.3749 16.2501Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="nav-content" onclick="window.location.href='#';">
+                            <span class="nav-label">PREVIOUS</span>
+                            <h3 class="nav-title">똑똑한 노후 준비!</h3>
+                            <p class="nav-description">40대부터 은퇴를 앞둔 60대까지, <br/>
+                                알아두면 좋은 연령법 똑똑한 은퇴 준비</p>
+                        </div>
+                        
+                    </div>
+                    <div class="nav-item next">
+                        <div class="nav-content">
+                            <span class="nav-label">NEXT</span>
+                            <h3 class="nav-title">NPS 칼럼</h3>
+                            <p class="nav-description">잘못 알려진 국민연금 제도 바로알기</p>
+                        </div>
+                        <button class="nav-button" onclick="window.location.href='#';">
+                            <svg width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.62508 13.7499L20.1076 13.7499L14.4826 8.12492L16.2501 6.35742L24.8926 14.9999L16.2501 23.6424L14.4826 21.8749L20.1076 16.2499L5.62508 16.2499L5.62508 13.7499Z" fill="white"/>
+                            </svg>                             
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!-- 푸터 -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="국민연금로고"/>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-icons">
+                        <a href="https://www.youtube.com/user/NaionalPensionServic" target="_blank" title="유투브" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_5)">
+                                <path d="M32.48 16.24C32.48 25.21 25.21 32.48 16.24 32.48C7.27 32.48 0 25.21 0 16.24C0 7.27 7.27 0 16.24 0C25.21 0 32.48 7.27 32.48 16.24Z" fill="white"/>
+                                <path d="M24.91 16.2402C24.91 22.6202 24.53 22.0802 16.24 22.3202C8.06001 22.1502 7.57001 22.6202 7.57001 16.2402C7.57001 9.86016 8.08001 10.3102 16.24 10.1602C24.13 10.2602 24.91 9.72016 24.91 16.2402Z" fill="#231815"/>
+                                <path d="M18.98 16.2399L14.52 18.8599V13.6099L18.98 16.2399Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1402_5">
+                                <rect width="32.48" height="32.48" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg> 
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/?next=/npstagram/" target="_blank" title="인스타그램" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_9)">
+                                <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
+                                <path d="M9.06 19.3298V13.1098C9.06 10.8798 10.87 9.06982 13.1 9.06982H19.32C21.55 9.06982 23.36 10.8798 23.36 13.1098V19.3298C23.36 21.5598 21.55 23.3698 19.32 23.3698H13.1C10.87 23.3698 9.06 21.5598 9.06 19.3298Z" fill="#231815"/>
+                                <path d="M13.11 10.1699C12.33 10.1699 11.59 10.4799 11.03 11.0299C10.48 11.5899 10.17 12.3199 10.17 13.1099V19.3299C10.17 20.1199 10.48 20.8499 11.03 21.4099C11.59 21.9599 12.32 22.2699 13.11 22.2699H19.33C20.11 22.2699 20.85 21.9599 21.41 21.4099C21.97 20.8599 22.27 20.1199 22.27 19.3299V13.1099C22.27 12.3199 21.96 11.5899 21.41 11.0299C20.85 10.4799 20.12 10.1699 19.33 10.1699H13.11Z" fill="white"/>
+                                <path d="M19.48 12.3102C19.48 11.9502 19.77 11.6602 20.13 11.6602C20.49 11.6602 20.78 11.9502 20.78 12.3102C20.78 12.6702 20.49 12.9702 20.13 12.9702C19.77 12.9702 19.48 12.6802 19.48 12.3102Z" fill="#231815"/>
+                                <path d="M18.09 18.5302C17.59 19.0302 16.93 19.3102 16.22 19.3102C15.51 19.3102 14.85 19.0302 14.35 18.5302C13.85 18.0302 13.58 17.3702 13.58 16.6602C13.58 15.9502 13.86 15.2902 14.35 14.7902C14.85 14.2902 15.51 14.0102 16.22 14.0102C16.93 14.0102 17.59 14.2902 18.09 14.7902C18.59 15.2902 18.86 15.9502 18.86 16.6602C18.86 17.3702 18.59 18.0302 18.09 18.5302ZM16.22 12.9102C14.15 12.9102 12.47 14.5902 12.47 16.6602C12.47 18.7302 14.15 20.4102 16.22 20.4102C18.29 20.4102 19.97 18.7302 19.97 16.6602C19.97 14.5902 18.29 12.9102 16.22 12.9102Z" fill="#231815"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1402_9">
+                                <rect width="32.43" height="32.43" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/proNPS" target="_blank"  title="페이스북" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_15)">
+                                <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
+                                <path d="M24.46 16.2202C24.46 20.3502 21.42 23.7702 17.46 24.3702C17.46 22.5002 17.46 20.6302 17.46 18.7602L17.61 18.6002C18.2 18.6002 18.79 18.6002 19.37 18.6002L19.55 18.4402C19.57 18.2102 19.61 17.9902 19.63 17.7602C19.69 17.2802 19.76 16.8002 19.82 16.3202C19.84 16.1502 19.83 16.1502 19.66 16.1502H17.45C17.45 15.8702 17.45 15.6202 17.45 15.3602C17.45 14.9902 17.45 14.6302 17.48 14.2702C17.5 13.9802 17.64 13.7302 17.93 13.6102C18.07 13.5502 18.22 13.5102 18.36 13.5102C18.82 13.4902 19.29 13.4902 19.75 13.4902L19.92 13.3302C19.92 12.7002 19.92 12.0702 19.92 11.4402L19.77 11.2802C19.15 11.2602 18.54 11.2202 17.92 11.2102C17.51 11.2002 17.11 11.2802 16.73 11.4302C15.62 11.8802 15.08 12.7502 14.97 13.8902C14.91 14.5802 14.94 15.2802 14.94 15.9702C14.94 16.0902 14.91 16.1402 14.78 16.1402C14.19 16.1402 13.6 16.1402 13.02 16.1402L12.87 16.3002C12.87 17.0102 12.87 17.7202 12.87 18.4302L13.03 18.5902C13.6 18.5902 14.18 18.5902 14.75 18.5902C14.94 18.5902 14.94 18.5902 14.94 18.7802C14.94 20.6402 14.94 22.5002 14.94 24.3502C11 23.7402 7.97998 20.3202 7.97998 16.2102C7.97998 11.6602 11.67 7.97021 16.22 7.97021C20.77 7.97021 24.46 11.6602 24.46 16.2102" fill="#231815"/>
+                                <path d="M19.93 13.3401L19.76 13.5001C19.3 13.5001 18.83 13.5001 18.37 13.5201C18.22 13.5201 18.07 13.5701 17.94 13.6201C17.65 13.7401 17.52 13.9801 17.49 14.2801C17.46 14.6401 17.46 15.0101 17.46 15.3701C17.46 15.6301 17.46 15.8801 17.46 16.1601H17.63C18.31 16.1601 18.99 16.1601 19.66 16.1601C19.83 16.1601 19.84 16.1601 19.82 16.3401C19.76 16.8201 19.7 17.3001 19.63 17.7801C19.6 18.0001 19.57 18.2301 19.55 18.4601L19.37 18.6201C18.78 18.6201 18.19 18.6201 17.61 18.6201L17.46 18.7801C17.46 20.6501 17.46 22.5201 17.46 24.3901C17.06 24.4501 16.64 24.4801 16.22 24.4801C15.8 24.4801 15.36 24.4501 14.94 24.3801C14.94 22.5201 14.94 20.6601 14.94 18.8101C14.94 18.6834 14.8767 18.6201 14.75 18.6201C14.18 18.6201 13.6 18.6201 13.03 18.6201L12.87 18.4601C12.87 17.7501 12.87 17.0401 12.87 16.3301L13.02 16.1701C13.61 16.1701 14.2 16.1701 14.78 16.1701C14.92 16.1701 14.94 16.1301 14.94 16.0001C14.94 15.3101 14.91 14.6101 14.97 13.9201C15.07 12.7701 15.62 11.9001 16.73 11.4601C17.11 11.3101 17.51 11.2301 17.92 11.2401C18.54 11.2501 19.15 11.2901 19.77 11.3101L19.92 11.4701C19.92 12.1001 19.92 12.7301 19.92 13.3601" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1402_15">
+                                <rect width="32.43" height="32.43" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://blog.naver.com/pro_nps" target="_blank" title="블로그" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_19)">
+                                <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
+                                <path d="M24.48 19.1601C24.48 20.6101 23.31 21.7801 21.87 21.7801H10.56C9.12001 21.7801 7.95001 20.6101 7.95001 19.1601V12.9501C7.95001 11.5001 9.12001 10.3301 10.56 10.3301H21.87C23.31 10.3301 24.48 11.5001 24.48 12.9501V19.1601Z" fill="#231815"/>
+                                <path d="M18.25 21.3299L16.57 21.2299V21.1899L16.22 21.2099L15.86 21.1899V21.2399L14.18 21.3399L15.78 23.9499L15.82 24.0099C15.9 24.1399 16.04 24.2299 16.21 24.2299C16.38 24.2299 16.52 24.1399 16.6 24.0099L16.64 23.9399L18.24 21.3299H18.25Z" fill="#231815"/>
+                                <path d="M11.4 17.1002C11.04 17.1002 10.75 16.8102 10.75 16.4502C10.75 16.0902 11.04 15.8002 11.4 15.8002C11.76 15.8002 12.05 16.0902 12.05 16.4502C12.05 16.8102 11.76 17.1002 11.4 17.1002ZM11.62 14.8802C11.62 14.8802 11.17 14.8802 10.76 15.2802V13.6802H9.75V17.9002H10.77V17.5702C10.77 17.5702 11.01 18.0102 11.62 18.0102C11.62 18.0102 13.05 17.9602 13.05 16.4402C13.05 16.4402 13 14.9002 11.62 14.9002" fill="white"/>
+                                <path d="M13.38 13.5801V14.5601C13.38 14.5601 13.84 14.5401 13.84 15.4001V17.9001H14.82V15.1701C14.82 15.1701 14.86 13.5901 13.38 13.5901" fill="white"/>
+                                <path d="M17.2 17.1001C16.84 17.1001 16.55 16.8101 16.55 16.4501C16.55 16.0901 16.84 15.8001 17.2 15.8001C17.56 15.8001 17.85 16.0901 17.85 16.4501C17.85 16.8101 17.56 17.1001 17.2 17.1001ZM17.2 14.8901C17.2 14.8901 15.53 14.8901 15.53 16.4501C15.53 16.4501 15.48 17.9901 17.2 17.9901C17.2 17.9901 18.91 17.9901 18.91 16.4501C18.91 16.4501 18.97 14.8901 17.2 14.8901Z" fill="white"/>
+                                <path d="M21.09 17.1002C20.73 17.1002 20.44 16.8102 20.44 16.4502C20.44 16.0902 20.73 15.8002 21.09 15.8002C21.45 15.8002 21.74 16.0902 21.74 16.4502C21.74 16.8102 21.45 17.1002 21.09 17.1002ZM21.7 14.9902V15.2702C21.7 15.2702 21.41 14.8802 20.85 14.8802C20.85 14.8802 19.42 14.8202 19.42 16.4302C19.42 16.4302 19.4 17.9302 20.81 17.9302C20.81 17.9302 21.38 17.9502 21.7 17.5402V17.7802C21.7 17.7802 21.77 18.5202 21.05 18.5202H20.81V19.4202H21.2C21.2 19.4202 22.68 19.4402 22.68 17.8402V14.9802H21.7V14.9902Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1402_19">
+                                <rect width="32.43" height="32.43" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://post.naver.com/pro_nps" target="_blank" title="네이버 포스트" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_27)">
+                                <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
+                                <path d="M21.19 8.77002H11.25V18.71H21.19V8.77002Z" fill="#231815"/>
+                                <path d="M19.06 22.1601L21.19 19.6201H11.24L13.37 22.1601H19.06Z" fill="#231815"/>
+                                <path d="M14.4 23.3901L16.22 25.5501L18.03 23.3901H14.4Z" fill="#231815"/>
+                                <path d="M18.54 11.7598V16.0198H16.98L15.45 13.8798V16.0198H13.9V11.7598H15.45L16.98 13.9898V11.7598H18.54Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1402_27">
+                                <rect width="32.43" height="32.43" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://tv.naver.com/npstv" target="_blank" title="네이버TV" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g clip-path="url(#clip0_1402_33)">
+                                <path d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z" fill="white"/>
+                                <rect width="16" height="16" transform="translate(9 8)" fill="url(#pattern0_1402_33)"/>
+                                </g>
+                                <defs>
+                                <pattern id="pattern0_1402_33" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_1402_33" transform="scale(0.01)"/>
+                                </pattern>
+                                <clipPath id="clip0_1402_33">
+                                <rect width="32.43" height="32.43" fill="white"/>
+                                </clipPath>
+                                <image id="image0_1402_33" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4yLWMwMDAgNzkuMWI2NWE3OWI0LCAyMDIyLzA2LzEzLTIyOjAxOjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjMuNSAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMDUtMTdUMTU6MjI6MzIrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMDUtMTdUMTU6MjI6MzIrMDk6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDI0LTA1LTE3VDE1OjIyOjMyKzA5OjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmQ3YTE1ZjdkLTNlZjUtNDM0NC05NmQ0LTM0ZTMwMTRmNjM1OSIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmFjMmRhNTk4LWE4M2YtYWY0MC05MTY0LWMzODk5ZTlhMDVlZCIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmJmODA3YjJiLTNiMzEtNDczNC1hODU1LTdmNTEyM2E5YzBhMyIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmJmODA3YjJiLTNiMzEtNDczNC1hODU1LTdmNTEyM2E5YzBhMyIgc3RFdnQ6d2hlbj0iMjAyNC0wNS0xN1QxNToyMjozMiswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIzLjUgKE1hY2ludG9zaCkiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmQ3YTE1ZjdkLTNlZjUtNDM0NC05NmQ0LTM0ZTMwMTRmNjM1OSIgc3RFdnQ6d2hlbj0iMjAyNC0wNS0xN1QxNToyMjozMiswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIzLjUgKE1hY2ludG9zaCkiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+WfsJvAAAEwxJREFUeJztXXlwE/d+/+7q9hls40tYjm3ZCJB8xfjgcAwDxMSElhDIzGuZZCCThNIMaV7DZMhkCH2dl8zLkJekTZqSl0xomPTBkEB5HA4Q24/LBzb4BCFj14cAY8mHJFura3f7B6y7bCTtIcmWCZ8Zj+3V79J+9nv+jkVIkoTHCB+gMz2Ax3gY4kAbuHz5cmptbe3K4eHhxHv37iWNj48/gSAIIZFIPPPmzRtUKpV3Fi5ceH3Dhg1XgzHgRx2CCamurtbcvXs3dXBwcF53d/cBm80GNpsNHA4HAACIRCIAALDZbDA2NvaG1WqNUSqVxlWrVt0KztAfTSBCbIher5fv27fvn41G4++Gh4eB3gaCIAAAQJIkIAgCJEkCSZKQlJQECxYs+Ke1a9eeWrNmjSFo3+ARAy9Curq6os6fP1/+ww8/bLRarVsJggCCIKYIocjwBpIkAUVRkEgkhwsKCq5ptdrOHTt2nAj4GzxiEL3//vucCx87dqyiq6vrdF9fX4HH4/EqGf5AkiTgOL6IJMlVGIZ19fX1zXE4HE63222Pj4/HhXyBRw28JOT555//o8lkehPDMMDx+/ePCxFeO0YQQFEU1qxZAwUFBYtfeOGFZkENPWLgJCHd3d3Ss2fPLq6trV1pt9t1BEEAigr3mOkk9vf3w7Vr16QnTpwoB4BxgiBsSUlJTsGNz3Jw8rLGxsaeuHnzZj1dTQUSUNINvtvtBoIgXsZxHJqamt4ymUzPjY+Pty9fvnxAcAezGJwIMZvNCe3t7YDjuGAVxQSdULfbDS6XC2pqaiA+Pv4vPT09OxUKxfdFRUXmoHQ2i8BKiF6vl3d3d+cMDg4CQRAhGQRlTwiCgNHRUbh06dKnHR0duvT09P61a9dWb9y48VdjX1gJMZvNCTab7ajH4wEEQaZUTShAV2MWi+UVo9EIjY2NoziOo2lpacaysrI7Iek4jMBKyPDwcKLFYpnS+6ECk2Qcx8FkMsG5c+c+NxgMoNFotkdHRx/UarUTIRtEGICVEI/HI8ZxHEiSnFJZ3iSEHqH7A51UrpJmNBrh3r17/9Hc3Lx4xYoVtTqdrn39+vXtnCrPMrASguO4mH7j2KJyPlLEtSyO40AQBLhcrq16vX6r0+ncplAoHFlZWbcyMzNDY9hmCFwIQZmSQdmS6QZJktDV1QU9PT1f6/V62Lx582KXy9Wp0Wgc0z6YEIGVEAzDIpxOJ+A4PpXBBXhY3UyXfaH6cDgc0NvbC5999tmV+Pj4T4qLi69UVlZWFxQUjIZsENMEVkIIgkA9Hg+4XC5QKBQ+y4WaFMaYgCAIsFqt4PF43rx+/TpERUX9ze3bt3vXrVvXOS2DCBE4EeJ2u2FychLkcjmgKOrTGIfKHfbVLoIggGEYdHZ2Qk9Pz/+kpKR8jGHYoU2bNjWFZCDTAE6ROoZhMDIyAjExMSAWiwPKYwmBL8mjE4VhGAwMDLz1xRdfxJ0+fbpSrVbf2r179/fTNcZggZUQBEEIKlibnJwEhUIBcrl8OsbGC9QYx8fHX+7v7wen0/n7b7/9tiInJ8eQnJw8NFu8MU4S8mAeA0ZHRyE2NhbkcjmnSamZAEmSYDabYWRkZLfBYNhdXl4OeXl5T2dmZp6f6bFxAa85dbvdDh6PByYnJyEpKQkkEgmIxQ83Qc8Gs5Hlr4y/4JMNVDmPxwP19fXQ1tb2Ul1dXcWaNWvOaLXaznCO9nkRQhAEuN1uIEkSrFYryGSyqZ+Zik38gSRJsNvt4HQ6t+I4Di0tLXstFstat9vdFK4uMu9VJziOA47jMDQ0BHK5HKKjoyEhIWFKUoIRqQfiQtPrUn/jOA4WiwXOnj0LFy9ePG0wGHZaLJbjFRUVfYI6CSEELwMiSRIcDge43W6w2+0QEREBMTExEBERMZW1ZVNH9MwxvWwgkuarHWrK2eFwQGNj46fd3d3Z3333nWndunUn8vPzWzMyMsLC6HPxsnx+RpIkeDwecDgcD80CSiQSkEgkYafCAO6r3cnJSXA6nf9otVqhubl5r8PhWDo0NNQXDun9gFcuAtw3npSxxzAMoqKiIC4uzmd5pkrhA65ZZV/1qLoulwtcLhecOnUK6uvrL6WkpPxeLBZ/unjx4mFeDQcZQSGEjomJCXA4HGCxWCAuLg7kcjlERER4LStEgoKVDaATa7FYwG63796zZ0+cVqvtmD9/vmHbtm3ngtIRTwSdEMoTw3EcJiYmgFoYQaVdwlGNUY6K0Wh8XSKRAIZhb1dXVxvT09MHFixYYJ/OsQSdEID/DyTHxsZALBbDxMQEJCcng0wmA7FYPDXRxSTHm4FnqjWuqyT9tcNsk7ksaXBw8KP29vaP1q9fv8lisVwsLS0d4ncHhIN1XVZLS4u6t7f372/cuCGoA8rw2+12wDAMAAAkEglrPoy6Sb5mGLlImi8vzls/1N/U/y6XCwYHBzdfu3YNHRkZESMIMpaamhpyaeGUywqkA0paKE+MIkIqlYJUKp32RKU/0CWIWgFjs9neam1tfQtBkLVWq9WwcuXK3lCOgZPKCobeJwgCMAwDDMNgcnISIiMjISEhAaRS6S+kgVoxz+yf/sT78tB8qSNme96cA3q/VD232w1NTU3Q0dFxOjY29kuLxfKVTqdrV6vVHuF3wzdCYkPY4HQ6p7LHKSkpUxlkajGFP6lhezi4zvXzLed0OmFkZOT1b7755vX09PS3VSrVwK5duw77HYwAzIi+IAhiKqAUiUQQHx9vKSwsrE5KSrodGRk5E0NiBeU93r59GwwGw0dtbW15P/74Y2FjY2NyMPuZUQVOkiTExsbCU089dXL//v1ry8rKjqSlpbXM5JiYYKpPkiTBZDLB9evXd3/44YctX3311Ssff/zx88HqL6DUSbAglUoxAIA9e/a82djYqL569WrVmTNnPhkaGpryzMIRbrcbbty48buBgYE/9fb2Zi5duvRyUVFRc3Z2tktomzNiQ5hAUXRqs05JScktADhpNptV/f39uoGBgdVjY2Pgdrv9tsF3wiwYE2xUXsxut7/icrkgKioKRCJRSXZ2tuA5/bAghImSkpJbJSUlv+3s7Iw7evTouxcuXPiN2WxO9rf6XmhOLBDQ45bx8XGora2FxsbG7TqdrlNohM8pDgml2vI3saXVake1Wu1vT506dby7u7vs3LlzHwwPD4PD4QjohgZzyRJd0txuN9hstpf379/fVllZWf3MM8/o+bYXPlGZHzz77LN/LSwsPFlYWPjvGRkZLYmJiWGZF6O8R71e/8eBgQGVkDZYCQn11OyD9lk3fC5fvrxj7969b2zZsmVXRUXFRzKZTDApofg+lNQhCAJ37tyBmzdv5pw8eVLLtx3OEkJ1FoofPqiqqqrZvHnznvfee69i1apV36rVasFzJMEG5SIjCAKDg4P/1tDQUMq3Dc5GPdRSwgfZ2dlYdnb2X20229zo6GgTSZKVJpNJZ7fbWb2x6YLVaoXbt2+n8q3HyaijKBoynf2gXUF71F988cUjAHCkvr7+68OHD++9cePGi0ND05Yp9wlq3TEApPCtyykwFKpeuCAYRJeVld2Mjo7+h97e3q+PHDlypq+vDywWS0AxCd9UPx0oigKGYeB2uxN4VQQe2V6uST0helyohNCh1WpHJyYm/jccFldQ2WSCIHh7sayEoChKIAjCad7CV1qbrU4wcPr06adbW1srOzo6eNsRvjOSvkCvGxERAZGRkbwX43GWEGobgtD0ty8EqrIuX748v6amZpvBYCgzmUzLqDl8oW16m3vhWxcAQKFQwJw5c0JHiD+15UtdcVFjXOMQb/jpp5+W3bp1q7ihoeFts9k8dVZXOCAyMhISExNNfOtxdnu5TBoJJYQvWlpaVAcPHvxDW1vb6tHR0Tj6JqJgpkSEqjKSJEGlUsGSJUsu8+2Xs9srEol4bXlmLjDwRxrXm3j+/HndxYsXf9Pf35/f29tbOTEx8VCb/iTY3y4sXw8S2zXmZ1Q7sbGxkJWVtWHx4sW8s76c3V7q6Au2wXkbqLdrDLJYVdaVK1cyrl27VtXU1PTO0NAQuFwuzkd9TGcEjyAIqFSqf503b55RyLw7r8CQ3mkwQJIkiESih+ZDmOjq6oo7cODAPr1ev2xwcFDNZXEC22JuZl1f7bHV8fZwicXiI6+99tp/Llu2zOjrO/kDZxtCH+B0+Pl1dXX5PT09xVeuXFnf19dX9SDy9dq3v4Vv3sbsiyTmdbZAkXlPcnNzYeHChT8IJQNAYC4rWIT4sh96vT6qtbW1Uq/Xf9Dc3PzQuY5s4+NiD7hcZ37uS9oQBAGRSASJiYlfajSaC0LsBh2cCGEa9WAS8kAd4gAAzc3Nqra2tsojR468OzY2pqJ2a7H1yfdh4UuSr88RBAGFQgFRUVH733nnnQ/Ky8sDPnSNU6ROEUI3olyeSA7xB7hcLujt7X3qwIEDL7e0tFTdvXv3BWoOnelE+FIb/vrgWsZX+96uP7AVUFpaChqNpkqtVt8KBhkAAQSGQp8yehkURcHlcsG9e/cqL126VNnV1QWTk5O/KBvIQQWBeljM+jKZDCIjIyEmJuaT/Pz8vxQUFFzNz88fD6gTGnjZEG/6VYiKoLw2iUQCo6OjYLFYgDqxzldAxoS/63wSnf7aoT6j1DWKopCdnQ2rV69+urS0tCGQ5T6+wCsO4etledP/KIqCWCwGkUg09ZuLezqdoMZDfXe5XA4ajQaysrK2VFRU1KWmpt4J1Z5E3ul3ITeMrvIoyRCJRFNkAMz89Ks3SCQSkEql3yuVyjs6na4+Nze3fenSpYJdWi7gvAxIqNtLkUBJw4NAUJBaCUQy+WSAKfWUlpYGGRkZjfv27fuMU8UggNeMIfU/F9DrUWRQRHDxbJhtUWX5BHPMNtiCO4D7+1YiIiKgvLx826JFi65nZmaGdD8IE7xWLrIlAul6lxZj/EI9BQvBUHNUGyiKgkwmgzlz5nw5d+5cc3FxcdNMnL3FOZclFos5qQ66FDDVk4/2OQ/WW2DGB94kk/KgZDIZLFu27I3KysrqmXzHSVAWOTClgq28NwRzeSdb2xQZYrEY4uLiQKfTQWZm5nPFxcVNxcXF4b9Pne3mMqWCqhMO8KbWKFdWoVB8m56e3lNUVFSj0+k6dTqddQaG+BB4eVm+AkO6dAjV64F4UP6u0403ZdNkMhmsXLkSCgoKPg+3Y8x5LXLw5vrSiWLuNAqFlASSGExOTobk5OR/qaioqFWr1bdSUlJm/GwTJgTbEF+EhFugR6lRhUJxMC0t7UZOTo7hpZdeqpvpcfkC52yvLwmh33jmYoNQ7mrisggBQRCIiYkBpVL54datW7+eDW+I4z1B5c/19JaKZ5sO9dUW37JMWxEZGQkLFiyAvLy85zIyMvpmAxkAAgJDNniLnKdLfVG2LiIiAuLj4z/Lzc39ecWKFXWLFi0K2zMWmRCUy2Ip7/eaEGPPNnFErYiRyWSgVqth06ZNBTqdrjMrKyskpy2EEqyEkCTpdYWcr7wSF2+HD9jmPRAEAalUChqNBtLT07eVlpY25OTkGGYjGQA8zu31dX06AkBfnptIJAKpVPrnqKioCa1We1an07VXVlby3mgZThC8LZpNNQULTK+JeghEIhEUFhaCVqs9tHPnzmNB73iGEJb71OlgSuEDgw2lpaVbcnNz2+fNmxfSCaPpRtgTQoGSiujo6D+pVKru1atXnyspKZn5/WtBBqfXVVC6m25I+ULonDlVfu7cuVBRUfF3GzZsODbd5yBOJ1gJkUqlLi5H8nEFGyF04iQSCcTExEB+fj48+eSTzxUWFl59lMkA4EiIWCyekgz68hg+4DI9S/1PLcJWKBT/lZiYaCwvLz+k0Wj0oVh2E25gJSQ6Otoql8u3AMB3gb4h2huY5KIoClKpFNavXw/5+fkfzHY3li9YCVmyZMmdjo4Os0QiAaczuC9xZqZVlEolpKamvqvT6drz8vLaU1NTwy49Hmpw8rISEhLMUqk06ITQgSDIj0ql8kpeXl779u3bT4WsozAHpxfct7a2PlFXV1dx6NChoy6XC1AUBY/nfmYiUPWlVCph4cKFOzZt2nT41/h2aCY4SUh+fv643W5vqq+v/4PZbN41Pj4OAPCQoefVqVgMsbGxkJGR8W5RUVFzenr6wGMy7oNzYLhkyZI7R48eHXS73Z+MjY29GUinIpHozwkJCX1FRUXNr7766plA2nrUwEll0dHc3Jzw888/rzp+/Ph/Yxg2NSHkb5crgtx/y01SUhLk5ubu2LJly8FwWOERjuCdOikqKjJjGHZZIpFsHBoaSjYajZ8PDAwA9XpWOkQi0dQJ1pmZmaBUKjdoNBr9YzJ8g7eE0FFTU5PZ0NBQWltbu8Jms8U4nU4pgiB/++DjY1Kp1JWYmDg8f/78m1VVVSdUKtXAbHmf4EwhIEKYuHDhgspms0XJZDLXnDlzRgsLC8PyTWjhjKASAgBgMBikYrHY81gShCHohDxGYJgVx8T+mvCYkDDDY0LCDP8HartdpdJNyU8AAAAASUVORK5CYII="/>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p>
+                    국민연금 고객센터 : 국번없이 1355 <br class="mob-br"/> (해외:+82-63-713-6900 평일 09:00 ~ 18:00)<br>
+                    54870 전라북도 전주시 덕진구 기지로 180 <br class="mob-br"/> (만성동, 국민연금공단)<br>
+                    간행물 등록번호 : 전주, 바 00034<br>
+                    © nps.or.kr. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
         </div>
 
         <!-- 하단바 공유하기 팝업 -->
