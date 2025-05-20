@@ -162,7 +162,7 @@ body.menu-open .page-wrapper {
     display: none;
     position: absolute;
     top: 120px;
-    width: 220px;
+    width: 240px;
     background-color: #ffffff;
     padding: 25px;
     border: 1px solid #E8E8E8;
@@ -411,6 +411,7 @@ body.menu-open .page-wrapper {
     padding-left: 16px;
     line-height: 100%;
     padding: 10px 20px;
+    letter-spacing: -0.5px;
 }
 
 .mobile-menu .menu-item.open .submenu {
