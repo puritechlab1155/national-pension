@@ -294,8 +294,6 @@ body.menu-open .page-wrapper {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    padding-bottom: 65px;
 }
 
 .mobile-menu.open {
@@ -320,7 +318,10 @@ body.menu-open .page-wrapper {
     visibility: visible;
 }
 .mobile-menu-links {
-    padding-bottom: 100px;
+    max-height: 430px;
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .mobile-menu .mobile-menu-header {
