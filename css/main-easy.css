@@ -2242,7 +2242,7 @@ body.menu-open .page-wrapper {
     height: 40px;
     border-bottom: 2px solid #000000;
     font-weight: 700;
-    width: 180px;
+    /* width: 180px; */
 }
 
 #event-page .sec02 .event-title {
