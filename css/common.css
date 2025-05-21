@@ -47,7 +47,11 @@ button {
     cursor: pointer;
     border: none;
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 
 @supports (-webkit-appearance:none) {

@@ -192,9 +192,10 @@
         </header>
 
         <!-- 컨텐츠 -->
-        <main class="search content" id="index">
+        <main class="content" id="index">
             <section class="section sec01 padding-80">
-                <div class="sec01-header" id="checkView">
+                <!-- id="checkView2" 서브: 컨텐츠 복제 easy-page.html -->
+                <div class="sec01-header" id="checkView2">
                     <span class="check-icon">
                         <svg class="check-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect class="check-circle" x="0.75" y="0.75" width="26.5" height="26.5" rx="13.25" stroke="#AAAAAA" stroke-width="1.5"/>
@@ -206,13 +207,13 @@
                 
             </section>
 
-            <section class="section sec03 padding-80">
-                <h2 class="title poppins">검색 결과 : 세계</h2>
+            <section id="search" class="section sec03 padding-80">
+                <h2 class="title poppins">검색 결과 : <span class="search-input poppins">세계</span></h2>
                 <div class="carousel-container">
 
                     <div class="carousel-wrapper">
                         <div class="search-container carousel-track">
-                            <a href="sub-page.html" class="carousel-item">
+                            <a href="sub-page.html" class="search-item">
                                 <img class="search-img" src="img/main/sec03-pic01.jpg" alt="국민연금 주요 뉴스"/>
                                 <div class="caption">
                                     <p class="small-text">NPS 뉴스</p>
@@ -220,7 +221,7 @@
                                 </div>
                             </a>
             
-                            <a href="sub-page.html" class="carousel-item">
+                            <a href="sub-page.html" class="search-item">
                                 <img class="search-img" src="img/main/sec03-pic02.jpg" alt="잘못 알려진 국민연금 제도 바로알기"/>
                                 <div class="caption">
                                     <p class="small-text">NPS 팩트</p>
@@ -228,7 +229,7 @@
                                 </div>
                             </a>
             
-                            <a href="sub-page.html" class="carousel-item">
+                            <a href="sub-page.html" class="search-item">
                                 <img class="search-img" src="img/main/sec03-pic03.jpg" alt="지금 알아두면 좋은 제도는 무엇일까?"/>
                                 <div class="caption">
                                     <p class="small-text">알아봐요, 국민연금</p>
@@ -236,7 +237,7 @@
                                 </div>
                             </a>
             
-                            <a href="sub-page.html" class="carousel-item">
+                            <a href="sub-page.html" class="search-item">
                                 <img class="search-img" src="img/main/sec03-pic04.jpg" alt="세계의 다양한 연금 제도 알아보기"/>
                                 <div class="caption">
                                     <p class="small-text">세계연금 이모저모</p>
@@ -668,7 +669,7 @@
 
     // ✅ 섹션 3 : 이미지 슬라이더
     const track = document.querySelector('.carousel-track');
-    let items = document.querySelectorAll('.carousel-item');
+    let items = document.querySelectorAll('.search-item');
     const leftBtn = document.querySelector('.carousel-button.left');
     const rightBtn = document.querySelector('.carousel-button.right');
 
@@ -698,9 +699,9 @@
     };
 
     const removeClones = () => {
-        const clones = document.querySelectorAll('.carousel-item.clone');
+        const clones = document.querySelectorAll('.search-item.clone');
         clones.forEach(clone => clone.remove());
-        items = document.querySelectorAll('.carousel-item:not(.clone)');
+        items = document.querySelectorAll('.search-item:not(.clone)');
         totalItems = items.length;
     };
 
@@ -729,7 +730,7 @@
             track.appendChild(clone);
         });
 
-        items = document.querySelectorAll('.carousel-item');
+        items = document.querySelectorAll('.search-item');
         totalItems = items.length;
         currentIndex = visibleCount;
         updateSlide(true);
@@ -860,7 +861,7 @@
 
 
     // ✅ 섹션 7 : 이벤트 
-    const carouselItems = document.querySelector('.carousel-items');
+    const carouselItems = document.querySelector('.search-items');
         const itemsData = [
             {
                 title: "NPS 칼럼 이벤트",

@@ -105,6 +105,7 @@
                 class="m-prev-issues">지난호 보기</button>
         </div>
 
+        <!-- 컨텐츠 -->
         <div class="page-wrapper">
             <!-- 해더 -->
             <header class="header">
@@ -202,6 +203,8 @@
                         <span class="check-label">편하게 보기</span>
                     </div>
                 </section>
+
+                <!-- 컨텐츠 복제들어갈 자리 -->
 
             </main>
 
@@ -441,30 +444,40 @@
     </body>
     <script src="js/script.js"></script>
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // easy-page에서만 실행되는 코드
-        if (window.location.href.includes("easy-page.html")) {
-            const savedContent = localStorage.getItem("easyPageContent");
-            const previousPage = localStorage.getItem("previousPage");
-            const mainElement = document.querySelector('main.content');
-            const checkView = document.getElementById("checkView2");
+        document.addEventListener("DOMContentLoaded", function () {
+            // easy-page에서만 실행되는 코드
+            if (window.location.href.includes("easy-page.html")) {
+                const savedContent = localStorage.getItem("easyPageContent");
+                const previousPage = localStorage.getItem("previousPage");
+                const mainElement = document.querySelector('main.content');
+                const checkView = document.getElementById("checkView2");
 
-            console.log("Previous Page: ", previousPage);
+                console.log("Previous Page: ", previousPage);
 
-            // 저장된 콘텐츠 삽입
-            if (savedContent && mainElement) {
-                if (mainElement.id === 'easy') {
-                    mainElement.id = 'sub-page';
+                // 저장된 콘텐츠 삽입
+                if (savedContent && mainElement) {
+                    if (mainElement.id === 'easy') {
+                        if (previousPage && previousPage.includes("sub")) {
+                            mainElement.id = "sub-page";
+                        } else if (previousPage && previousPage.includes("index")) {
+                            mainElement.id = "index";
+                        } else if (previousPage && previousPage.includes("event")) {
+                            mainElement.id = "event-page";
+                        } else {
+                            // fallback
+                            mainElement.id = "sub-page";
+                        }
+                    }
+
+                    mainElement.insertAdjacentHTML("beforeend", savedContent);
                 }
-                mainElement.insertAdjacentHTML("beforeend", savedContent);
-            }
 
-            // 체크박스가 있으면 활성화
-            if (checkView) {
-                checkView.classList.add("active");
+                // 체크박스가 있으면 활성화
+                if (checkView) {
+                    checkView.classList.add("active");
+                }
             }
-        }
-    });
+        });
 
 
 
