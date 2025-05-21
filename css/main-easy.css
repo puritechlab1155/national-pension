@@ -2101,6 +2101,7 @@ body.menu-open .page-wrapper {
     background-position: center;
     background-repeat: no-repeat;
     text-align: right;
+    cursor: pointer;
 }
 
 .pagination .nav-item.prev {
@@ -2108,7 +2109,7 @@ body.menu-open .page-wrapper {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    cursor: pointer;
 }
 
 .pagination .nav-content {
