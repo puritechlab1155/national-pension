@@ -1,6 +1,13 @@
 /* <---------모든 페이지 공통적용-------> */
 
-
+.f-24 {
+    font-size: clamp(30px, 2vw, 36px) !important;
+    line-height: clamp(48px, 7vh, 60px) !important;
+}
+.f-18 {
+    font-size: clamp(24px, 2vw, 27px) !important;
+    line-height: clamp(39px, 6vh, 45px) !important;
+}
 .m-top-90{
     margin-top: 90px !important;
 }
@@ -3220,6 +3227,301 @@ body.menu-open .page-wrapper {
     background-color: #969696;
 }
 
+    /* sub13.html */
+    #sub13 .flex-2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px; /* 간격 조절 (선택사항) */
+        margin-bottom: 100px;
+        align-items: stretch;
+    }
+    #sub13 .flex-2 .summary {
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 0 !important;
+    }
+    #sub13 .flex-2 .img-container {
+        width: 50%;
+        box-sizing: border-box;
+        height: auto;
+        margin-bottom: 0;
+        align-items: stretch;
+    }
+    #sub13 .flex-2 .article-img {
+        object-position: 70% center;
+    }
+    /* flex-wraper: 전체 컨테이너 */
+    #sub13 .flex-wraper {
+        display: flex;
+        gap: 20px; 
+        flex-direction: column;
+    }
+    #sub13 .flex-3 {
+        display: flex;
+        flex: 1; 
+        gap: 20px; 
+    }
+    #sub13 .flexItem {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        height: auto; 
+        min-height: 80px; 
+        box-sizing: border-box; 
+    }
+    #sub13 .flex-3:first-child .flexItem:first-child {
+        display: flex;
+        flex: 0 0 calc((100% - 40px) * 2 / 3 + 20px);
+        justify-content: center;
+        align-items: center;
+
+    }
+    #sub13 .flex-3:first-child .flexItem:nth-child(2) {
+        flex: 1;
+    }
+    #sub13 .flex-3:nth-child(2) .flexItem,
+    #sub13 .flex-3:nth-child(3) .flexItem {
+        flex-grow: 1; 
+    }
+    #sub13 .flexItem {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    #sub13 .flexItem-topContent {
+        background: #FFE2E2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        width: 100%;
+    }
+    #sub13 .flexItem-topContent .title-img {
+        max-width: 77.22px;
+    }
+    #sub13 .flex-wraper .flex-3:last-child .flexItem:last-child .title-img {
+        max-width: 104px;
+    }
+    #sub13 .flex-wraper .item4 .flexItem-bottomContent {
+        min-height: 302.77px;
+    }
+    #sub13 .flexItem-topContent .danger-textBox {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    #sub13 .flexItem-topContent .danger-textBox .danger {
+        max-width: 50px;
+    }
+    #sub13 .flexItem-topContent .danger-textBox .flexItem-desc {
+        font-size: 18px;
+        color: #484848;
+    }
+
+    #sub13 .flexItem-bottomContent {
+        background: #F1F1F1;
+        padding: 16px;
+        width: 100%;
+    }
+    #sub13 .flexItem-bottomContent .icon-flex {
+        display: flex;
+        gap: 10px;
+    }
+    #sub13 .flexItem-bottomContent .desc-list {
+        margin-top: 16px;
+    }
+    #sub13 .flexItem-bottomContent .flexItem-desc {
+        font-size: 18px;
+        /* background: #F1F1F1; */
+    }
+    #sub13 .flexItem-bottomContent .desc-blod {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+    }
+    #sub13 .flexItem-bottomContent .desc-normal {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    #sub13 .flexItem-bottomContent .caution {
+        font-size: 17px;
+        /* margin-top: 5px; */
+        color: #404040;
+        font-weight: 300;
+    }
+
+
+
+
+
+    /* bg-container */
+    #sub13 .bg-container {
+        position: relative;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 0;
+        padding-bottom: 200.33%; /* 이미지의 원본 비율에 따른 높이 설정 */
+        background-image: url("/img/sub13/article03_pc.jpg");
+        background-size: 130%; 
+        background-position: center;
+        background-repeat: no-repeat; 
+    }
+    #sub13 .bg-container .bg-content {
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 20px;  */
+        box-sizing: border-box; 
+    }
+    #sub13 .bg-container .title-box {
+        border-bottom: 1px solid #FF8EA8;
+        padding-bottom: 15px;
+        width: clamp(320px, 92%, 900px);
+    }
+    #sub13 .bg-container .title {
+        /* width: clamp(220.41px,20vw,378.97px); */
+    }
+    #sub13 .rule-wraper {
+        width: clamp(320px, 92%, 900px);
+        /* margin-top: clamp(25px, 8vh, 68px); */
+        margin-top: 68px;
+    }
+    #sub13 .rule-wraper .rule-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 40px;
+        gap: clamp(0px, 2vw, 30px);
+    }
+    #sub13 .rule-wraper .rule-icon {
+        max-width: clamp(50px,5vw,91px);
+    }
+    #sub13 .rule-wraper .rule-textBox {
+        text-align: left;
+    }
+    #sub13 .rule-wraper .rule-textBox .rule-subTItle {
+        font-weight: 500;
+    }
+    #sub13 .rule-wraper .rule-textBox .rule-desc {
+        font-weight: 400;
+    }
+
+
+
+    @media (max-width: 1280px) {
+        #sub13 .flex-3 {
+            flex-direction: column;
+        }
+        #sub13 .rule-wraper {
+            width: clamp(320px, 69%, 540px);
+        }
+        #sub13 .bg-container .title-box {
+            width: clamp(320px, 67%, 520px);
+        }
+        #sub13 .rule-wraper .rule-item {
+            margin-bottom: 15px;
+            gap: 8px;
+        }
+        #sub13 .rule-wraper {
+            margin-top: 20px;
+        }
+        #sub13 .rule-wraper .rule-icon {
+            max-width: clamp(50px, 4vw, 55px);
+        }
+        #sub13 .f-24 {
+            /* font-size: 20px !important; */
+        }
+        #sub13 .bg-container {
+            /* background-size: 107% auto; */
+        }
+    }
+    @media (max-width: 960px) {
+        #sub13 .bg-container {
+            background-size: 120% auto;
+            padding-bottom: 200%;
+        }
+    }
+    @media (max-width: 873px) {
+        #sub13 .bg-container {
+            background-size: 130% auto;
+            padding-bottom: 230%;
+        }
+        #sub13 .rule-wraper,
+        #sub13 .bg-container .title-box {
+            width: clamp(450px, 87%, 580px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        #sub13 .flex-3 {
+            flex-direction: column;
+        }
+        #sub13 .flex-2  {
+            margin-bottom: 50px;
+            flex-direction: column;
+            gap: 48px;
+        }
+        #sub13 .flex-2 .summary,
+        #sub13 .flex-2 .img-container {
+            width: 100%;
+        }
+        #sub13 .flex-2 .img-container {
+            height: auto !important;
+        }
+        #sub13 .bg-container {
+            background-image: url("../img/sub13/article03_m.jpg");
+            padding-bottom: 472.42%;
+            background-size: 100% auto;
+        }
+        #sub13 .rule-wraper .rule-item {
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+            margin-bottom: 80px;
+        }
+        #sub13 .rule-wraper {
+            margin-top: 80px;
+        }
+        #sub13 .rule-wraper,
+        #sub13 .bg-container .title-box {
+            /* width: clamp(320px, 69%, 540px); */
+            width: 270px;
+        }
+    }
+
+    @media (max-width: 567px) {
+        #sub13 .rule-wraper {
+            margin-top: 30px;
+        }
+        #sub13 .rule-wraper .rule-item {
+            margin-bottom: 30px;
+        }
+    }
+    @media (max-width: 480px) {
+        .flex-wraper {
+            gap: 15px;
+        }
+        .flex-3 {
+            gap: 10px;
+        }
+        #sub13 .bg-container {
+            padding-bottom: 564.42%;
+            background-size: 120% auto;
+        }
+        #sub13 .rule-wraper .rule-item {
+            margin-bottom: 11%;
+        }
+    }
 
 
 
@@ -4084,6 +4386,9 @@ body.menu-open .page-wrapper {
         font-size: 22px;
         line-height: 33px;
     }
+
+
+
 
     
 

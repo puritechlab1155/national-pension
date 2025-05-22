@@ -2262,7 +2262,7 @@ body.menu-open .page-wrapper {
 #sub13 .bg-container .title-box {
     border-bottom: 1px solid #FF8EA8;
     padding-bottom: 15px;
-    width: 60%;
+    width: clamp(320px, 60%, 960px);
 }
 #sub13 .bg-container .title {
     width: clamp(220.41px,20vw,378.97px);
@@ -2299,6 +2299,44 @@ body.menu-open .page-wrapper {
     #sub13 .flex-3 {
         flex-direction: column;
     }
+    #sub13 .rule-wraper {
+        width: clamp(320px, 69%, 540px);
+    }
+    #sub13 .bg-container .title-box {
+        width: clamp(320px, 67%, 520px);
+    }
+    #sub13 .rule-wraper .rule-item {
+        margin-bottom: 15px;
+        gap: 8px;
+    }
+    #sub13 .rule-wraper {
+        margin-top: 20px;
+    }
+    #sub13 .rule-wraper .rule-icon {
+        max-width: clamp(50px, 4vw, 55px);
+    }
+    #sub13 .f-24 {
+        font-size: 20px !important;
+    }
+    #sub13 .bg-container {
+        background-size: 107% auto;
+    }
+}
+@media (max-width: 960px) {
+    #sub13 .bg-container {
+        background-size: 120% auto;
+        padding-bottom: 200%;
+    }
+}
+@media (max-width: 873px) {
+    #sub13 .bg-container {
+        background-size: 130% auto;
+        padding-bottom: 230%;
+    }
+    #sub13 .rule-wraper,
+    #sub13 .bg-container .title-box {
+        width: clamp(450px, 87%, 580px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -2320,23 +2358,45 @@ body.menu-open .page-wrapper {
     #sub13 .bg-container {
         background-image: url("../img/sub13/article03_m.jpg");
         padding-bottom: 472.42%;
+        background-size: 100% auto;
     }
     #sub13 .rule-wraper .rule-item {
         flex-direction: column;
         align-items: start;
         gap: 0;
+        margin-bottom: 80px;
     }
-    #sub13 .rule-wraper .rule-item {
-        margin-bottom: 20px;
+    #sub13 .rule-wraper {
+        margin-top: 80px;
+    }
+    #sub13 .rule-wraper,
+    #sub13 .bg-container .title-box {
+        /* width: clamp(320px, 69%, 540px); */
+        width: 270px;
     }
 }
 
+@media (max-width: 567px) {
+    #sub13 .rule-wraper {
+        margin-top: 30px;
+    }
+    #sub13 .rule-wraper .rule-item {
+        margin-bottom: 30px;
+    }
+}
 @media (max-width: 480px) {
     .flex-wraper {
         gap: 15px;
     }
     .flex-3 {
         gap: 10px;
+    }
+    #sub13 .bg-container {
+        padding-bottom: 564.42%;
+        background-size: 120% auto;
+    }
+    #sub13 .rule-wraper .rule-item {
+        margin-bottom: 11%;
     }
 }
 
