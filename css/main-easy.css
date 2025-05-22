@@ -3357,20 +3357,22 @@ body.menu-open .page-wrapper {
 
     /* bg-container */
     #sub13 .bg-container {
-        position: relative;
+        /* position: relative; */
         display: flex; 
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 0;
-        padding-bottom: 200.33%; /* 이미지의 원본 비율에 따른 높이 설정 */
+        /* height: 0;
+        padding-bottom: 200.33%; 
         background-image: url("/img/sub13/article03_pc.jpg");
         background-size: 130%; 
         background-position: center;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;  */
+        background: #EDE9E6;
+        padding: 50px 20px;
     }
     #sub13 .bg-container .bg-content {
-        position: absolute; 
+        /* position: absolute;  */
         top: 0;
         left: 0;
         width: 100%;
@@ -3423,20 +3425,20 @@ body.menu-open .page-wrapper {
             flex-direction: column;
         }
         #sub13 .rule-wraper {
-            width: clamp(320px, 69%, 540px);
+            /* width: clamp(320px, 69%, 540px); */
         }
         #sub13 .bg-container .title-box {
-            width: clamp(320px, 67%, 520px);
+            /* width: clamp(320px, 67%, 520px); */
         }
         #sub13 .rule-wraper .rule-item {
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             gap: 8px;
         }
         #sub13 .rule-wraper {
             margin-top: 20px;
         }
         #sub13 .rule-wraper .rule-icon {
-            max-width: clamp(50px, 4vw, 55px);
+            max-width: clamp(75px, 7vw, 82.5px);
         }
         #sub13 .f-24 {
             /* font-size: 20px !important; */
@@ -3448,17 +3450,17 @@ body.menu-open .page-wrapper {
     @media (max-width: 960px) {
         #sub13 .bg-container {
             background-size: 120% auto;
-            padding-bottom: 200%;
+            /* padding-bottom: 200%; */
         }
     }
     @media (max-width: 873px) {
         #sub13 .bg-container {
             background-size: 130% auto;
-            padding-bottom: 230%;
+            /* padding-bottom: 230%; */
         }
         #sub13 .rule-wraper,
         #sub13 .bg-container .title-box {
-            width: clamp(450px, 87%, 580px);
+            /* width: clamp(450px, 87%, 580px); */
         }
     }
 
@@ -3479,15 +3481,16 @@ body.menu-open .page-wrapper {
             height: auto !important;
         }
         #sub13 .bg-container {
-            background-image: url("../img/sub13/article03_m.jpg");
+            /* background-image: url("../img/sub13/article03_m.jpg");
             padding-bottom: 472.42%;
-            background-size: 100% auto;
+            background-size: 100% auto; */
+            margin-bottom: 40px;
         }
         #sub13 .rule-wraper .rule-item {
             flex-direction: column;
             align-items: start;
             gap: 0;
-            margin-bottom: 80px;
+            /* margin-bottom: 80px; */
         }
         #sub13 .rule-wraper {
             margin-top: 80px;
@@ -3495,7 +3498,7 @@ body.menu-open .page-wrapper {
         #sub13 .rule-wraper,
         #sub13 .bg-container .title-box {
             /* width: clamp(320px, 69%, 540px); */
-            width: 270px;
+            /* width: 270px; */
         }
     }
 
@@ -3504,7 +3507,7 @@ body.menu-open .page-wrapper {
             margin-top: 30px;
         }
         #sub13 .rule-wraper .rule-item {
-            margin-bottom: 30px;
+            /* margin-bottom: 30px; */
         }
     }
     @media (max-width: 480px) {
@@ -3515,7 +3518,7 @@ body.menu-open .page-wrapper {
             gap: 10px;
         }
         #sub13 .bg-container {
-            padding-bottom: 564.42%;
+            /* padding-bottom: 564.42%; */
             background-size: 120% auto;
         }
         #sub13 .rule-wraper .rule-item {

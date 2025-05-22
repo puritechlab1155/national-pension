@@ -25,6 +25,12 @@
 .mt-100 {
     margin-top: clamp(48px, 11vh, 100px);
 }
+.mt-30 {
+    margin-top: clamp(20px, 5vh, 30px);
+}
+.mb-40 {
+    margin-bottom: clamp(20px, 5vh, 40px);
+}
 
 * {
     margin: 0;
