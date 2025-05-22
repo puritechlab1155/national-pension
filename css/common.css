@@ -11,7 +11,7 @@
 .notoSerif-4 {
     font-family: "Noto Serif KR", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 400 !important;
     font-style: normal;
 }
 .f-24 {
