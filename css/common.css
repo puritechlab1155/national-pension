@@ -147,9 +147,10 @@ body.menu-open {
     touch-action: none; /
 }
 
-.mob-br{
+br.mob-br{ /* 480기준 br */
     display: none;
 }
+
 
 .poppins {
     font-family: 'Poppins', sans-serif;
@@ -161,14 +162,8 @@ body.menu-open {
     font-family: 'WavvePADO-Regular';
 }
 
-
-
-/* .enlarged-view {
-    font-size: 1.5em !important; 
-    line-height: 1.5 !important; 
+@media (max-width: 768px) {
+    .m-inline {
+        display: inline;
+    }
 }
-
-.enlarged-view img {
-    transform: scale(1.2) !important; 
-    transform-origin: center center !important;
-} */

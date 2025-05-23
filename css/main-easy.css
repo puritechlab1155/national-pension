@@ -40,10 +40,16 @@
     .padding-80 { 
         padding: 0 80px;
     }
+    #event-page.sub15 .padding-80, #event-page.sub16 .padding-80, #event-page.sub17 .padding-80, #event-page.sub19 .padding-80 {
+        padding: 0; /* event-15,16,17,19 공통 */
+    }
 }
 @media (max-width: 1280px) {
     .padding-230{
         padding: 0 100px !important;
+    }
+    #event-page.sub15 .sec02-1, #event-page.sub15 .sec03, #event-page.sub15 .sec04, #event-page.sub15 .sec05, #event-page.sub15 .sec06 {
+        padding: 0 100px !important; /* event-15,16,17,19 공통 */
     }
 }
 
@@ -72,6 +78,9 @@
         font-size: 22.5px;
         line-height: 29px;
         margin-bottom: 5px;
+    }
+    #event-page.sub15 .sec02-1, #event-page.sub15 .sec03, #event-page.sub15 .sec04, #event-page.sub15 .sec05, #event-page.sub15 .sec06 {
+        padding: 0 20px !important;
     }
 
 }
@@ -3528,6 +3537,341 @@ body.menu-open .page-wrapper {
 
 
 
+    /* event-추가 스타일링 */
+    #event-page .sec03 .info-zone {
+        margin: 50px 0;
+        max-width: 1059px; /* event-모든페이지 공통 */
+    }
+    #event-page .sec04 .max-w {
+        max-width: 1059px; /* event-모든페이지 공통 */
+    }
+    #event-page .sec05-btnBox {
+        display: flex; /* event-모든페이지 공통 */
+        justify-content: center;
+        gap: 40px;
+        margin-top: 50px;
+    }
+    #event-page .borderButton {
+        border: 2px solid #71C0E8; /* event-모든페이지 공통 */
+        background: transparent;
+        color: #71C0E8;
+        padding: 5px 80px;
+        font-size: 25.5px;
+        font-weight: 600;
+        border-radius: 999px;
+        margin-top: 20px;
+    }
+    #event-page .btn-bg {
+        background: #424242; /* event-모든페이지 공통 */
+        color: #fff;
+        padding: 6px 60px;
+        font-size: 33px;
+        border-radius: 999px;
+    }
+    #event-page .sec02 .bg-img { /* event-모든페이지 공통 */
+        /* margin-top: 20px; */
+        /* margin-left: 20px; */
+        width: auto; 
+        /* min-width: 120%; */
+        /* flex-shrink: 0; */
+        max-width: none;
+    }
+
+    #event-page.sub15 .sec05 .notice2 {
+        max-width: 1000px;
+    }
+    #event-page.sub15 .sec01,#event-page.sub15 .sec02,
+    #event-page.sub16 .sec01,#event-page.sub16 .sec02 
+    #event-page.sub17 .sec01,#event-page.sub17 .sec02 
+    #event-page.sub19 .sec01,#event-page.sub19 .sec02 {
+        background-color: initial; /* event-15,16,17,19 공통 */
+    }
+    #event-page.sub15 .sec02 .text-content,
+    #event-page.sub16 .sec02 .text-content,
+    #event-page.sub17 .sec02 .text-content,
+    #event-page.sub19 .sec02 .text-content {
+        top: 50%; /* event-15,16,17,19 공통 */
+    }
+    #event-page.sub15 .sec04,
+    #event-page.sub16 .sec04,
+    #event-page.sub17 .sec04,
+    #event-page.sub18 .sec04 {
+        margin-top: 0px; /* event-15,16,17,19 공통 */
+        margin-bottom: 0px;
+    }
+    #event-page.sub15 .sec05,
+    #event-page.sub16 .sec05,
+    #event-page.sub17 .sec05,
+    #event-page.sub18 .sec05 {
+        margin-top: 0px; /* event-15,16,17,19 공통 */
+        padding-top: 50px;
+    }
+    #event-page.sub15 .sec06, #event-page.sub16 .sec06, #event-page.sub17 .sec06, #event-page.sub18 .sec06 {
+        padding: 160px 80px 75px !important; /* event-15,16,17,19 공통 */
+    }
+
+
+    /* event-15page.html */
+    #event-page.sub15 .sec02-1,
+    #event-page.sub15 .sec03,
+    #event-page.sub15 .sec04,
+    #event-page.sub15 .sec05,
+    #event-page.sub15 .sec06 {
+        background-color: #C7EAFD;
+        padding: 0 40px;
+    }
+    #event-page .sec02 .event-title {
+
+    }
+    #event-page.sub15 .sec02 .star {
+        position: absolute;
+        top: 9%;
+        left: 31%;
+        max-width: 94.5px;
+    }
+    #event-page.sub15 .sec02 .line {
+        max-width: 478.5px;
+    }
+    #event-page.sub15 .note {
+        min-width: 700px;
+    }
+    #event-page.sub15 .section {
+        margin-top: 0;
+        /* padding: 0 20px; */
+    }
+    #event-page.sub15 .sec04 .img-position {
+        position: relative;
+    }
+    #event-page.sub15 .sec04 .img-position .quiz {
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 319.5px;
+    }
+    #event-page.sub15 .sec04 .desc-dotted-container {
+        position: absolute;
+        top: 580px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        /* padding: 0 80px; */
+    }
+    #event-page.sub15 .sec04 .desc-dotted {
+        /* display: block; */
+        font-size: 31.5px;
+        border-bottom: 2px dotted #CBD8DF;
+        line-height: 57px;
+    }
+    #event-page.sub15 .sec04 .initial-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: absolute;
+        bottom: 170px;
+        transform: translate(-50%);
+        left: 50%;
+    }
+    #event-page.sub15 .sec04 .initial-container .initial-top,
+    #event-page.sub15 .sec04 .initial-container .initial-bottom  {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    #event-page.sub15 .sec04 .initial-container .initialItem {
+        width: 82.72px;
+        height: 82.72px;
+        background-color: #FFE196;
+        /* padding: 0px; */
+        border-radius: 8px;
+    }
+    #event-page.sub15 .sec04 .initial-container .f-42 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 64px;
+        line-height: 1.2;
+    }
+    #event-page.sub15 .sec04 .btn-container {
+        position: absolute;
+        bottom: 60px;
+        transform: translate(-50%);
+        left: 50%;
+    }
+    #event-page.sub15 .sec04 .fw-normal {
+        font-weight: normal;
+    }
+    #event-page.sub15 .sec04 .borderButton {
+        color: #222;
+        padding: 5px 20px;
+    }
+    #event-page.sub15 .sec05-btnBox .invit  {
+        background-color: #71C0E8;
+    }
+    @media (max-width: 1163px) {
+        #event-page.sub15 .sec04 .initial-container .initialItem {
+            width: 62px;
+            height: 62px;
+            padding: 6px;
+        }
+        #event-page.sub15 .sec04 .initial-container .f-42 {
+            font-size: 64px;
+            line-height: 0.7;
+        }
+        #event-page.sub15 .sec04 .img-position .quiz {
+            top: 250px;
+            max-width: 250px;
+        }
+        #event-page.sub15 .sec04 .desc-dotted-container {
+            top: 480px;
+        }
+    }
+    @media (max-width: 1050px) {
+        #event-page.sub15 .mob-br {
+            display: block;
+        }
+        #event-page.sub15 .sec04 .initial-container {
+            flex-direction: column;
+            gap: 50px;
+            bottom: 290px;
+        }
+        #event-page.sub15 .sec04 .img-position .quiz {
+            top: 300px;
+            max-width: 250px;
+        }
+        #event-page.sub15 .sec04 .desc-dotted-container {
+            top: 720px;
+        }
+        #event-page.sub15 .sec04 .btn-container {
+            bottom: 120px;
+        }
+    }
+    @media (max-width: 768px) {
+        #event-page.sub15 .sec04 .initial-container .initialItem {
+            width: 58px;
+            height: 58px;
+            padding: 9px;
+        }
+        #event-page.sub15 .sec04 .initial-container .f-42 {
+            font-size: 45.12px;
+            line-height: 0.8;
+        }
+        #event-page .sec03 .info-zone {
+            margin: 30px 0;
+            /* max-width: 480px; */
+        }
+        #event-page .borderButton {
+            /* font-size: 24px;
+            padding: 5px 30px !important; */
+        }
+        #event-page.sub15 .sec04 .desc-dotted {
+            display: inline;
+            font-size: 25.5px;
+            line-height: 52.5px;
+        }
+        #event-page .sec04 .max-w {
+            /* max-width: 320px; */
+        }
+        #event-page.sub15 .sec04 .img-position .quiz {
+            top: 170px;
+            max-width: 270px;
+        }
+        #event-page.sub15 .sec04 .desc-dotted-container {
+            top: 500px;
+        }
+        #event-page.sub15 .sec04 .initial-container {
+            gap: 30px;
+            bottom: 150px;
+        }
+        #event-page.sub15 .sec04 .btn-container {
+            bottom: 30px;
+        }
+        #event-page.sub15 .sec05, #event-page.sub16 .sec05, #event-page.sub17 .sec05, #event-page.sub18 .sec05 {
+            padding-top: 10px; /* event-15,16,17,19 공통 */
+        }
+        #event-page .btn-bg {
+            padding: 6px 30px; /* event 공통 */
+            font-size: 30px;
+        }
+        #event-page.sub15 .sec02 .text-content, #event-page.sub16 .sec02 .text-content, #event-page.sub17 .sec02 .text-content, #event-page.sub19 .sec02 .text-content {
+            top: 65%; /* event-15,16,17,19 공통 */
+        }
+        /* event-15page.html */
+        #event-page.sub15 .sec02 .star {
+             max-width: 28.91px;
+        }
+        #event-page.sub15 .sec02 .line {
+            max-width: 147px;
+        }
+        #event-page.sub15 .sec02 .event-title {
+            margin-bottom: 10px;
+        }
+        #event-page.sub15 .sec06, #event-page.sub16 .sec06, #event-page.sub17 .sec06, #event-page.sub18 .sec06 {
+            padding: 160px 20px 75px !important; /* event-15,16,17,19 공통 */
+        }
+        #event-page.sub15 .note {
+            min-width: 360px;
+        }
+    }
+    @media (max-width: 480px) {
+        #event-page.sub15 .sec04 .img-position .quiz {
+            top: 170px;
+            max-width: 200px;
+        }
+        #event-page.sub15 .sec04 .desc-dotted-container {
+            top: 470px;
+        }
+        #event-page.sub15 .sec04 .desc-dotted {
+            font-size: 22px;
+            line-height: 1.8;
+        }
+        #event-page .borderButton {
+            padding: 5px 10px !important;
+        }
+        #event-page.sub15 .sec04 .initial-container .initialItem {
+            width: 40px;
+            height: 40px;
+            padding: 0px;
+        }
+        #event-page.sub15 .sec04 .initial-container {
+            gap: 10px;
+            bottom: 130px;
+        }
+    }
+    @media (max-width: 427px) {
+        #event-page.sub15 .sec04 .img-position .quiz {
+            top: 130px;
+            max-width: 200px;
+        }
+        #event-page.sub15 .sec04 .desc-dotted-container {
+            top: 380px;
+        }
+        #event-page.sub15 .sec04 .desc-dotted {
+            font-size: 22px;
+            line-height: 1.8;
+        }
+        #event-page .borderButton {
+            padding: 5px 10px !important;
+        }
+        #event-page.sub15 .sec04 .initial-container .initialItem {
+            width: 40px;
+            height: 40px;
+            padding: 0px;
+        }
+        #event-page.sub15 .sec04 .initial-container {
+            gap: 10px;
+            bottom: 130px;
+        }
+        #event-page .btn-bg {
+            padding: 6px 15px;
+            font-size: 30px;
+        }
+    }
+    /* 여기까지 sub15 */
+
+
+
 
 
 
@@ -4484,7 +4828,7 @@ body.menu-open .page-wrapper {
     }
 
     #event-page .sec03 .info-label {
-        width: 40%;
+        width: 30%;
         font-size: 22.5px;
         line-height: 35px;
         margin-right: 0%;
@@ -4605,6 +4949,9 @@ body.menu-open .page-wrapper {
     }
     #event-page .sec03 .divider {
         border: 0.5px solid #000000;
+    }
+    #event-page .sec03 .info-label {
+        width: 40%;
     }
 
     @keyframes move-forever {
