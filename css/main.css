@@ -2280,6 +2280,15 @@ margin-top: 140px;
 
 
 
+/* sub07.html */
+#sub07 .f-pink {
+    color: #FF8EA8;
+    display: block;
+}
+
+
+
+
 /* sub13.html */
 #sub13 .flex-2 {
     display: flex;
@@ -3513,6 +3522,9 @@ margin-top: 140px;
 }
 
 /* event-추가 스타일링 */
+#sub-page .big-m-inline {
+    display: block;
+}
 #event-page .sec03 .info-zone {
     margin: 50px 0;
     max-width: 686px; /* event-모든페이지 공통 */

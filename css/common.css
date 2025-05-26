@@ -8,7 +8,10 @@
     font-weight: normal;
     font-style: normal;
 }
-
+.border-t2 {
+    border-top: 1px solid #222;
+    padding-top: 10px;
+}
 .notoSerif-4 {
     font-family: "Noto Serif KR", serif;
     font-optical-sizing: auto;
@@ -171,6 +174,6 @@ br.mob-br{ /* 480기준 br */
 
 @media (max-width: 768px) {
     .m-inline {
-        display: inline;
+        display: none;
     }
 }

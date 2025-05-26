@@ -35,6 +35,9 @@
     color: #717171;
     margin-bottom: 10px;
 }
+#sub-page .big-m-inline {
+    display: block;
+}
 
 @media (max-width: 1520px) {
     .padding-80 { 
@@ -95,6 +98,9 @@
         border-left: 1px solid #717171;
         padding-left: 10px;
         /* gap: 5px !important; */
+    }
+    .big-m-inline {
+        display: inline !important;
     }
 }
 
