@@ -381,7 +381,7 @@ body.menu-open .page-wrapper {
 }
 
 .mobile-menu-links {
-    max-height: 430px;
+    max-height: 450px;
     flex: 1;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -480,7 +480,7 @@ body.menu-open .page-wrapper {
     font-size: 20px;
     font-weight: 400;
     padding-left: 16px;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
 .mobile-menu .menu-item.open .submenu {
