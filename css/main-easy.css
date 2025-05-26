@@ -3666,7 +3666,6 @@ body.menu-open .page-wrapper {
         /* flex-shrink: 0; */
         max-width: none;
     }
-
     #event-page.sub15 .sec05 .notice2 {
         max-width: 1000px;
     }
@@ -3734,7 +3733,7 @@ body.menu-open .page-wrapper {
     }
     #event-page.sub15 .sec04 .img-position .quiz {
         position: absolute;
-        top: 300px;
+        top: 250px;
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: 319.5px;
@@ -3976,8 +3975,152 @@ body.menu-open .page-wrapper {
             padding: 6px 15px;
             font-size: 30px;
         }
+    }  /* 여기까지 sub15 */
+
+
+    /* event-17page.html */
+    #event-page.sub17 .sec01, #event-page.sub17 .sec02 {
+        background-color: #fff;
     }
-    /* 여기까지 sub15 */
+    #event-page.sub17 .sec02-1, #event-page.sub17 .sec03, #event-page.sub17 .sec04 , #event-page.sub17 .sec05, #event-page.sub17 .sec06 {
+        background-color: #DBFFDE;
+    }
+    #event-page.sub17 .invit {
+        background-color: #FF8EA8 !important;
+    }
+    #event-page.sub17 .sec02 {
+        height: 400px;
+    }
+    #event-page.sub17 .sec02-1 .comment {
+        margin-top: 0px;
+    }
+    #event-page.sub17 .sec03 {
+        padding-top: 40px;
+        margin-top: 0px;
+    }
+    #event-page.sub17 .line {
+        max-width: 126px;
+    }
+    #event-page.sub17 .sec02-1 .coupon-img {
+        max-width: 276px;
+    }
+    #event-page.sub17 .borderButton {
+        border: 2px solid #FF8EA8;
+        color: #FF8EA8;
+    }
+    #event-page.sub17 .sec02 {
+        padding-bottom: 0;
+    }
+    #event-page.sub17 .sec02-1 {
+        padding-top: 0;
+    }
+    /* 퀴즈 */
+    #event-page.sub17 .sec04 {
+        /* position: relative; */
+    }
+    #event-page.sub17 .sec04 .img-position {
+        position: relative;
+    }
+    #event-page.sub17 .sec04 .img-position:nth-child(2), #event-page.sub17 .sec04 .img-position:nth-child(3) {
+        margin-top: 50px;
+    }
+    #event-page.sub17 .sec04 .quiz {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 83px;
+    }
+    #event-page.sub17 .sec04 .q-icon {
+        position: absolute;
+        top: 25%;
+        left: 70%;
+        max-width: 150px;
+    }
+    #event-page.sub17 .sec04 .q2 {
+        left: 11%;
+    }
+    #event-page.sub17 .sec04 .dotted-container {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    #event-page.sub17 .sec04 .dotted-container .desc-dotted {
+        border-bottom: 2px dotted #FF8EA8;
+        font-size: 30px;
+        line-height: 57px;
+    }
+    #event-page.sub17 .m-block {
+        display: none;
+    }
+    #event-page.sub17 .sec04 .ox-container {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        /* align-items: center; */
+        gap:48px
+    }
+    #event-page.sub17 .sec04 .ox-container .oxItem {
+        width: 120px;
+        height: 120px;
+        border-radius: 24px;
+        background-color: #F1EFE0;
+        font-size: 100px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    #event-page.sub17 .sec04 .ox-container .oxItem .inter-7 {
+        color: #61C669;
+    }
+    #event-page.sub17 .sec04 .ox-container .oxItem.right .inter-7 {
+        color: #FF8EA8;
+    }
+
+
+    @media (max-width: 768px) {
+        #event-page.sub17 .m-block {
+            display: block;
+        }
+        #event-page.sub17 .m-inline {
+            display: none;
+        }
+        #event-page.sub17 .sec04 .quiz {
+            top: 21%;
+            max-width: 58px;
+        }
+        #event-page.sub17 .sec04 .dotted-container .desc-dotted {
+            font-size: 17px;
+            line-height: 35px;
+        }
+        #event-page.sub17 .sec04 .ox-container .oxItem {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            font-size: 50px;
+            align-items: center;
+        }
+        #event-page.sub17 .sec04 .dotted-container {
+            top: 37%;
+        }
+        #event-page.sub17 .sec04 .q-icon {
+            top: 21%;
+            left: 75%;
+            max-width: 50px;
+        }
+    }
+
+
+
+
+
+
 
 
 

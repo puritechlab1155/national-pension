@@ -3667,6 +3667,22 @@ margin-top: 140px;
     padding-top: 40px;
     margin-top: 0px;
 }
+#event-page.sub17 .line {
+    max-width: 126px;
+}
+#event-page.sub17 .sec02-1 .coupon-img {
+    max-width: 276px;
+}
+#event-page.sub17 .borderButton {
+    border: 2px solid #FF8EA8;
+    color: #FF8EA8;
+}
+#event-page.sub17 .sec02 {
+    padding-bottom: 0;
+}
+#event-page.sub17 .sec02-1 {
+    padding-top: 0;
+}
 /* 퀴즈 */
 #event-page.sub17 .sec04 {
     /* position: relative; */
@@ -3743,7 +3759,30 @@ margin-top: 140px;
     }
     #event-page.sub17 .m-inline {
         display: none;
-    }o
+    }
+    #event-page.sub17 .sec04 .quiz {
+        top: 21%;
+        max-width: 58px;
+    }
+    #event-page.sub17 .sec04 .dotted-container .desc-dotted {
+        font-size: 17px;
+        line-height: 35px;
+    }
+    #event-page.sub17 .sec04 .ox-container .oxItem {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        font-size: 50px;
+        align-items: center;
+    }
+    #event-page.sub17 .sec04 .dotted-container {
+        top: 37%;
+    }
+    #event-page.sub17 .sec04 .q-icon {
+        top: 21%;
+        left: 75%;
+        max-width: 50px;
+    }
 }
 
 
@@ -3927,7 +3966,7 @@ margin-top: 140px;
 
     /* ✅ event-page.html */
     #event-page .sec02 {
-        height: 350px;
+        height: 350px !important;
     }
     #event-page .sec02 .text-content {
         top: 80%;
@@ -4597,11 +4636,10 @@ margin-top: 140px;
         padding-top: 65px;
     }
     #event-page .sec02 {
-        height: 310px;
+        height: 310px !important;
     }
     #event-page .sec02 .text-content {
         top: 75%;
-
     }
     #event-page .sec02-1 .comment {
         width: 80%;
@@ -4618,13 +4656,11 @@ margin-top: 140px;
         /* transform: scale(0.6);
         margin-top: -190px; */
     }
-
     #event-page .sec02 .seagull-1{
         transform: scale(0.6);
         top: 7%;
         left: 60%;
     }
-
     #event-page .sec02 .seagull-2 {
         display: none;
     }
@@ -4633,11 +4669,9 @@ margin-top: 140px;
         grid-template-columns: repeat(2, 1fr); 
         gap: 30px;
     }
-
     #event-page .sec02 .mob-br {
         display: block;
     }
-
     #event-page .sec03 {
         padding-top: 0px;
         margin-top: 30px;
@@ -4645,17 +4679,14 @@ margin-top: 140px;
     #event-page .sec03 .info-zone {
         width: 90%;
     }
-
     #event-page .sec03 .info-label {
         width: 50%;
         font-size: 17px;
         line-height: 25px;
-        
         margin-right: 0%;
         padding: 3px;
         width: 30%;
     }
-
     #event-page .sec03 .info-value {
         font-size: 17px;
         font-weight: 400;
@@ -4663,7 +4694,6 @@ margin-top: 140px;
         padding: 3px;
         width: 80%;
     }
-
     #event-page .sec03 .subscribe-button {
         margin-top: 30px;
         padding: 13px 55px;
@@ -4672,18 +4702,15 @@ margin-top: 140px;
         border-radius: 999px;
         cursor: pointer;
         font-size: 18px;
-        
         line-height: 100%;
         font-weight: 700;
     }
-
     #event-page .sec05 {
         padding-bottom: 0px;
     }
     #event-page .sec05 .notice1{
         width: 90%;
     }
-
     #event-page .sec05 .notice2{
         width: 90%;
         border-top: 1px solid #000;
@@ -4700,24 +4727,18 @@ margin-top: 140px;
     #event-page .sec06 {
         padding-top: 0px;
     }
-
     #event-page .sec06 .padding-80 {
         padding: 0 20px;
     }
-
     #event-page .event-modal .modal-content { 
         max-width: 80%;
     }
-    
     #event-page .event-result .gift-img {
         width: 70%; 
     }
-
     #event-page .event-result .gift-card {
         margin: 10px 0px;
     }
-
-
     #event-page .eventModal .form-title,
     #event-page .infoModal .form-title{
         font-size: 35px;
