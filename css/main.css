@@ -2417,7 +2417,7 @@ margin-top: 140px;
     text-align: center;
     height: 0;
     padding-bottom: 161.33%; /* 이미지의 원본 비율에 따른 높이 설정 */
-    background-image: url("/img/sub13/article03_pc.jpg");
+    background-image: url("../img/sub13/article03_pc.jpg");
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat; 
