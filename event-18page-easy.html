@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 애니메이션 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -204,12 +208,12 @@
             </section>
 
             <section class="section sec02">
-                <img class="seagull-1" src="img/event-page/seagull1.png" alt="갈매기1">
-                <img class="seagull-2" src="img/event-page/seagull2.png" alt="갈매기1">
+                <img class="seagull-1 animate__animated animate__shakeY animate__slower animate__infinite" src="img/event-page/seagull1.png" alt="갈매기1">
+                <img class="seagull-2 animate__animated animate__shakeY animate__slower animate__infinite" src="img/event-page/seagull2.png" alt="갈매기1">
                 <img class="cloud-img" src="img/event-page/cloud.png" alt="구름 이미지" />
                 <div class="text-content padding-230">
                     <p class="draw">선물 상자 뽑기</p>
-                    <h1 class="event-title">출렁이는 파도 위, <br/>
+                    <h1 class="event-title animate__animated animate__backInUp">출렁이는 파도 위, <br/>
                         행운이 든 선물 상자를 <br class="mob-br"/> 잡아라~!</h1>
                 </div>
             </section>
@@ -219,9 +223,8 @@
                     감사의 마음을 담아 행운의 선물상자를 준비했습니다. <br/>
                     파도 위 상자를 클릭해 당첨된 구독자에게 선물을 드립니다.
                 </p>
-                <img class="coupon-img" src="img/event-page/gift-coupon.png" alt="기프트쿠폰" />
+                <img class="coupon-img animate__animated animate__pulse animate__infinite" src="img/event-page/gift-coupon.png" alt="기프트쿠폰" />
             </section>
-
 
             <section class="section sec03 padding-230">
                 <h2 class="section-title">참여 방법</h2>
@@ -270,7 +273,7 @@
             </section>
 
             <section class="section sec04">
-                <p class="comment">아래에서 원하는 선물 상자를 <br class="mob-br"/> 눌러 주세요!</p>
+                <p class="comment animate__animated animate__pulse animate__infinite">아래에서 원하는 선물 상자를 <br class="mob-br"/> 눌러 주세요!</p>
                     <!-- SVG wave background -->
                 <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 130 100" preserveAspectRatio="none">
@@ -418,6 +421,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="section sec05"> 
                 <ul class="notice1">
                     <li>내 곁에 국민연금 구독자가 아닐 경우, 차후에 당첨이 취소되오니 반드시 구독 후 이벤트에 참여해 주세요.</li>
@@ -433,11 +437,10 @@
                     <li> 정확하지 않은 개인정보로 인해 당첨자 연락이 되지 않거나 확인이 불가능할 경우, 당첨 취소됩니다. </li>
                 </ul>
             </section>
-            
 
             <section class="section sec06">
                 <div class="pagination padding-80">
-                    <div class="nav-item prev">
+                    <div class="nav-item prev animate__animated" data-aos="zoom-in">
                         <button class="nav-button" onclick="window.location.href='#';">
                             <svg width="45" height="45" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M24.3749 16.2501L9.89242 16.2501L15.5174 21.8751L13.7499 23.6426L5.10742 15.0001L13.7499 6.35758L15.5174 8.12508L9.89242 13.7501L24.3749 13.7501L24.3749 16.2501Z" fill="white"/>
@@ -451,7 +454,7 @@
                         </div>
                         
                     </div>
-                    <div class="nav-item next">
+                    <div class="nav-item next animate__animated" data-aos="zoom-in" data-aos-delay="300">
                         <div class="nav-content">
                             <span class="nav-label">NEXT</span>
                             <h3 class="nav-title">NPS 칼럼</h3>
@@ -788,7 +791,14 @@
 
 
 </body>
+<!-- aos -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 <script src="js/script.js"></script>
+<script>
+    AOS.init();
+</script>
+
 <script>
 
         // ✅  모바일 파도 변경

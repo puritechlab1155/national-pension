@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'WavvePADO-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.notoSerif-4 {
+    font-family: "Noto Serif KR", serif;
+    font-optical-sizing: auto;
+    font-weight: 400 !important;
+    font-style: normal;
+}
+.f-24 {
+    font-size: clamp(20px, 2vw, 24px) !important;
+    line-height: clamp(32px, 5vh, 40px) !important;
+}
+.f-18 {
+    font-size: clamp(16px, 2vw, 18px) !important;
+    line-height: clamp(26px, 5vh, 30px) !important;
+}
+.mt-100 {
+    margin-top: clamp(48px, 11vh, 100px);
+}
+.mt-30 {
+    margin-top: clamp(20px, 5vh, 30px);
+}
+.mb-40 {
+    margin-bottom: clamp(20px, 5vh, 40px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #222222;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+body {
+    background: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+a:focus {
+    outline: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@supports (-webkit-appearance:none) {
+input {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+display: none;
+}
+
+input::-webkit-contacts-auto-fill-button {
+visibility: hidden !important;
+display: none !important;
+pointer-events: none !important;
+position: absolute !important;
+right: 0 !important;
+}
+
+input::-webkit-credentials-auto-fill-button {
+visibility: hidden !important;
+display: none !important;
+pointer-events: none !important;
+position: absolute !important;
+right: 0 !important;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+
+.color-picker::-webkit-color-swatch-wrapper {
+padding: 0;
+}
+
+.color-picker::-webkit-color-swatch {
+border: 2px solid #eee;
+border-radius: 50%;
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+img, input, select, textarea, button, label {
+    vertical-align: middle;
+}
+img, fieldset, abbr {
+    border: 0;
+}
+
+body.menu-open {
+    overflow: hidden;
+    height: 100vh; 
+    touch-action: none; /
+}
+
+br.mob-br{ /* 480기준 br */
+    display: none;
+}
+
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.Wavve{
+    font-family: 'WavvePADO-Regular';
+}
+
+@media (max-width: 768px) {
+    .m-inline {
+        display: inline;
+    }
+}

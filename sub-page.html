@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="css/common.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+            <!-- 애니메이션 라이브러리 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
@@ -187,8 +191,12 @@
     
             <!-- 컨텐츠 -->
             <main class="content" id="sub-page">
+                <!-- sec01 수정금지(편하게 보기) -->
                 <section class="section sec01 padding-230">
-                    <div class="sec01-header" id="checkView2">
+                    <!-- *********중요
+                    id=" checkView : 추가 페이지 필요, -easy.html 생성방식 / checkView2 : 한 페이지, 파일명 3가지 방식으로 생성(index-파일명/sub-파일명/event-파일명)" 
+                    css는 main과 main-easy(수치 x1.5확인) 각각 넣어줘야함-->
+                    <div class="sec01-header" id="checkView2"> 
                         <span class="check-icon">
                             <svg class="check-svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect class="check-circle" x="0.75" y="0.75" width="26.5" height="26.5" rx="13.25" stroke="#AAAAAA" stroke-width="1.5"/>
@@ -199,7 +207,8 @@
                     </div>
                 </section>
 
-                <section class="section sec02 padding-230">
+                <!-- 기사 내용 바꿔주세요 (class유지!!!! 새로 생성시 반응형 꼭꼭 확인!!!) -->
+                <section id="#" class="section sec02 padding-230">
                     <div class="article">
                         <div class="article-header">
                             <div class="info">
@@ -207,7 +216,7 @@
                                 <span class="separator change"> | </span> 
                                 <span class="author change">write. 한국일보 김창훈 기자</span>
                             </div>
-                            <h2 class="title change">2024 국민연금 개혁의 필요성</h2>
+                            <h2 class="title change">테스트</h2>
                             <p class="message change">더는 미룰 연금개혁도 <br class="mob-br"/> '럭키 비키' 외칠 수 있다면</p>
                         </div>
                         <div class="article-content change">
@@ -232,9 +241,10 @@
                     </div>
                 </section>
 
+                <!-- !!!!!추후 수정!!!!!! 하단링크/ 문구/ 이미지(css : .pagination .nav-item.prev) -->
                 <section class="section sec03 padding-80">
                     <div class="pagination">
-                        <div class="nav-item prev" onclick="window.location.href='#';">
+                        <div class="nav-item prev animate__animated" data-aos="zoom-in" onclick="window.location.href='#';">
                             <button class="nav-button">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M24.3749 16.2501L9.89242 16.2501L15.5174 21.8751L13.7499 23.6426L5.10742 15.0001L13.7499 6.35758L15.5174 8.12508L9.89242 13.7501L24.3749 13.7501L24.3749 16.2501Z" fill="white"/>
@@ -248,7 +258,7 @@
                             </div>
                             
                         </div>
-                        <div class="nav-item next" onclick="window.location.href='#';">
+                        <div class="nav-item next animate__animated" data-aos="zoom-in" data-aos-delay="300" onclick="window.location.href='#';">
                             <div class="nav-content">
                                 <span class="nav-label change">NEXT</span>
                                 <h3 class="nav-title change">NPS 칼럼</h3>
@@ -265,7 +275,7 @@
             </main>
 
 
-            <!-- 푸터 -->
+            <!-- 푸터 ( 여기서부터 끝까지 수정 금지!!!!) -->
             <footer class="footer">
                 <div class="footer-content">
                     <div class="footer-left">
@@ -498,12 +508,14 @@
 
 
     </body>
+    <!-- aos -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <script src="js/script.js"></script>
     <script>
-
-
-
-
+        AOS.init();
     </script>
+    
+    <script></script>
 
 </html>

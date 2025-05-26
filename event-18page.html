@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 애니메이션 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -204,12 +208,12 @@
             </section>
 
             <section class="section sec02">
-                <img class="seagull-1" src="img/event-page/seagull1.png" alt="갈매기1">
-                <img class="seagull-2" src="img/event-page/seagull2.png" alt="갈매기1">
+                <img class="seagull-1 animate__animated animate__shakeY animate__slower animate__infinite" src="img/event-page/seagull1.png" alt="갈매기1">
+                <img class="seagull-2 animate__animated animate__shakeY animate__slower animate__infinite" src="img/event-page/seagull2.png" alt="갈매기1">
                 <img class="cloud-img" src="img/event-page/cloud.png" alt="구름 이미지" />
                 <div class="text-content padding-230">
                     <p class="draw">선물 상자 뽑기</p>
-                    <h1 class="event-title">출렁이는 파도 위, <br/>
+                    <h1 class="event-title animate__animated animate__backInUp">출렁이는 파도 위, <br/>
                         행운이 든 선물 상자를 <br class="mob-br"/> 잡아라~!</h1>
                 </div>
             </section>
@@ -219,7 +223,7 @@
                     감사의 마음을 담아 행운의 선물상자를 준비했습니다. <br/>
                     파도 위 상자를 클릭해 당첨된 구독자에게 선물을 드립니다.
                 </p>
-                <img class="coupon-img" src="img/event-page/gift-coupon.png" alt="기프트쿠폰" />
+                <img class="coupon-img animate__animated animate__pulse animate__infinite" src="img/event-page/gift-coupon.png" alt="기프트쿠폰" />
             </section>
 
 
@@ -270,7 +274,7 @@
             </section>
 
             <section class="section sec04">
-                <p class="comment">아래에서 원하는 선물 상자를 <br class="mob-br"/> 눌러 주세요!</p>
+                <p class="comment animate__animated animate__pulse animate__infinite">아래에서 원하는 선물 상자를 <br class="mob-br"/> 눌러 주세요!</p>
                     <!-- SVG wave background -->
                 <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 130 100" preserveAspectRatio="none">
@@ -788,7 +792,13 @@
 
 
 </body>
+<!-- aos -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 <script src="js/script.js"></script>
+<script>
+  AOS.init();
+</script>
 <script>
 
         // ✅  모바일 파도 변경

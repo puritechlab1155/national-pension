@@ -2242,6 +2242,7 @@ body.menu-open .page-wrapper {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 10;
     }
 
     #sub05 .video-top-bar .article-img {
@@ -2335,7 +2336,6 @@ body.menu-open .page-wrapper {
     overflow: hidden;
     height: 650px;
 }
-
 #event-page .sec02 .cloud-img {
     margin-top: 20px;
     margin-left: 20px;
@@ -2344,19 +2344,20 @@ body.menu-open .page-wrapper {
     flex-shrink: 0;
     max-width: none;
 }
-
 #event-page .sec02 .seagull-1 {
     position: absolute;
     top: 7%;
     left: 22%;
+    max-width: 219px;
+    width: 100%;
 }
-
 #event-page .sec02 .seagull-2 {
     position: absolute;
     top: 7%;
     right: 32%;
+    max-width: 142.5px;
+    width: 100%;
 }
-
 #event-page .sec02 .text-content {
     display: flex;
     flex-direction: column;
@@ -3714,12 +3715,12 @@ body.menu-open .page-wrapper {
     }
     #event-page.sub15 .sec02 .star {
         position: absolute;
-        top: 9%;
-        left: 31%;
+        top: 2%;
+        left: 21%;
         max-width: 94.5px;
     }
     #event-page.sub15 .sec02 .line {
-        max-width: 478.5px;
+        max-width: 717.75px;
     }
     #event-page.sub15 .note {
         min-width: 700px;
@@ -3797,6 +3798,12 @@ body.menu-open .page-wrapper {
     }
     #event-page.sub15 .sec05-btnBox .invit  {
         background-color: #71C0E8;
+    }
+    @media (max-width: 1280px) {
+        #event-page.sub15 .sec02 .star {
+            top: -3%;
+            left: 28%;
+        }
     }
     @media (max-width: 1163px) {
         #event-page.sub15 .sec04 .initial-container .initialItem {
@@ -3888,10 +3895,12 @@ body.menu-open .page-wrapper {
         }
         /* event-15page.html */
         #event-page.sub15 .sec02 .star {
-             max-width: 28.91px;
+            max-width: 44px;
+            top: 9%;
+            left: 32%;
         }
         #event-page.sub15 .sec02 .line {
-            max-width: 147px;
+            max-width: 220.5px;
         }
         #event-page.sub15 .sec02 .event-title {
             margin-bottom: 10px;
@@ -3901,6 +3910,17 @@ body.menu-open .page-wrapper {
         }
         #event-page.sub15 .note {
             min-width: 360px;
+        }
+    }
+    @media (max-width: 630px) {
+        #event-page.sub15 .sec02 .star {
+            top: 26px;
+            left: 172px;
+        }
+    }
+    @media (max-width: 560px) {
+        #event-page.sub15 .sec02 .star {
+            left: 90px;
         }
     }
     @media (max-width: 480px) {
@@ -4857,7 +4877,7 @@ body.menu-open .page-wrapper {
 
     #event-page .sec02 .cloud-img {
         transform: scale(0.6);
-        margin-top: -190px;
+        margin-top: -146px;
     }
     #index .sec02 .keyword-cloud * {
         transform: scale(1.2);
@@ -4866,8 +4886,8 @@ body.menu-open .page-wrapper {
     
 
     #event-page .sec02 .seagull-1{
-        transform: scale(0.6);
-        top: -2%;
+        max-width: 130px;
+        top: 7%;
         left: 60%;
     }
 

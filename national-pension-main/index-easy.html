@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 곁에 국민연금</title>
+    <link rel="stylesheet" href="css/main-easy.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 모바일 슬라이드 메뉴 오버레이 배경 -->
+    <div class="mobile-menu-overlay"></div>
+    <!-- 모바일 슬라이드 메뉴 -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html">
+                <img src="img/logo.png" alt="NPS 로고" class="mobile-logo" />
+            </a>
+            <button type="button" class="close-menu" aria-label="닫기">
+                <svg class="slide-menu-close" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7.5063 7.5063" stroke="white" stroke-width="0.841346" />
+                    <path d="M7.50635 1L1.00005 7.5063" stroke="white" stroke-width="0.841346" />
+                </svg>
+            </button>
+        </div>
+        <span class="m-volume">2025 VOL.203</span>
+        <ul class="mobile-menu-links">
+            <li class="submenu-toggle">
+                <div class="menu-item">
+                    <a class="menu-link" href="#">NPS</a>
+                    <button type="button" class="submenu-button">
+                        <svg class="submenu-toggle-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 9L10 13L6 9" stroke="black" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="sub-01page.html" class="submenu-link">NPS 뉴스</a></li>
+                    <li class="submenu-item"><a href="sub-02page.html" class="submenu-link">NPS 칼럼</a></li>
+                    <li class="submenu-item"><a href="sub-03page.html" class="submenu-link">알아봐요, 국민연금</a></li>
+                    <li class="submenu-item"><a href="sub-04page.html" class="submenu-link">세계연금 이모저모</a></li>
+                    <li class="submenu-item"><a href="sub-05page.html" class="submenu-link">NPS 영상</a></li>
+                </ul>
+            </li>
+            <li class="submenu-toggle">
+                <div class="menu-item">
+                    <a class="menu-link" href="#">시니어 라이프</a>
+                    <button type="button" class="submenu-button">
+                        <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 9L10 13L6 9" stroke="black" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="sub-06page.html" class="submenu-link">모두의 여행</a></li>
+                    <li class="submenu-item"><a href="sub-07page.html" class="submenu-link">쉼표 하나 놓고 떠나요</a></li>
+                    <li class="submenu-item"><a href="sub-08page.html" class="submenu-link">우리는 지금</a></li>
+                    <li class="submenu-item"><a href="sub-09page.html" class="submenu-link">똑똑한 노후준비!</a></li>
+                    <li class="submenu-item"><a href="sub-10page.html" class="submenu-link">액티브 시니어</a></li>
+                </ul>
+            </li>
+            <li class="submenu-toggle">
+                <div class="menu-item">
+                    <a class="menu-link" href="#">문화</a>
+                    <button type="button" class="submenu-button">
+                        <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 9L10 13L6 9" stroke="black" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="sub-11page.html" class="submenu-link">연금&시네마</a></li>
+                    <li class="submenu-item"><a href="sub-12page.html" class="submenu-link">오늘의 레시피</a></li>
+                    <li class="submenu-item"><a href="sub-13page.html" class="submenu-link">헬스 앤 라이프</a></li>
+                    <li class="submenu-item"><a href="sub-14page.html" class="submenu-link">꼬리에 꼬리를 무는 문화탐구</a></li>
+                </ul>
+            </li>
+            <li class="submenu-toggle">
+                <div class="menu-item">
+                <a class="menu-link">이벤트</a>
+                <button type="button" class="submenu-button">
+                    <svg class="submenu-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 9L10 13L6 9" stroke="black" />
+                    </svg>
+                </button>
+                </div>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="event-15page.html" class="submenu-link">초성 퀴즈</a></li>
+                    <li class="submenu-item"><a href="event-16page.html" class="submenu-link">최애 콘텐츠 투표</a></li>
+                    <li class="submenu-item"><a href="event-17page.html" class="submenu-link">OX 퀴즈</a></li>
+                    <li class="submenu-item"><a href="event-18page.html" class="submenu-link">구독자 뽑기</a></li>
+                    <li class="submenu-item"><a href="event-19page.html" class="submenu-link">독자 목소리</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button type="button" onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'"
+            class="m-prev-issues">지난호 보기</button>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- 해더 -->
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-left">
+                    <a href="index.html" class="logo">
+                        <img class="header-logo" src="img/logo.png" alt="NPS 로고" />
+                    </a> 
+                    <li class="menu-item dropdown">
+                        <a href="#" class="menu-link">NPS</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="sub-01page.html" class="submenu-link">NPS 뉴스</a></li>
+                            <li class="submenu-item"><a href="sub-02page.html" class="submenu-link">NPS 칼럼</a></li>
+                            <li class="submenu-item"><a href="sub-03page.html" class="submenu-link">알아봐요, 국민연금</a></li>
+                            <li class="submenu-item"><a href="sub-04page.html" class="submenu-link">세계연금 이모저모</a></li>
+                            <li class="submenu-item"><a href="sub-05page.html" class="submenu-link">NPS 영상</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="menu-link">시니어 라이프</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="sub-06page.html" class="submenu-link">모두의 여행</a></li>
+                            <li class="submenu-item"><a href="sub-07page.html" class="submenu-link">쉼표 하나 놓고 떠나요</a></li>
+                            <li class="submenu-item"><a href="sub-08page.html" class="submenu-link">우리는 지금</a></li>
+                            <li class="submenu-item"><a href="sub-09page.html" class="submenu-link">똑똑한 노후준비!</a></li>
+                            <li class="submenu-item"><a href="sub-10page.html" class="submenu-link">액티브 시니어</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="menu-link">문화</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="sub-11page.html" class="submenu-link">연금&시네마</a></li>
+                            <li class="submenu-item"><a href="sub-12page.html" class="submenu-link">오늘의 레시피</a></li>
+                            <li class="submenu-item"><a href="sub-13page.html" class="submenu-link">헬스 앤 라이프</a></li>
+                            <li class="submenu-item"><a href="sub-14page.html" class="submenu-link">꼬리에 꼬리를 무는 문화탐구</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="menu-link">이벤트</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="event-15page.html" class="submenu-link">초성 퀴즈</a></li>
+                            <li class="submenu-item"><a href="event-16page.html" class="submenu-link">최애 콘텐츠 투표</a></li>
+                            <li class="submenu-item"><a href="event-17page.html" class="submenu-link">OX 퀴즈</a></li>
+                            <li class="submenu-item"><a href="event-18page.html" class="submenu-link">구독자 뽑기</a></li>
+                            <li class="submenu-item"><a href="event-19page.html" class="submenu-link">독자 목소리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-right">
+                    <button type="button"
+                        onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'"
+                        class="prev-issues">지난호 보기</button>
+                    <span class="volume poppins">2025 Spring VOL.203</span>
+                    <div class="search-container" id="searchContainer">
+                        <div>
+                            <svg class="search-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35 35L28.3333 28.3333M31.6667 18.3333C31.6667 21.8696 30.2619 25.2609 27.7614 27.7614C25.2609 30.2619 21.8696 31.6667 18.3333 31.6667C14.7971 31.6667 11.4057 30.2619 8.90524 27.7614C6.40476 25.2609 5 21.8696 5 18.3333C5 14.7971 6.40476 11.4057 8.90524 8.90524C11.4057 6.40476 14.7971 5 18.3333 5C21.8696 5 25.2609 6.40476 27.7614 8.90524C30.2619 11.4057 31.6667 14.7971 31.6667 18.3333Z"
+                                    stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="search-bar" id="searchBar">
+                            <input type="text" class="search-input" />
+                        </div>
+                    </div>
+                    <button type="button" class="menu-toggle" aria-label="메뉴 열기" onclick="window.location.href='#';">
+                        <svg class="m-menu" width="17" height="12" viewBox="0 0 17 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="17" height="0.68" fill="black" />
+                            <rect y="5" width="17" height="0.68" fill="black" />
+                            <rect y="10.88" width="17" height="0.68" fill="black" />
+                        </svg>
+
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- 컨텐츠 -->
+        <main class="content" id="index">
+            <section class="section sec01 padding-80">
+                <div class="sec01-header" id="checkView">
+                    <span class="check-icon">
+                        <svg class="check-svg" width="37" height="37" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="check-circle" x="0.75" y="0.75" width="26.5" height="26.5" rx="13.25" stroke="#AAAAAA" stroke-width="1.5"/>
+                            <path class="check-path" d="M7 15L12 20L21 9" stroke="#AAAAAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="check-label">편하게 보기</span>
+                </div>
+                <div class="content-box">
+                    <div class="black-box">
+                        지금 주목할만한 이야기
+                    </div>
+                    <div class="content-wrapper">
+                        <!-- 왼쪽 이미지 -->
+                        <div class="content-left">
+                            <img class="sec01-img" src="img/main/section01.png" alt="컨텐츠 이미지" class="content-image" />
+                        </div>
+
+                        <!-- 오른쪽 텍스트 -->
+                        <div class="content-right">
+                            <div class="text-area">
+                                <p class="catagory">NPS 칼럼</p>
+                                <h1 class="title">2025 <br/> 국민연금개혁의 <br/> 필요성</h1>
+                                <h5 class="sub-title">더는 못 미룰 연금개혁도 <br/> “럭키 비키” 외칠 수 있다면</h5>
+                            </div>
+                            <button type="button" class="sec01-btn" onclick="window.location.href='#';">지금 확인하기</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section sec02 padding-80">
+                <h2 class="poppins title">KEYWORD</h2>
+                <div class="keyword-cloud">
+                    <div class="keyword-item center" data-aos-delay="400">
+                        <a href="#" class="keyword main">국민연금<br/>개혁</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1200">
+                        <a href="#" class="keyword medium gray">경제학</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="800">
+                        <a href="#" class="keyword small">N잡러</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1800">
+                        <a href="#" class="keyword emphasized">N잡러</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1100">
+                        <a href="#" class="keyword">노후대비</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="500">
+                        <a href="#" class="keyword">주택청약</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1500">
+                        <a href="#" class="keyword nano gray">금리</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="800">
+                        <a href="#" class="keyword gray mbig">흑백요리사</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1500">
+                        <a href="#" class="keyword small gray">트렌드</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="1000">
+                        <a href="#" class="keyword big">주택담보대출</a>
+                    </div>
+                    <div class="keyword-item" data-aos-delay="800">
+                        <a href="#" class="keyword normal">장애연금</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section sec03 padding-80 ">
+                <h2 class="title poppins">NPS</h2>
+                <div class="carousel-container">
+                    <button class="carousel-button left" onclick="window.location.href='#';">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M33.414 6.58606C33.7889 6.96112 33.9996 7.46973 33.9996 8.00006C33.9996 8.53039 33.7889 9.03901 33.414 9.41406L18.828 24.0001L33.414 38.5861C33.7783 38.9633 33.9799 39.4685 33.9753 39.9929C33.9708 40.5173 33.7605 41.0189 33.3896 41.3897C33.0188 41.7605 32.5172 41.9709 31.9928 41.9754C31.4684 41.98 30.9632 41.7784 30.586 41.4141L14.586 25.4141C14.2111 25.039 14.0004 24.5304 14.0004 24.0001C14.0004 23.4697 14.2111 22.9611 14.586 22.5861L30.586 6.58606C30.9611 6.21112 31.4697 6.00049 32 6.00049C32.5303 6.00049 33.0389 6.21112 33.414 6.58606Z"
+                                fill="#AAAAAA" />
+                        </svg>
+                    </button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic01.jpg" alt="국민연금 주요 뉴스"/>
+                                <div class="caption">
+                                    <p class="small-text">NPS 뉴스</p>
+                                    <p class="title-text">국민연금 주요 뉴스</p>
+                                </div>
+                            </a>
+            
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic02.jpg" alt="잘못 알려진 국민연금 제도 바로알기"/>
+                                <div class="caption">
+                                    <p class="small-text">NPS 팩트</p>
+                                    <p class="title-text">잘못 알려진 국민연금 제도<br/>바로알기</p>
+                                </div>
+                            </a>
+            
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic03.jpg" alt="지금 알아두면 좋은 제도는 무엇일까?"/>
+                                <div class="caption">
+                                    <p class="small-text">알아봐요, 국민연금</p>
+                                    <p class="title-text">지금 알아두면 좋은 제도는<br/>무엇일까?</p>
+                                </div>
+                            </a>
+            
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic04.jpg" alt="세계의 다양한 연금 제도 알아보기"/>
+                                <div class="caption">
+                                    <p class="small-text">세계연금 이모저모</p>
+                                    <p class="title-text">세계의 다양한 연금 제도<br/>알아보기</p>
+                                </div>
+                            </a>
+            
+                            <a href="sub-page.html" class="carousel-item">
+                                <img class="carousel-img" src="img/main/sec03-pic05.png" alt="다른 나라의 연금제도는? 글로벌 연금 토크쇼"/>
+                                <div class="caption">
+                                    <p class="small-text">NPS 영상</p>
+                                    <p class="title-text">다른 나라의 연금제도는?<br/>글로벌 연금 토크쇼</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <button class="carousel-button right" onclick="window.location.href='#';">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.5859 6.58606C14.211 6.96112 14.0004 7.46973 14.0004 8.00006C14.0004 8.53039 14.211 9.03901 14.5859 9.41406L29.1719 24.0001L14.5859 38.5861C14.2216 38.9633 14.02 39.4685 14.0246 39.9929C14.0291 40.5173 14.2395 41.0189 14.6103 41.3897C14.9811 41.7605 15.4827 41.9709 16.0071 41.9754C16.5315 41.98 17.0367 41.7784 17.4139 41.4141L33.4139 25.4141C33.7889 25.039 33.9995 24.5304 33.9995 24.0001C33.9995 23.4697 33.7889 22.9611 33.4139 22.5861L17.4139 6.58606C17.0389 6.21112 16.5303 6.00049 15.9999 6.00049C15.4696 6.00049 14.961 6.21112 14.5859 6.58606Z"
+                                fill="#AAAAAA" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="section sec04 m-top-90">
+                <h2 class="title poppins">국민연금 TV</h2>
+                <div class="sec04-wrap padding-80">
+                    <div class="line"></div>
+                    <div class="slider-section">
+                        <button id="prev" class="swiper-button prev" onclick="window.location.href='#';"> 
+                            <svg class="swiper-button-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M33.414 6.58606C33.7889 6.96112 33.9996 7.46973 33.9996 8.00006C33.9996 8.53039 33.7889 9.03901 33.414 9.41406L18.828 24.0001L33.414 38.5861C33.7783 38.9633 33.9799 39.4685 33.9753 39.9929C33.9708 40.5173 33.7605 41.0189 33.3896 41.3897C33.0188 41.7605 32.5172 41.9709 31.9928 41.9754C31.4684 41.98 30.9632 41.7784 30.586 41.4141L14.586 25.4141C14.2111 25.039 14.0004 24.5304 14.0004 24.0001C14.0004 23.4697 14.2111 22.9611 14.586 22.5861L30.586 6.58606C30.9611 6.21112 31.4697 6.00049 32 6.00049C32.5303 6.00049 33.0389 6.21112 33.414 6.58606Z"
+                                    fill="#AAAAAA" />
+                            </svg>
+                        </button>
+                        <div class="swiper-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-item">
+                                        <iframe class="swiper-frame"
+                                            style="width: 100%; height: 400px"
+                                            src="https://www.youtube.com/embed/mGRgD6fLVBE"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen
+                                        ></iframe>
+                                </div>
+                                <div class="swiper-item">
+                                    <iframe class="swiper-frame"
+                                            style="width: 100%; height: 400px"
+                                            src="https://www.youtube.com/embed/loIBLzAX-pU"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen
+                                        ></iframe>
+                                </div>
+                                <div class="swiper-item">
+                                    <iframe class="swiper-frame"
+                                            style="width: 100%; height: 400px"
+                                            src="https://www.youtube.com/embed/W74KnvpgFE8"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen
+                                        ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="next" class="swiper-button next" onclick="window.location.href='#';">
+                            <svg class="swiper-button-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.5859 6.58606C14.211 6.96112 14.0004 7.46973 14.0004 8.00006C14.0004 8.53039 14.211 9.03901 14.5859 9.41406L29.1719 24.0001L14.5859 38.5861C14.2216 38.9633 14.02 39.4685 14.0246 39.9929C14.0291 40.5173 14.2395 41.0189 14.6103 41.3897C14.9811 41.7605 15.4827 41.9709 16.0071 41.9754C16.5315 41.98 17.0367 41.7784 17.4139 41.4141L33.4139 25.4141C33.7889 25.039 33.9995 24.5304 33.9995 24.0001C33.9995 23.4697 33.7889 22.9611 33.4139 22.5861L17.4139 6.58606C17.0389 6.21112 16.5303 6.00049 15.9999 6.00049C15.4696 6.00049 14.961 6.21112 14.5859 6.58606Z"
+                                    fill="#AAAAAA" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section sec05 padding-80 m-top-90">
+                <div class="sec05-container">
+                    <h2 class="title poppins">시니어 라이프</h2>
+                    <div class="grid">
+                        <div class="left-col">
+                            <a href="#" class="post-item">
+                                <img src="img/main/sec05-pic01.jpg" alt="부모님과 함께하는 부산 여행" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+                                <div class="text-overlay">
+                                    <p class="sub-title">모두의 여행</p>
+                                    <h2 class="post-title">부모님과 함께하는 부산 여행</h2>
+                                </div>
+                            </a>
+                            <div class="text-wrap">
+                                <p class="sub-title">모두의 여행</p>
+                                <h2 class="post-title">부모님과 함께하는 부산 여행</h2>
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="right-row">
+                                <div class="item-2-3-col">
+                                    <a href="#" class="post-item item-2">
+                                        <div class="img-container">
+                                            <img class="post-img" src="img/main/sec05-pic02.jpg" alt="함께 떠나는 시니어 여행" class="post-item__image">
+                                        </div>
+                                        <h3 class="sub-title">쉼표 하나 놓고 떠나요</h3>
+                                        <p class="post-title">노년층에게 혜택을 주는 여행지로 떠나보자!</p>
+                                    </a>
+                                    <a href="#" class="post-item item-3">
+                                        <div class="img-container">
+                                            <img class="post-img" src="img/main/sec05-pic04.jpg" alt="함께 떠나는 시니어 여행" class="post-item__image">
+                                        </div>
+                                        <h3 class="sub-title">똑똑한 노후준비!</h3>
+                                        <p class="post-title">40대부터 <br> 은퇴를 앞둔 60대까지,<br> 
+                                            알아두면 좋은 연령법 <br> 똑똑한 은퇴 준비</p>
+                                    </a>
+                                </div>
+                                <div class="item-4-5-col">
+                                    <a href="#" class="post-item item-4">
+                                        <div class="img-container">
+                                            <img class="post-img" src="img/main/sec05-pic03.jpg" alt="함께 떠나는 시니어 여행" class="post-item__image">
+                                        </div>
+                                        <h3 class="sub-title">액티비 시니어</h3>
+                                        <p class="post-title">60대에도 끊임없이 도전하는 <br>
+                                            셀럽의 이야기 들어보기</p>
+                                    </a>
+                                    <a href="#" class="post-item item-5">
+                                        <div class="img-container">
+                                            <img class="post-img" src="img/main/sec05-pic05.png" alt="함께 떠나는 시니어 여행" class="post-item__image">
+                                        </div>
+                                        <h3 class="sub-title">5060 우리는 지금</h3>
+                                        <p class="post-title">중장년층 관심 주제에 대해 <br>
+                                            재밌게 풀어보기</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section sec06 padding-80 m-top-90">
+                <h2 class="title poppins">문화</h2>
+                <div class="culture-items">
+                    <a href="#" class="item">
+                        <div class="img-container">
+                            <img class="culture-img" src="img/main/sec06-pic01.jpg" alt="문화컨텐츠 1"/>
+                        </div>
+                        <div class="text-wrap">
+                            <h3 class="sub-title">연금&시네마</h3>
+                            <p class="post-title">영화 <미 비포 유>로 읽는<br/>장애연금</p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img-container">
+                            <img class="culture-img" src="img/main/sec06-pic02.jpg" alt="문화컨텐츠 2"/>
+                        </div>
+                        <div class="text-wrap">
+                            <h3 class="sub-title">오늘의 레시피</h3>
+                            <p class="post-title">영양이 오동통, <br/> 굴전 레시피</p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img-container">
+                            <img class="culture-img" src="img/main/sec06-pic03.jpg" alt="문화컨텐츠 3"/>
+                        </div>
+                        <div class="text-wrap">
+                            <h3 class="sub-title">헬스 앤 라이프</h3>
+                            <p class="post-title">동절기엔 이것을 <br/> 조심하세요! <br/> 낙상과 심혈관 질환</p>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img-container">
+                            <img class="culture-img" src="img/main/sec06-pic04.jpg" alt="문화컨텐츠 4"/>
+                        </div>
+                        <div class="text-wrap">
+                            <h3 class="sub-title">꼬리에 꼬리를 무는 문화탐구</h3>
+                            <p class="post-title"><흑백요리사> 인기 이끈 <br/>베테랑 셰프들</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section sec07 padding-80 m-top-90">
+                <h2 class="title poppins">이벤트</h2>
+                <div class="event-carousel">
+                    <div class="carousel-items"></div>
+                </div>
+                <div class="event-items">
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">NPS 칼럼 이벤트</div>
+                            <img class="event-img" src="img/main/sec07-pic01.jpg" alt="이벤트1"/>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">알아봐요, 국민연금 이벤트</div>
+                            <img class="event-img" src="img/main/sec07-pic02.jpg" alt="이벤트2"/>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">연금&시네마 이벤트</div>
+                            <img class="event-img" src="img/main/sec07-pic03.jpg" alt="이벤트3"/>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">오픈 이벤트</div>
+                            <img class="event-img" src="img/main/sec07-pic04.jpg" alt="이벤트4"/>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image-wrapper">
+                            <div class="event-title">독자의 목소리</div>
+                            <img class="event-img" src="img/main/sec07-pic05.jpg" alt="이벤트5"/>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+
+        <!-- 푸터 -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="국민연금로고" />
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-icons">
+                        <a href="https://www.youtube.com/user/NaionalPensionServic" target="_blank" title="유투브"
+                            class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_5)">
+                                    <path
+                                        d="M32.48 16.24C32.48 25.21 25.21 32.48 16.24 32.48C7.27 32.48 0 25.21 0 16.24C0 7.27 7.27 0 16.24 0C25.21 0 32.48 7.27 32.48 16.24Z"
+                                        fill="white" />
+                                    <path
+                                        d="M24.91 16.2402C24.91 22.6202 24.53 22.0802 16.24 22.3202C8.06001 22.1502 7.57001 22.6202 7.57001 16.2402C7.57001 9.86016 8.08001 10.3102 16.24 10.1602C24.13 10.2602 24.91 9.72016 24.91 16.2402Z"
+                                        fill="#231815" />
+                                    <path d="M18.98 16.2399L14.52 18.8599V13.6099L18.98 16.2399Z" fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1402_5">
+                                        <rect width="32.48" height="32.48" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/?next=/npstagram/" target="_blank"
+                            title="인스타그램" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_9)">
+                                    <path
+                                        d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z"
+                                        fill="white" />
+                                    <path
+                                        d="M9.06 19.3298V13.1098C9.06 10.8798 10.87 9.06982 13.1 9.06982H19.32C21.55 9.06982 23.36 10.8798 23.36 13.1098V19.3298C23.36 21.5598 21.55 23.3698 19.32 23.3698H13.1C10.87 23.3698 9.06 21.5598 9.06 19.3298Z"
+                                        fill="#231815" />
+                                    <path
+                                        d="M13.11 10.1699C12.33 10.1699 11.59 10.4799 11.03 11.0299C10.48 11.5899 10.17 12.3199 10.17 13.1099V19.3299C10.17 20.1199 10.48 20.8499 11.03 21.4099C11.59 21.9599 12.32 22.2699 13.11 22.2699H19.33C20.11 22.2699 20.85 21.9599 21.41 21.4099C21.97 20.8599 22.27 20.1199 22.27 19.3299V13.1099C22.27 12.3199 21.96 11.5899 21.41 11.0299C20.85 10.4799 20.12 10.1699 19.33 10.1699H13.11Z"
+                                        fill="white" />
+                                    <path
+                                        d="M19.48 12.3102C19.48 11.9502 19.77 11.6602 20.13 11.6602C20.49 11.6602 20.78 11.9502 20.78 12.3102C20.78 12.6702 20.49 12.9702 20.13 12.9702C19.77 12.9702 19.48 12.6802 19.48 12.3102Z"
+                                        fill="#231815" />
+                                    <path
+                                        d="M18.09 18.5302C17.59 19.0302 16.93 19.3102 16.22 19.3102C15.51 19.3102 14.85 19.0302 14.35 18.5302C13.85 18.0302 13.58 17.3702 13.58 16.6602C13.58 15.9502 13.86 15.2902 14.35 14.7902C14.85 14.2902 15.51 14.0102 16.22 14.0102C16.93 14.0102 17.59 14.2902 18.09 14.7902C18.59 15.2902 18.86 15.9502 18.86 16.6602C18.86 17.3702 18.59 18.0302 18.09 18.5302ZM16.22 12.9102C14.15 12.9102 12.47 14.5902 12.47 16.6602C12.47 18.7302 14.15 20.4102 16.22 20.4102C18.29 20.4102 19.97 18.7302 19.97 16.6602C19.97 14.5902 18.29 12.9102 16.22 12.9102Z"
+                                        fill="#231815" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1402_9">
+                                        <rect width="32.43" height="32.43" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/proNPS" target="_blank" title="페이스북" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_15)">
+                                    <path
+                                        d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z"
+                                        fill="white" />
+                                    <path
+                                        d="M24.46 16.2202C24.46 20.3502 21.42 23.7702 17.46 24.3702C17.46 22.5002 17.46 20.6302 17.46 18.7602L17.61 18.6002C18.2 18.6002 18.79 18.6002 19.37 18.6002L19.55 18.4402C19.57 18.2102 19.61 17.9902 19.63 17.7602C19.69 17.2802 19.76 16.8002 19.82 16.3202C19.84 16.1502 19.83 16.1502 19.66 16.1502H17.45C17.45 15.8702 17.45 15.6202 17.45 15.3602C17.45 14.9902 17.45 14.6302 17.48 14.2702C17.5 13.9802 17.64 13.7302 17.93 13.6102C18.07 13.5502 18.22 13.5102 18.36 13.5102C18.82 13.4902 19.29 13.4902 19.75 13.4902L19.92 13.3302C19.92 12.7002 19.92 12.0702 19.92 11.4402L19.77 11.2802C19.15 11.2602 18.54 11.2202 17.92 11.2102C17.51 11.2002 17.11 11.2802 16.73 11.4302C15.62 11.8802 15.08 12.7502 14.97 13.8902C14.91 14.5802 14.94 15.2802 14.94 15.9702C14.94 16.0902 14.91 16.1402 14.78 16.1402C14.19 16.1402 13.6 16.1402 13.02 16.1402L12.87 16.3002C12.87 17.0102 12.87 17.7202 12.87 18.4302L13.03 18.5902C13.6 18.5902 14.18 18.5902 14.75 18.5902C14.94 18.5902 14.94 18.5902 14.94 18.7802C14.94 20.6402 14.94 22.5002 14.94 24.3502C11 23.7402 7.97998 20.3202 7.97998 16.2102C7.97998 11.6602 11.67 7.97021 16.22 7.97021C20.77 7.97021 24.46 11.6602 24.46 16.2102"
+                                        fill="#231815" />
+                                    <path
+                                        d="M19.93 13.3401L19.76 13.5001C19.3 13.5001 18.83 13.5001 18.37 13.5201C18.22 13.5201 18.07 13.5701 17.94 13.6201C17.65 13.7401 17.52 13.9801 17.49 14.2801C17.46 14.6401 17.46 15.0101 17.46 15.3701C17.46 15.6301 17.46 15.8801 17.46 16.1601H17.63C18.31 16.1601 18.99 16.1601 19.66 16.1601C19.83 16.1601 19.84 16.1601 19.82 16.3401C19.76 16.8201 19.7 17.3001 19.63 17.7801C19.6 18.0001 19.57 18.2301 19.55 18.4601L19.37 18.6201C18.78 18.6201 18.19 18.6201 17.61 18.6201L17.46 18.7801C17.46 20.6501 17.46 22.5201 17.46 24.3901C17.06 24.4501 16.64 24.4801 16.22 24.4801C15.8 24.4801 15.36 24.4501 14.94 24.3801C14.94 22.5201 14.94 20.6601 14.94 18.8101C14.94 18.6834 14.8767 18.6201 14.75 18.6201C14.18 18.6201 13.6 18.6201 13.03 18.6201L12.87 18.4601C12.87 17.7501 12.87 17.0401 12.87 16.3301L13.02 16.1701C13.61 16.1701 14.2 16.1701 14.78 16.1701C14.92 16.1701 14.94 16.1301 14.94 16.0001C14.94 15.3101 14.91 14.6101 14.97 13.9201C15.07 12.7701 15.62 11.9001 16.73 11.4601C17.11 11.3101 17.51 11.2301 17.92 11.2401C18.54 11.2501 19.15 11.2901 19.77 11.3101L19.92 11.4701C19.92 12.1001 19.92 12.7301 19.92 13.3601"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1402_15">
+                                        <rect width="32.43" height="32.43" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://blog.naver.com/pro_nps" target="_blank" title="블로그" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_19)">
+                                    <path
+                                        d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z"
+                                        fill="white" />
+                                    <path
+                                        d="M24.48 19.1601C24.48 20.6101 23.31 21.7801 21.87 21.7801H10.56C9.12001 21.7801 7.95001 20.6101 7.95001 19.1601V12.9501C7.95001 11.5001 9.12001 10.3301 10.56 10.3301H21.87C23.31 10.3301 24.48 11.5001 24.48 12.9501V19.1601Z"
+                                        fill="#231815" />
+                                    <path
+                                        d="M18.25 21.3299L16.57 21.2299V21.1899L16.22 21.2099L15.86 21.1899V21.2399L14.18 21.3399L15.78 23.9499L15.82 24.0099C15.9 24.1399 16.04 24.2299 16.21 24.2299C16.38 24.2299 16.52 24.1399 16.6 24.0099L16.64 23.9399L18.24 21.3299H18.25Z"
+                                        fill="#231815" />
+                                    <path
+                                        d="M11.4 17.1002C11.04 17.1002 10.75 16.8102 10.75 16.4502C10.75 16.0902 11.04 15.8002 11.4 15.8002C11.76 15.8002 12.05 16.0902 12.05 16.4502C12.05 16.8102 11.76 17.1002 11.4 17.1002ZM11.62 14.8802C11.62 14.8802 11.17 14.8802 10.76 15.2802V13.6802H9.75V17.9002H10.77V17.5702C10.77 17.5702 11.01 18.0102 11.62 18.0102C11.62 18.0102 13.05 17.9602 13.05 16.4402C13.05 16.4402 13 14.9002 11.62 14.9002"
+                                        fill="white" />
+                                    <path
+                                        d="M13.38 13.5801V14.5601C13.38 14.5601 13.84 14.5401 13.84 15.4001V17.9001H14.82V15.1701C14.82 15.1701 14.86 13.5901 13.38 13.5901"
+                                        fill="white" />
+                                    <path
+                                        d="M17.2 17.1001C16.84 17.1001 16.55 16.8101 16.55 16.4501C16.55 16.0901 16.84 15.8001 17.2 15.8001C17.56 15.8001 17.85 16.0901 17.85 16.4501C17.85 16.8101 17.56 17.1001 17.2 17.1001ZM17.2 14.8901C17.2 14.8901 15.53 14.8901 15.53 16.4501C15.53 16.4501 15.48 17.9901 17.2 17.9901C17.2 17.9901 18.91 17.9901 18.91 16.4501C18.91 16.4501 18.97 14.8901 17.2 14.8901Z"
+                                        fill="white" />
+                                    <path
+                                        d="M21.09 17.1002C20.73 17.1002 20.44 16.8102 20.44 16.4502C20.44 16.0902 20.73 15.8002 21.09 15.8002C21.45 15.8002 21.74 16.0902 21.74 16.4502C21.74 16.8102 21.45 17.1002 21.09 17.1002ZM21.7 14.9902V15.2702C21.7 15.2702 21.41 14.8802 20.85 14.8802C20.85 14.8802 19.42 14.8202 19.42 16.4302C19.42 16.4302 19.4 17.9302 20.81 17.9302C20.81 17.9302 21.38 17.9502 21.7 17.5402V17.7802C21.7 17.7802 21.77 18.5202 21.05 18.5202H20.81V19.4202H21.2C21.2 19.4202 22.68 19.4402 22.68 17.8402V14.9802H21.7V14.9902Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1402_19">
+                                        <rect width="32.43" height="32.43" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://post.naver.com/pro_nps" target="_blank" title="네이버 포스트" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1402_27)">
+                                    <path
+                                        d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z"
+                                        fill="white" />
+                                    <path d="M21.19 8.77002H11.25V18.71H21.19V8.77002Z" fill="#231815" />
+                                    <path d="M19.06 22.1601L21.19 19.6201H11.24L13.37 22.1601H19.06Z" fill="#231815" />
+                                    <path d="M14.4 23.3901L16.22 25.5501L18.03 23.3901H14.4Z" fill="#231815" />
+                                    <path
+                                        d="M18.54 11.7598V16.0198H16.98L15.45 13.8798V16.0198H13.9V11.7598H15.45L16.98 13.9898V11.7598H18.54Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1402_27">
+                                        <rect width="32.43" height="32.43" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://tv.naver.com/npstv" target="_blank" title="네이버TV" class="footer-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g clip-path="url(#clip0_1402_33)">
+                                    <path
+                                        d="M0 16.22C0 25.18 7.26 32.44 16.22 32.44C25.18 32.44 32.44 25.18 32.44 16.22C32.44 7.26 25.17 0 16.22 0C7.27 0 0 7.26 0 16.22Z"
+                                        fill="white" />
+                                    <rect width="16" height="16" transform="translate(9 8)"
+                                        fill="url(#pattern0_1402_33)" />
+                                </g>
+                                <defs>
+                                    <pattern id="pattern0_1402_33" patternContentUnits="objectBoundingBox" width="1"
+                                        height="1">
+                                        <use xlink:href="#image0_1402_33" transform="scale(0.01)" />
+                                    </pattern>
+                                    <clipPath id="clip0_1402_33">
+                                        <rect width="32.43" height="32.43" fill="white" />
+                                    </clipPath>
+                                    <image id="image0_1402_33" width="100" height="100" preserveAspectRatio="none"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4yLWMwMDAgNzkuMWI2NWE3OWI0LCAyMDIyLzA2LzEzLTIyOjAxOjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjMuNSAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMDUtMTdUMTU6MjI6MzIrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMDUtMTdUMTU6MjI6MzIrMDk6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDI0LTA1LTE3VDE1OjIyOjMyKzA5OjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmQ3YTE1ZjdkLTNlZjUtNDM0NC05NmQ0LTM0ZTMwMTRmNjM1OSIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmFjMmRhNTk4LWE4M2YtYWY0MC05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" />
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p>
+                        국민연금 고객센터 : 국번없이 1355 <br class="mob-br" /> (해외:+82-63-713-6900 평일 09:00 ~ 18:00)<br/>
+                        54870 전라북도 전주시 덕진구 기지로 180 <br class="mob-br" /> (만성동, 국민연금공단)<br/>
+                        간행물 등록번호 : 전주, 바 00034<br>
+                        © nps.or.kr. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- 하단바 공유하기 팝업 -->
+    <div class="share-popup-overlay"></div>
+    <div class="bar-popup" id="popup">
+        <div class="line"></div>
+        <div class="icon-container">
+            <button type="button" class="popup-icon url" data-href="#url" onclick="copy(this.dataset.href);">
+                URL
+            </button>
+            <button type="button" class="popup-icon" onclick="shareKakaoTalk(); return false;" target="_blank"
+                title="카카오톡">
+                <img class="popup-icon-img" src="img/kakao-icon.png" alt="카카오톡" />
+            </button>
+            <button type="button" class="popup-icon"
+                onclick="window.open('https://www.instagram.com/', '_blank', 'noopener,noreferrer,width=600,height=400');"
+                title="인스타그램">
+                <img class="popup-icon-img" src="img/instagram-icon.png" alt="인스타" />
+            </button>
+            <button type="button" class="popup-icon"
+                onclick="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=' +encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" title="페이스북">
+                <img class="popup-icon-img" src="img/facebook-icon.png" alt="페이스북" />
+            </button>
+            <button type="button" class="popup-icon"
+                onclick="javascript:window.open('https://twitter.com/intent/tweet?text=[%EA%B3%B5%EC%9C%A0]%20' +encodeURIComponent(document.URL)+'%20-%20'+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" title="스페이스">
+                <img class="popup-icon-img" src="img/x-icon.png" alt="스페이스" />
+            </button>
+            <button type="button" class="popup-icon"
+                onclick="javascript:window.open('http://share.naver.com/web/shareView.nhn?url=' +encodeURIComponent(document.URL)+'&title='+encodeURIComponent(document.title), 'naversharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" title="블로그">
+                <img class="popup-icon-img" src="img/blog-icon.png" alt="블로그" />
+            </button>
+        </div>
+    </div>
+    <!-- 모바일 하단바 -->
+    <div class="mobile-bottom-bar">
+        <button type="button" class="bar-icon" id="backButton">
+            <svg width="60" height="41" viewBox="0 0 60 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-path"
+                    d="M39.3749 21.75L24.8924 21.75L30.5174 27.375L28.7499 29.1425L20.1074 20.5L28.7499 11.8575L30.5174 13.625L24.8924 19.25L39.3749 19.25L39.3749 21.75Z" />
+            </svg>
+        </button>
+        <button type="button" class="bar-icon" id="forwardButton">
+            <svg width="60" height="41" viewBox="0 0 60 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-path"
+                    d="M20.6251 19.25L35.1076 19.25L29.4826 13.625L31.2501 11.8575L39.8926 20.5L31.2501 29.1425L29.4826 27.375L35.1076 21.75L20.6251 21.75L20.6251 19.25Z" />
+            </svg>
+        </button>
+        <button type="button" class="bar-icon" id="homeButton">
+            <svg width="60" height="41" viewBox="0 0 60 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-path" d="M20 31.5V16.8333L30 9.5L40 16.8333V31.5H32.5V22.9444H27.5V31.5H20Z" />
+            </svg>
+        </button>
+        <button type="button" class="bar-icon" id="share-button">
+            <svg width="60" height="41" viewBox="0 0 60 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon-path"
+                    d="M36 30.5C35.1667 30.5 34.4583 30.2083 33.875 29.625C33.2917 29.0417 33 28.3333 33 27.5C33 27.4 33.025 27.1667 33.075 26.8L26.05 22.7C25.7833 22.95 25.475 23.146 25.125 23.288C24.775 23.43 24.4 23.5007 24 23.5C23.1667 23.5 22.4583 23.2083 21.875 22.625C21.2917 22.0417 21 21.3333 21 20.5C21 19.6667 21.2917 18.9583 21.875 18.375C22.4583 17.7917 23.1667 17.5 24 17.5C24.4 17.5 24.775 17.571 25.125 17.713C25.475 17.855 25.7833 18.0507 26.05 18.3L33.075 14.2C33.0417 14.0833 33.021 13.971 33.013 13.863C33.005 13.755 33.0007 13.634 33 13.5C33 12.6667 33.2917 11.9583 33.875 11.375C34.4583 10.7917 35.1667 10.5 36 10.5C36.8333 10.5 37.5417 10.7917 38.125 11.375C38.7083 11.9583 39 12.6667 39 13.5C39 14.3333 38.7083 15.0417 38.125 15.625C37.5417 16.2083 36.8333 16.5 36 16.5C35.6 16.5 35.225 16.429 34.875 16.287C34.525 16.145 34.2167 15.9493 33.95 15.7L26.925 19.8C26.9583 19.9167 26.9793 20.0293 26.988 20.138C26.9967 20.2467 27.0007 20.3673 27 20.5C26.9993 20.6327 26.9953 20.7537 26.988 20.863C26.9807 20.9723 26.9597 21.0847 26.925 21.2L33.95 25.3C34.2167 25.05 34.525 24.8543 34.875 24.713C35.225 24.5717 35.6 24.5007 36 24.5C36.8333 24.5 37.5417 24.7917 38.125 25.375C38.7083 25.9583 39 26.6667 39 27.5C39 28.3333 38.7083 29.0417 38.125 29.625C37.5417 30.2083 36.8333 30.5 36 30.5Z" />
+            </svg>
+        </button>
+        <button type="button" class="bar-icon"
+            onclick="window.open('https://www.nps.or.kr/jsppage/cyber_pr/subscribe/intro.jsp', '_blank', 'noopener,noreferrer,width=700,height=500');"
+            target="_blank" title="구독">
+            <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1279_6190)">
+                    <path
+                        d="M4.5659 16.5L4.5659 11.2909H0L0 8.515L11.7224 8.515V11.2909H7.04465L7.04465 16.5H4.5659ZM8.26251 7.96667L8.65842 3.39157L0.460463 3.39157L0.460463 0.739899L11.2491 0.739899L10.6466 7.97096L8.2539 7.97096L8.26251 7.96667Z"
+                        fill="#FF8EA8" />
+                    <path
+                        d="M19.2964 7.90241L24 7.90241V10.2842L12.2776 10.2842V7.90241L16.9554 7.90241V6.36024L12.7983 6.36024V0.5L23.4621 0.5V2.74471L15.2684 2.74471V4.06412L23.5266 4.06412V6.36024L19.2964 6.36024V7.90241ZM12.8026 13.5913V11.278L23.4664 11.278V16.5043L21.0737 16.5043V13.5913L12.7983 13.5913H12.8026Z"
+                        fill="#FF8EA8" />
+                </g>
+                <defs>
+                    <clipPath d="clip0_1279_6190">
+                        <rect width="24" height="16" fill="white" transform="translate(0 0.5)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+    </div>
+    <!-- 떠있는 메뉴-->
+    <div class="floating-buttons">
+        <div class="share-panel">
+            <button class="share-button url" data-href="#url" onclick="copy(this.dataset.href);">
+                URL
+            </button>
+            <button class="share-button" onclick="shareKakaoTalk(); return false;" target="_blank" title="카카오톡">
+                <img class="share-button-img" src="img/kakao-icon.png" alt="카카오톡" />
+            </button>
+            <button class="share-button"
+                onclick="window.open('https://www.instagram.com/', '_blank', 'noopener,noreferrer,width=600,height=400');"
+                title="인스타그램">
+                <img class="share-button-img" src="img/instagram-icon.png" alt="인스타" />
+            </button>
+            <button class="share-button"
+                onclick="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=' +encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" title="페이스북">
+                <img class="share-button-img" src="img/facebook-icon.png" alt="페이스북" />
+            </button>
+            <button class="share-button"
+                onclick="javascript:window.open('https://twitter.com/intent/tweet?text=[%EA%B3%B5%EC%9C%A0]%20' +encodeURIComponent(document.URL)+'%20-%20'+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" title="스페이스">
+                <img class="share-button-img" src="img/x-icon.png" alt="스페이스" />
+            </button>
+            <button class="share-button"
+                onclick="javascript:window.open('http://share.naver.com/web/shareView.nhn?url=' +encodeURIComponent(document.URL)+'&title='+encodeURIComponent(document.title), 'naversharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" title="블로그">
+                <img class="share-button-img" src="img/blog-icon.png" alt="블로그" />
+            </button>
+        </div>
+        <div class="share-wrap" id="shareWrap">
+            <div class="circle-button share-toggle" title="공유">
+                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15 20C14.1667 20 13.4583 19.7083 12.875 19.125C12.2917 18.5417 12 17.8333 12 17C12 16.9 12.025 16.6667 12.075 16.3L5.05 12.2C4.78333 12.45 4.475 12.646 4.125 12.788C3.775 12.93 3.4 13.0007 3 13C2.16667 13 1.45833 12.7083 0.875 12.125C0.291667 11.5417 0 10.8333 0 10C0 9.16667 0.291667 8.45833 0.875 7.875C1.45833 7.29167 2.16667 7 3 7C3.4 7 3.775 7.071 4.125 7.213C4.475 7.355 4.78333 7.55067 5.05 7.8L12.075 3.7C12.0417 3.58333 12.021 3.471 12.013 3.363C12.005 3.255 12.0007 3.134 12 3C12 2.16667 12.2917 1.45833 12.875 0.875C13.4583 0.291667 14.1667 0 15 0C15.8333 0 16.5417 0.291667 17.125 0.875C17.7083 1.45833 18 2.16667 18 3C18 3.83333 17.7083 4.54167 17.125 5.125C16.5417 5.70833 15.8333 6 15 6C14.6 6 14.225 5.929 13.875 5.787C13.525 5.645 13.2167 5.44933 12.95 5.2L5.925 9.3C5.95833 9.41667 5.97933 9.52933 5.988 9.638C5.99667 9.74667 6.00067 9.86733 6 10C5.99933 10.1327 5.99533 10.2537 5.988 10.363C5.98067 10.4723 5.95967 10.5847 5.925 10.7L12.95 14.8C13.2167 14.55 13.525 14.3543 13.875 14.213C14.225 14.0717 14.6 14.0007 15 14C15.8333 14 16.5417 14.2917 17.125 14.875C17.7083 15.4583 18 16.1667 18 17C18 17.8333 17.7083 18.5417 17.125 19.125C16.5417 19.7083 15.8333 20 15 20Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div id="subscribe-button" class="circle-button" title="구독">
+            <a href="https://www.nps.or.kr/jsppage/cyber_pr/subscribe/intro.jsp" class="subscribe-link"
+                onclick="window.open(this.href, '_blank', 'noopener,noreferrer,width=700,height=500'); return false;"
+                target="_blank" title="구독">
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1277_5754)">
+                        <path
+                            d="M4.5659 16L4.5659 10.7909H0L0 8.01497L11.7224 8.01497V10.7909H7.04465L7.04465 16L4.5659 16ZM8.26251 7.46664L8.65842 2.89154L0.460463 2.89154L0.460463 0.239868L11.2491 0.239868L10.6466 7.47093L8.2539 7.47093L8.26251 7.46664Z"
+                            fill="white" />
+                        <path
+                            d="M19.0188 7.40241L23.7224 7.40241V9.7842L12 9.7842V7.40241L16.6778 7.40241V5.86024L12.5207 5.86024V0L23.1845 0V2.24471L14.9909 2.24471V3.56412L23.2491 3.56412V5.86024L19.0188 5.86024V7.40241ZM12.525 13.0913V10.778L23.1888 10.778V16.0043L20.7961 16.0043V13.0913L12.5207 13.0913H12.525Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1277_5754">
+                            <rect width="24" height="16" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+        <div class="circle-button" title="맨 위로" id="scrollToTopBtn">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.7499 24.375V9.8925L8.12492 15.5175L6.35742 13.75L14.9999 5.1075L23.6424 13.75L21.8749 15.5175L16.2499 9.8925V24.375H13.7499Z"
+                    fill="white" />
+            </svg>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+
+    // ✅ 섹션 2 : 키워드 등장
+    document.addEventListener('DOMContentLoaded', function () {
+        // AOS 초기화 - 기존 AOS 효과 유지
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        const keywordItems = document.querySelectorAll('.keyword-item');
+        const mainKeyword = document.querySelector('.keyword-item.center'); // 메인 키워드 선택
+        let animationTriggered = false; // 애니메이션 실행 여부를 추적하는 변수
+
+        function startKeywordAnimations() {
+            if (animationTriggered) {
+                return; // 이미 애니메이션이 실행되었으면 더 이상 실행하지 않음
+            }
+            animationTriggered = true;
+
+            // 메인 키워드 애니메이션 (먼저 천천히 등장)
+            anime({
+                targets: mainKeyword,
+                opacity: [0, 1],
+                scale: [0.8, 1],
+                easing: 'easeOutQuad',
+                duration: 800, // 다른 키워드보다 길게 설정
+                delay: parseInt(mainKeyword.dataset.aosDelay) || 800, // 메인 키워드의 딜레이 적용
+                keyframes: [
+                    { scale: 1 },
+                    { scale: 1.2, duration: 500, easing: 'easeInOutSine' },
+                    { scale: 1, duration: 500, easing: 'easeInOutSine' }
+                ],
+                loopBegin: function () {
+                    anime.set(mainKeyword, { scale: 1 });
+                }
+            });
+
+            // 나머지 키워드 애니메이션 (시간차 등장)
+            keywordItems.forEach(item => {
+                if (item !== mainKeyword) { // 메인 키워드 제외
+                    const delay = parseInt(item.dataset.aosDelay) || 0;
+
+                    anime({
+                        targets: item,
+                        opacity: [0, 1],
+                        scale: [0.9, 1],
+                        easing: 'easeOutQuad',
+                        duration: 1200,
+                        delay: delay + 800, // 메인 키워드 등장 시간 이후 시작
+                        keyframes: [
+                            { scale: 1 },
+                            { scale: 1.1, duration: 600, easing: 'easeInOutSine' },
+                            { scale: 1, duration: 400, easing: 'easeInOutSine' }
+                        ],
+                        loopBegin: function () {
+                            anime.set(item, { scale: 1 });
+                        }
+                    });
+                }
+            });
+
+            // 애니메이션 시작 후 스크롤 이벤트 리스너 제거
+            window.removeEventListener('scroll', handleScroll);
+        }
+
+        function handleScroll() {
+            // 스크롤 위치를 확인하여 애니메이션 시작 조건 충족 여부 판단
+            // 예시: 화면 높이의 50% 이상 스크롤되었을 때 시작
+            if (window.scrollY > window.innerHeight * 0.5) {
+                startKeywordAnimations();
+            }
+        }
+
+        // 초기 상태로 숨김 (CSS에서 처리하는 것이 더 좋음)
+        keywordItems.forEach(item => {
+            item.style.opacity = 0;
+            item.style.transform = 'scale(0.9)'; // 초기 스케일 설정 (메인 키워드 제외)
+        });
+        mainKeyword.style.opacity = 0;
+        mainKeyword.style.transform = 'scale(0.8)';
+
+        // 스크롤 이벤트 리스너 등록
+        window.addEventListener('scroll', handleScroll);
+    });
+
+    // ✅ 섹션 3 : 이미지 슬라이더
+    const track = document.querySelector('.carousel-track');
+    let items = document.querySelectorAll('.carousel-item');
+    const leftBtn = document.querySelector('.carousel-button.left');
+    const rightBtn = document.querySelector('.carousel-button.right');
+
+    const itemWidth = 300; // 아이템 너비
+    const itemMargin = 18; // 아이템 간격
+    const totalItemWidth = itemWidth + itemMargin;
+
+    let visibleCount = 4;
+    let currentIndex = visibleCount;
+    let totalItems = items.length;
+
+    const updateVisibleCount = () => {
+        const width = window.innerWidth;
+        if (width <= 480) visibleCount = 1;
+        else if (width <= 767) visibleCount = 2;
+        else visibleCount = 4;
+    };
+
+    const updateSlide = (instant = false) => {
+        const offset = currentIndex * totalItemWidth;
+        if (instant) {
+            track.style.transition = 'none';
+        } else {
+            track.style.transition = 'transform 0.3s ease';
+        }
+        track.style.transform = `translateX(-${offset}px)`;
+    };
+
+    const removeClones = () => {
+        const clones = document.querySelectorAll('.carousel-item.clone');
+        clones.forEach(clone => clone.remove());
+        items = document.querySelectorAll('.carousel-item:not(.clone)');
+        totalItems = items.length;
+    };
+
+
+    const cloneItems = () => {
+        removeClones(); // 기존 복제 아이템 제거
+
+        if (window.innerWidth <= 768) {
+            // 모바일에서는 복제하지 않고 원본만 유지
+            currentIndex = 0;
+            updateSlide(true);
+            return;
+        }
+
+        const originalItems = Array.from(items);
+
+        originalItems.slice(-visibleCount).forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.classList.add('clone');
+            track.insertBefore(clone, track.firstChild);
+        });
+
+        originalItems.slice(0, visibleCount).forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.classList.add('clone');
+            track.appendChild(clone);
+        });
+
+        items = document.querySelectorAll('.carousel-item');
+        totalItems = items.length;
+        currentIndex = visibleCount;
+        updateSlide(true);
+    };
+
+    leftBtn.addEventListener('click', () => {
+        currentIndex--;
+        updateSlide();
+    });
+
+    rightBtn.addEventListener('click', () => {
+        currentIndex++;
+        updateSlide();
+    });
+
+    track.addEventListener('transitionend', () => {
+        // 처음 복제된 아이템 위치로 이동 (무한 루프)
+        if (currentIndex === 0) {
+            currentIndex = totalItems - visibleCount * 2;
+            updateSlide(true);
+        }
+        // 마지막 복제된 아이템 위치로 이동 (무한 루프)
+        if (currentIndex === totalItems - visibleCount) {
+            currentIndex = visibleCount;
+            updateSlide(true);
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        const prevVisibleCount = visibleCount;
+        updateVisibleCount();
+        removeClones(); // 복제 먼저 제거
+        cloneItems(); // 새로 복제 or 원상복구
+        if (prevVisibleCount !== visibleCount) {
+            cloneItems(); // 보이는 개수가 바뀌면 복제 다시
+        } else {
+            updateSlide(true);
+        }
+    });
+
+    updateVisibleCount();
+    cloneItems(); // 초기 복제 실행
+    updateSlide(true); // 초기 슬라이드 위치 설정
+
+    let autoSlideInterval = setInterval(() => {
+        currentIndex++;
+        updateSlide();
+    }, 2000);
+
+
+    // ✅ 섹션 4 : 유투브 슬라이드
+    const carouselCon04 = document.querySelector('.swiper-slider');
+    const carouselWrap04 = document.querySelector('.swiper-wrapper');
+    const originalSlides04 = document.querySelectorAll('.swiper-item'); // 변경: querySelectorAll 사용
+    const prevButton04 = document.getElementById('prev');
+    const nextButton04 = document.getElementById('next');
+
+    let currentIndex04 = 1; // 초기 위치를 첫 번째 실제 슬라이드로 설정 (클론 후)
+    let slideCount04 = originalSlides04.length;
+    let isTransitioning04 = false;
+    let autoSlideInterval04;
+    const autoSlideDelay04 = 2000;
+
+    function goToSlide04(index, instant = false) {
+        console.log('goToSlide04 called with index:', index, 'instant:', instant);
+        if (isTransitioning04) return;
+        isTransitioning04 = true;
+        const updatedSlides = document.querySelectorAll('.swiper-wrapper > div');
+        const totalSlides = updatedSlides.length;
+        carouselWrap04.style.transition = instant ? 'none' : 'transform 0.5s ease-in-out';
+        carouselWrap04.style.transform = `translateX(-${index * 100}%)`;
+        currentIndex04 = index;
+        setTimeout(() => {
+            isTransitioning04 = false;
+            if (currentIndex04 === 0) {
+                goToSlide04(totalSlides - 2, true); // 마지막 실제 슬라이드로 이동
+            } else if (currentIndex04 === totalSlides - 1) {
+                goToSlide04(1, true); // 첫 번째 실제 슬라이드로 이동
+            }
+        }, instant ? 0 : 500);
+    }
+
+    function nextSlide04() {
+        goToSlide04(currentIndex04 + 1);
+    }
+
+    function prevSlide04() {
+        goToSlide04(currentIndex04 - 1);
+    }
+
+    function setupInfiniteLoop04() {
+        const firstClone = originalSlides04[0].cloneNode(true);
+        const lastClone = originalSlides04[slideCount04 - 1].cloneNode(true);
+        carouselWrap04.appendChild(firstClone);
+        carouselWrap04.insertBefore(lastClone, carouselWrap04.firstChild);
+
+        goToSlide04(1, true);
+        startAutoSlide04();
+    }
+
+    function startAutoSlide04() {
+        stopAutoSlide04();
+        autoSlideInterval04 = setInterval(nextSlide04, autoSlideDelay04);
+    }
+
+    function stopAutoSlide04() {
+        clearInterval(autoSlideInterval04);
+    }
+
+    if (prevButton04 && nextButton04) {
+        prevButton04.addEventListener('click', () => {
+            stopAutoSlide04();
+            prevSlide04();
+            startAutoSlide04();
+        });
+        nextButton04.addEventListener('click', () => {
+            stopAutoSlide04();
+            nextSlide04();
+            startAutoSlide04();
+        });
+    }
+
+    if (originalSlides04.length === 3) {
+        setupInfiniteLoop04();
+        carouselCon04.addEventListener('mouseenter', stopAutoSlide04);
+        carouselCon04.addEventListener('mouseleave', startAutoSlide04);
+    }
+
+
+    // ✅ 섹션 7 : 이벤트 
+    const carouselItems = document.querySelector('.carousel-items');
+        const itemsData = [
+            {
+                title: "NPS 칼럼 이벤트",
+                imgSrc: "img/main/sec07-pic01.jpg",
+                alt: "NPS 칼럼 이벤트"
+            },
+            {
+                title: "알아봐요, 국민연금 이벤트",
+                imgSrc: "img/main/sec07-pic02.jpg",
+                alt: "알아봐요, 국민연금 이벤트"
+            },
+            {
+                title: "연금&시네마 이벤트",
+                imgSrc: "img/main/sec07-pic03.jpg",
+                alt: "연금&시네마 이벤트"
+            },
+            {
+                title: "오픈 이벤트",
+                imgSrc: "img/main/sec07-pic04.jpg",
+                alt: "오픈 이벤트"
+            },
+            {
+                title: "독자의 목소리",
+                imgSrc: "img/main/sec07-pic05.jpg",
+                alt: "독자의 목소리"
+            }
+        ];
+        
+        let activeIndex = 0;
+        const itemCount = itemsData.length;
+        let isAnimating = false;
+        
+        // Create items initially
+        function createItems() {
+            carouselItems.innerHTML = '';
+            
+            // Create all 5 items
+            for (let i = 0; i < itemCount; i++) {
+                const item = document.createElement('div');
+                item.classList.add('eventItem');
+                item.id = `item-${i}`;
+                
+                const itemHTML = `
+                    <div class="image-wrapper">
+                        <div class="event-title">${itemsData[i].title}</div>
+                        <img class="event-img" src="${itemsData[i].imgSrc}" alt="${itemsData[i].alt}"/>
+                    </div>
+                `;
+                
+                item.innerHTML = itemHTML;
+                carouselItems.appendChild(item);
+            }
+            
+            // Position all items based on active index
+            updateItemPositions();
+        }
+        
+        // Update positions of all items based on active index
+        function updateItemPositions() {
+            // Reset all items to hidden first
+            document.querySelectorAll('.eventItem').forEach(item => {
+                item.classList.remove('visible-center', 'visible-left', 'visible-right');
+                item.classList.add('hidden');
+            });
+            
+            // Set positions for visible items
+            const centerIndex = activeIndex;
+            const leftIndex = (activeIndex - 1 + itemCount) % itemCount;
+            const rightIndex = (activeIndex + 1) % itemCount;
+            
+            // Center item
+            const centerItem = document.getElementById(`item-${centerIndex}`);
+            centerItem.classList.remove('hidden');
+            centerItem.classList.add('visible-center');
+            
+            // Left item (20% visible)
+            const leftItem = document.getElementById(`item-${leftIndex}`);
+            leftItem.classList.remove('hidden');
+            leftItem.classList.add('visible-left');
+            
+            // Right item (20% visible)
+            const rightItem = document.getElementById(`item-${rightIndex}`);
+            rightItem.classList.remove('hidden');
+            rightItem.classList.add('visible-right');
+        }
+
+        // Move the carousel left
+        function moveLeft() {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            const currentCenter = document.querySelector('.visible-center');
+            const currentLeft = document.querySelector('.visible-left');
+            const currentRight = document.querySelector('.visible-right');
+
+            if (currentCenter) currentCenter.style.transform = 'translateX(calc(100% + 10px - 20%)) scale(0.8)';
+            if (currentLeft) currentLeft.style.transform = 'translateX(0) scale(1)';
+            if (currentRight) currentRight.style.transform = 'translateX(calc(200% + 20px - 40%)) scale(0.8)';
+
+            activeIndex = (activeIndex - 1 + itemCount) % itemCount;
+
+            setTimeout(() => {
+                document.querySelectorAll('.eventItem').forEach(item => {
+                    item.style.transform = ''; // Reset inline transforms
+                });
+                updateItemPositions();
+                isAnimating = false;
+            }, 300);
+        }
+
+        // Move the carousel right
+        function moveRight() {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            const currentCenter = document.querySelector('.visible-center');
+            const currentLeft = document.querySelector('.visible-left');
+            const currentRight = document.querySelector('.visible-right');
+
+            if (currentCenter) currentCenter.style.transform = 'translateX(calc(-100% - 10px + 20%)) scale(0.8)';
+            if (currentLeft) currentLeft.style.transform = 'translateX(calc(-200% - 20px + 40%)) scale(0.8)';
+            if (currentRight) currentRight.style.transform = 'translateX(0) scale(1)';
+
+            activeIndex = (activeIndex + 1) % itemCount;
+
+            setTimeout(() => {
+                document.querySelectorAll('.eventItem').forEach(item => {
+                    item.style.transform = ''; // Reset inline transforms
+                });
+                updateItemPositions();
+                isAnimating = false;
+            }, 300);
+        }
+
+        // Handle window resize to ensure responsive behavior
+        window.addEventListener('resize', function() {
+            if (!isAnimating) {
+                updateItemPositions();
+            }
+        });
+
+        // Initialize
+        createItems();
+
+        let startX = 0;
+        let endX = 0;
+
+        // PC용 마우스 드래그
+        carouselItems.addEventListener('mousedown', (e) => {
+            startX = e.clientX;
+        });
+
+        carouselItems.addEventListener('mouseup', (e) => {
+            endX = e.clientX;
+            handleSwipe();
+        });
+
+        // 모바일용 터치 이벤트
+        carouselItems.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        carouselItems.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const distance = endX - startX;
+
+            if (Math.abs(distance) > 50) { 
+                if (distance < 0) {
+                    moveRight(); 
+                } else {
+                    moveLeft(); 
+                }
+            }
+        }
+
+</script>
+
+</html>

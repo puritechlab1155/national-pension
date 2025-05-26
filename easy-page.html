@@ -9,6 +9,10 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+        <!-- 애니메이션 라이브러리 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
@@ -438,7 +442,20 @@
 
 
     </body>
+    <!-- aos -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <script src="js/script.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            AOS.init({
+                once: true,
+            });
+            AOS.refresh();
+        });
+    </script>
+    
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // easy-page에서만 실행되는 코드

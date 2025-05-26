@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내 곁에 국민연금</title>
     
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-easy.css">
     <link rel="stylesheet" href="css/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 애니메이션 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -189,9 +193,9 @@
         <!-- 컨텐츠 -->
         <main class="sub15 content" id="event-page">
             <section class="section sec01">
-                <div class="sec01-header" id="checkView2">
+                <div class="sec01-header" id="checkView">
                     <span class="check-icon">
-                        <svg class="check-svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                        <svg class="check-svg" width="37" height="37" viewBox="0 0 28 28" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect class="check-circle" x="0.75" y="0.75" width="26.5" height="26.5" rx="13.25"
                                 stroke="#AAAAAA" stroke-width="1.5" />
@@ -212,10 +216,10 @@
                 </picture>
                 <div class="text-content padding-230">
                     <p class="draw">초성 퀴즈</p>
-                    <img class="star" src="img/event-page/star.png" alt="별">
+                    <img class="star animate__animated animate__flash animate__infinite" src="img/event-page/star.png" alt="별">
                     <h1 class="event-title mb-40">웹진을 읽고 <br/>
                         초성에 맞는 단어를 <br class="mob-br"/> 맞혀 주세요</h1>
-                    <img class="line" src="img/event-page/line.png" alt="선">
+                    <img class="line animate__animated animate__backInUp" src="img/event-page/line.png" alt="선">
                 </div>
             </section>
             <section class="section sec02-1">
@@ -224,7 +228,7 @@
                     웹진 곳곳에 정답이 숨어 있습니다. <br/>
                     정답을 모두 맞추신 분들 중 추첨을 통해 선물을 드립니다.
                 </p>
-                <img class="coupon-img" src="img/event-page/coffe.png" alt="커피 기프티콘" />
+                <img class="coupon-img animate__animated animate__pulse animate__infinite" src="img/event-page/coffe.png" alt="커피 기프티콘" />
                 <button type="button" class="borderButton">커피 기프티콘(15명)</button>
             </section>
 
@@ -247,7 +251,7 @@
 
             <!-- 퀴즈 노트 -->
             <section class="section sec04">
-                <div class="img-position max-w">
+                <div class="img-position max-w animate__animated" data-aos="fade-up" data-aos-duration="1000">
                     <picture>
                         <source media="(min-width: 1050px)" srcset="img/event-page/note_pc.png">
                         <img class="note" src="img/event-page/note_m.png" alt="노트 이미지">
@@ -276,7 +280,9 @@
                         </div>
                     </div>
                     <div class="btn-container">
-                        <button type="button" class="borderButton">힌트 <span class="fw-normal">NPS 칼럼</span></button>
+                        <button type="button" class="borderButton" onclick="window.open('sub-02page.html', '_blank');">
+                            힌트 <span class="fw-normal">NPS 칼럼</span>
+                        </button>
                     </div>
 
                 </div>
@@ -314,7 +320,7 @@
             <!-- 페이지 버튼 -->
             <section class="section sec06">
                 <div class="pagination padding-80">
-                    <div class="nav-item prev">
+                    <div class="nav-item prev animate__animated" data-aos="zoom-in">
                         <button class="nav-button" onclick="window.location.href='#';">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M24.3749 16.2501L9.89242 16.2501L15.5174 21.8751L13.7499 23.6426L5.10742 15.0001L13.7499 6.35758L15.5174 8.12508L9.89242 13.7501L24.3749 13.7501L24.3749 16.2501Z" fill="white"/>
@@ -328,7 +334,7 @@
                         </div>
                         
                     </div>
-                    <div class="nav-item next">
+                    <div class="nav-item next animate__animated" data-aos="zoom-in" data-aos-delay="300">
                         <div class="nav-content">
                             <span class="nav-label">NEXT</span>
                             <h3 class="nav-title">NPS 칼럼</h3>
@@ -665,96 +671,14 @@
 
 
 </body>
+<!-- aos -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 <script src="js/script.js"></script>
 <script>
-
-        // ✅  모바일 파도 변경
-        function updateWavePattern() {
-            const waveElements = document.querySelectorAll('use.wave'); // 클래스에 'wave'를 가진 모든 요소 선택
-            const patternId = window.innerWidth <= 480 ? '#gentle-wave-wider' : '#gentle-wave-small';
-
-            waveElements.forEach(wave => {
-                wave.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', patternId);
-            });
-        }
-
-        window.addEventListener('DOMContentLoaded', updateWavePattern);
-        window.addEventListener('resize', updateWavePattern);
-
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(updateWavePattern, 100);
-        });
-
-        // ✅  아이폰 iOS 위치값 적용
-        function fixIOSSVGAttributes() {
-            if (window.innerWidth <= 480) {
-                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-                if (isIOS) {
-                    const waves = {
-                        '.wave1': '10',
-                        '.wave2': '45',
-                        '.wave3': '60',
-                        '.wave4': '90',
-                        '.wave5': '105',
-                        '.wave6': '130'
-                    };
-
-                    const gifts = {
-                        'nth-of-type(1)': { x: '15', y: '78' },
-                        'nth-of-type(2)': { x: '80', y: '75' },
-                        'nth-of-type(3)': { x: '50', y: '90' },
-                        'nth-of-type(4)': { x: '85', y: '115' },
-                        'nth-of-type(5)': { x: '13', y: '120' },
-                        'nth-of-type(6)': { x: '45', y: '140' },
-                        'nth-of-type(7)': { x: '15', y: '155' },
-                        'nth-of-type(8)': { x: '90', y: '155' }
-                    };
-
-                    Object.entries(waves).forEach(([selector, yValue]) => {
-                        const element = document.querySelector(`#event-page .parallax ${selector}`);
-                        if (element) element.setAttribute('y', yValue);
-                    });
-
-                    Object.entries(gifts).forEach(([nthOfType, coordinates]) => {
-                        const element = document.querySelector(`#event-page .parallax .gift:${nthOfType}`);
-                        if (element) {
-                            element.setAttribute('x', coordinates.x);
-                            element.setAttribute('y', coordinates.y);
-                        }
-                    });
-                }
-            }
-        }
-
-        // iOS 감지 후 실행
-        document.addEventListener('DOMContentLoaded', fixIOSSVGAttributes);
-        window.addEventListener('resize', fixIOSSVGAttributes);
-
-        const giftElements = document.querySelectorAll('#event-page .parallax .gift');
-
-        giftElements.forEach(gift => {
-            gift.addEventListener('click', function() {
-                // 클릭된 요소 외의 모든 'clicked' 클래스 제거
-                giftElements.forEach(otherGift => {
-                    if (otherGift !== this && otherGift.classList.contains('clicked')) {
-                        otherGift.classList.remove('clicked');
-                    }
-                });
-                // 클릭된 요소에 'clicked' 클래스 토글
-                this.classList.toggle('clicked');
-            });
-        });
-
-
-
-
-    
-
-
-
+  AOS.init();
 </script>
+
 <script type="text/javascript">
     function shareKakaoTalk() {
         Kakao.Share.sendDefault({

@@ -13,6 +13,7 @@
 
     <!-- 애니메이션 라이브러리 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -192,7 +193,7 @@
         <!-- 컨텐츠 -->
         <main class="sub15 content" id="event-page">
             <section class="section sec01">
-                <div class="sec01-header" id="checkView1">
+                <div class="sec01-header" id="checkView">
                     <span class="check-icon">
                         <svg class="check-svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -215,10 +216,10 @@
                 </picture>
                 <div class="text-content padding-230">
                     <p class="draw">초성 퀴즈</p>
-                    <img class="star animate__animated animate__flash" src="img/event-page/star.png" alt="별">
+                    <img class="star animate__animated animate__flash animate__infinite" src="img/event-page/star.png" alt="별">
                     <h1 class="event-title mb-40">웹진을 읽고 <br/>
                         초성에 맞는 단어를 <br class="mob-br"/> 맞혀 주세요</h1>
-                    <img class="line" src="img/event-page/line.png" alt="선">
+                    <img class="line animate__animated animate__backInUp" src="img/event-page/line.png" alt="선">
                 </div>
             </section>
             <section class="section sec02-1">
@@ -227,7 +228,7 @@
                     웹진 곳곳에 정답이 숨어 있습니다. <br/>
                     정답을 모두 맞추신 분들 중 추첨을 통해 선물을 드립니다.
                 </p>
-                <img class="coupon-img" src="img/event-page/coffe.png" alt="커피 기프티콘" />
+                <img class="coupon-img animate__animated animate__pulse animate__infinite" src="img/event-page/coffe.png" alt="커피 기프티콘" />
                 <button type="button" class="borderButton">커피 기프티콘(15명)</button>
             </section>
 
@@ -250,7 +251,7 @@
 
             <!-- 퀴즈 노트 -->
             <section class="section sec04">
-                <div class="img-position max-w">
+                <div class="img-position max-w animate__animated" data-aos="fade-up" data-aos-duration="1000">
                     <picture>
                         <source media="(min-width: 769px)" srcset="img/event-page/note_pc.png">
                         <img class="note" src="img/event-page/note_m.png" alt="노트 이미지">
@@ -279,7 +280,9 @@
                         </div>
                     </div>
                     <div class="btn-container">
-                        <button type="button" class="borderButton">힌트 <span class="fw-normal">NPS 칼럼</span></button>
+                        <button type="button" class="borderButton" onclick="window.open('sub-02page.html', '_blank');">
+                            힌트 <span class="fw-normal">NPS 칼럼</span>
+                        </button>
                     </div>
 
                 </div>
@@ -317,7 +320,7 @@
             <!-- 페이지 버튼 -->
             <section class="section sec06">
                 <div class="pagination padding-80">
-                    <div class="nav-item prev">
+                    <div class="nav-item prev animate__animated" data-aos="zoom-in">
                         <button class="nav-button" onclick="window.location.href='#';">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M24.3749 16.2501L9.89242 16.2501L15.5174 21.8751L13.7499 23.6426L5.10742 15.0001L13.7499 6.35758L15.5174 8.12508L9.89242 13.7501L24.3749 13.7501L24.3749 16.2501Z" fill="white"/>
@@ -331,7 +334,7 @@
                         </div>
                         
                     </div>
-                    <div class="nav-item next">
+                    <div class="nav-item next animate__animated" data-aos="zoom-in" data-aos-delay="300">
                         <div class="nav-content">
                             <span class="nav-label">NEXT</span>
                             <h3 class="nav-title">NPS 칼럼</h3>
@@ -669,10 +672,13 @@
 
 </body>
 
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<!-- aos -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 <script src="js/script.js"></script>
+<script>
+  AOS.init();
+</script>
 
 <script type="text/javascript">
     function shareKakaoTalk() {
