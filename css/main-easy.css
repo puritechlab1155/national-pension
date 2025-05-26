@@ -167,7 +167,7 @@ body.menu-open .page-wrapper {
 .header .nav-left {
     margin: 0 0 0 50px;
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
 }
 
 .header .logo {
@@ -216,11 +216,11 @@ body.menu-open .page-wrapper {
 }
 
 
-.header .submenu {
+.header .menu-item .submenu {
     display: none;
     position: absolute;
     top: 135px;
-    left: 430px;
+    left: 790px;
     width: 350px;
     background-color: #ffffff;
     padding: 25px;
@@ -228,10 +228,11 @@ body.menu-open .page-wrapper {
     z-index: 999;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
 }
-.menu-item:nth-child(1) .submenu { left: 430px; }
-.menu-item:nth-child(2) .submenu { left: 550px; }
-.menu-item:nth-child(3) .submenu { left: 770px}
-.menu-item:nth-child(4) .submenu { left: 890px;}
+.menu-item:nth-child(1) .submenu { /*left: 430px; */}
+.menu-item:nth-child(2) .submenu { left: 430px; }
+.menu-item:nth-child(3) .submenu { left: 520px;}
+.menu-item:nth-child(4) .submenu { left: 700px;}
+.menu-item:nth-child(4) .submenu { /* left: 890px; */}
 
 /* .header .dropdown:hover .submenu,
 .header .dropdown:focus-within .submenu {
@@ -292,7 +293,7 @@ body.menu-open .page-wrapper {
 }
 
 .header .search-bar.active {
-    width: 370px;
+    width: 500px;
     transform: translateX(0);
     opacity: 1;
     right: -10px;
@@ -878,25 +879,35 @@ body.menu-open .page-wrapper {
     .header .volume {
         text-align: right;
         line-height: 140%;
-        width: 130px;
+        /* width: 130px; */
         font-size: 22px;
     }
-    
+    .header .search-bar.active {
+        width: 440px;
+    }
     .header .nav-right {
         justify-content: end;
         align-items: end;
     }
-
     .header .prev-issues{
         padding: 3px 15px 4px;
         font-size: 21px;
     }
-    .menu-item:nth-child(1) .submenu { left: 370px; }
-    .menu-item:nth-child(2) .submenu { left: 480px; }
-    .menu-item:nth-child(3) .submenu { left: 680px}
-    .menu-item:nth-child(4) .submenu { left: 780px;}
-
-    
+    .header .menu-item .submenu {
+        display: none;
+        position: absolute;
+        top: 135px;
+        left: 690px;
+        width: 350px;
+        background-color: #ffffff;
+        padding: 25px;
+        border: 1.5px solid #E8E8E8;
+        z-index: 999;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    }
+    .menu-item:nth-child(2) .submenu { left: 375px; }
+    .menu-item:nth-child(3) .submenu { left: 450px;}
+    .menu-item:nth-child(4) .submenu { left: 615px;}
 }
 
 @media (max-width: 1280px) {
