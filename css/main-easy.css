@@ -2319,7 +2319,7 @@ body.menu-open .page-wrapper {
 }
 
 #event-page .sec01 {
-    padding-top: 200px;
+    padding-top: 200px !important;
     padding-bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -4026,23 +4026,23 @@ body.menu-open .page-wrapper {
     }
     #event-page.sub17 .sec04 .quiz {
         position: absolute;
-        top: 30%;
+        top: 30% !important;
         left: 50%;
         transform: translateX(-50%);
         max-width: 83px;
     }
     #event-page.sub17 .sec04 .q-icon {
         position: absolute;
-        top: 25%;
-        left: 70%;
-        max-width: 150px;
+        top: 23%;
+        left: 74%;
+        max-width: 120px;
     }
-    #event-page.sub17 .sec04 .q2 {
+    #event-page.sub17 .sec04 .img-position .q2 {
         left: 11%;
     }
     #event-page.sub17 .sec04 .dotted-container {
         position: absolute;
-        top: 45%;
+        top: 41%;
         left: 50%;
         transform: translateX(-50%);
         margin-bottom: 30px;
@@ -4051,8 +4051,8 @@ body.menu-open .page-wrapper {
     }
     #event-page.sub17 .sec04 .dotted-container .desc-dotted {
         border-bottom: 2px dotted #FF8EA8;
-        font-size: 30px;
-        line-height: 57px;
+        font-size: 40px;
+        line-height: 85.5px;
     }
     #event-page.sub17 .m-block {
         display: none;
@@ -4065,6 +4065,9 @@ body.menu-open .page-wrapper {
         display: flex;
         /* align-items: center; */
         gap:48px
+    }
+    #event-page.sub17 .sec04 .img-position:nth-child(3) .ox-container {
+        bottom: 10%;
     }
     #event-page.sub17 .sec04 .ox-container .oxItem {
         width: 120px;
@@ -4084,37 +4087,60 @@ body.menu-open .page-wrapper {
     }
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 1130px) {
         #event-page.sub17 .m-block {
             display: block;
         }
         #event-page.sub17 .m-inline {
             display: none;
         }
-        #event-page.sub17 .sec04 .quiz {
+        #event-page.sub17 .sec04 .img-position .quiz {
             top: 21%;
-            max-width: 58px;
+            max-width: 87px;
         }
         #event-page.sub17 .sec04 .dotted-container .desc-dotted {
-            font-size: 17px;
-            line-height: 35px;
+            font-size: 25.5px;
+            line-height: 52.5px;
         }
         #event-page.sub17 .sec04 .ox-container .oxItem {
-            width: 60px;
-            height: 60px;
+            width: 90px;
+            height: 90px;
             border-radius: 12px;
-            font-size: 50px;
+            font-size: 75px;
             align-items: center;
         }
         #event-page.sub17 .sec04 .dotted-container {
-            top: 37%;
+            top: 40%;
         }
         #event-page.sub17 .sec04 .q-icon {
             top: 21%;
             left: 75%;
-            max-width: 50px;
+            max-width: 75px;
         }
     }
+    @media (max-width: 768px) {
+        #event-page.sub17 .sec04 .ox-container {
+            bottom: 10%;
+        }
+    }
+    @media (max-width: 500px) {
+        #event-page.sub17 .sec04 .ox-container,
+        #event-page.sub17 .sec04 .img-position:nth-child(3) .ox-container {
+            bottom: 5%;
+        }
+        #event-page.sub17 .sec04 .dotted-container .desc-dotted {
+            font-size: 20.4px;
+            line-height: 42px;
+        }
+        #event-page.sub17 .sec04 .ox-container .oxItem {
+            width: 72px;
+            height: 72px;
+            border-radius: 14.4px;
+            font-size: 60px;
+            align-items: center;
+        }
+    }
+    
 
 
 
@@ -4997,7 +5023,7 @@ body.menu-open .page-wrapper {
         padding-top: 65px;
     }
     #event-page .sec01 {
-        padding-top: 100px;
+        padding-top: 100px !important;
     }
     #event-page .sec02 {
         height: 350px;
