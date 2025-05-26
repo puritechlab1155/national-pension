@@ -2191,6 +2191,95 @@ margin-top: 140px;
     }
 }
 
+/* sub-06page.html */
+#sub06 .img-boxy {
+    width: auto;
+    height: auto;
+    margin-bottom: 70px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;   
+}
+
+#sub06 .img-boxy-portugal {
+    position: absolute;
+    width: 30%;
+    top: 95%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+
+} 
+
+#sub06 .summary-flex {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#sub06 .summary {
+    width: 50%;
+}
+
+#sub06 .img-container {
+    height: auto !important;
+}
+
+#sub06 .flex-2 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: stretch;
+    color: #FF8EA8;
+}
+#sub06 .flex-2 .summary {
+    width: 100%;
+}
+
+#sub06 .img-container45 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    gap: 30px;
+    
+}
+
+@media (max-width: 480px) {
+    #sub06 .summary-flex {
+        justify-content: flex-start;
+    }
+    #sub06 .summary {
+        width: 100%;
+    }
+
+    #sub06 .only-pc {
+        display: none;
+    }
+
+    #sub06 .img-container45 {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #sub06 .element45-01 {
+        margin-bottom: 20px;
+    }
+    }
+
+@media (max-width: 664px) {
+    #sub06 .summary {
+        width: 100%;
+    }
+
+}/* 여기까지 sub06.html */
+
+
+
+
+
+
 /* sub13.html */
 #sub13 .flex-2 {
     display: flex;
