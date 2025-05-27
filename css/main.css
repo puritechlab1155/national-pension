@@ -3210,13 +3210,15 @@ margin-top: 140px;
 #event-page .sec05 .notice2 {
     margin-top: 50px;
     padding: 30px 0 30px 20px;
-    border-top: 2px solid #000;
+    border-top: 1px solid #222;
     list-style-type: disc;
     text-align: left;
     font-weight: 400;
     font-size: 15px;
     line-height: 21.8px;
     text-align: left;
+    max-width: 686px;
+    width: 100%;
 }
 #event-page .sec06 {
     background-color: #D3FFFD;
@@ -3789,14 +3791,14 @@ margin-top: 140px;
 #event-page.sub15 .sec04,
 #event-page.sub16 .sec04,
 #event-page.sub17 .sec04,
-#event-page.sub18 .sec04 {
+#event-page.sub19 .sec04 {
     margin-top: 0px; /* event-15,16,17,19 공통 */
     margin-bottom: 0px;
 }
 #event-page.sub15 .sec05,
 #event-page.sub16 .sec05,
 #event-page.sub17 .sec05,
-#event-page.sub18 .sec05 {
+#event-page.sub19 .sec05 {
     margin-top: 0px; /* event-15,16,17,19 공통 */
     padding-top: 50px;
 }
@@ -3942,7 +3944,7 @@ margin-top: 140px;
     #event-page.sub15 .sec04 .btn-container {
         bottom: 30px;
     }
-    #event-page.sub15 .sec05, #event-page.sub16 .sec05, #event-page.sub17 .sec05, #event-page.sub18 .sec05 {
+    #event-page.sub15 .sec05, #event-page.sub16 .sec05, #event-page.sub17 .sec05, #event-page.sub19 .sec05 {
         padding-top: 10px; /* event-15,16,17,19 공통 */
     }
     #event-page .btn-bg {
@@ -3965,6 +3967,108 @@ margin-top: 140px;
 }/* 여기까지 sub15 */
 
 
+/* event-16page.html */
+#event-page.sub16 .sec02 {
+    background-color: #ffffff;
+}
+#event-page.sub16 .sec02 .effect_line {
+    position: absolute;
+    top: 40%;
+    right: 22%;
+    max-width: 49px;
+}
+#event-page.sub16 .sec02-1 {
+    background-color: #FFE2E2;
+    margin-top: 0;
+    padding-top: 0;
+}
+#event-page.sub16 .sec02-1 .sub16-article-02 {
+    max-width: 310px;
+}
+#event-page.sub16 .sec02-1 .sub16-article-02 {
+    max-width: 744px;
+}
+#event-page.sub16 .sec02-1 .comment {
+    text-align: center;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#event-page.sub16 .sec03 {
+    background-color: #FFE2E2;
+    margin: 0;
+}
+#event-page.sub16 .sec03 .coupon-img {
+    max-width: 414px;
+}
+#event-page.sub16 .sec03 .borderButton {
+    border: 2px solid #FF8EA8;
+    background: transparent;
+    color: #FF8EA8;
+    padding: 5px 80px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 999px;
+    margin-top: 20px;
+}
+#event-page.sub16 .sec04 {
+    background-color: #FFE2E2;
+    padding-top: 0;
+}
+#event-page.sub16 .sec05-btnBox .invit.btn-bg{
+    background-color: #FF8EA8;
+}
+#event-page.sub16 .sec05 {
+    background-color: #FFE2E2;
+}
+#event-page.sub16 .sec05 .notice2 {
+    margin-top: 0;
+}
+#event-page.sub16 .sec06 {
+    background-color: #FFE2E2;
+    padding-top: 90px;
+}
+    
+
+@media (max-width: 1280px) {
+    #event-page.sub16 .sec02 .effect_line {
+        max-width: 38px;
+        top: 34%;
+        right: 33%;
+    }
+}
+    
+@media (max-width: 768px) {
+    #event-page.sub16 .sec02 .effect_line {
+        max-width: 28px;
+        top: 12%;
+        right: 32%;
+    }
+    #event-page.sub16 .sec02-1 .sub16-article-02 {
+        max-width: 310px;
+    }
+    #event-page.sub16 .sec03 {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    #event-page.sub16 .sec03 .coupon-img {
+        max-width: 276px;
+    }
+    #event-page.sub16 .sec06 {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    #event-page.sub16 .sec06 .pagination {
+        gap: 10px;
+    }
+}
+    
+@media (max-width: 480px) {
+    #event-page.sub16 .sec02 .effect_line {
+        right: 27%;
+    }
+}
 
 /* event-17page.html */
 #event-page.sub17 .sec01, #event-page.sub17 .sec02 {
@@ -4098,6 +4202,93 @@ margin-top: 140px;
         top: 21%;
         left: 75%;
         max-width: 50px;
+    }
+}
+
+
+/* event-19page.html */
+#event-page.sub19 .sec01 {
+    background-color: #ffffff;
+}
+#event-page.sub19 .sec02 .event-title {
+    margin-bottom: 0;
+}
+#event-page.sub19 .sec02 {
+    background-color: #ffffff;
+}
+#event-page.sub19 .sec02-1 {
+    background-color: #FBE5F9;
+}
+#event-page.sub19 .sec02-1 .comment {
+    text-align: center;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#event-page.sub19 .article16-02 {
+    max-width: 646px;
+}
+#event-page.sub19 .sec03 {
+    background-color: #FBE5F9;
+    margin: 0;
+}
+#event-page.sub19 .sec03 .coupon-img {
+    max-width: 276px;
+}
+#event-page.sub19 .sec03 .borderButton {
+    border: 2px solid #FF8EA8;
+    background: transparent;
+    color: #FF8EA8;
+    padding: 5px 80px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 999px;
+    margin-top: 20px;
+}
+#event-page.sub19 .sec04 {
+    background-color: #FBE5F9;
+    margin: 0;
+    padding-top: 0;
+}
+#event-page.sub19 .sec05-btnBox .invit.btn-bg{
+    background-color: #FF8EA8;
+}
+#event-page.sub19 .sec05 {
+    background-color: #FBE5F9;
+    margin-top: 0;
+}
+#event-page.sub19 .sec05 .notice2 {
+    margin-top: 0;
+}
+#event-page.sub19 .sec06 {
+    background-color: #FBE5F9;
+}
+
+
+@media (max-width: 768px) {
+    #event-page.sub19 .sec03 .coupon-img {
+        max-width: 200px;
+    }
+    #event-page.sub19 .article16-02 {
+    max-width: 320px;
+}
+#event-page.sub19 .sec02 {
+        height: 330px !important;
+    }
+    #event-page.sub19 .sec03 {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    #event-page.sub19 .sec05 {
+        padding-top: 10px;
+    }
+    #event-page.sub19 .sec06 {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    #event-page.sub19 .sec06 .pagination {
+        gap: 10px;
     }
 }
 

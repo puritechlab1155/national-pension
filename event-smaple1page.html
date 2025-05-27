@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- 애니메이션 라이브러리 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -22,7 +22,7 @@
     <div class="mobile-menu-overlay"></div>
     <!-- 모바일 슬라이드 메뉴 -->
     <div class="mobile-menu">
-        <div class="mobile-menu-header">
+        <div class="mobile-menu-header">    
             <a href="index.html">
                 <img src="img/logo.png" alt="NPS 로고" class="mobile-logo" />
             </a>
@@ -193,7 +193,7 @@
         </header>
         <!-- 컨텐츠 -->
         <!-- sub15 class를 해당 페이지 넘버로 바꿔주세요 -->
-        <main class="sub16 content" id="event-page">
+        <main class="sub15 content" id="event-page">
             <section class="section sec01">
                 <div class="sec01-header" id="checkView2">
                     <span class="check-icon">
@@ -209,37 +209,33 @@
                 </div>
             </section>
 
-
             <!-- 기사 내용 바꿔주세요 -->
             <section class="section sec02">
+                <!-- <img class="cloud-img" src="img/event-page/circleBg.png" alt="반원" /> -->
                 <picture>
-                    <source class="bg-img" media="(min-width: 769px)" srcset="img/sub16/article-04.png">
-                    <img class="bg-img" src="img/sub16/article-m04.png" alt="반원 배경">
+                    <source class="bg-img" media="(min-width: 769px)" srcset="img/event-page/circleBg.png">
+                    <img class="bg-img" src="img/event-page/circleBg_m.png" alt="반원 배경">
                 </picture>
-    
                 <div class="text-content padding-230">
-                    <img class="effect_line animate__animated animate__flash animate__infinite" src="img/sub16/article-01.png" alt="효과선">
-                
-                    <p class="draw">최애 콘텐츠 투표</p>
-                    <h1 class="event-title mb-40">2025 상반기호 <br/>
-                        최고의 콘텐츠를 <br class="mob-br"/> 뽑아라!</h1>
+                    <p class="draw">sample</p>
+                    <img class="star animate__animated animate__flash" src="img/event-page/star.png" alt="별">
+                    <h1 class="event-title mb-40">웹진을 읽고 <br/>
+                        초성에 맞는 단어를 <br class="mob-br"/> 맞혀 주세요</h1>
+                    <img class="line" src="img/event-page/line.png" alt="선">
                 </div>
             </section>
-            <section class="section sec02-1 pink">
-                <img class="sub16-article-02 animate__animated animate__tada animate__infinite animate__slower" src="img/sub16/article-02.png" alt="16-img-02">
+            <section class="section sec02-1">
                 <p class="comment">
-                    &lt;내 곁에 국민연금>2025 상반기호를 읽고<br class="gone"/> 구독자분들의 마음을 사로잡은 최고의 콘텐츠를 뽑아주세요! <br class="gone"/>
-                    가장 기억에 남는 이야기를 뽑아 그 이유와 함께 보내주신 분들 중<br class="gone"/>
-                    추첨을 통해 선물을 드립니다.
+                    &lt;내 곁에 국민연금>2025 상반기호를 읽고 초성 퀴즈를 맞혀 주세요! <br class="gone"/>
+                    웹진 곳곳에 정답이 숨어 있습니다. <br/>
+                    정답을 모두 맞추신 분들 중 추첨을 통해 선물을 드립니다.
                 </p>
-                </section>
-
+                <img class="coupon-img" src="img/event-page/coffe.png" alt="커피 기프티콘" />
+                <button type="button" class="borderButton">커피 기프티콘(15명)</button>
+            </section>
 
             <!-- 응모기간, 발표 (공통) -->
-            <section class="section sec03 pink">
-                <img class="coupon-img animate__animated animate__pulse animate__infinite" src="img/sub16/article-03.png" alt="cu" />
-                <button type="button" class="borderButton">편의점 기프티콘(15명)</button>
-            
+            <section class="section sec03">
                 <div class="info-zone">
                     <hr class="divider">
                     <div class="info-row">
@@ -255,9 +251,48 @@
                 </div>
             </section>
 
+            <!-- 퀴즈 노트 -->
+            <section class="section sec04">
+                <div class="img-position max-w">
+                    <picture>
+                        <source media="(min-width: 769px)" srcset="img/event-page/note_pc.png">
+                        <img class="note" src="img/event-page/note_m.png" alt="노트 이미지">
+                    </picture>
+                    <img class="quiz" src="img/event-page/quiz.png" alt="노트 이미지">
+                    <div class="desc-dotted-container">
+                        <span class="desc-dotted">기존 지역가입자 보험료 지원은 </span> <br/>
+                        <span class="desc-dotted">납부재개자에만 제한적으로 <br class="mob-br"/>지원했으나,</span><br class="m-inline"/>
+                        <span class="desc-dotted">이번 개혁을 통해 <br class="mob-br"/>계속 납부하고 있던 사람이라도 </span><br/>
+                        <span class="desc-dotted">일정 소득 수준 미만의<br class="mob-br"/> OOO OOOOO에 해당하면 </span><br/>
+                        <span class="desc-dotted">지원받을 수 있도록 지원대상을<br class="mob-br"/> 확대하였습니다. </span><br/>
+                        <span class="desc-dotted">확대 된 대상이 어떻게 될까요? </span>
+                    </div>
+                    <div class="initial-container">
+                        <div class="initial-top">
+                            <div class="initialItem"><span class="f-42">ㅈ</span></div>
+                            <div class="initialItem"><span class="f-42">ㅅ</span></div>
+                            <div class="initialItem"><span class="f-42">ㄷ</span></div>
+                        </div>
+                        <div class="initial-bottom">
+                            <div class="initialItem"><span class="f-42">ㅈ</span></div>
+                            <div class="initialItem"><span class="f-42">ㅇ</span></div>
+                            <div class="initialItem"><span class="f-42">ㄱ</span></div>
+                            <div class="initialItem"><span class="f-42">ㅇ</span></div>
+                            <div class="initialItem"><span class="f-42">ㅈ</span></div>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button type="button" class="borderButton">힌트 <span class="fw-normal">NPS 칼럼</span></button>
+                    </div>
 
-            <!-- 구독 및 참여 버튼 -->
-            <section class="section sec04 pink">
+                </div>
+                
+
+            </section>
+            
+            
+            <!-- 이벤트 notice2 공통 멘트 -->
+            <section class="section sec05"> 
                 <div class="sec05-btnBox">
                     <button type="button" class="subscribe btn-bg" 
                         onclick="window.open('https://www.nps.or.kr/jsppage/cyber_pr/subscribe/intro.jsp', '_blank', 'noopener,noreferrer,width=700,height=500');">
@@ -268,11 +303,9 @@
                         참여하기
                     </button>
                 </div>
-            </section>
+                
 
-            
-            <!-- 이벤트 notice2 공통 멘트 -->
-            <section class="section sec05 pink"> 
+
                 <ul class="notice2">
                     <li> <내 곁에 국민연금> 웹진 이벤트 5종에 대한 중복 당첨은 불가합니다. </li>
                     <li> 본 이벤트 경품은 당사 사정에 따라 변경될 수 있습니다. </li>
@@ -284,9 +317,8 @@
                 </ul>
             </section>
 
-
             <!-- 페이지 버튼 -->
-            <section class="section sec06 pink">
+            <section class="section sec06">
                 <div class="pagination padding-80">
                     <div class="nav-item prev animate__animated" data-aos="zoom-in">
                         <button class="nav-button" onclick="window.location.href='#';">
@@ -645,7 +677,7 @@
 
 <script src="js/script.js"></script>
 <script>
-    AOS.init();
+  AOS.init();
 </script>
 
 <script type="text/javascript">
