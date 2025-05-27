@@ -2130,7 +2130,7 @@ body.menu-open .page-wrapper {
 
 #sub-page .sec03 {
     padding-top: 60px;
-    margin-bottom: 75px;
+    padding-bottom: 75px;
 }
 
 .pagination {
@@ -5061,7 +5061,7 @@ margin-top: 140px;
     }
 
     #sub-page .sec03 {
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     #sub-page .sec03.padding-80 {

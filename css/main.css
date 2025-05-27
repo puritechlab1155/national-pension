@@ -2005,7 +2005,7 @@ body.menu-open .page-wrapper {
 
 #sub-page .sec03 {
     padding-top: 80px;
-    margin-bottom: 75px;
+    padding-bottom: 75px;
 }
 
 .pagination {
@@ -2284,6 +2284,221 @@ margin-top: 140px;
 #sub07 .f-pink {
     color: #FF8EA8;
     display: block;
+}
+#sub07 .title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #AAAAAA;
+}
+#sub07.sec02 .img-box {
+    position: relative;
+    max-width: 200px;
+}
+#sub07.sec02 .articleImg {
+    position: absolute;
+    top: -146px;
+    right: -350%;
+}
+#sub07 .course-line {
+    background-color: #fff;
+    max-width: 300px;
+    width: 100%;
+    height: 1px;
+}
+#sub07 .course-box {
+    background-color: #FF8EA8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 20px;
+}
+#sub07 .course-box .icon {
+    max-width: 40px;
+}
+#sub07 .article-title-inner {
+    color: #fff;
+    font-size: 25px;
+}
+#sub07 .course-box {
+    margin: 46px 0;
+}
+#sub07 .t-r {
+    width: 50%;
+    float: right;
+}
+#sub07 .flex-article {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+#sub07.sec02 .paragraph {
+    margin-top: 0;
+}
+#sub07 .flex-article .left-text, #sub07 .flex-article .right-img {
+    width: 50%;
+} 
+#sub07 .flex-article .left-text .dashed {
+    border-top: 1px dashed #2F2725;
+    padding-top: 10px;
+}
+#sub07.sec02 .info-item {
+    display: flex;
+}
+#sub07.sec02 .info-item .info-b {
+    font-weight: 700;
+    width: 85px;
+}
+#sub07.sec02 .info-item .info {
+    margin-bottom: 5px;
+}
+#sub07.sec02 .paragraph {
+    margin-bottom: 30px;
+}
+#sub07 .flex-article .location {
+    display: flex;
+    gap: 3px;
+    align-items: baseline;
+    margin-top: 5px;
+}
+#sub07 .flex-article .location .gps-icon {
+    width: 10px;
+}
+/* swiper 스와이퍼 */
+#sub07 .swiper-button-next, #sub07 .swiper-button-prev {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#sub07 .swiper-button-prev:after, #sub07 .swiper-rtl .swiper-button-next:after,
+#sub07 .swiper-button-next:after, #sub07 .swiper-rtl .swiper-button-prev:after {
+    color: #ccc;
+    font-size: 17px;
+    font-weight: 700;
+}
+#sub07 .swiper-slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+#sub07-1 .imgBg-container {
+    background-image: url(../img/sub07/imgBg_pc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 120px;
+}
+#sub07-1 .inner {
+    max-width: 980px;
+    margin: 0 auto;
+}
+#sub07-1 .imgBg-title {
+    padding: 100px 0 48px;
+    margin: 0 auto;
+}
+#sub07-1 .imgBg-container .f-18 {
+    margin-bottom: 48px;
+}
+#sub07-1 .tour-info {
+    border-top: 1px solid #2F2725;
+    padding: 20px 0 40px;
+    margin-top: 48px;
+}
+#sub07-1 .listStyle1 {
+    margin-bottom: 5px;
+    padding-left: 15px; /* 하이픈을 위한 왼쪽 여백 */
+    position: relative; /* ::before 가상 요소 위치 지정을 위함 */
+}
+#sub07-1 .listStyle2 {
+    margin-bottom: 5px;
+    padding-left: 18px; 
+    position: relative; 
+}
+#sub07-1 .listStyle1::before {
+    content: '- '; /* 하이픈과 공백 추가 */
+    position: absolute;
+    left: 0; /* li의 왼쪽에 위치 */
+    color: #2F2725; 
+}
+#sub07-1 .note {
+    font-weight: bold;
+}
+#sub07-1 .listStyle2::before {
+    content: '※ '; /* 하이픈과 공백 추가 */
+    position: absolute;
+    left: 0; /* li의 왼쪽에 위치 */
+    color: #2F2725; 
+}
+/* 탑승료 테이블 스타일 */
+#sub07-1 .fare-table-wrapper {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+#sub07-1 .infoB-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #EF89A1;
+}
+#sub07-1 .fare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 17px;
+    table-layout: fixed; /* 열 너비를 균등 */
+    color: #2F2725;
+}
+#sub07-1 .fare-table td {
+    border-right: 1px solid #2F2725;
+    padding: 12px 10px;
+    text-align: center;
+    width: 33.33%; 
+}
+#sub07-1 .fare-table td:last-child {
+    border: none;
+}
+#sub07-1 .fare-table tr:nth-child(1) td:first-child {
+    background: #D5B7CC;
+}
+#sub07-1 .fare-table tr:nth-child(2) td:first-child {
+    background: #E6D797;
+}
+#sub07-1 .fare-table tbody tr:nth-child(odd) { 
+    background-color: #DFCCD9; 
+}
+#sub07-1 .fare-table tbody tr:nth-child(even) { 
+    background-color: #F3E7B4;
+}
+/* 하단 정보 섹션 스타일 */
+#sub07-1 .info-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#sub07-1 .table-infoItem {
+    flex: 1;
+    min-width: 180px;
+    padding: 0 10px;
+    border-right: 1px solid #2F2725;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+#sub07-1 .table-infoItem .infoB-text {
+    margin: 0;
+}
+#sub07-1 .table-infoItem:last-child {
+    border-right: none; 
+}
+#sub-page .sub07.sec03 {
+    background: #FFE4E6;
+}
+@media (max-width: 768px) {
+
+#sub07-1 .imgBg-container {
+    background-image: url(../img/sub07/imgBg_m.png);
+    }
+
 }
 
 
@@ -4690,7 +4905,7 @@ margin-top: 140px;
     }
 
     #sub-page .sec03 {
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
     #sub-page .sec03.padding-80 {
         padding: 0 20px;
