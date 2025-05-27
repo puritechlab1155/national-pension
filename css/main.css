@@ -5099,13 +5099,14 @@ margin-top: 140px;
         padding-bottom: 20px;
     }
     #sub-page .sec03.padding-80 {
-        padding: 0 20px;
+        padding: 0 20px 20px;
     }
 
 
     .pagination {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
     .pagination .nav-item {

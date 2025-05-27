@@ -3886,7 +3886,7 @@ margin-top: 140px;
             margin-bottom: 10px;
         }
         #event-page.sub15 .sec06, #event-page.sub16 .sec06, #event-page.sub17 .sec06, #event-page.sub18 .sec06 {
-            padding: 160px 20px 75px !important; /* event-15,16,17,19 공통 */
+            padding: 60px 20px 75px !important; /* event-15,16,17,19 공통 */
         }
         #event-page.sub15 .note {
             min-width: 360px;
@@ -5074,7 +5074,7 @@ margin-top: 140px;
     }
 
     #sub-page .sec03.padding-80 {
-        padding: 0 20px;
+        padding: 60px 20px 75px !important;
     }
 
     .pagination {
