@@ -52,7 +52,7 @@
         padding: 0 100px !important;
     }
     #event-page.sub15 .sec02-1, #event-page.sub15 .sec03, #event-page.sub15 .sec04, #event-page.sub15 .sec05, #event-page.sub15 .sec06 {
-        padding: 0 100px !important; /* event-15,16,17,19 공통 */
+        padding: 20px 80px 75px !important;
     }
 }
 
@@ -2211,6 +2211,12 @@ margin-top: 140px;
 }
 
 /* sub-06page.html */
+#sub06 .m-br480 { display: none; }
+#sub06 .f-30 {
+    font-weight: 100 !important;
+    font-size: 45px !important;
+    line-height: 63px !important;
+}
 #sub06 .img-boxy {
     width: auto;
     height: auto;
@@ -2267,6 +2273,7 @@ margin-top: 140px;
     }
 }
 @media (max-width: 480px) {
+    #sub06 .m-br480 { display: block; }
     #sub06 .summary-flex {
         justify-content: flex-start;
     }
@@ -2373,7 +2380,7 @@ margin-top: 140px;
     margin-top: 5px;
 }
 #sub07 .flex-article .location .gps-icon {
-    width: 10px;
+    width: 15px;
 }
 /* swiper 스와이퍼 */
 #sub07 .swiper-button-next, #sub07 .swiper-button-prev {
@@ -2421,7 +2428,7 @@ margin-top: 140px;
 }
 #sub07-1 .listStyle2 {
     margin-bottom: 5px;
-    padding-left: 18px; 
+    padding-left: 27px; 
     position: relative; 
 }
 #sub07-1 .listStyle1::before {
@@ -2490,7 +2497,7 @@ margin-top: 140px;
 }
 #sub07-1 .table-infoItem {
     flex: 1;
-    min-width: 180px;
+    /* min-width: 180px; */
     padding: 0 10px;
     border-right: 1px solid #2F2725;
     display: flex;
@@ -2550,7 +2557,7 @@ margin-top: 140px;
         margin-bottom: 16px !important;
     }
     #sub07 .caption {
-        font-size: 15px;
+        font-size: 22.5px;
     }
     #sub07-1 .imgBg-container {
         margin-top: 60px;
@@ -2582,10 +2589,17 @@ margin-top: 140px;
     }
     #sub07-1 .info-section {
         flex-direction: column;
+        gap: 20px;
+        padding-bottom: 0;
+
     }
     #sub07-1 .table-infoItem {
         border-right: none;
         border-bottom: 1px solid #2F2725;
+        padding-bottom: 20px;
+    }
+    #sub07-1 .table-infoItem:last-child {
+        border: none;
     }
 }
 
@@ -3983,7 +3997,7 @@ margin-top: 140px;
         padding-top: 50px;
     }
     #event-page.sub15 .sec06, #event-page.sub16 .sec06, #event-page.sub17 .sec06, #event-page.sub18 .sec06 {
-        padding: 160px 80px 75px !important; /* event-15,16,17,19 공통 */
+        padding: 160px 80px 75px; /* event-15,16,17,19 공통 */
     }
 
 
@@ -3991,13 +4005,13 @@ margin-top: 140px;
     #event-page.sub15 .sec02-1,
     #event-page.sub15 .sec03,
     #event-page.sub15 .sec04,
-    #event-page.sub15 .sec05,
-    #event-page.sub15 .sec06 {
+    #event-page.sub15 .sec05/*,
+    #event-page.sub15 .sec06 */ {
         background-color: #C7EAFD;
         padding: 0 40px;
     }
-    #event-page .sec02 .event-title {
-
+    #event-page.sub15 .sec06 {
+        background-color: #C7EAFD;
     }
     #event-page.sub15 .sec02 .star {
         position: absolute;
@@ -4191,12 +4205,13 @@ margin-top: 140px;
         #event-page.sub15 .sec02 .event-title {
             margin-bottom: 10px;
         }
-        #event-page.sub15 .sec06, #event-page.sub16 .sec06, #event-page.sub17 .sec06, #event-page.sub18 .sec06 {
-            padding: 60px 20px 75px !important; /* event-15,16,17,19 공통 */
+        #event-page .sec06 {
+            padding: 60px 0px 20px !important; /* event 공통 */
         }
         #event-page.sub15 .note {
             min-width: 360px;
         }
+        
     }
     @media (max-width: 630px) {
         #event-page.sub15 .sec02 .star {
@@ -4842,6 +4857,7 @@ margin-top: 140px;
 
 
 
+
 @media (max-width: 768px) {
 
     /* ✅ index.html */
@@ -5380,12 +5396,15 @@ margin-top: 140px;
     }
 
     #sub-page .sec03.padding-80 {
-        padding: 60px 20px 75px !important;
+        /* padding: 60px 20px 75px !important; */
+        padding: 0px 20px 20px !important;
+        
     }
 
     .pagination {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
     .pagination .nav-item {
@@ -5414,6 +5433,7 @@ margin-top: 140px;
         font-size: 22px;
         line-height: 33px;
     }
+    
 
 
 
@@ -5572,6 +5592,7 @@ margin-top: 140px;
     #event-page .unluckyModal .form-description{
         font-size: 25px;
     }
+    
 
 
 }
