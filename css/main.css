@@ -2166,6 +2166,9 @@ body.menu-open .page-wrapper {
     align-items: center;
     border-right: 1px solid #222;
 }
+#sub02 .table-container .td:last-child {
+    border: none;
+}
 #sub02 .table-container .icon-b {
     
 }
