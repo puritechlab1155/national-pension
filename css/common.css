@@ -168,7 +168,7 @@ body.menu-open {
 }
 
 br.mob-br{ /* 480기준 br */
-    display: none;
+    display: none !important;
 }
 
 
