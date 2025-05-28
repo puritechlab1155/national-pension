@@ -2002,19 +2002,16 @@ body.menu-open .page-wrapper {
     object-fit: cover;
     display: block;
 }
-
 #sub-page .sec03 {
     padding-top: 80px;
     padding-bottom: 75px;
 }
-
 .pagination {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     gap: 40px;
 }
-
 .pagination .nav-item {
     flex: 1;
     overflow: hidden;
@@ -2024,7 +2021,6 @@ body.menu-open .page-wrapper {
     padding: 25px 40px;
     position: relative;
 }
-
 .pagination .nav-item::after {
     content: "";
     position: absolute;
@@ -2035,7 +2031,6 @@ body.menu-open .page-wrapper {
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
-
 .pagination .nav-item.next {
     background-image: url('../img/sub-page/next-img.jpg');
     background-size: cover;
@@ -2044,7 +2039,6 @@ body.menu-open .page-wrapper {
     text-align: right;
     cursor: pointer;
 }
-
 .pagination .nav-item.prev {
     background-image: url('../img/sub-page/prev-img.jpg');
     background-size: cover;
@@ -2052,44 +2046,36 @@ body.menu-open .page-wrapper {
     background-repeat: no-repeat;
     cursor: pointer;
 }
-
 .pagination .nav-content {
     flex: 1;
 }
-
 .pagination .nav-label {
     display: block;
     font-size: 15px;
     font-weight: 400;
     line-height: 100%;
-    
     margin-bottom: 5px;
     color: #FFFFFF;
     z-index: 5;
     position: relative;
 }
-
 .nav-title {
     font-size: 15px;
     font-weight: 500;
     line-height: 24px;
-    
     margin-bottom: 5px;
     color: #FFFFFF;
     z-index: 5;
     position: relative;
 }
-
 .nav-description {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    
     color: #FFFFFF;
     z-index: 5;
     position: relative;
 }
-
 .pagination .nav-button {
     background: none;
     border: none;
@@ -2097,12 +2083,113 @@ body.menu-open .page-wrapper {
     padding: 10px 30px;
     z-index: 5;
 }
-
 .pagination .nav-arrow {
     width: 30px;
     height: 30px;
     color: #fff;
 }
+
+
+/* sub-02page.html */
+#sub02 .bgBox, #sub02 .icon-b, #sub02 .icon-p {
+    font-size: 17px;
+}
+
+#sub02 .f-pink { 
+    color: #FF8EA8;
+    display: block;
+}
+#sub02 .img-box {
+    margin-bottom: 50px;
+}
+#sub02 .article-img {
+    max-width: 610px;
+    margin: 0 auto;
+}
+#sub02 .gray-box {
+    background-color: #F3F2F2;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+#sub02 .paragraph.mb-4 {
+    margin-bottom: 40px !important;
+}
+/* 표 스타일링 */
+#sub02 .table-title {
+    border-bottom: 1px solid #222;
+    padding: 15px 0;
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+    margin-bottom: 32px;
+}
+#sub02 .title-img {
+    transform: scale(0.8);
+    transform-origin: left center;
+}
+#sub02 .table-container {
+    
+}
+#sub02 .table-container .table-col {
+    width: 100%;
+    display: flex;
+}
+#sub02 .table-container .table-th {
+    width: 20%;
+}
+#sub02 .table-container .table-td-container {
+    width: 80%;
+}
+#sub02 .table-container .bgBox {
+    background: #F3F2F2;
+    text-align: center;
+    font-weight: 600;
+    padding: 8px 0;
+}
+#sub02 .bgBox.bg-b { background: #747678; color: #fff; }
+#sub02 .bgBox.bg-p { background: #FF8EA8; color: #fff; }
+#sub02 .table-container .iconTitle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3px;
+    margin: 16px 0;
+    border-right: 1px solid #222;
+}
+#sub02 .table-container .table-img {
+    
+}
+#sub02 .table-container .td {
+    margin: 16px 0;
+    display: block;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #222;
+}
+#sub02 .table-container .icon-b {
+    
+}
+#sub02 .table-container .icon-p {
+    
+}
+#sub02 .table-td-container {
+    display: flex;
+
+}
+#sub02 .table-td-container .table-td {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    #sub02 .m-none { display: none;}
+}
+
+
+
+
+
+
+
 
 /* sub-03page.html */
 #sub03 .article-img {
