@@ -2155,10 +2155,8 @@ body.menu-open .page-wrapper {
     padding: 15px 0;
     display: flex;
     justify-content: start;
-    gap: 10px;
+    gap: 4px;
     margin-bottom: 32px;
-    flex-direction: column;
-    align-items: center;
 }
 #sub02 .title-img {
     transform: scale(1);
@@ -2235,12 +2233,14 @@ body.menu-open .page-wrapper {
 @media (max-width: 768px) {
     #sub02 .big-brW { display: none; }
     #sub02 .m-none { display: none;}
-s
+
     #sub02 .table-title {
         flex-direction: column;
         align-items: center;
-        padding-bottom: 0;
-        gap: 0;
+        padding-bottom: 10px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
     }
     #sub02 .title-img {
         transform: scale(1);
