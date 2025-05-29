@@ -2094,6 +2094,7 @@ body.menu-open .page-wrapper {
 #sub02 .bgBox, #sub02 .icon-b, #sub02 .icon-p {
     font-size: 17px;
 }
+#sub02 .desc { font-size: 15px; }
 
 #sub02 .f-pink { 
     color: #FF8EA8;
@@ -2115,6 +2116,7 @@ body.menu-open .page-wrapper {
     margin-bottom: 40px !important;
 }
 /* 표 스타일링 */
+#sub02 .w-none { display: none; }
 #sub02 .table-title {
     border-bottom: 1px solid #222;
     padding: 15px 0;
@@ -2133,9 +2135,12 @@ body.menu-open .page-wrapper {
 #sub02 .table-container .table-col {
     width: 100%;
     display: flex;
+    border-bottom: 1px dotted #222;
 }
 #sub02 .table-container .table-th {
     width: 20%;
+    display: flex;
+    flex-direction: column;
 }
 #sub02 .table-container .table-td-container {
     width: 80%;
@@ -2155,32 +2160,46 @@ body.menu-open .page-wrapper {
     gap: 3px;
     margin: 16px 0;
     border-right: 1px solid #222;
+    flex: 1;
 }
 #sub02 .table-container .table-img {
-    
+    width: clamp(50px, 4vw, 64px);
 }
 #sub02 .table-container .td {
-    margin: 16px 0;
-    display: block;
+    flex: 1; 
     display: flex;
     align-items: center;
+    padding: 8px 15px;
+    margin: 16px 0;
+}
+#sub02 .td, #sub02 .iconTitle-wrapper {
+    min-height: 80px;
+}
+#sub02 .table-container .borderd-r {
     border-right: 1px solid #222;
 }
-#sub02 .table-container .td:last-child {
-    border: none;
-}
 #sub02 .table-container .icon-b {
-    
+    font-weight: 600;
 }
 #sub02 .table-container .icon-p {
     
 }
 #sub02 .table-td-container {
     display: flex;
-
+    align-items: stretch;
 }
 #sub02 .table-td-container .table-td {
+    display: flex;
+    flex-direction: column; /* 내용이 세로로 배치되게 */
     flex: 1;
+}
+#sub02 .sup {
+    vertical-align: baseline;
+}
+#sub02 .desc {
+    display: block;
+    text-align: right;
+    margin: 8px 0 50px;
 }
 
 @media (max-width: 768px) {
