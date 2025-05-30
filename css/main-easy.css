@@ -4943,6 +4943,15 @@ margin-top: 140px;
 
 
     /* event-17page.html */
+    .sub17 .nav-item.prev {
+        background-image: url(../img/sub17/prev-img.jpg);
+    }
+    .sub17 .nav-item.next {
+        background-image: url(../img/sub17/next-img.jpg);
+    }
+    #event-page.sub17 .big-none {
+        display: block;
+    }
     #event-page.sub17 .sec01, #event-page.sub17 .sec02 {
         background-color: #fff;
     }
@@ -5031,7 +5040,7 @@ margin-top: 140px;
         gap:48px
     }
     #event-page.sub17 .sec04 .img-position:nth-child(3) .ox-container {
-        bottom: 10%;
+        bottom: 5%;
     }
     #event-page.sub17 .sec04 .ox-container .oxItem {
         width: 120px;

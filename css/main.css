@@ -4715,6 +4715,12 @@ margin-top: 140px;
 }
 
 /* event-17page.html */
+.sub17 .nav-item.prev {
+    background-image: url(../img/sub17/prev-img.jpg);
+}
+.sub17 .nav-item.next {
+    background-image: url(../img/sub17/next-img.jpg);
+}
 #event-page.sub17 .sec01, #event-page.sub17 .sec02 {
     background-color: #fff;
 }
