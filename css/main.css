@@ -4611,6 +4611,12 @@ margin-top: 140px;
 
 
 /* event-16page.html */
+.sub16 .nav-item.prev {
+    background-image: url(../img/sub16/prev-img.jpg);
+}
+.sub16 .nav-item.next {
+    background-image: url(../img/sub16/next-img.jpg);
+}
 #event-page.sub16 .sec02 {
     background-color: #ffffff;
 }
@@ -4631,13 +4637,7 @@ margin-top: 140px;
 #event-page.sub16 .sec02-1 .sub16-article-02 {
     max-width: 744px;
 }
-#event-page.sub16 .sec02-1 .comment {
-    text-align: center;
-    font-size: 17px;
-    line-height: 29px;
-    font-weight: 400;
-    margin-top: 20px;
-}
+
 #event-page.sub16 .sec03 {
     background-color: #FFE2E2;
     margin: 0;

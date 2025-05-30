@@ -3257,7 +3257,7 @@ margin-top: 140px;
 
 #event-page .sec02 .event-title {
     font-size: 72px;
-    line-height: 80px;
+    line-height: 99px;
     font-weight: 700;
     margin-top: 50px;
 }
@@ -4580,6 +4580,12 @@ margin-top: 140px;
 
 
     /* event-15page.html */
+    #event-page.sub15 .sub15P .nav-item.prev {
+        background-image: url(../img/sub15/prev-img.jpg);
+    }
+    #event-page.sub15 .sub15P .nav-item.next {
+        background-image: url(../img/sub15/next-img.jpg);
+    }
     #event-page.sub15 .sec02-1,
     #event-page.sub15 .sec03,
     #event-page.sub15 .sec04,
@@ -4859,6 +4865,12 @@ margin-top: 140px;
 
 
     /* event-16page.html */
+    .sub16 .nav-item.prev {
+        background-image: url(../img/sub16/prev-img.jpg);
+    }
+    .sub16 .nav-item.next {
+        background-image: url(../img/sub16/next-img.jpg);
+    }
     #event-page.sub16 .sec02-1.pink {
         background-color: #FFE2E2;
         /* padding: 0 40px; */
