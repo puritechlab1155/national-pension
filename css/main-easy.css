@@ -2317,7 +2317,12 @@ body.menu-open .page-wrapper {
 
 
 /* sub-04page.html */
-
+.sub04 .nav-item.prev {
+    background-image: url(../img/sub04/prev-img.jpg);
+}
+.sub04 .nav-item.next {
+    background-image: url(../img/sub04/next-img.jpg);
+}
 #sub04 {
     margin-bottom: 100px;
 }
@@ -2599,6 +2604,12 @@ body.menu-open .page-wrapper {
 
 
 /* sub-05page.html */
+.sub05 .nav-item.prev {
+    background-image: url(../img/sub05/prev-img.jpg);
+}
+.sub05 .nav-item.next {
+    background-image: url(../img/sub05/next-img.jpg);
+}
 #sub05 .summary {
     margin-bottom: 130px !important;
 }
@@ -2759,6 +2770,12 @@ margin-top: 140px;
 }/* 여기까지 sub06.html */
 
 /* sub07.html */
+.sub07 .nav-item.prev {
+    background-image: url(../img/sub07/prev-img.jpg);
+}
+.sub07 .nav-item.next {
+    background-image: url(../img/sub07/next-img.jpg);
+}
 #sub07 .f-pink {
     color: #FF8EA8;
     display: block;
@@ -3074,6 +3091,12 @@ margin-top: 140px;
 }
 
 /* sub10.html */
+.sub10 .nav-item.prev {
+    background-image: url(../img/sub10/prev-img.jpg);
+}
+.sub10 .nav-item.next {
+    background-image: url(../img/sub10/next-img.jpg);
+}
 #sub10.sec02 .img-container {
     height: auto;
 }
@@ -4176,6 +4199,12 @@ margin-top: 140px;
 }
 
     /* sub13.html */
+    .sub13 .nav-item.prev {
+        background-image: url(../img/sub13/prev-img.jpg);
+    }
+    .sub13 .nav-item.next {
+        background-image: url(../img/sub13/next-img.jpg);
+    }
     #sub13 .flex-2 {
         display: flex;
         justify-content: space-between;
