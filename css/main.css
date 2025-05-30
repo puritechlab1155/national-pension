@@ -2252,6 +2252,15 @@ body.menu-open .page-wrapper {
 }
 
 /* sub-03page.html */
+.sub03 .nav-item.prev {
+    background-image: url(../img/sub03/prev-img.jpg);
+}
+.sub03 .nav-item.next {
+    background-image: url(../img/sub03/next-img.jpg);
+}
+#sub03 .m-br480 {
+    display: none;
+}
 #sub03 .article-img {
     max-width: 610px;
 }
@@ -2260,6 +2269,11 @@ body.menu-open .page-wrapper {
 }
 #sub03 .img-container {
     height: auto !important;
+}
+@media (max-width: 480px) {
+    #sub03 .m-br480 {
+        display: block;
+    }
 }
 
 
