@@ -2133,10 +2133,12 @@ body.menu-open .page-wrapper {
     color: #FF8EA8;
     display: block;
 }
-#sub02 .img-box {
+#sub02 .img-box,
+#sub04 .img-box {
     margin-bottom: 50px;
 }
-#sub02 .article-img {
+#sub02 .article-img,
+#sub04 .article-img {
     max-width: 610px;
     margin: 0 auto;
 }
