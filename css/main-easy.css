@@ -3373,14 +3373,12 @@ margin-top: 140px;
 
 #event-page .sec03 .subscribe-button {
     margin-top: 30px;
-    padding: 10px 35px;
+    padding: 6px 60px;
     background-color: #0086DD;
     color: #FFFFFF;
     border-radius: 999px;
     cursor: pointer;
-    font-size: 27px;
-    
-    
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -4085,7 +4083,8 @@ margin-top: 140px;
 
 #event-page .unlucky-modal .unlucky-img {
     width: 55%; 
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
 }
 #event-page .unlucky-modal .form-description {
     font-size: 24px;
@@ -5106,6 +5105,19 @@ margin-top: 140px;
         }
     }
     
+/* event-18page.html */
+.comment.sub18-mt-50 {
+    margin-top: 50px !important;
+}
+.sub18.nav-item.prev {
+    background-image: url(../img/sub18/prev-img.jpg);
+}
+.sub18.nav-item.next {
+    background-image: url(../img/sub18/next-img.jpg);
+}
+.sub18.nav-item.prev {
+
+}
 
 /* event-19page.html */
 #event-page.sub19 .sec02-1.purple {

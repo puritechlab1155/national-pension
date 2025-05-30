@@ -3638,7 +3638,7 @@ margin-top: 140px;
     color: #FFFFFF;
     border-radius: 999px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 27px;
     
     line-height: 100%;
     font-weight: 700;
@@ -4274,7 +4274,8 @@ margin-top: 140px;
 }
 #event-page .unlucky-modal .unlucky-img {
     width: 55%; 
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
 }
 #event-page .unlucky-modal .form-description {
     font-size: 24px;
@@ -4849,7 +4850,27 @@ margin-top: 140px;
 }
 
 
+/* event-18page.html */
+.comment.sub18-mt-50 {
+    margin-top: 50px !important;
+}
+.sub18.nav-item.prev {
+    background-image: url(../img/sub18/prev-img.jpg);
+}
+.sub18.nav-item.next {
+    background-image: url(../img/sub18/next-img.jpg);
+}
+.sub18.nav-item.prev {
+
+}
+
 /* event-19page.html */
+.sub19 .nav-item.prev {
+    background-image: url(../img/sub19/prev-img.jpg);
+}
+.sub19 .nav-item.next {
+    background-image: url(../img/sub19/next-img.jpg);
+}
 #event-page.sub19 .sec01 {
     background-color: #ffffff;
 }
@@ -4862,13 +4883,7 @@ margin-top: 140px;
 #event-page.sub19 .sec02-1 {
     background-color: #FBE5F9;
 }
-#event-page.sub19 .sec02-1 .comment {
-    text-align: center;
-    font-size: 17px;
-    line-height: 29px;
-    font-weight: 400;
-    margin-top: 20px;
-}
+
 #event-page.sub19 .article16-02 {
     max-width: 646px;
 }
