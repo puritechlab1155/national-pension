@@ -3263,8 +3263,8 @@ margin-top: 140px;
 }
 
 #event-page .sec02-1 .comment {
-    font-size: 27px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 51px;
     font-weight: 400;
     margin-top: 20px;
     text-align: center;
@@ -4533,7 +4533,7 @@ margin-top: 140px;
         background: #424242; /* event-모든페이지 공통 */
         color: #fff;
         padding: 6px 60px;
-        font-size: 33px;
+        font-size: 40px;
         border-radius: 999px;
     }
     #event-page .sec02 .bg-img { /* event-모든페이지 공통 */
@@ -4703,7 +4703,7 @@ margin-top: 140px;
     }
     @media (max-width: 1050px) {
         #event-page.sub15 .mob-br {
-            display: block;
+            display: block !important;
         }
         #event-page.sub15 .sec04 .initial-container {
             flex-direction: column;
