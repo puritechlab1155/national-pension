@@ -2121,6 +2121,12 @@ body.menu-open .page-wrapper {
 }
 
 /* sub-02page.html */
+.sub02 .nav-item.prev {
+    background-image: url(../img/sub02/prev-img.jpg);
+}
+.sub02 .nav-item.next {
+    background-image: url(../img/sub02/next-img.jpg);
+}
 #sub02 .big-brW { display: block; }
 #sub02 .big-none { display: none; }
 #sub02 .big-559 { color: #fff; }
@@ -2296,6 +2302,9 @@ body.menu-open .page-wrapper {
 
 
 /* sub-03page.html */
+#sub03 .m-br480 {
+    display: none;
+}
 #sub03 .article-img {
     max-width: 610px;
 }

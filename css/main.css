@@ -2091,6 +2091,12 @@ body.menu-open .page-wrapper {
 
 
 /* sub-02page.html */
+.sub02 .nav-item.prev {
+    background-image: url(../img/sub02/prev-img.jpg);
+}
+.sub02 .nav-item.next {
+    background-image: url(../img/sub02/next-img.jpg);
+}
 #sub02 .bgBox, #sub02 .icon-b, #sub02 .icon-p {
     font-size: 17px;
 }
