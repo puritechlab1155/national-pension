@@ -1,5 +1,9 @@
 /* <---------모든 페이지 공통적용-------> */
-
+.caption, .caption-4 {
+    display: block;
+    margin-top: 5px;
+    font-size: 24px;
+}
 .f-24 {
     font-size: clamp(30px, 2vw, 36px) !important;
     line-height: clamp(48px, 7vh, 60px) !important;
@@ -2692,6 +2696,12 @@ margin-top: 140px;
 }
 
 /* sub-06page.html */
+.sub06 .pagination .nav-item.prev {
+    background-image: url(../img/sub06/prev-img.jpg);
+}
+.sub06 .pagination .nav-item.next {
+    background-image: url(../img/sub06/next-img.jpg);
+}
 #sub06 .m-br480 { display: none; }
 #sub06 .f-30 {
     font-weight: 100 !important;
@@ -2701,7 +2711,27 @@ margin-top: 140px;
 #sub06 .img-boxy {
     width: auto;
     height: auto;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;   
+}
+#sub06 .img-boxy2 {
+    width: auto;
+    height: auto;
+    margin-bottom: 36px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;   
+}
+#sub06 .img-boxy-river {
+    width: auto;
+    height: auto;
+    margin-bottom: 26px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -2726,6 +2756,7 @@ margin-top: 140px;
 #sub06 .img-container {
     height: auto !important;
 }
+
 #sub06 .flex-2 {
     display: flex;
     justify-content: flex-start;
@@ -2743,16 +2774,50 @@ margin-top: 140px;
     gap: 30px;
 }
 
+#sub06 .img-container45.con12 {
+    margin-bottom: 28px;
+}
+
+#sub06 .img-container45-boxy {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    gap: 30px;
+}
+#sub06.sec02 .element45-01 .caption-4 {
+    display: block;
+    margin-top: 5px;
+}
+
 @media (max-width: 768px) {
     #sub06 .summary {
-        width: 100%;
+        width: 50%;
     }
     #sub06 .img-container45 {
         display: block;
         width: 100%;
         margin-bottom: 30px;
     }
+    #sub06 .img-container45 .img45_width {
+        width: 100%;
+    }
+    #sub06.sec02 .element45-01 .caption-4 {
+        margin-bottom: 28px;
+    }
+    #sub06 .element45-01 {
+        margin-bottom: 28px;
+    }
+    #sub06 .img-boxy2 {
+        margin-bottom: 28px;
+    }
 }
+
+@media (max-width: 664px) {
+    #sub06 .summary {
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
     #sub06 .m-br480 { display: block; }
     #sub06 .summary-flex {

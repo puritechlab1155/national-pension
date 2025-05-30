@@ -8,7 +8,7 @@
     font-weight: normal;
     font-style: normal;
 }
-.caption {
+.caption, .caption-4 {
     display: block;
     margin-top: 5px;
 }
