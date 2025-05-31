@@ -2551,10 +2551,10 @@ body.menu-open .page-wrapper {
 
 
 /* sub-02page.html */
-.sub02 .nav-item.prev {
+.sub02 .pagination .nav-item.prev {
     background-image: url(../img/sub02/prev-img.jpg);
 }
-.sub02 .nav-item.next {
+.sub02 .pagination .nav-item.next {
     background-image: url(../img/sub02/next-img.jpg);
 }
 #sub02 .big-brW { display: block; }
@@ -2732,6 +2732,13 @@ body.menu-open .page-wrapper {
 
 
 /* sub-03page.html */
+.sub03 .pagination .nav-item.prev,
+.sub04 .pagination .nav-item.prev {
+    background-image: url(../img/sub03/prev-img.jpg);
+}
+.sub03 .pagination .nav-item.next {
+    background-image: url(../img/sub03/next-img.jpg);
+}
 #sub03 .m-br480 {
     display: none;
 }
