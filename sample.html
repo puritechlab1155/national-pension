@@ -157,7 +157,7 @@
                         <button type="button"
                             onclick="window.location.href='https://www.nps.or.kr/jsppage/cyber_pr/webzine1.jsp'"
                             class="prev-issues">지난호 보기</button>
-                        <span class="volume poppins">2025 Spring VOL.203</span>
+                        <span class="volume poppins">2025 상반기 VOL.203</span>
                         <div class="search-container" id="searchContainer">
                             <div>
                                 <svg class="search-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -458,35 +458,10 @@
 
     </body>
     <script src="js/script.js"></script>
-    <script>
+    <!-- Kakao SDK 불러오기 -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="js/kakao.js"></script>
 
-
-
-    </script>
-    <script type="text/javascript">
-        function shareKakaoTalk() {
-            Kakao.Share.sendDefault({
-            objectType: 'feed',
-            content: {
-                title: document.title, // 현재 페이지 제목
-                description: document.querySelector('meta[name="description"]') ? document.querySelector('meta[name="description"]').getAttribute('content') : document.title, // 현재 페이지 설명 (메타 태그가 없으면 제목 사용)
-                imageUrl: '', // 공유할 이미지 URL (선택 사항)
-                link: {
-                mobileWebUrl: document.URL,
-                webUrl: document.URL,
-                },
-            },
-            buttons: [
-                {
-                title: '웹으로 보기',
-                link: {
-                    mobileWebUrl: document.URL,
-                    webUrl: document.URL,
-                },
-                },
-            ],
-            });
-        }
-    </script>
+    <script></script>
 
 </html>
